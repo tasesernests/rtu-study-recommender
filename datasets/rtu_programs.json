@@ -1,0 +1,1984 @@
+{
+  "metadata": {
+    "source": "Rīgas Tehniskā universitāte (RTU)",
+    "type": "Akadēmiskās bakalaura (pirmā cikla) studijas",
+    "generated": "2026-05-20",
+    "version": "1.0",
+    "total_programs": 20,
+    "description": "Structured dataset of RTU bachelor programs for student-program matching. Each program contains structured fields for algorithmic and semantic matching based on student interests, strengths, language preferences, career goals, and academic background."
+  },
+  "matching_taxonomy": {
+    "interest_domains": [
+      "IT_un_programmeeshana",
+      "elektronika_un_telekomunikacijas",
+      "mehaanika_un_maashiinbuuve",
+      "butransports_un_aviacija",
+      "buuvenieciba",
+      "kiiimija_un_biotehnoloGija",
+      "materiaalu_zinatne",
+      "vides_zinatne_un_ilgtspeejiba",
+      "robotika_un_automatizacija",
+      "maaksla_un_dizains",
+      "arhitektura",
+      "bizness_un_vadiba",
+      "tiesibas",
+      "valodas_un_kulturas",
+      "radosa_industrija",
+      "datu_zinatne_un_MI"
+    ],
+    "strength_tags": [
+      "matemātika",
+      "fizika",
+      "ķīmija",
+      "bioloģija",
+      "programmēšana",
+      "radošums",
+      "zīmēšana",
+      "valodas",
+      "analītiskā domāšana",
+      "tehniskā domāšana",
+      "komunikācija",
+      "vadība",
+      "pētniecība",
+      "dizains"
+    ],
+    "personality_fit": [
+      "analitisks",
+      "radošs",
+      "praktiski orientēts",
+      "zinātniski orientēts",
+      "sociāli orientēts",
+      "tehniski orientēts",
+      "uzņēmīgs",
+      "humanitāri orientēts",
+      "starptautiski orientēts",
+      "komandas spēlētājs",
+      "patstāvīgs"
+    ],
+    "industry_sectors": [
+      "IT",
+      "aviācija_un_transports",
+      "ražošana_un_rūpniecība",
+      "būvniecība",
+      "enerģētika",
+      "vide_un_klimats",
+      "ķīmija_un_farmācija",
+      "biomedicīna",
+      "sakari_un_telekomunikācijas",
+      "robotika_un_automatizācija",
+      "māksla_un_kultūra",
+      "bizness_un_finanses",
+      "tieslietas",
+      "izglītība_un_pētniecība",
+      "dizains_un_mediji"
+    ]
+  },
+  "programs": [
+    {
+      "id": "ATSI",
+      "name": "Aeronautikas un transporta sistēmu inženierija",
+      "name_en": "Aeronautics and Transport Systems Engineering",
+      "faculty": "Būvniecības un mašīnzinību fakultāte",
+      "program_type": "Akadēmiskās bakalaura (pirmā cikla) studijas",
+      "study_direction": "Mehānika un metālapstrāde, siltumenerģētika, siltumtehnika un mašīnzinības",
+      "study_field": "Būvniecība, mašīnzinības un medicīnas inženierija",
+      "degree": {
+        "title": "Inženierzinātņu bakalaura grāds mašīnzinībās",
+        "title_en": "Bachelor of Engineering in Mechanical Engineering",
+        "level": "6"
+      },
+      "logistics": {
+        "duration_years": 4,
+        "credits": 240,
+        "format": "Pilna laika klātienes",
+        "language": ["Latviešu", "Angļu"],
+        "locations": ["Rīga"],
+        "start_location": "Rīga"
+      },
+      "finances": {
+        "budget_places": { "Rīga": 30 },
+        "annual_fee_eur": 3500,
+        "fee_type": "Pilna laika klātienes"
+      },
+      "admission": {
+        "required_prior_education": "Vidējā izglītība",
+        "special_requirements": null,
+        "entry_exam": false,
+        "entry_exam_details": null,
+        "centralized_exams_needed": null
+      },
+      "program_director": {
+        "name": "Māris Hauka",
+        "title": "Doktors, Asociētais profesors"
+      },
+      "description": "Programma sagatavo speciālistus, kuri spēs labot, veikt tehnisko apkopi, ekspluatēt un pārvaldīt transportlīdzekļu parku, ieskaitot attālināti vadāmus un bezpilota transportlīdzekļus, organizēt pārvadājumus un nodrošināt sadarbību dažādiem transporta veidiem.",
+      "goals": "Nodrošināt darba tirgū pieprasītu aeronautikas un transporta sistēmu speciālistu sagatavošanu ar nozares pamatzināšanām, kuri ir spējīgi analizēt informāciju, pieņemt lēmumus un veikt patstāvīgu darbu, kā arī sagatavot studentus maģistrantūrai.",
+      "objectives": [
+        "Nodrošināt bakalaura studiju līmenim atbilstošu konkurētspējīgu izglītību aeronautikas un transporta sistēmu jomā",
+        "Sniegt vispusīgas zināšanas, veidot prasmes atbilstoši darba tirgus prasībām transporta sistēmas inženierim",
+        "Nodrošināt studiju programmas satura attīstību atbilstoši transporta institūciju starptautiskajiem normatīvajiem aktiem",
+        "Veicināt studējošo interesi par turpmāku profesionālo pilnveidi un studijām maģistrantūrā",
+        "Veicināt starptautisku sadarbību un dalību starptautiskās apmaiņas programmās"
+      ],
+      "learning_outcomes": {
+        "knowledge": [
+          "Pamata un specializētas zināšanas aeronautikas transporta nozarē",
+          "Izpratne par aeronautikas transporta nozares svarīgākajiem jēdzieniem un likumsakarībām"
+        ],
+        "skills": [
+          "Veikt profesionālu, inovatīvu vai pētniecisku darbību transporta sistēmu inženierijas jomā",
+          "Veikt praktisku darbu transporta un loģistikas jomā",
+          "Projektēt CAD/CAM/CAE sistēmas transportam",
+          "Izmantot matemātiskos modeļus transporta uzdevumu risināšanā",
+          "Analizēt informāciju un sagatavot pārskatus",
+          "Formulēt un aprakstīt problēmas un risinājumus transporta sistēmu inženierijā"
+        ],
+        "competencies": [
+          "Patstāvīgi iegūt, atlasīt un analizēt transporta sistēmu inženierijas nozares informāciju",
+          "Pieņemt lēmumus un risināt problēmas transporta inženiera profesijā",
+          "Izprast profesionālo ētiku un izvērtēt darbības ietekmi uz vidi un sabiedrību"
+        ]
+      },
+      "career": {
+        "description": "Speciālists strādā transporta (ieskaitot aeronautikas) un loģistikas uzņēmumos un organizācijās, pētniecības un izglītības iestādēs.",
+        "job_titles": [
+          "Transporta sistēmu inženieris",
+          "Aviācijas tehnikas speciālists",
+          "Loģistikas inženieris",
+          "Bezpilota gaisa kuģu operators",
+          "Transporta parka pārvaldnieks",
+          "Pētniecības speciālists transportā"
+        ],
+        "sectors": [
+          "aviācija_un_transports",
+          "ražošana_un_rūpniecība",
+          "izglītība_un_pētniecība"
+        ]
+      },
+      "matching": {
+        "interest_domains": [
+          "butransports_un_aviacija",
+          "mehaanika_un_maashiinbuuve",
+          "robotika_un_automatizacija"
+        ],
+        "required_strengths": ["matemātika", "fizika", "analītiskā domāšana", "tehniskā domāšana"],
+        "personality_fit": ["analitisks", "tehniski orientēts", "praktiski orientēts"],
+        "language_of_instruction": ["lv", "en"],
+        "international_potential": true,
+        "research_oriented": true,
+        "postgrad_pathway": true,
+        "difficulty_level": "augsts",
+        "math_intensive": true,
+        "creative_component": false,
+        "entry_exam_required": false
+      }
+    },
+    {
+      "id": "BUV_EN",
+      "name": "Būvniecība (angļu valodā)",
+      "name_en": "Civil Engineering (in English)",
+      "faculty": "Būvniecības un mašīnzinību fakultāte",
+      "program_type": "Akadēmiskās bakalaura (pirmā cikla) studijas",
+      "study_direction": "Arhitektūra un būvniecība",
+      "study_field": "Būvniecība, mašīnzinības un medicīnas inženierija",
+      "degree": {
+        "title": "Inženierzinātņu bakalaura grāds būvniecībā un civilajā celtniecībā",
+        "title_en": "Bachelor of Engineering in Civil Engineering",
+        "level": "6"
+      },
+      "logistics": {
+        "duration_years": 3,
+        "credits": 180,
+        "format": "Pilna laika klātienes",
+        "language": ["Angļu"],
+        "locations": ["Rīga"],
+        "start_location": "Rīga"
+      },
+      "finances": {
+        "budget_places": null,
+        "annual_fee_eur": 3500,
+        "fee_type": "Pilna laika klātienes",
+        "note": "Nav budžeta vietu – paredzēts ārvalstu studējošajiem"
+      },
+      "admission": {
+        "required_prior_education": "Vidējā izglītība",
+        "special_requirements": "Paredzēta tikai ārvalstu studējošajiem studijām angļu valodā.",
+        "entry_exam": false,
+        "entry_exam_details": null,
+        "centralized_exams_needed": null
+      },
+      "program_director": {
+        "name": "Baiba Gaujēna",
+        "title": "Doktors, Asociētais profesors"
+      },
+      "description": "Starptautiska programma angļu valodā, vērsta uz plašu un augstas kvalifikācijas speciālistu sagatavošanu būvniecībā ar sistēmisku domāšanu un izpratni par jaunākajām tehnoloģijām.",
+      "goals": "Sagatavot plaša profila un augstas kvalifikācijas speciālistus ar akadēmisko izglītību, kuriem piemīt sistēmiska domāšana un kuri spēj sekot tehnoloģiju attīstībai būvniecībā.",
+      "objectives": [
+        "Nodrošināt starptautiskiem standartiem atbilstošu konkurētspējīgu akadēmisko izglītību",
+        "Attīstīt spēju adaptēt ārvalstu tehnoloģijas vietējiem apstākļiem",
+        "Attīstīt inovatīvu projektu izstrādi ilgtspējīgā būvniecībā",
+        "Sniegt vispusīgas zināšanas būvniecībā atbilstoši darba tirgus prasībām",
+        "Veicināt studentu un akadēmiskā personāla mijiedarbību zinātnisko darbu izstrādē"
+      ],
+      "learning_outcomes": {
+        "knowledge": [
+          "Teorētiskās un praktiskās zināšanas darbam būvniecības jomā",
+          "Pārzina tehnoloģijas un metodes darba uzdevumu veikšanai"
+        ],
+        "skills": [
+          "Veikt darbu atbilstoši nozares normatīvo aktu un standartu prasībām",
+          "Plānot un organizēt darbu, izmantojot dažādas metodes un instrumentus",
+          "Atrast, izvērtēt un radoši izmantot informāciju problēmu risināšanai",
+          "Sadarboties komandā vai vadīt komandas darbu"
+        ],
+        "competencies": [
+          "Pielietot iegūtās zināšanas darbā būvniecības jomā",
+          "Izstrādāt inovatīvus projektus ilgtspējīgā būvniecībā"
+        ]
+      },
+      "career": {
+        "description": "Absolventi var strādāt būvniecības uzņēmumos, valsts institūcijās, pašvaldībās, kā arī veikt pētījumus un izstrādāt būvprojektus.",
+        "job_titles": [
+          "Būvinženieris",
+          "Projekta vadītājs būvniecībā",
+          "Būvniecības normatīvo aktu speciālists",
+          "Pētniecības speciālists inženierbūvēs"
+        ],
+        "sectors": ["būvniecība", "enerģētika", "izglītība_un_pētniecība"]
+      },
+      "matching": {
+        "interest_domains": ["buuvenieciba", "vides_zinatne_un_ilgtspeejiba"],
+        "required_strengths": ["matemātika", "fizika", "tehniskā domāšana", "valodas"],
+        "personality_fit": ["tehniski orientēts", "starptautiski orientēts", "analitisks"],
+        "language_of_instruction": ["en"],
+        "international_potential": true,
+        "research_oriented": false,
+        "postgrad_pathway": true,
+        "difficulty_level": "vidējs",
+        "math_intensive": true,
+        "creative_component": false,
+        "entry_exam_required": false,
+        "target_audience": "ārvalstu studenti",
+        "note": "Nav pieejams Latvijas pilsoņiem uz budžeta vietām"
+      }
+    },
+    {
+      "id": "BTBI",
+      "name": "Biotehnoloģija un bioinženierija",
+      "name_en": "Biotechnology and Bioengineering",
+      "faculty": "Dabaszinātņu un tehnoloģiju fakultāte",
+      "program_type": "Akadēmiskās bakalaura (pirmā cikla) studijas",
+      "study_direction": "Ķīmija, ķīmijas tehnoloģijas un biotehnoloģija",
+      "study_field": "Dabaszinātnes",
+      "degree": {
+        "title": "Dabaszinātņu bakalaura grāds biotehnoloģijā un bioinženierijā",
+        "title_en": "Bachelor of Science in Biotechnology and Bioengineering",
+        "level": "6"
+      },
+      "logistics": {
+        "duration_years": 3,
+        "credits": 180,
+        "format": "Pilna laika klātienes",
+        "language": ["Angļu"],
+        "locations": ["Rīga"],
+        "start_location": "Rīga",
+        "note": "Uzņemšana notiek Latvijas Universitātē. Kopīga LU un RTU programma."
+      },
+      "finances": {
+        "budget_places": { "Rīga": 8 },
+        "annual_fee_eur": 3600,
+        "fee_type": "Pilna laika klātienes"
+      },
+      "admission": {
+        "required_prior_education": "Vidējā izglītība",
+        "special_requirements": "Uzņemšana notiek Latvijas Universitātē. Skatīt LU uzņemšanas nosacījumus.",
+        "entry_exam": false,
+        "entry_exam_details": null,
+        "centralized_exams_needed": null,
+        "admission_url": "https://www.lu.lv/studijas/studiju-programmas/bakalaura-limena-studijas/biotehnologija-un-bioinzenierija/"
+      },
+      "program_director": {
+        "name": "Marta Zemīte",
+        "title": "Doktors, Pētnieks"
+      },
+      "description": "Kopīgā LU un RTU programma angļu valodā sniedz gan teorētiskās, gan praktiskās zināšanas biotehnoloģijā un bioinženierijā, ieskaitot iekārtu un procesu projektēšanu un produktu izstrādi.",
+      "goals": "Sagatavot augsti kvalificētus speciālistus un zinātniekus, kuri spēj konkurēt vietējā un starptautiskajā zinātniskā darba tirgū dažādās biotehnoloģijas un bioinženierijas nozarēs.",
+      "objectives": [
+        "Nodrošināt iespēju apgūt bioloģijas, matemātikas, fizikas un ķīmijas pamatkursus",
+        "Nodrošināt padziļinātus kursus molekulārās vai organismu bioloģijas virzienā",
+        "Attīstīt kritiskās domāšanas, analīzes un argumentācijas spējas",
+        "Attīstīt iemaņas biotehnoloģisku iekārtu un procesu projektēšanā",
+        "Attīstīt iemaņas patstāvīgu pētījumu veikšanai izvēlētā bioloģijas apakšnozarē"
+      ],
+      "learning_outcomes": {
+        "knowledge": [
+          "Pamata un specializētās zināšanas biotehnoloģijā un bioinženierijā",
+          "Pārzina jomas intelektuālā īpašuma jautājumus un profesionālās ētikas problēmas"
+        ],
+        "skills": [
+          "Izmantot moderno laboratorijas aprīkojumu pētījumu veikšanai",
+          "Analizēt iegūtos pētījumu datus un interpretēt tos",
+          "Patstāvīgi iegūt, atlasīt un analizēt informāciju",
+          "Izskaidrot iegūtās zināšanas un argumentēti diskutēt ar speciālistiem un nespeciālistiem"
+        ],
+        "competencies": [
+          "Izvērtēt savas profesionālās darbības ietekmi uz vidi un sabiedrību",
+          "Veikt zinātniskos pētījumus no hipotēzes līdz rezultātiem",
+          "Parādīt zinātnisku pieeju kompleksu problēmu risināšanā",
+          "Parādīt prasmes biotehnoloģisko pētījumu rezultātu komercializācijā"
+        ]
+      },
+      "career": {
+        "description": "Absolventiem ir iespēja strādāt universitāšu un institūtu zinātniskajās laboratorijās, uzņēmumos pārtikas, lauksaimniecības, medicīnas, atkritumu pārstrādes jomās vai veidot savus jaunuzņēmumus.",
+        "job_titles": [
+          "Zinātnieks biotehnoloģijā",
+          "Laboratorijas speciālists",
+          "Produktu izstrādes inženieris",
+          "Bioinženieris",
+          "Startupu dibinātājs biotehnoloģijā"
+        ],
+        "sectors": [
+          "biomedicīna",
+          "ķīmija_un_farmācija",
+          "izglītība_un_pētniecība"
+        ]
+      },
+      "matching": {
+        "interest_domains": ["kiiimija_un_biotehnoloGija", "materiaalu_zinatne"],
+        "required_strengths": ["bioloģija", "ķīmija", "matemātika", "pētniecība", "analītiskā domāšana"],
+        "personality_fit": ["zinātniski orientēts", "analitisks", "patstāvīgs"],
+        "language_of_instruction": ["en"],
+        "international_potential": true,
+        "research_oriented": true,
+        "postgrad_pathway": true,
+        "difficulty_level": "augsts",
+        "math_intensive": true,
+        "creative_component": false,
+        "entry_exam_required": false,
+        "joint_program": true,
+        "partner_institution": "Latvijas Universitāte"
+      }
+    },
+    {
+      "id": "MATI",
+      "name": "Materiālu inženierija",
+      "name_en": "Materials Engineering",
+      "faculty": "Dabaszinātņu un tehnoloģiju fakultāte",
+      "program_type": "Akadēmiskās bakalaura (pirmā cikla) studijas",
+      "study_direction": "Fizika, materiālzinātne, matemātika un statistika",
+      "study_field": "Datorzinātne, telekomunikācija un elektroenerģētika; Dabaszinātnes",
+      "degree": {
+        "title": "Inženierzinātņu bakalaura grāds materiālu inženierijā",
+        "title_en": "Bachelor of Engineering in Materials Engineering",
+        "level": "6"
+      },
+      "logistics": {
+        "duration_years": 3,
+        "credits": 180,
+        "format": "Pilna laika klātienes",
+        "language": ["Latviešu", "Angļu"],
+        "locations": ["Rīga"],
+        "start_location": "Rīga"
+      },
+      "finances": {
+        "budget_places": { "Rīga": 30 },
+        "annual_fee_eur": 3340,
+        "fee_type": "Pilna laika klātienes"
+      },
+      "admission": {
+        "required_prior_education": "Vidējā izglītība",
+        "special_requirements": null,
+        "entry_exam": false,
+        "entry_exam_details": null,
+        "centralized_exams_needed": null
+      },
+      "program_director": {
+        "name": "Dmitrijs Stepanovs",
+        "title": "Doktors, Vadošais pētnieks"
+      },
+      "description": "Vienīgā šāda veida programma Latvijā, kas nodrošina pamatzināšanas jaunu materiālu izstrādē, inovatīvu tehnoloģiju pielietošanā un programmēšanas rīku izmantošanā. Saņēmusi izcilu akreditācijas novērtējumu.",
+      "goals": "Sagatavot progresīvi domājošus, augsti kvalificētus materiālzinātnes un inženierijas profesionāļus ar vispusīgām teorētiskajām zināšanām, praktiskā darba iemaņām un kompetencēm.",
+      "objectives": [
+        "Nodrošināt Boloņas rekomendācijām atbilstošu konkurētspējīgu akadēmisko izglītību",
+        "Sniegt zinātniski pamatotas zināšanas materiālzinātnē un inženierijā",
+        "Attīstīt iemaņas problēmu apzināšanā un risināšanā, izmantojot laboratorijas un industriālas iekārtas",
+        "Veicināt zināšanu pārnesi un argumentētu prezentēšanu",
+        "Rosināt interesi par maģistrantūras studijām"
+      ],
+      "learning_outcomes": {
+        "knowledge": [
+          "Vispusīgas teorētiskas zināšanas par materiālzinātnes pamatnostādnēm",
+          "Specializētas zināšanas noteiktā materiālzinātnes virzienā",
+          "Pārzina materiālu ražošanas un zinātnisko pētījumu plānošanas metodes"
+        ],
+        "skills": [
+          "Pamatoti izvēlēties un patstāvīgi izmantot materiālu iegūšanas un apstrādes metodes",
+          "Apkopot un prezentēt pētniecības rezultātus zinātniekiem un sabiedrībai",
+          "Piedalīties inovatīvu zinātnisko un ražotāju prasību projektu izpildē",
+          "Veikt ražotāja produkcijas kvalitātes kontroli un tehnisko ekspertīzi"
+        ],
+        "competencies": [
+          "Kritiski izvērtēt moderno materiālu un tehnoloģisko risinājumu ieviešanas nozīmi",
+          "Izmantot programmēšanu un modelēšanu ražošanas problēmu risināšanai"
+        ]
+      },
+      "career": {
+        "description": "Karjera biomedicīnā, kultūras mantojuma saglabāšanā, stiklveida pārklājumu tehnoloģijās, polimēru jomās.",
+        "job_titles": [
+          "Materiālu zinātnieks",
+          "Materiālu inženieris",
+          "Kvalitātes kontroles speciālists",
+          "Produktu izstrādes inženieris",
+          "Restaurācijas speciālists",
+          "Laboratorijas pētnieks"
+        ],
+        "sectors": [
+          "ražošana_un_rūpniecība",
+          "biomedicīna",
+          "būvniecība",
+          "izglītība_un_pētniecība"
+        ]
+      },
+      "matching": {
+        "interest_domains": ["materiaalu_zinatne", "kiiimija_un_biotehnoloGija", "buuvenieciba"],
+        "required_strengths": ["ķīmija", "fizika", "matemātika", "programmēšana", "pētniecība"],
+        "personality_fit": ["zinātniski orientēts", "analitisks", "tehniski orientēts"],
+        "language_of_instruction": ["lv", "en"],
+        "international_potential": true,
+        "research_oriented": true,
+        "postgrad_pathway": true,
+        "difficulty_level": "augsts",
+        "math_intensive": true,
+        "creative_component": false,
+        "entry_exam_required": false,
+        "unique_in_latvia": true
+      }
+    },
+    {
+      "id": "VIDE",
+      "name": "Vides inženierija",
+      "name_en": "Environmental Engineering",
+      "faculty": "Dabaszinātņu un tehnoloģiju fakultāte",
+      "program_type": "Akadēmiskās bakalaura (pirmā cikla) studijas",
+      "study_direction": "Vides aizsardzība",
+      "study_field": "Dabaszinātnes",
+      "degree": {
+        "title": "Inženierzinātņu bakalaura grāds vides inženierzinātnēs",
+        "title_en": "Bachelor of Engineering in Environmental Engineering",
+        "level": "6"
+      },
+      "logistics": {
+        "duration_years": 3,
+        "credits": 180,
+        "format": "Pilna laika klātienes",
+        "language": ["Latviešu", "Angļu"],
+        "locations": ["Rīga"],
+        "start_location": "Rīga"
+      },
+      "finances": {
+        "budget_places": { "Rīga": 30 },
+        "annual_fee_eur": 3730,
+        "fee_type": "Pilna laika klātienes"
+      },
+      "admission": {
+        "required_prior_education": "Vispārējā vai profesionālā vidējā izglītība",
+        "special_requirements": null,
+        "entry_exam": false,
+        "entry_exam_details": null,
+        "centralized_exams_needed": null
+      },
+      "program_director": {
+        "name": "Jūlija Gušča",
+        "title": "Doktors, Profesors"
+      },
+      "description": "Programma sagatavo vides aizsardzības speciālistus ar plašām inženiertehniskām kompetencēm, izmantojot starpnozaru pieeju un inovatīvu piesārņojuma novēršanas tehnoloģiju lietojumu.",
+      "goals": "Sagatavot plaša profila speciālistus ar integrētu akadēmisko izglītību, kuri spēj sekot vides tehnoloģiju attīstībai un sekmīgi piedalīties vides un klimata tehnoloģiju ieviešanā.",
+      "objectives": [
+        "Nodrošināt nepārtrauktu vides izglītības kvalitātes paaugstināšanu",
+        "Attīstīt pētījumu veikšanas spējas klimata un vides tehnoloģiju jomā",
+        "Attīstīt spēju adaptēt ārvalstu tehnoloģijas vietējiem apstākļiem",
+        "Attīstīt inovatīvu projektu izstrādes spēju ilgtspējīgā resursu izmantošanā",
+        "Veicināt studentu un akadēmiskā personāla mijiedarbību zinātnisko darbu izstrādē"
+      ],
+      "learning_outcomes": {
+        "knowledge": [
+          "Specializētas zināšanas par apkārtējās vides aizsardzības sistēmām",
+          "Izpratne par faktoriem, kas ietekmē apkārtējās vides kvalitāti"
+        ],
+        "skills": [
+          "Analītiski izskaidrot sakarības vides aizsardzībā un piedāvāt risinājumus",
+          "Patstāvīgi iegūt un analizēt informāciju par vides un klimata tehnoloģijām",
+          "Integrēt mūsdienīgas vides un klimata tehnoloģijas"
+        ],
+        "competencies": [
+          "Patstāvīgi organizēt profesionālo pilnveidi vides inženierijā",
+          "Uzņemties atbildību un iniciatīvu vides aizsardzības projektos"
+        ]
+      },
+      "career": {
+        "description": "Absolventi var strādāt vides aizsardzības, enerģētikas, energoefektivitātes, resursu apsaimniekošanas jomās, valsts iestādēs un pašvaldībās.",
+        "job_titles": [
+          "Vides inženieris",
+          "Vides aizsardzības speciālists",
+          "Enerģētikas speciālists",
+          "Klimata tehnoloģiju konsultants",
+          "Resursu apsaimniekošanas speciālists",
+          "Pētniecības speciālists vides jomā"
+        ],
+        "sectors": [
+          "vide_un_klimats",
+          "enerģētika",
+          "izglītība_un_pētniecība"
+        ]
+      },
+      "matching": {
+        "interest_domains": ["vides_zinatne_un_ilgtspeejiba", "kiiimija_un_biotehnoloGija"],
+        "required_strengths": ["matemātika", "fizika", "ķīmija", "analītiskā domāšana", "pētniecība"],
+        "personality_fit": ["zinātniski orientēts", "analitisks", "starptautiski orientēts"],
+        "language_of_instruction": ["lv", "en"],
+        "international_potential": true,
+        "research_oriented": true,
+        "postgrad_pathway": true,
+        "difficulty_level": "vidējs-augsts",
+        "math_intensive": true,
+        "creative_component": false,
+        "entry_exam_required": false,
+        "sustainability_focus": true
+      }
+    },
+    {
+      "id": "KKT",
+      "name": "Ķīmija un ķīmijas tehnoloģija",
+      "name_en": "Chemistry and Chemical Technology",
+      "faculty": "Dabaszinātņu un tehnoloģiju fakultāte",
+      "program_type": "Akadēmiskās bakalaura (pirmā cikla) studijas",
+      "study_direction": "Ķīmija, ķīmijas tehnoloģijas un biotehnoloģija",
+      "study_field": "Dabaszinātnes",
+      "degree": {
+        "title": "Inženierzinātņu bakalaura grāds ķīmijas tehnoloģijās",
+        "title_en": "Bachelor of Engineering in Chemical Technology",
+        "level": "6"
+      },
+      "logistics": {
+        "duration_years": 4,
+        "credits": 240,
+        "format": "Pilna laika klātienes",
+        "language": ["Latviešu", "Angļu"],
+        "locations": ["Rīga"],
+        "start_location": "Rīga"
+      },
+      "finances": {
+        "budget_places": { "Rīga": 60 },
+        "annual_fee_eur": 3340,
+        "fee_type": "Pilna laika klātienes"
+      },
+      "admission": {
+        "required_prior_education": "Vidējā izglītība",
+        "special_requirements": null,
+        "entry_exam": false,
+        "entry_exam_details": null,
+        "centralized_exams_needed": null
+      },
+      "program_director": {
+        "name": "Māris Turks",
+        "title": "Doktors, Dekāns"
+      },
+      "description": "Vienīgā šāda veida programma Latvijā, iekļaujot ķīmijas un ķīmijas tehnoloģijas teorētisko pamatu apguvi, praktiskās iemaņas laboratorijās un praksi specialitātē.",
+      "goals": "Nodrošināt teorētisko zināšanu un pētniecības iemaņu apguvi ķīmijā un ķīmijas inženierzinātnē. Sagatavot absolventus patstāvīgam darbam uzņēmumos, kas saistīti ar ķīmisko procesu organizāciju un kontroli.",
+      "objectives": [
+        "Nodrošināt teorētisko zināšanu un pētniecības iemaņu apguvi ķīmijā un ķīmijas inženierzinātnē",
+        "Sagatavot absolventus patstāvīgam darbam ar ķīmiskajiem procesiem",
+        "Nodrošināt materiālu un produktu kvalitātes kontroles kompetences",
+        "Sagatavot studējošos maģistrantūrai"
+      ],
+      "learning_outcomes": {
+        "knowledge": [
+          "Pārzina ķīmijas, ķīmijas tehnoloģijas pamatteorijas un procesus",
+          "Pārzina rūpnieciskās ražošanas un zinātnisko pētījumu plānošanas metodes"
+        ],
+        "skills": [
+          "Praktiski pielietot zināšanas ķīmijā un ķīmijas tehnoloģijā",
+          "Patstāvīgi izmantot plānošanas un analīzes metodes",
+          "Formulēt un prezentēt rezultātus nozares speciālistiem",
+          "Patstāvīgi plānot, iegūt un analizēt informāciju pētniecībā un ražošanā"
+        ],
+        "competencies": [
+          "Patstāvīgi izvēlēties rezultātu apstrādes metodes konkrētai problēmai",
+          "Nodrošināt ķīmisko procesu realizāciju un vadību"
+        ]
+      },
+      "career": {
+        "description": "Absolvents var strādāt kā inženieris vai tehnologs jebkurā uzņēmumā ar ķīmiskiem procesiem, pētnieciskajās laboratorijās vai kā pašnodarbināta persona.",
+        "job_titles": [
+          "Ķīmijas inženieris",
+          "Tehnologs",
+          "Kvalitātes kontroles speciālists",
+          "Laboratorijas analītiķis",
+          "Procesa vadītājs ķīmiskajā ražošanā",
+          "Pētniecības speciālists"
+        ],
+        "sectors": [
+          "ķīmija_un_farmācija",
+          "biomedicīna",
+          "ražošana_un_rūpniecība",
+          "izglītība_un_pētniecība"
+        ]
+      },
+      "matching": {
+        "interest_domains": ["kiiimija_un_biotehnoloGija", "materiaalu_zinatne"],
+        "required_strengths": ["ķīmija", "matemātika", "fizika", "pētniecība", "analītiskā domāšana"],
+        "personality_fit": ["zinātniski orientēts", "analitisks", "praktiski orientēts"],
+        "language_of_instruction": ["lv", "en"],
+        "international_potential": true,
+        "research_oriented": true,
+        "postgrad_pathway": true,
+        "difficulty_level": "augsts",
+        "math_intensive": true,
+        "creative_component": false,
+        "entry_exam_required": false,
+        "unique_in_latvia": true
+      }
+    },
+    {
+      "id": "DS",
+      "name": "Datorsistēmas",
+      "name_en": "Computer Systems",
+      "faculty": "Datorzinātnes, informācijas tehnoloģijas un enerģētikas fakultāte",
+      "program_type": "Akadēmiskās bakalaura (pirmā cikla) studijas",
+      "study_direction": "Informācijas tehnoloģijas, datortehnika, elektronika, telekomunikācijas, datorvadība un datorzinātne",
+      "study_field": "Datorzinātne, telekomunikācija un elektroenerģētika",
+      "degree": {
+        "title": "Inženierzinātņu bakalaura grāds datorsistēmās",
+        "title_en": "Bachelor of Engineering in Computer Systems",
+        "level": "6"
+      },
+      "logistics": {
+        "duration_years": 3,
+        "credits": 180,
+        "format": "Pilna laika klātienes",
+        "language": ["Latviešu", "Angļu"],
+        "locations": ["Rīga", "Rēzekne", "Liepāja"],
+        "start_location": "Rīga, Rēzekne, Liepāja"
+      },
+      "finances": {
+        "budget_places": { "Rīga": 140, "Rēzekne": 30, "Liepāja": 30 },
+        "annual_fee_eur": 3990,
+        "fee_type": "Pilna laika klātienes",
+        "note": "30 budžeta vietas Liepājā (RTU Liepājas akadēmija)"
+      },
+      "admission": {
+        "required_prior_education": "Vidējā izglītība",
+        "special_requirements": null,
+        "entry_exam": false,
+        "entry_exam_details": null,
+        "centralized_exams_needed": null,
+        "quality_label": "Euro-Inf"
+      },
+      "program_director": {
+        "name": "Egons Lavendelis",
+        "title": "Doktors, Profesors"
+      },
+      "description": "Programma ar Eiropas kvalitātes zīmogu Euro-Inf. Sniedz akadēmisko izglītību informātikas nozarē: sistēmu analīzē, projektēšanā, programmēšanā, testēšanā, datubāzu tehnoloģijās un MI pamatizglītībā.",
+      "goals": "Sagatavot speciālistus patstāvīga darba uzsākšanai informātikas nozarē ar zināšanām programminženierijā, datorsistēmu izstrādē un sistēmu analīzē.",
+      "objectives": [
+        "Sniegt zināšanas matemātikā un fizikā atbilstoši augstākās tehniskās inženierizglītības prasībām",
+        "Sniegt pamatzināšanas datorzinātnē ar uzsvaru uz programminženieriju un mākslīgā intelekta metodēm",
+        "Attīstīt studentu spējas praktiski strādāt ar dažādiem programmproduktiem",
+        "Trenēt studentus programmēšanā un datoru profesionālā lietošanā",
+        "Attīstīt studentu prasmi patstāvīgi apgūt jaunos programmproduktus"
+      ],
+      "learning_outcomes": {
+        "knowledge": [
+          "Zināšanas datorzinātnes nozarē un tās formālajos pamatos"
+        ],
+        "skills": [
+          "Izvēlēties adekvātus algoritmus (tai skaitā MI), metodes un programmproduktus",
+          "Lietot programmatūras izstrādes vides un rīkus",
+          "Izstrādāt programmas atbilstoši labajām praksēm un IT standartiem",
+          "Apgūt profesionālo literatūru latviešu valodā un svešvalodā"
+        ],
+        "competencies": [
+          "Piedalīties projektu izstrādē un vadīšanā",
+          "Strādāt kolektīvā un koordinēt darba grupu",
+          "Patstāvīgi plānot savu darbu"
+        ]
+      },
+      "career": {
+        "description": "Absolventi uzsāk darbu IT uzņēmumos programmatūras izstrādes projektos dažādos amatos.",
+        "job_titles": [
+          "Programmētājs",
+          "Testētājs",
+          "Dokumentētājs",
+          "Datorsistēmu analītiķis",
+          "Programminženieris"
+        ],
+        "sectors": ["IT", "ražošana_un_rūpniecība"]
+      },
+      "matching": {
+        "interest_domains": ["IT_un_programmeeshana", "datu_zinatne_un_MI"],
+        "required_strengths": ["matemātika", "programmēšana", "analītiskā domāšana", "tehniskā domāšana"],
+        "personality_fit": ["analitisks", "tehniski orientēts", "patstāvīgs"],
+        "language_of_instruction": ["lv", "en"],
+        "international_potential": true,
+        "research_oriented": false,
+        "postgrad_pathway": true,
+        "difficulty_level": "vidējs-augsts",
+        "math_intensive": true,
+        "creative_component": false,
+        "entry_exam_required": false,
+        "quality_label": "Euro-Inf",
+        "available_in_regions": ["Rīga", "Rēzekne", "Liepāja"]
+      }
+    },
+    {
+      "id": "IT",
+      "name": "Informācijas tehnoloģija",
+      "name_en": "Information Technology",
+      "faculty": "Datorzinātnes, informācijas tehnoloģijas un enerģētikas fakultāte",
+      "program_type": "Akadēmiskās bakalaura (pirmā cikla) studijas",
+      "study_direction": "Informācijas tehnoloģijas, datortehnika, elektronika, telekomunikācijas, datorvadība un datorzinātne",
+      "study_field": "Datorzinātne, telekomunikācija un elektroenerģētika",
+      "degree": {
+        "title": "Inženierzinātņu bakalaura grāds informācijas tehnoloģijā",
+        "title_en": "Bachelor of Engineering in Information Technology",
+        "level": "6"
+      },
+      "logistics": {
+        "duration_years": 3,
+        "credits": 180,
+        "format": "Pilna laika klātienes",
+        "language": ["Latviešu"],
+        "locations": ["Rīga"],
+        "start_location": "Rīga"
+      },
+      "finances": {
+        "budget_places": { "Rīga": 115 },
+        "annual_fee_eur": 3990,
+        "fee_type": "Pilna laika klātienes"
+      },
+      "admission": {
+        "required_prior_education": "Vidējā izglītība",
+        "special_requirements": null,
+        "entry_exam": false,
+        "entry_exam_details": null,
+        "centralized_exams_needed": null
+      },
+      "program_director": {
+        "name": "Jānis Grabis",
+        "title": "Doktors, Profesors"
+      },
+      "description": "Programma sniedz vispusīgas zināšanas datorzinātnē un datortehnoloģijās. Īpaša uzmanība sistēmu modelēšanai, datu analīzei, IT pārvaldībai un projektu vadībai.",
+      "goals": "Sagatavot kvalificētus speciālistus IT jomā, kuri spēj izvēlēties, izveidot, integrēt un uzturēt lietotājam piemērotus IT risinājumus biznesa problēmu risināšanai.",
+      "objectives": [
+        "Nodrošināt vispusīgu inženiertehnisko izglītību un padziļinātas zināšanas informācijas tehnoloģijā",
+        "Sagatavot studentus veiksmīgai profesionālajai karjerai",
+        "Attīstīt studentu individuālās spējas",
+        "Veicināt jaunāko zinātnisko atziņu ieviešanu studiju procesā",
+        "Attīstīt kritiskas un sistemātiskas domāšanas spējas"
+      ],
+      "learning_outcomes": {
+        "knowledge": [
+          "Izmantot inženierzinātņu principus IT jomā",
+          "Izskaidrot IT teorētiskos pamatus: algoritmizāciju, datu struktūras, diskrēto matemātiku, sistēmu teoriju"
+        ],
+        "skills": [
+          "Izmantot IT uzņēmumu datorsistēmu izstrādē, ieskaitot datortīklu un datu bāzu izstrādi",
+          "Plānot uzņēmuma IT sistēmas darbību",
+          "Izstrādāt sarežģītu sistēmu modeļus",
+          "Strukturēt un analizēt liela apjoma datus",
+          "Integrēt sistēmas un izstrādāt e-biznesa risinājumus"
+        ],
+        "competencies": [
+          "Komunicēt ar IT risinājumu pasūtītājiem",
+          "Īstenot pētījumus IT jomā"
+        ]
+      },
+      "career": {
+        "description": "Programma piemērota tiem, kuri vēlas kļūt par IT konsultantiem, lietojumprogrammatūras izstrādātājiem, IT pārvaldniekiem vai sistēmu analīzes speciālistiem.",
+        "job_titles": [
+          "IT konsultants",
+          "Lietojumprogrammatūras izstrādātājs",
+          "IT pārvaldnieks",
+          "Sistēmu analītiķis",
+          "Datu analītiķis",
+          "IT projektu vadītājs"
+        ],
+        "sectors": ["IT", "bizness_un_finanses"]
+      },
+      "matching": {
+        "interest_domains": ["IT_un_programmeeshana", "datu_zinatne_un_MI"],
+        "required_strengths": ["matemātika", "programmēšana", "analītiskā domāšana"],
+        "personality_fit": ["analitisks", "tehniski orientēts", "komandas spēlētājs"],
+        "language_of_instruction": ["lv"],
+        "international_potential": false,
+        "research_oriented": false,
+        "postgrad_pathway": true,
+        "difficulty_level": "vidējs",
+        "math_intensive": true,
+        "creative_component": false,
+        "entry_exam_required": false,
+        "business_oriented": true
+      }
+    },
+    {
+      "id": "IRS",
+      "name": "Intelektuālas robotizētas sistēmas",
+      "name_en": "Intelligent Robotic Systems",
+      "faculty": "Datorzinātnes, informācijas tehnoloģijas un enerģētikas fakultāte",
+      "program_type": "Akadēmiskās bakalaura (pirmā cikla) studijas",
+      "study_direction": "Informācijas tehnoloģijas, datortehnika, elektronika, telekomunikācijas, datorvadība un datorzinātne",
+      "study_field": "Datorzinātne, telekomunikācija un elektroenerģētika",
+      "degree": {
+        "title": "Inženierzinātņu bakalaura grāds intelektuālajās robotizētajās sistēmās",
+        "title_en": "Bachelor of Engineering in Intelligent Robotic Systems",
+        "level": "6"
+      },
+      "logistics": {
+        "duration_years": 3,
+        "credits": 180,
+        "format": "Pilna laika klātienes",
+        "language": ["Latviešu"],
+        "locations": ["Rīga"],
+        "start_location": "Rīga"
+      },
+      "finances": {
+        "budget_places": { "Rīga": 35 },
+        "annual_fee_eur": 3990,
+        "fee_type": "Pilna laika klātienes"
+      },
+      "admission": {
+        "required_prior_education": "Vidējā izglītība",
+        "special_requirements": "Iestājpārbaudījums matemātikā, fizikā un loģikā. Tiek vērtētas sadarbības spējas.",
+        "entry_exam": true,
+        "entry_exam_details": {
+          "subjects": ["matemātika", "fizika", "loģika"],
+          "also_assessed": ["sadarbības spējas"],
+          "exam_dates_2026": ["2026-06-06", "2026-06-13"]
+        },
+        "centralized_exams_needed": null
+      },
+      "program_director": {
+        "name": "Agris Ņikitenko",
+        "title": "Doktors, Dekāns"
+      },
+      "description": "Viena no jaunākajām inženierzinātņu programmām RTU un pirmā šāda veida programma Baltijas valstīs. Sagatavo ražošanas automatizācijas un robotikas inženierus.",
+      "goals": "Sagatavot speciālistus ar spēju domāt sistēmiski, analizēt un izstrādāt tehniski un ekonomiski pamatotus robotizētu un intelektuālu sistēmu risinājumus.",
+      "objectives": [
+        "Attīstīt sistēmisko domāšanu un praktiskās iemaņas robotizētu risinājumu izstrādē",
+        "Izmantot fundamentālus un jaunākos sasniegumus robotikas un MI jomās",
+        "Nodrošināt vairāku jomu zināšanu sniegšanu, sadarbojoties dažādu RTU struktūrvienību mācībspēkiem",
+        "Nodrošināt programmas elastību, lai piemērotos mainīgam darba tirgum",
+        "Sagatavot studentus maģistrantūrai"
+      ],
+      "learning_outcomes": {
+        "knowledge": [
+          "Formulēt konkrētu problēmu automatizētu un robotizētu sistēmu terminos"
+        ],
+        "skills": [
+          "Izstrādāt risinājumus, izmantojot modernus automātikas un elektriskās piedziņas elementus",
+          "Izstrādāt automātiskas vai robotizētas sistēmas vadības algoritmus",
+          "Izstrādāt programmatūru automatizētu iekārtu vadībai",
+          "Izstrādāt risinājumus, kas kombinē aparatūras un programmatūras priekšrocības",
+          "Identificēt problēmas, kuru risināšanā izmanto robotizētas intelektuālas sistēmas"
+        ],
+        "competencies": [
+          "Patstāvīgi apgūt jaunas zināšanas",
+          "Strādāt grupā vienota mērķa sasniegšanai",
+          "Pamatot risinājuma priekšrocības vai trūkumus pasūtītājam"
+        ]
+      },
+      "career": {
+        "description": "Absolventi var uzsākt darbu kā jaunākie automātikas un robotikas speciālisti uzņēmumos ar automatizētām ražošanas līnijām, kā arī kļūt par robotu apkalpošanas vai izstrādes inženieriem.",
+        "job_titles": [
+          "Robotikas inženieris",
+          "Automātikas speciālists",
+          "Ražošanas automatizācijas inženieris",
+          "Robotu apkalpošanas inženieris",
+          "Programmētājs iegulto sistēmu jomā"
+        ],
+        "sectors": [
+          "robotika_un_automatizācija",
+          "ražošana_un_rūpniecība",
+          "IT"
+        ]
+      },
+      "matching": {
+        "interest_domains": ["robotika_un_automatizacija", "IT_un_programmeeshana", "elektronika_un_telekomunikacijas"],
+        "required_strengths": ["matemātika", "fizika", "programmēšana", "analītiskā domāšana", "tehniskā domāšana"],
+        "personality_fit": ["analitisks", "tehniski orientēts", "komandas spēlētājs", "zinātniski orientēts"],
+        "language_of_instruction": ["lv"],
+        "international_potential": false,
+        "research_oriented": true,
+        "postgrad_pathway": true,
+        "difficulty_level": "augsts",
+        "math_intensive": true,
+        "creative_component": false,
+        "entry_exam_required": true,
+        "first_in_baltics": true,
+        "competitive_admission": true
+      }
+    },
+    {
+      "id": "TTDP",
+      "name": "Telekomunikāciju tehnoloģijas un datu pārraides inženierija",
+      "name_en": "Telecommunications Technologies and Data Transmission Engineering",
+      "faculty": "Datorzinātnes, informācijas tehnoloģijas un enerģētikas fakultāte",
+      "program_type": "Akadēmiskās bakalaura (pirmā cikla) studijas",
+      "study_direction": "Informācijas tehnoloģijas, datortehnika, elektronika, telekomunikācijas, datorvadība un datorzinātne",
+      "study_field": "Datorzinātne, telekomunikācija un elektroenerģētika",
+      "degree": {
+        "title": "Inženierzinātņu bakalaura grāds elektrosakaru inženierijā",
+        "title_en": "Bachelor of Engineering in Telecommunications Engineering",
+        "level": "6"
+      },
+      "logistics": {
+        "duration_years": 3,
+        "credits": 180,
+        "format": "Pilna laika klātienes",
+        "language": ["Latviešu", "Angļu"],
+        "locations": ["Rīga"],
+        "start_location": "Rīga"
+      },
+      "finances": {
+        "budget_places": { "Rīga": 40 },
+        "annual_fee_eur": 3800,
+        "fee_type": "Pilna laika klātienes"
+      },
+      "admission": {
+        "required_prior_education": "Vidējā izglītība",
+        "special_requirements": null,
+        "entry_exam": false,
+        "entry_exam_details": null,
+        "centralized_exams_needed": null
+      },
+      "program_director": {
+        "name": "Lilita Ģēģere",
+        "title": "Doktors, Docents"
+      },
+      "description": "Programma nodarbojas ar sakaru sistēmām un liela mēroga datu tīkliem. Iepazīstina ar metodēm signālu pārraides un uztveršanas problēmu, informācijas drošības un sakaru sistēmu projektēšanas jomā.",
+      "goals": "Nodrošināt teorētisko zināšanu un pētniecības iemaņu apguvi telekomunikācijās; sagatavot inovatīvi domājošus speciālistus ar starptautiski konkurētspējīgu akadēmisko izglītību.",
+      "objectives": [
+        "Nodrošināt konkurētspējīgu izglītību telekomunikāciju tehnoloģijās un datu pārraides jomās",
+        "Sniegt fundamentālo zinātņu pamatus jomas teorētiskajiem kursiem",
+        "Nodrošināt specializētu zināšanu ieguvi telekomunikācijās un datu pārraides inženierijā",
+        "Sniegt zināšanas par datorizētu rīku pielietošanu sakaru sistēmu analīzē un projektēšanā",
+        "Attīstīt starptautisko mobilitāti un dalību projektos"
+      ],
+      "learning_outcomes": {
+        "knowledge": [
+          "Pārzina fundamentālo zinātņu pamatus jomas teorētiskajiem kursiem",
+          "Pārzina telekomunikāciju un datoru tīklus, galvenās tehnoloģijas un standartus",
+          "Pārzina telekomunikāciju iekārtu darbības principus un tīklu projektēšanas metodes"
+        ],
+        "skills": [
+          "Strādāt ar svešvalodā pieejamo zinātnisko un tehnisko literatūru",
+          "Izmantot teorētiskās zināšanas telekomunikāciju uzdevumu risināšanai",
+          "Veikt eksperimentālu datu apstrādi telekomunikāciju sistēmu analīzē",
+          "Izstrādāt lietojumprogrammas un algoritmus",
+          "Pielietot aktuālās tehnoloģijas sakaru sistēmu projektēšanā"
+        ],
+        "competencies": [
+          "Veikt telekomunikāciju tīklu diagnostiku un parametru novērtēšanu",
+          "Strādāt individuāli un komandā, rīkoties ilgtspējīgi un ētiski"
+        ]
+      },
+      "career": {
+        "description": "Absolventi var kļūt par konsultantiem, projektētājiem, inženieriem, datu pārraides infrastruktūras speciālistiem telekomunikāciju un IT uzņēmumos.",
+        "job_titles": [
+          "Telekomunikāciju inženieris",
+          "Sakaru sistēmu projektētājs",
+          "Datu pārraides speciālists",
+          "Telekomunikāciju tīklu administrators",
+          "IT konsultants",
+          "Zinātnieks telekomunikācijās"
+        ],
+        "sectors": [
+          "sakari_un_telekomunikācijas",
+          "IT",
+          "izglītība_un_pētniecība"
+        ]
+      },
+      "matching": {
+        "interest_domains": ["elektronika_un_telekomunikacijas", "IT_un_programmeeshana"],
+        "required_strengths": ["matemātika", "fizika", "programmēšana", "analītiskā domāšana"],
+        "personality_fit": ["tehniski orientēts", "analitisks", "starptautiski orientēts"],
+        "language_of_instruction": ["lv", "en"],
+        "international_potential": true,
+        "research_oriented": true,
+        "postgrad_pathway": true,
+        "difficulty_level": "vidējs-augsts",
+        "math_intensive": true,
+        "creative_component": false,
+        "entry_exam_required": false
+      }
+    },
+    {
+      "id": "VDT",
+      "name": "Viedās datortehnoloģijas",
+      "name_en": "Smart Computer Technologies",
+      "faculty": "Datorzinātnes, informācijas tehnoloģijas un enerģētikas fakultāte",
+      "program_type": "Akadēmiskās bakalaura (pirmā cikla) studijas",
+      "study_direction": "Informācijas tehnoloģijas, datortehnika, elektronika, telekomunikācijas, datorvadība un datorzinātne",
+      "study_field": "Datorzinātne, telekomunikācija un elektroenerģētika",
+      "degree": {
+        "title": "Inženierzinātņu bakalaura grāds viedajās datortehnoloģijās",
+        "title_en": "Bachelor of Engineering in Smart Computer Technologies",
+        "level": "6"
+      },
+      "logistics": {
+        "duration_years": 3,
+        "credits": 180,
+        "format": "Pilna laika klātienes",
+        "language": ["Latviešu"],
+        "locations": ["Rīga"],
+        "start_location": "Rīga"
+      },
+      "finances": {
+        "budget_places": { "Rīga": 90 },
+        "annual_fee_eur": 3660,
+        "fee_type": "Pilna laika klātienes"
+      },
+      "admission": {
+        "required_prior_education": "Vidējā izglītība",
+        "special_requirements": null,
+        "entry_exam": false,
+        "entry_exam_details": null,
+        "centralized_exams_needed": null
+      },
+      "program_director": {
+        "name": "Dmitrijs Bļizņuks",
+        "title": "Doktors, Profesors"
+      },
+      "description": "Programma sagatavo speciālistus viedo datortehnoloģiju risinājumu izveidē un uzturēšanā: datorgrafikā, datorredzē, datorvadībā, 3D modelēšanā, IoT tehnoloģijās un robotu vadībā.",
+      "goals": "Sagatavot kvalificētus speciālistus datorredzes, datorvadības un datortīklu jomā, kuri spēj izveidot un uzturēt viedo datortehnoloģiju risinājumus automatizācijas un vizualizācijas problēmu risināšanai.",
+      "objectives": [
+        "Nodrošināt vispusīgu inženiertehnisko izglītību un padziļinātas zināšanas viedajās datortehnoloģijās",
+        "Sagatavot studentus karjerai industriālajos uzņēmumos un valsts iestādēs",
+        "Attīstīt studentu individuālās spējas",
+        "Veicināt jaunāko zinātnisko atziņu ieviešanu studiju procesā",
+        "Attīstīt kritiskas un sistemātiskas domāšanas spējas"
+      ],
+      "learning_outcomes": {
+        "knowledge": [
+          "Izmantot inženierzinātņu principus viedajās datortehnoloģijās: datorgrafikā, datorredzē, datorvadībā",
+          "Izskaidrot viedo datortehnoloģiju teorētiskos pamatus: algoritmizācija, datu struktūras, diskrētā matemātika"
+        ],
+        "skills": [
+          "Izmantot viedās datortehnoloģijas uzņēmumu datorsistēmu izstrādē",
+          "Plānot inteliģentu sistēmu darbību",
+          "Izstrādāt sarežģītu sistēmu modeļus",
+          "Strukturēt un analizēt liela apjoma datus",
+          "Integrēt sistēmas un izstrādāt automatizācijas risinājumus"
+        ],
+        "competencies": [
+          "Komunicēt ar viedo datortehnoloģiju uzdevumu pasūtītājiem",
+          "Īstenot pētījumus viedo datortehnoloģiju jomā"
+        ]
+      },
+      "career": {
+        "description": "Absolventi strādā nozarēs, kur nepieciešama viedo datortehnoloģiju izpratne: automatizācija, vizualizācija, datorgrafika, datorredze.",
+        "job_titles": [
+          "Datorredzes inženieris",
+          "3D grafika speciālists",
+          "IoT sistēmu izstrādātājs",
+          "Automatizācijas speciālists",
+          "Robotu vadības programmētājs",
+          "Vizualizācijas izstrādātājs"
+        ],
+        "sectors": [
+          "IT",
+          "robotika_un_automatizācija",
+          "ražošana_un_rūpniecība",
+          "māksla_un_kultūra"
+        ]
+      },
+      "matching": {
+        "interest_domains": ["IT_un_programmeeshana", "robotika_un_automatizacija", "maaksla_un_dizains"],
+        "required_strengths": ["matemātika", "programmēšana", "analītiskā domāšana", "tehniskā domāšana"],
+        "personality_fit": ["analitisks", "tehniski orientēts", "radošs"],
+        "language_of_instruction": ["lv"],
+        "international_potential": false,
+        "research_oriented": false,
+        "postgrad_pathway": true,
+        "difficulty_level": "vidējs",
+        "math_intensive": true,
+        "creative_component": true,
+        "entry_exam_required": false
+      }
+    },
+    {
+      "id": "RIND",
+      "name": "Radošās industrijas",
+      "name_en": "Creative Industries",
+      "faculty": "Inženierekonomikas un vadības fakultāte",
+      "program_type": "Akadēmiskās bakalaura (pirmā cikla) studijas",
+      "study_direction": "Vadība, administrēšana un nekustamo īpašumu pārvaldība",
+      "study_field": "Uzņēmējdarbība, nekustamo īpašumu pārvaldība un loģistika; Izglītība, kultūra un sociālā labklājība",
+      "degree": {
+        "title": "Humanitāro zinātņu bakalaura grāds radošajās industrijās",
+        "title_en": "Bachelor of Humanities in Creative Industries",
+        "level": "6"
+      },
+      "logistics": {
+        "duration_years": 3,
+        "credits": 180,
+        "format": "Pilna laika klātienes",
+        "language": ["Latviešu"],
+        "locations": ["Rīga"],
+        "start_location": "Rīga",
+        "note": "Kopīgi īsteno RTU un Latvijas Kultūras akadēmija."
+      },
+      "finances": {
+        "budget_places": { "LKA": 12 },
+        "annual_fee_eur": 2900,
+        "fee_type": "Pilna laika klātienes",
+        "note": "12 budžeta vietas Latvijas Kultūras akadēmijā"
+      },
+      "admission": {
+        "required_prior_education": "Vispārējā vai profesionālā vidējā izglītība",
+        "special_requirements": "CE matemātikā, angļu (vai vācu/franču) valodā un latviešu valodā obligāti.",
+        "entry_exam": false,
+        "entry_exam_details": null,
+        "centralized_exams_needed": ["matemātika", "angļu_valoda_vai_cita", "latviešu_valoda"]
+      },
+      "program_director": {
+        "name": "Rita Greitāne",
+        "title": "Doktors, Docents"
+      },
+      "description": "Apvieno mākslas un uzņēmējdarbības kompetences radošo industriju speciālistu sagatavošanai. Kopīga RTU un Latvijas Kultūras akadēmijas programma ar pieeju abu augstskolu resursiem.",
+      "goals": "Sagatavot radošus un motivētus starpdisciplinārus speciālistus darbam radošajās industrijās ar padziļinātu izpratni par kultūras un mākslas procesiem.",
+      "objectives": [
+        "Sniegt starpdisciplināras zināšanas kultūras, mākslas un uzņēmējdarbības jomās",
+        "Sekmēt kultūras un mākslas procesu padziļinātu izpratni un radošumu",
+        "Attīstīt uzņēmējdarbības kompetences un sadarbības prasmes",
+        "Attīstīt zinātniski pētnieciskā darba iemaņas",
+        "Veicināt interesi par tālāku izglītošanos"
+      ],
+      "learning_outcomes": {
+        "knowledge": [
+          "Novērtēt kultūras un mākslas vērtības",
+          "Izprast radošo industriju ekonomisko, politisko, sociālo un tiesisko kontekstu"
+        ],
+        "skills": [
+          "Iekļauties uzņēmējdarbības vidē un veidot jaunuzņēmumus",
+          "Patstāvīgi iegūt, atlasīt un analizēt informāciju",
+          "Izstrādāt inovatīvus, mākslinieciskus un konkurētspējīgus produktus",
+          "Piedāvāt preces un pakalpojumus mērķauditorijai, izmantojot mūsdienīgus komunikācijas kanālus"
+        ],
+        "competencies": [
+          "Analizēt uzņēmumu darbības rādītājus radošajās industrijās",
+          "Rīkoties ētiski un sociāli atbildīgi"
+        ]
+      },
+      "career": {
+        "description": "Absolventi strādā radošo industriju, kultūras, mākslas, dizaina un uzņēmējdarbības jomās, veido jaunus produktus un pakalpojumus, dibina uzņēmumus.",
+        "job_titles": [
+          "Radošo industriju speciālists",
+          "Projektu vadītājs kultūrā",
+          "Starta uzņēmuma dibinātājs",
+          "Kultūras organizācijas vadītājs",
+          "Mārketinga speciālists radošā jomā",
+          "Pasākumu organizators"
+        ],
+        "sectors": [
+          "māksla_un_kultūra",
+          "bizness_un_finanses",
+          "dizains_un_mediji"
+        ]
+      },
+      "matching": {
+        "interest_domains": ["radosa_industrija", "maaksla_un_dizains"],
+        "required_strengths": ["radošums", "komunikācija", "valodas", "vadība"],
+        "personality_fit": ["radošs", "uzņēmīgs", "sociāli orientēts", "humanitāri orientēts"],
+        "language_of_instruction": ["lv"],
+        "international_potential": false,
+        "research_oriented": false,
+        "postgrad_pathway": true,
+        "difficulty_level": "vidējs",
+        "math_intensive": false,
+        "creative_component": true,
+        "entry_exam_required": false,
+        "joint_program": true,
+        "partner_institution": "Latvijas Kultūras akadēmija"
+      }
+    },
+    {
+      "id": "ARH",
+      "name": "Arhitektūra",
+      "name_en": "Architecture",
+      "faculty": "Arhitektūras un dizaina institūts",
+      "program_type": "Akadēmiskās bakalaura (pirmā cikla) studijas",
+      "study_direction": "Arhitektūra un būvniecība",
+      "study_field": "Arhitektūra, māksla un dizains",
+      "degree": {
+        "title": "Inženierzinātņu bakalaura grāds arhitektūrā un pilsētu plānošanā",
+        "title_en": "Bachelor of Engineering in Architecture and Urban Planning",
+        "level": "6"
+      },
+      "logistics": {
+        "duration_years": 3.5,
+        "credits": 210,
+        "format": "Pilna laika klātienes",
+        "language": ["Latviešu"],
+        "locations": ["Rīga"],
+        "start_location": "Rīga"
+      },
+      "finances": {
+        "budget_places": { "Rīga": 30 },
+        "annual_fee_eur": 6800,
+        "fee_type": "Pilna laika klātienes"
+      },
+      "admission": {
+        "required_prior_education": "Vidējā izglītība",
+        "special_requirements": "Maksas iestājpārbaudījums zīmēšanā.",
+        "entry_exam": true,
+        "entry_exam_details": {
+          "subjects": ["zīmēšana"],
+          "paid": true,
+          "exam_dates_2026": ["2026-06-06"]
+        },
+        "centralized_exams_needed": null
+      },
+      "program_director": {
+        "name": "Uģis Bratuškins",
+        "title": "Doktors, Profesors"
+      },
+      "description": "Bakalaura programma ir pirmā no divām secīgi apgūstamām programmām arhitektūrā. Sniedz pamata zināšanas un prasmes arhitekta profesijai vai turpmākām studijām arhitekta profesionālās kvalifikācijas iegūšanai.",
+      "goals": "Nodrošināt zināšanu un prasmju pamata kopumu, kas nepieciešams praktiskai darbībai sertificēta arhitekta vadībā vai studijām arhitekta profesionālās kvalifikācijas iegūšanai.",
+      "objectives": [
+        "Sniegt arhitektūras estētiskajām un tehniskajām prasībām atbilstošu būvprojektu izstrādes pamatzināšanas",
+        "Sniegt vispārēju ieskatu arhitektūras, mākslas un tehnoloģiju vēsturē un teorijā",
+        "Veicināt tēlotājmākslas iemaņu apguvi",
+        "Izkopt prasmi projektēt ēkas atbilstoši pasūtītāju prasībām",
+        "Sniegt pamatzināšanas pilsētbūvniecībā un teritoriālajā plānošanā"
+      ],
+      "learning_outcomes": {
+        "knowledge": [
+          "Izprot arhitektūras un mākslas, tehnoloģiju un humanitāro zinātņu vēstures attīstības likumsakarības",
+          "Pārzina pilsētbūvniecības un teritoriālplānošanas pamatus",
+          "Pārzina būvkonstrukciju projektēšanas vispārīgos principus un būvfizikas pamatus"
+        ],
+        "skills": [
+          "Izstrādāt arhitektūras estētiskajām un tehniskajām prasībām atbilstošu ēku būvprojektu metus",
+          "Projektēt ēkas atbilstoši normatīvo aktu prasībām",
+          "Pielietot tēlotājmākslas prasmes arhitektūras projektu kvalitātei"
+        ],
+        "competencies": [
+          "Pārzina cilvēku un ēku savstarpējo saistību un vides konteksta nozīmīgumu",
+          "Pārzina arhitekta profesijas sociālos faktorus"
+        ]
+      },
+      "career": {
+        "description": "Arhitekta palīgs. Darbs bez patstāvīgas prakses tiesībām sertificēta arhitekta vadībā. Nepieciešamas turpmākas studijas profesionālās kvalifikācijas iegūšanai.",
+        "job_titles": [
+          "Arhitekta palīgs",
+          "Projektēšanas asistents",
+          "Būvprojektu speciālists"
+        ],
+        "sectors": ["būvniecība", "māksla_un_kultūra"],
+        "note": "Pilna profesionālā kvalifikācija (arhitekts) prasa papildu maģistrantūru"
+      },
+      "matching": {
+        "interest_domains": ["arhitektura", "maaksla_un_dizains", "buuvenieciba"],
+        "required_strengths": ["zīmēšana", "radošums", "matemātika", "fizika", "analītiskā domāšana"],
+        "personality_fit": ["radošs", "tehniski orientēts", "analitisks"],
+        "language_of_instruction": ["lv"],
+        "international_potential": false,
+        "research_oriented": false,
+        "postgrad_pathway": true,
+        "difficulty_level": "augsts",
+        "math_intensive": true,
+        "creative_component": true,
+        "entry_exam_required": true,
+        "entry_exam_paid": true,
+        "competitive_admission": true,
+        "pathway_note": "Beidzot nepieciešams turpināt maģistrantūrā, lai iegūtu pilnvērtīgu arhitekta kvalifikāciju"
+      }
+    },
+    {
+      "id": "DZOT",
+      "name": "Datorzinātne un organizāciju tehnoloģijas",
+      "name_en": "Computer Science and Organization Technologies",
+      "faculty": "Rīgas Biznesa skola",
+      "program_type": "Akadēmiskās bakalaura (pirmā cikla) studijas",
+      "study_direction": "Informācijas tehnoloģijas, datortehnika, elektronika, telekomunikācijas, datorvadība un datorzinātne",
+      "study_field": "Datorzinātne, telekomunikācija un elektroenerģētika; Uzņēmējdarbība, nekustamo īpašumu pārvaldība un loģistika",
+      "degree": {
+        "title": "Dabaszinātņu bakalaura grāds datorvadībā un datorzinātnē",
+        "title_en": "Bachelor of Science in Computer Science",
+        "level": "6"
+      },
+      "logistics": {
+        "duration_years": 4,
+        "credits": 240,
+        "format": "Pilna laika klātienes",
+        "language": ["Angļu"],
+        "locations": ["Rīga"],
+        "start_location": "Rīga",
+        "note": "Programma izstrādāta sadarbībā ar LU un State University of New York at Buffalo. Iespēja iegūt Buffalo Universitātes grādu."
+      },
+      "finances": {
+        "budget_places": null,
+        "annual_fee_eur": 23500,
+        "fee_type": "Pilna laika klātienes",
+        "note": "Premium programma – nav budžeta vietu"
+      },
+      "admission": {
+        "required_prior_education": "Vidējā izglītība",
+        "special_requirements": "Vērtē iepriekšējās izglītības rezultāti, angļu valodas prasmes (TOEFL/IELTS), ārpusskolas nodarbības, personīgie sasniegumi, intervija.",
+        "entry_exam": false,
+        "entry_exam_details": null,
+        "centralized_exams_needed": null,
+        "admission_criteria": [
+          "Iepriekšējās izglītības rezultāti (CE rezultāti, sekmju izraksti)",
+          "Angļu valodas prasmes (TOEFL iBT / TOEFL ITP / IELTS)",
+          "Ārpusskolas nodarbības un personīgie sasniegumi",
+          "Intervija"
+        ]
+      },
+      "program_director": {
+        "name": "Agris Ņikitenko",
+        "title": "Doktors, Dekāns"
+      },
+      "description": "Augsta līmeņa starptautiska programma angļu valodā, izstrādāta sadarbībā ar SUNY Buffalo. Apvieno datorzinātni un organizāciju vadību. Iespēja iegūt amerikāņu universitātes grādu.",
+      "goals": "Nodrošināt datorzinātņu teorētisko zināšanu un pētniecības iemaņu apguvi; sagatavot inovatīvi domājošus speciālistus ar akadēmisko izglītību.",
+      "objectives": [
+        "Nodrošināt studentu spēju pielietot programmēšanas tehnoloģijas un metodes",
+        "Nodrošināt izpratni par organizāciju darbību un produktu veidošanas procesiem",
+        "Nodrošināt izpratni par juridisko, ētisko un ekonomisko kontekstu",
+        "Attīstīt komandas darba organizācijas un starptautiskās saziņas iemaņas",
+        "Nodrošināt prasmes tehnoloģiju projektu vadīšanai"
+      ],
+      "learning_outcomes": {
+        "knowledge": [
+          "Izskaidrot datorzinātņu teorētiskos pamatus: algoritmizācija, datu struktūras, diskrētā matemātika",
+          "Izprast uzņēmumu datorsistēmu izstrādi, ieskaitot tīklus un datu bāzes"
+        ],
+        "skills": [
+          "Identificēt datortehnoloģiju lomu organizāciju darbībā",
+          "Novērtēt datorizietu risinājumu piemērotību izaicinājumiem",
+          "Organizēt komandas darbu starptautiskā vidē",
+          "Efektīvi plānot un koordinēt projektus"
+        ],
+        "competencies": [
+          "Ievērot juridiskos, ētiskos un ekonomiskos principus datorzinātņu profesionālajā praksē",
+          "Apzināties jomas attīstības tendences mūžizglītībā"
+        ]
+      },
+      "career": {
+        "description": "Absolventi var strādāt kā IT vadītāji, sistēmu analītiķi, programmētāji, informācijas drošības analītiķi un vadības speciālisti.",
+        "job_titles": [
+          "Datoru un informācijas sistēmu vadītājs",
+          "Datorsistēmu analītiķis",
+          "Informācijas drošības analītiķis",
+          "Datorprogrammētājs",
+          "Programmatūras izstrādātājs",
+          "Web izstrādātājs",
+          "Tīkla administrators",
+          "Augstākā līmeņa vadītājs"
+        ],
+        "sectors": [
+          "IT",
+          "bizness_un_finanses",
+          "sakari_un_telekomunikācijas"
+        ]
+      },
+      "matching": {
+        "interest_domains": ["IT_un_programmeeshana", "datu_zinatne_un_MI"],
+        "required_strengths": ["matemātika", "programmēšana", "valodas", "analītiskā domāšana", "vadība"],
+        "personality_fit": ["analitisks", "starptautiski orientēts", "uzņēmīgs"],
+        "language_of_instruction": ["en"],
+        "international_potential": true,
+        "research_oriented": true,
+        "postgrad_pathway": true,
+        "difficulty_level": "augsts",
+        "math_intensive": true,
+        "creative_component": false,
+        "entry_exam_required": false,
+        "premium_program": true,
+        "dual_degree_option": true,
+        "partner_university": "State University of New York at Buffalo",
+        "joint_program": true
+      }
+    },
+    {
+      "id": "VSU",
+      "name": "Vadīšana starptautiskos uzņēmumos",
+      "name_en": "Management in International Business",
+      "faculty": "Rīgas Biznesa skola",
+      "program_type": "Akadēmiskās bakalaura (pirmā cikla) studijas",
+      "study_direction": "Vadība, administrēšana un nekustamo īpašumu pārvaldība",
+      "study_field": "Uzņēmējdarbība, nekustamo īpašumu pārvaldība un loģistika",
+      "degree": {
+        "title": "Sociālo zinātņu bakalaura grāds vadībā un administrēšanā",
+        "title_en": "Bachelor of Business Administration (BBA)",
+        "level": "6"
+      },
+      "logistics": {
+        "duration_years": 3,
+        "credits": 180,
+        "format": "Pilna laika klātienes",
+        "language": ["Angļu"],
+        "locations": ["Rīga"],
+        "start_location": "Rīga",
+        "note": "Izstrādāta sadarbībā ar BI Norvēģijas Biznesa skolu un Bufalo Universitātes Vadības skolu. Iespēja iegūt dubulto diplomu."
+      },
+      "finances": {
+        "budget_places": null,
+        "annual_fee_eur": 17400,
+        "fee_type": "Pilna laika klātienes",
+        "note": "Nav budžeta vietu"
+      },
+      "admission": {
+        "required_prior_education": "Vispārējā vai profesionālā vidējā izglītība",
+        "special_requirements": "CE rezultāti, angļu valodas prasmes (TOEFL/IELTS), ārpusskolas nodarbības, personīgie sasniegumi, intervija.",
+        "entry_exam": false,
+        "entry_exam_details": null,
+        "centralized_exams_needed": null,
+        "admission_criteria": [
+          "Iepriekšējās izglītības rezultāti",
+          "Angļu valodas prasmes (TOEFL iBT / TOEFL ITP / IELTS)",
+          "Ārpusskolas nodarbības un personīgie sasniegumi",
+          "Intervija"
+        ]
+      },
+      "program_director": {
+        "name": "Claudio Andres Rivera",
+        "title": "Doktors, Docents"
+      },
+      "description": "BBA programma angļu valodā Rīgas Biznesa skolā, izstrādāta sadarbībā ar Eiropas un ASV vadošajām biznesa skolām. Ietver finanses, ekonomiku, mārketingu, juridiskos jautājumus un starpkultūru komunikāciju.",
+      "goals": "Sagatavot kvalificētus uzņēmumu un iestāžu vadības speciālistus darbam starptautiskajā biznesa vidē.",
+      "objectives": [
+        "Sagatavot starptautisku uzņēmumu speciālistus, kuri formulē attīstības variantus un plāno projektu darbu",
+        "Sniegt pamata un specializētās zināšanas vadības zinātnes nozarē"
+      ],
+      "learning_outcomes": {
+        "knowledge": [
+          "Pamata un specializētās zināšanas vadības zinātnes nozarē",
+          "Izpratne par svarīgākajiem vadības jēdzieniem un likumsakarībām"
+        ],
+        "skills": [
+          "Analizēt starptautisku uzņēmumu vadības problēmas",
+          "Uzņemties atbildību un iniciatīvu individuāli vai vadot komandu",
+          "Pieņemt lēmumus mainīgos apstākļos"
+        ],
+        "competencies": [
+          "Rast radošus risinājumus neskaidros apstākļos"
+        ]
+      },
+      "career": {
+        "description": "Absolventi strādā starptautiskos uzņēmumos un organizācijās kā vadības speciālisti, projektu un struktūrvienību koordinatori.",
+        "job_titles": [
+          "Biznesa vadītājs starptautiskā uzņēmumā",
+          "Projektu vadītājs",
+          "Mārketinga menedžeris",
+          "Finanšu analītiķis",
+          "Uzņēmuma attīstības speciālists"
+        ],
+        "sectors": ["bizness_un_finanses", "izglītība_un_pētniecība"]
+      },
+      "matching": {
+        "interest_domains": [],
+        "required_strengths": ["valodas", "komunikācija", "vadība", "analītiskā domāšana"],
+        "personality_fit": ["uzņēmīgs", "starptautiski orientēts", "sociāli orientēts"],
+        "language_of_instruction": ["en"],
+        "international_potential": true,
+        "research_oriented": false,
+        "postgrad_pathway": true,
+        "difficulty_level": "vidējs",
+        "math_intensive": false,
+        "creative_component": false,
+        "entry_exam_required": false,
+        "premium_program": true,
+        "dual_degree_option": true,
+        "internship_required": true,
+        "internship_weeks": 12
+      }
+    },
+    {
+      "id": "EVKS",
+      "name": "Eiropas valodu un kultūras studijas",
+      "name_en": "European Languages and Cultural Studies",
+      "faculty": "Liepājas akadēmija",
+      "program_type": "Akadēmiskās bakalaura (pirmā cikla) studijas",
+      "study_direction": "Valodu un kultūras studijas, dzimtās valodas studijas un valodu programmas",
+      "study_field": "Izglītība, kultūra un sociālā labklājība",
+      "degree": {
+        "title": "Bakalaura grāds valodu un kultūras studijās",
+        "title_en": "Bachelor in Language and Cultural Studies",
+        "level": "6"
+      },
+      "logistics": {
+        "duration_years": 3,
+        "credits": 180,
+        "format": "Pilna laika klātienes",
+        "language": ["Latviešu"],
+        "locations": ["Liepāja"],
+        "start_location": "Liepāja"
+      },
+      "finances": {
+        "budget_places": { "Liepāja": 30 },
+        "annual_fee_eur": 2210,
+        "fee_type": "Pilna laika klātienes"
+      },
+      "admission": {
+        "required_prior_education": "Vidējā izglītība",
+        "special_requirements": "Iestājpārrunas (2026: 6. un 13. jūnijā).",
+        "entry_exam": true,
+        "entry_exam_details": {
+          "subjects": ["iestājpārrunas"],
+          "exam_dates_2026": ["2026-06-06", "2026-06-13"]
+        },
+        "centralized_exams_needed": null
+      },
+      "program_director": {
+        "name": "Agata Babina",
+        "title": "Doktors, Docents"
+      },
+      "description": "Programma Liepājā nodrošina angļu valodas prasmes (C1) un vēl vienas Eiropas valodas (franču, spāņu vai vācu, B2 līmenis), vai padziļinātu latviešu valodas un kultūras kompetenci.",
+      "goals": "Nodrošināt kvalitatīvu akadēmisko izglītību un humanitāro zinātņu bakalaura grādu valodu un kultūras studijās, sagatavojot patstāvīgai profesionālai darbībai.",
+      "objectives": [
+        "Nodrošināt atbilstošu bāzi akadēmiskās izglītības iegūšanai",
+        "Sniegt starpdisciplinārās teorētiskās zināšanas valodniecībā, literatūrzinātnē un kultūras studijās",
+        "Veicināt valodu prasmju apgūšanu",
+        "Stimulēt kritisko analīzi un pētniecisko darbu",
+        "Stiprināt studiju saikni ar reālo praksi"
+      ],
+      "learning_outcomes": {
+        "knowledge": [
+          "Pamata un specializētās zināšanas vismaz divās Eiropas valodās un kultūrā",
+          "Svarīgāko valodniecības un kultūrzinātnes jēdzienu izpratne"
+        ],
+        "skills": [
+          "Veikt profesionālu, inovatīvu un pētniecisku darbību svešvalodu jomā",
+          "Kritiski analizēt un sintezēt valodniecības un literatūras jomas informāciju",
+          "Pārvaldīt pētniecības metodoloģiju cittautu valodniecībā"
+        ],
+        "competencies": [
+          "Patstāvīgi strukturēt savu mācīšanos",
+          "Uzņemties atbildību un iniciatīvu individuāli vai komandā"
+        ]
+      },
+      "career": {
+        "description": "Darbs zinātniskajā pētniecībā, tulkošanā, izdevniecībās, bibliotēkās, valsts un pašvaldību iestādēs, ES institūcijās, augstākās izglītības iestādēs.",
+        "job_titles": [
+          "Tulks",
+          "Valodu speciālists",
+          "Latviešu valodas un literatūras skolotājs",
+          "Svešvalodu skolotājs",
+          "Ārējo sakaru koordinators",
+          "Starptautisko projektu koordinators",
+          "Tekstu veidotājs",
+          "Referents"
+        ],
+        "sectors": [
+          "izglītība_un_pētniecība",
+          "māksla_un_kultūra",
+          "bizness_un_finanses"
+        ]
+      },
+      "matching": {
+        "interest_domains": ["valodas_un_kulturas"],
+        "required_strengths": ["valodas", "komunikācija", "pētniecība", "analītiskā domāšana"],
+        "personality_fit": ["humanitāri orientēts", "starptautiski orientēts", "zinātniski orientēts"],
+        "language_of_instruction": ["lv"],
+        "international_potential": true,
+        "research_oriented": true,
+        "postgrad_pathway": true,
+        "difficulty_level": "vidējs",
+        "math_intensive": false,
+        "creative_component": false,
+        "entry_exam_required": true,
+        "location": "Liepāja",
+        "languages_taught": ["angļu", "franču_vai_spāņu_vai_vācu", "latviešu"]
+      }
+    },
+    {
+      "id": "JMMD",
+      "name": "Jauno mediju māksla un dizains",
+      "name_en": "New Media Arts and Design",
+      "faculty": "Liepājas akadēmija",
+      "program_type": "Akadēmiskās bakalaura (pirmā cikla) studijas",
+      "study_direction": "Mākslas",
+      "study_field": "Arhitektūra, māksla un dizains; Izglītība, kultūra un sociālā labklājība",
+      "degree": {
+        "title": "Humanitāro zinātņu bakalaura grāds audiovizuālajā mākslā un mediju mākslā",
+        "title_en": "Bachelor of Humanities in Audiovisual and Media Arts",
+        "level": "6"
+      },
+      "logistics": {
+        "duration_years": 3,
+        "credits": 180,
+        "format": "Pilna laika klātienes",
+        "language": ["Latviešu"],
+        "locations": ["Liepāja"],
+        "start_location": "Liepāja"
+      },
+      "finances": {
+        "budget_places": { "Liepāja": 30 },
+        "annual_fee_eur": 8090,
+        "fee_type": "Pilna laika klātienes"
+      },
+      "admission": {
+        "required_prior_education": "Vidējā izglītība un iestājpārbaudījums",
+        "special_requirements": "Iestājpārbaudījums (mākslas jomā).",
+        "entry_exam": true,
+        "entry_exam_details": {
+          "subjects": ["mākslas iestājpārbaudījums"]
+        },
+        "centralized_exams_needed": null
+      },
+      "program_director": {
+        "name": "Anna Priedola",
+        "title": "Docents"
+      },
+      "description": "Programma Liepājā sagatavo speciālistus video mākslā, skaņas mākslā, foto un grafikas dizainā, interaktīvu mākslas instalāciju veidošanā, 3D grafikas un VR izstrādē.",
+      "goals": "Sniegt iespēju apgūt pamata akadēmisko izglītību un iegūt bakalaura grādu audiovizuālajā mākslā un mediju mākslā, sagatavoties patstāvīgai profesionālai darbībai.",
+      "objectives": [
+        "Sniegt starpdisciplinārās teorētiskās zināšanas humanitāro un mākslas zinātņu, multimediju un interaktīvās mākslas jomās",
+        "Veicināt mākslas un dizainam nepieciešamo prasmju un iemaņu apgūšanu",
+        "Stimulēt studentu radošo potenciālu",
+        "Veicināt sadarbību projektu izstrādē un vadīšanā"
+      ],
+      "learning_outcomes": {
+        "knowledge": [
+          "Profesionāli darboties jauno mediju mākslas izpausmēs: audiovizuālajā mākslā, animācijā, digitālajā grafikā"
+        ],
+        "skills": [
+          "Formulēt un izvērtēt jauno mediju mākslas un dizaina problēmas kultūrvēsturiskā kontekstā",
+          "Izstrādāt inovatīvus, starpdisciplinārus mākslas un dizaina projektus",
+          "Uzņemties atbildību individuāli vai komandā"
+        ],
+        "competencies": [
+          "Izprast jauno mediju mākslas profesionālo ētiku",
+          "Izvērtēt profesionālās darbības ietekmi uz vidi un sabiedrību"
+        ]
+      },
+      "career": {
+        "description": "Absolventi var strādāt kā neatkarīgi mediju mākslinieki, grafikas un web dizaineri, VR/AR produktu izstrādātāji, elektroniskās mūzikas producenti.",
+        "job_titles": [
+          "Mediju mākslinieks",
+          "Grafikas dizainers",
+          "Web dizainers",
+          "VR/AR izstrādātājs",
+          "Animators",
+          "Elektroniskās mūzikas producents",
+          "Skaņas mākslinieks",
+          "Interaktīvo instalāciju veidotājs"
+        ],
+        "sectors": [
+          "māksla_un_kultūra",
+          "dizains_un_mediji",
+          "IT"
+        ]
+      },
+      "matching": {
+        "interest_domains": ["maaksla_un_dizains", "radosa_industrija"],
+        "required_strengths": ["radošums", "dizains", "analītiskā domāšana"],
+        "personality_fit": ["radošs", "humanitāri orientēts", "patstāvīgs"],
+        "language_of_instruction": ["lv"],
+        "international_potential": false,
+        "research_oriented": true,
+        "postgrad_pathway": true,
+        "difficulty_level": "vidējs",
+        "math_intensive": false,
+        "creative_component": true,
+        "entry_exam_required": true,
+        "location": "Liepāja"
+      }
+    },
+    {
+      "id": "BV",
+      "name": "Biznesa vadība",
+      "name_en": "Business Management",
+      "faculty": "Rēzeknes akadēmija",
+      "program_type": "Akadēmiskās bakalaura (pirmā cikla) studijas",
+      "study_direction": "Vadība, administrēšana un nekustamo īpašumu pārvaldība",
+      "study_field": "Uzņēmējdarbība, nekustamo īpašumu pārvaldība un loģistika",
+      "degree": {
+        "title": "Sociālo zinātņu bakalaura grāds vadībā un administrēšanā",
+        "title_en": "Bachelor of Social Sciences in Management",
+        "level": "6"
+      },
+      "logistics": {
+        "duration_years_full_time": 3,
+        "duration_years_part_time": 3.5,
+        "credits": 180,
+        "format": ["Pilna laika klātienes", "Nepilna laika neklātienes"],
+        "language": ["Latviešu", "Angļu"],
+        "locations": ["Rēzekne"],
+        "start_location": "Rēzekne"
+      },
+      "finances": {
+        "budget_places": { "Rēzekne": 20 },
+        "annual_fee_eur": 2210,
+        "fee_type": "Pilna laika klātienes un nepilna laika neklātienes"
+      },
+      "admission": {
+        "required_prior_education": "Vidējā izglītība",
+        "special_requirements": null,
+        "entry_exam": false,
+        "entry_exam_details": null,
+        "centralized_exams_needed": null
+      },
+      "program_director": {
+        "name": "Iluta Arbidāne",
+        "title": "Doktors, Profesors"
+      },
+      "description": "Programma Rēzeknē, veidota atbilstoši uzņēmējdarbības nozares vajadzībām un tendencēm. Mācībspēki ar profesionālo pieredzi grāmatvedībā, apdrošināšanā un individuālā uzņēmējdarbībā.",
+      "goals": "Sagatavot studentus darbam uzņēmējdarbības vadības nozarē valsts un privātajā sektorā, nodrošinot absolventu konkurētspēju Latvijas un starptautiskā darba tirgū.",
+      "objectives": [
+        "Nodrošināt LKI 6. līmenim atbilstošu zināšanu, prasmju un kompetenču kopumu uzņēmējdarbības vadībā",
+        "Sniegt izpratni par mūsdienu tautsaimniecības un uzņēmējdarbības attīstības tendencēm",
+        "Nodrošināt studentcentrētu studiju procesu",
+        "Attīstīt analītiskās un inovatīvās domāšanas iemaņas",
+        "Veidot starptautisku, uz sadarbību vērstu studiju vidi"
+      ],
+      "learning_outcomes": {
+        "knowledge": [
+          "Pamata un specializētās vadības zinātnes zināšanas un to kritiska izpratne"
+        ],
+        "skills": [
+          "Veikt profesionālu, inovatīvu vai pētniecisku darbību uzņēmējdarbībā",
+          "Formulēt un analītiski aprakstīt ekonomikas un uzņēmējdarbības problēmas",
+          "Patstāvīgi strukturēt savu mācīšanos",
+          "Patstāvīgi iegūt, atlasīt un analizēt informāciju"
+        ],
+        "competencies": [
+          "Parādīt zinātnisku pieeju problēmu risināšanā un uzņemties atbildību",
+          "Pieņemt lēmumus mainīgos apstākļos",
+          "Parādīt biznesa ētikas izpratni"
+        ]
+      },
+      "career": {
+        "description": "Absolventi var strādāt uzņēmumos un iestādēs dažāda līmeņa vadības amatos vai piedalīties projektu vadībā.",
+        "job_titles": [
+          "Uzņēmuma vadītājs",
+          "Projektu vadītājs",
+          "Personāla vadītājs",
+          "Mārketinga speciālists",
+          "Finanšu vadītājs"
+        ],
+        "sectors": ["bizness_un_finanses", "izglītība_un_pētniecība"]
+      },
+      "matching": {
+        "interest_domains": [],
+        "required_strengths": ["vadība", "analītiskā domāšana", "komunikācija"],
+        "personality_fit": ["uzņēmīgs", "sociāli orientēts", "analitisks"],
+        "language_of_instruction": ["lv", "en"],
+        "international_potential": false,
+        "research_oriented": false,
+        "postgrad_pathway": true,
+        "difficulty_level": "vidējs",
+        "math_intensive": false,
+        "creative_component": false,
+        "entry_exam_required": false,
+        "part_time_available": true,
+        "location": "Rēzekne",
+        "affordable": true
+      }
+    },
+    {
+      "id": "TZ",
+      "name": "Tiesību zinātne",
+      "name_en": "Law",
+      "faculty": "Rēzeknes akadēmija",
+      "program_type": "Akadēmiskās bakalaura (pirmā cikla) studijas",
+      "study_direction": "Tiesību zinātne",
+      "study_field": "Tiesību zinātne",
+      "degree": {
+        "title": "Sociālo zinātņu bakalaura grāds tiesību zinātnē",
+        "title_en": "Bachelor of Social Sciences in Law",
+        "level": "6"
+      },
+      "logistics": {
+        "duration_years_full_time": 3,
+        "duration_years_part_time": 3.5,
+        "credits": 180,
+        "format": ["Pilna laika klātienes"],
+        "language": ["Latviešu"],
+        "locations": ["Rēzekne"],
+        "start_location": "Rēzekne"
+      },
+      "finances": {
+        "budget_places": { "Rēzekne": 30 },
+        "annual_fee_eur": 2580,
+        "fee_type": "Pilna laika klātienes"
+      },
+      "admission": {
+        "required_prior_education": "Vidējā izglītība",
+        "special_requirements": "Uzņem pamatojoties uz centralizēto eksāmenu rezultātiem.",
+        "entry_exam": false,
+        "entry_exam_details": null,
+        "centralized_exams_needed": null
+      },
+      "program_director": {
+        "name": "Ilona Bulgakova",
+        "title": "Doktors, Asociētais profesors"
+      },
+      "description": "Pirmais solis jurista kvalifikācijas iegūšanai. Sniedz pamatzināšanas un kompetences visās tiesību nozarēs. Studijās izmanto juridisko kāzusu risināšanu, diskusijas un situāciju analīzi.",
+      "goals": "Nodrošināt tiesību zinātņu teorētisko zināšanu un pētniecības iemaņu apguvi, sasniedzot EKI 6. līmeņa prasības.",
+      "objectives": [
+        "Sagatavot studējošos turpmākām tiesību zinātņu studijām",
+        "Veicināt zināšanu apguvi sociālo zinātņu bakalaura iegūšanai",
+        "Radīt motivāciju tālākizglītībai un iespēju sasniegt jurista kvalifikāciju"
+      ],
+      "learning_outcomes": {
+        "knowledge": [
+          "Vispusīgas juridiskajai jomai atbilstošas faktu, teoriju un tehnoloģiju zināšanas"
+        ],
+        "skills": [
+          "Balstoties uz analītisku pieeju, veikt juridiskos uzdevumus",
+          "Rast radošus un kompleksus risinājumus juridiskajām problēmām",
+          "Sadarboties ar kolēģiem, klientiem un vadību"
+        ],
+        "competencies": [
+          "Formulēt, aprakstīt un analizēt juridiskās problēmas",
+          "Atlasīt nepieciešamo informāciju skaidri definētu problēmu risināšanai"
+        ]
+      },
+      "career": {
+        "description": "Pēc šīs programmas absolvents var strādāt kā juridiskais asistents uzņēmumos, nevalstiskās organizācijās, pašvaldībās un tiesībaizsardzības iestādēs. Pilnai jurista kvalifikācijai nepieciešama maģistrantūra.",
+        "job_titles": [
+          "Juridiskais asistents",
+          "Prokurora palīgs",
+          "Tiesneša palīgs",
+          "Tiesas konsultants",
+          "Bāriņtiesas darbinieks",
+          "Valsts pārvaldes juridiskais darbinieks"
+        ],
+        "sectors": ["tieslietas", "bizness_un_finanses"],
+        "note": "Pilna jurista kvalifikācija prasa maģistrantūru (6. līmenis)"
+      },
+      "matching": {
+        "interest_domains": [],
+        "required_strengths": ["analītiskā domāšana", "komunikācija", "valodas"],
+        "personality_fit": ["analitisks", "sociāli orientēts", "humanitāri orientēts"],
+        "language_of_instruction": ["lv"],
+        "international_potential": false,
+        "research_oriented": false,
+        "postgrad_pathway": true,
+        "difficulty_level": "vidējs",
+        "math_intensive": false,
+        "creative_component": false,
+        "entry_exam_required": false,
+        "location": "Rēzekne",
+        "affordable": true,
+        "pathway_note": "Bakalaurs ir tikai pirmais solis – jurista kvalifikācijai nepieciešama maģistrantūra"
+      }
+    },
+    {
+      "id": "ITMM",
+      "name": "Inženiertehnika, mehānika un mašīnbūve",
+      "name_en": "Engineering, Mechanics and Mechanical Engineering",
+      "faculty": "Būvniecības un mašīnzinību fakultāte",
+      "program_type": "Akadēmiskās bakalaura (pirmā cikla) studijas",
+      "study_direction": "Mehānika un metālapstrāde, siltumenerģētika, siltumtehnika un mašīnzinības",
+      "study_field": "Būvniecība, mašīnzinības un medicīnas inženierija",
+      "degree": {
+        "title": "Inženierzinātņu bakalaura grāds mehānikā",
+        "title_en": "Bachelor of Engineering in Mechanics",
+        "level": "6"
+      },
+      "logistics": {
+        "duration_years": 3,
+        "credits": 180,
+        "format": "Pilna laika klātienes",
+        "language": ["Latviešu", "Angļu"],
+        "locations": ["Rīga"],
+        "start_location": "Rīga"
+      },
+      "finances": {
+        "budget_places": { "Rīga": 35 },
+        "annual_fee_eur": 3500,
+        "fee_type": "Pilna laika klātienes"
+      },
+      "admission": {
+        "required_prior_education": "Vidējā izglītība",
+        "special_requirements": null,
+        "entry_exam": false,
+        "entry_exam_details": null,
+        "centralized_exams_needed": null
+      },
+      "program_director": {
+        "name": "Olga Kononova",
+        "title": "Doktors, Asociētais profesors"
+      },
+      "description": "Programma sagatavo speciālistus ar fundamentālām zināšanām mehānikas un mašīnzinību jomās. Lietotājam apgūstamas datorprogrammas un prasmes mašīnu dinamikas analīzē, datorizētā projektēšanā, robotu tehnikā un mehatronikā.",
+      "goals": "Sagatavot konkurētspējīgus inženierus ar plaša profila zināšanām mehānikas un mašīnbūves nozarē, kuri var strādāt vietējos un starptautiskos uzņēmumos un projektos.",
+      "objectives": [
+        "Nodrošināt teorētisko zināšanu, prasmju un iemaņu apguvi inženiertehnikā, mehānikā un mašīnbūvē",
+        "Iepazīstināt ar nozarē lietotajām datorprogrammām laboratorijas darbos",
+        "Attīstīt tehniski radošo domāšanu un problēmrisināšanas prasmes",
+        "Sagatavot mašīnu dinamikas analīzei, datorizētai projektēšanai, robotu tehnikā"
+      ],
+      "learning_outcomes": {
+        "knowledge": [
+          "Izprot tehniskos procesus mehānikā un mašīnbūvē",
+          "Pārzina modernos materiālus"
+        ],
+        "skills": [
+          "Izvērtēt tehnoloģiskos procesus un veikt to analīzi",
+          "Novērtēt mehānisko sistēmu darbības kvalitāti un ietekmējošos faktorus",
+          "Izvērtēt mehānisko iekārtu ekspluatācijas procesus",
+          "Plānot nepieciešamos resursus inženiertehnisko sistēmu darbībai",
+          "Veikt mehānisko sistēmu projektēšanu, instalēšanu un ekspluatāciju"
+        ],
+        "competencies": [
+          "Veidot inženiera karjeru, efektīvi sadarbojoties ar cita profila speciālistiem",
+          "Turpināt studijas maģistratūrā"
+        ]
+      },
+      "career": {
+        "description": "Absolventi strādā uzņēmumos, kas vērsti uz mehānisko iekārtu projektēšanu un ražošanu, uzturēšanu, kā arī projektos ar aprēķiniem un simulācijām.",
+        "job_titles": [
+          "Mehānikas inženieris",
+          "Mašīnbūves inženieris",
+          "Robotikas inženieris",
+          "Mehatronika speciālists",
+          "CAD/CAM projektētājs",
+          "Ražošanas tehnoloģijas inženieris"
+        ],
+        "sectors": [
+          "ražošana_un_rūpniecība",
+          "robotika_un_automatizācija",
+          "aviācija_un_transports"
+        ]
+      },
+      "matching": {
+        "interest_domains": ["mehaanika_un_maashiinbuuve", "robotika_un_automatizacija"],
+        "required_strengths": ["matemātika", "fizika", "tehniskā domāšana", "analītiskā domāšana"],
+        "personality_fit": ["tehniski orientēts", "analitisks", "praktiski orientēts"],
+        "language_of_instruction": ["lv", "en"],
+        "international_potential": true,
+        "research_oriented": false,
+        "postgrad_pathway": true,
+        "difficulty_level": "vidējs-augsts",
+        "math_intensive": true,
+        "creative_component": false,
+        "entry_exam_required": false
+      }
+    }
+  ],
+  "quick_filter_presets": {
+    "without_entry_exam": ["ATSI", "BUV_EN", "BTBI", "MATI", "VIDE", "KKT", "DS", "IT", "TTDP", "VDT", "RIND", "DZOT", "VSU", "BV", "TZ", "ITMM"],
+    "with_entry_exam": ["IRS", "ARH", "EVKS", "JMMD"],
+    "in_english": ["BUV_EN", "BTBI", "DZOT", "VSU"],
+    "bilingual_lv_en": ["ATSI", "MATI", "VIDE", "KKT", "DS", "TTDP", "BV", "ITMM"],
+    "only_latvian": ["IT", "IRS", "VDT", "RIND", "ARH", "EVKS", "JMMD", "TZ"],
+    "rīga": ["ATSI", "BUV_EN", "BTBI", "MATI", "VIDE", "KKT", "DS", "IT", "IRS", "TTDP", "VDT", "RIND", "ARH", "DZOT", "VSU", "ITMM"],
+    "rēzekne": ["DS", "BV", "TZ"],
+    "liepāja": ["DS", "EVKS", "JMMD"],
+    "has_budget_places": ["ATSI", "BTBI", "MATI", "VIDE", "KKT", "DS", "IT", "IRS", "TTDP", "VDT", "RIND", "ARH", "BV", "TZ", "ITMM", "EVKS", "JMMD"],
+    "no_budget_places": ["BUV_EN", "DZOT", "VSU"],
+    "4_year_programs": ["ATSI", "KKT", "DZOT"],
+    "3_year_programs": ["BUV_EN", "BTBI", "MATI", "VIDE", "DS", "IT", "IRS", "TTDP", "VDT", "RIND", "VSU", "EVKS", "JMMD", "BV", "TZ", "ITMM"],
+    "3_5_year_programs": ["ARH"],
+    "math_heavy": ["ATSI", "MATI", "VIDE", "KKT", "DS", "IT", "IRS", "TTDP", "VDT", "DZOT", "ITMM", "ARH"],
+    "creative_component": ["RIND", "ARH", "VDT", "JMMD"],
+    "research_oriented": ["ATSI", "BTBI", "MATI", "VIDE", "KKT", "TTDP", "IRS", "DZOT", "EVKS", "JMMD"],
+    "affordable_under_3000": ["EVKS", "BV"],
+    "affordable_3000_4000": ["ATSI", "BUV_EN", "BTBI", "MATI", "VIDE", "KKT", "DS", "IT", "IRS", "TTDP", "VDT", "RIND", "ITMM", "TZ"],
+    "premium_over_5000": ["ARH", "JMMD", "VSU", "DZOT"]
+  }
+}

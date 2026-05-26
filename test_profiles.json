@@ -1,0 +1,125 @@
+{
+  "_comment": "RTU Study Recommender — Test profiles for quick UI testing",
+  "profiles": [
+    {
+      "id": "math_physics_programmer",
+      "name": "Matemātikas/Fizikas/IT Students",
+      "description": "Student who excels in exact sciences and loves programming",
+      "profile": {
+        "interests": ["it_programming", "data_science_ai", "robotics_automation"],
+        "strengths": ["mathematics", "physics", "programming", "analytical_thinking"],
+        "personality": ["analytical", "technical", "independent", "precise"],
+        "sectors": ["IT", "robotics_automation", "education_research"],
+        "preferred_language": "en",
+        "preferred_difficulty": "high",
+        "math_friendly": true,
+        "creative": false,
+        "research_oriented": true,
+        "international": true,
+        "exam_ok": true,
+        "teamwork": "both",
+        "career_text": "Vēlos strādāt mākslīgā intelekta vai kiberdrošības jomā starptautiskā uzņēmumā."
+      }
+    },
+    {
+      "id": "creative_designer",
+      "name": "Radošais Dizaineris",
+      "description": "Creative student passionate about visual design and art",
+      "profile": {
+        "interests": ["art_design", "architecture", "software_engineering"],
+        "strengths": ["creativity", "drawing_design", "communication", "languages"],
+        "personality": ["creative", "independent", "social", "entrepreneurial"],
+        "sectors": ["design_media", "art_culture", "IT"],
+        "preferred_language": "en",
+        "preferred_difficulty": "medium",
+        "math_friendly": false,
+        "creative": true,
+        "research_oriented": false,
+        "international": true,
+        "exam_ok": false,
+        "teamwork": "team",
+        "career_text": "Sapņoju strādāt dizaina studijā vai izveidot savu radošo uzņēmumu."
+      }
+    },
+    {
+      "id": "business_oriented",
+      "name": "Bizness Orientētais Students",
+      "description": "Entrepreneurially-minded student interested in economics and management",
+      "profile": {
+        "interests": ["business_management", "data_science_ai", "education_research"],
+        "strengths": ["economics_finance", "communication", "leadership", "analytical_thinking"],
+        "personality": ["entrepreneurial", "social", "analytical", "precise"],
+        "sectors": ["business_finance", "IT", "education_research"],
+        "preferred_language": "lv",
+        "preferred_difficulty": "medium",
+        "math_friendly": true,
+        "creative": false,
+        "research_oriented": false,
+        "international": false,
+        "exam_ok": true,
+        "teamwork": "team",
+        "career_text": "Vēlos dibināt savu uzņēmumu vai kļūt par projektu vadītāju lielā kompānijā."
+      }
+    },
+    {
+      "id": "environment_biology",
+      "name": "Vides Zinātne / Bioloģija Students",
+      "description": "Student passionate about the environment, sustainability and natural sciences",
+      "profile": {
+        "interests": ["environment_sustainability", "chemistry_biotech", "education_research"],
+        "strengths": ["biology", "chemistry", "research", "analytical_thinking"],
+        "personality": ["scientific", "sustainability_conscious", "analytical", "independent"],
+        "sectors": ["environment", "chemistry_pharma", "education_research"],
+        "preferred_language": "lv",
+        "preferred_difficulty": "medium_high",
+        "math_friendly": false,
+        "creative": false,
+        "research_oriented": true,
+        "international": false,
+        "exam_ok": true,
+        "teamwork": "both",
+        "career_text": "Vēlos strādāt vides aizsardzības jomā vai farmācijas uzņēmumā."
+      }
+    },
+    {
+      "id": "robotics_engineering",
+      "name": "Robotika / Inženieris",
+      "description": "Student passionate about robotics, automation, and physical systems",
+      "profile": {
+        "interests": ["robotics_automation", "electronics_telecom", "mechanics_engineering"],
+        "strengths": ["mathematics", "physics", "technical_thinking", "practical_skills"],
+        "personality": ["technical", "analytical", "practical", "precise"],
+        "sectors": ["robotics_automation", "engineering_manufacturing", "energy"],
+        "preferred_language": "lv",
+        "preferred_difficulty": "high",
+        "math_friendly": true,
+        "creative": false,
+        "research_oriented": false,
+        "international": false,
+        "exam_ok": true,
+        "teamwork": "both",
+        "career_text": "Vēlos projektēt robotiskas sistēmas ražošanas uzņēmumos vai automobiļu industrijā."
+      }
+    },
+    {
+      "id": "international_english",
+      "name": "Starptautiskais Angļu Valodas Students",
+      "description": "International or English-speaking student looking for English programmes",
+      "profile": {
+        "interests": ["construction_civil", "transport_aviation", "energy_power"],
+        "strengths": ["mathematics", "physics", "analytical_thinking", "languages"],
+        "personality": ["international", "analytical", "adventurous", "team_player"],
+        "sectors": ["construction", "transport_logistics", "energy"],
+        "preferred_language": "en",
+        "preferred_difficulty": "medium_high",
+        "math_friendly": true,
+        "creative": false,
+        "research_oriented": false,
+        "international": true,
+        "exam_ok": false,
+        "teamwork": "team",
+        "career_text": "I want to work in international construction or civil engineering projects across Europe."
+      }
+    }
+  ]
+}

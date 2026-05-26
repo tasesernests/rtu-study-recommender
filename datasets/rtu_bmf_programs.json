@@ -1,0 +1,1196 @@
+{
+  "metadata": {
+    "source": "Rīgas Tehniskā universitāte — Profesionālās bakalaura studiju programmas",
+    "faculty": "Būvniecības un mašīnzinību fakultāte (BMF)",
+    "collected": "2026-05-26",
+    "version": "1.0",
+    "total_programs": 11,
+    "description": "Strukturēts RTU BMF profesionālo bakalaura studiju programmu apraksts, ģenerēts no RTU oficiālajiem PDF dokumentiem. Paredzēts studentu-programmas saskaņošanas lietojumprogrammai.",
+    "url_base": "https://www.rtu.lv/lv/studijas/visas-studiju-programmas/atvert/",
+    "contact": {
+      "address": "Ķīpsalas iela 6A, Rīga",
+      "phone": "+371 67089711",
+      "email": "bmf@rtu.lv"
+    }
+  },
+  "matching_taxonomy": {
+    "interest_domains": {
+      "inzenierija": "Tehnoloģija, mehānika, ražošana, mašīnbūve",
+      "elektronika_it": "Elektronikas, IT un datorsistēmu inženierija",
+      "celtnieciba": "Arhitektūra, būvniecība un infrastruktūra",
+      "dizains": "Industriālais un produktu dizains",
+      "transports": "Autotransports, aviācija un transportbūves",
+      "energetika": "Siltumenerģētika, siltumtehnika un inženiersistēmas",
+      "medicinas_tehnologija": "Medicīnas fizika un biomedicīnas tehnoloģijas",
+      "jurnieciiba": "Jūrniecība un ūdenstransports"
+    },
+    "strength_tags": {
+      "matematika": "Stipras matemātikas zināšanas un analītiskā domāšana",
+      "fizika": "Fizika un eksperimentālas prasmes",
+      "programmesana": "Programmēšana un datorzinātne",
+      "rada": "Radoša un mākslinieciska domāšana",
+      "zimesana": "Zīmēšanas un vizualizācijas prasmes",
+      "lieriskas_prasmes": "Praktiskas darba prasmes, rokdarbi, mehānika",
+      "analitika": "Datu analīze, pētniecība un sistēmiskā domāšana",
+      "organizesana": "Plānošana, koordinācija, projektu vadība"
+    },
+    "personality_fit": {
+      "analytisks": "Analītisks un sistemātisks, mīl risināt problēmas",
+      "radoss": "Radošs un novatorisks, mīl ģenerēt idejas",
+      "praktisks": "Praktisks un ar rokām, mīl strādāt ar iekārtām",
+      "leadership": "Vadītāja tips, mīl organizēt un koordinēt",
+      "pedants": "Precīzs un uzmanīgs pret detaļām",
+      "avantūrists": "Darbmīlīgs, gatavs darbam jebkuros apstākļos"
+    },
+    "difficulty_levels": {
+      "videja": "Vidēja sarežģītība — pieejama lielākajai daļai studentu",
+      "videja-augsta": "Vidēji augsta — nepieciešamas labas eksaktās zināšanas",
+      "augsta": "Augsta — nepieciešamas ļoti labas matemātikas un/vai fizikas zināšanas"
+    }
+  },
+  "programs": [
+    {
+      "id": "ATI",
+      "code": "MCW",
+      "name": "Autotransporta inženierija",
+      "name_en": "Automotive Engineering",
+      "url": "https://www.rtu.lv/lv/studijas/visas-studiju-programmas/atvert/MCW?department=31000&type=P",
+      "faculty": "Būvniecības un mašīnzinību fakultāte",
+      "faculty_short": "BMF",
+      "program_type": "Pirmā cikla augstākās izglītības (profesionālās bakalaura) studijas",
+      "study_direction": "Mehānika un metālapstrāde, siltumenerģētika, siltumtehnika un mašīnzinības",
+      "study_field": "Būvniecība, mašīnzinības un medicīnas inženierija",
+      "degree": {
+        "title": "Profesionālais bakalaura grāds autotransportā",
+        "title_en": "Professional Bachelor's Degree in Automotive Transport",
+        "professional_qualification": "Autotransporta inženiera kvalifikācija",
+        "ekf_level": 6
+      },
+      "logistics": {
+        "duration_years": {
+          "full_time": 4.5,
+          "part_time_correspondence": 5
+        },
+        "credits": 270,
+        "formats": ["Pilna laika klātienes", "Nepilna laika neklātienes"],
+        "languages": ["Latviešu"],
+        "locations": ["Rīga"]
+      },
+      "finances": {
+        "budget_places": { "Rīga": 60 },
+        "annual_fee_eur": {
+          "full_time": 3500,
+          "part_time": 3300
+        }
+      },
+      "admission": {
+        "prior_education": "Vidējā izglītība",
+        "entry_exam": true,
+        "entry_exam_details": {
+          "subjects": ["matemātika", "fizika", "loģika", "sadarbības spējas"],
+          "dates_2026": ["6. jūnijs", "13. jūnijs"],
+          "paid": false
+        },
+        "special_requirements": null
+      },
+      "program_director": {
+        "name": "Māris Gailis",
+        "title": "Doktors, Asociētais profesors"
+      },
+      "description": "Studiju programma paredzēta autotransporta inženieru sagatavošanai — autotransporta tehnisko, tehnoloģisko un organizatorisko procesu izstrādātājiem, ieviesējiem un vadītājiem. Ietver autotransporta specializējošos, mehānikas un mašīnbūvniecības inženiertehniskos, transporta, uzņēmējdarbības un vispārizglītojošos studiju kursus. Atbilst profesijas standarta «Autotransporta inženieris» prasībām.",
+      "goals": "Nodrošināt profesionālā bakalaura izglītību autotransporta nozarē, lai sekmētu ilgtspējīgu augstas kvalitātes autotransporta nozares darbību un attīstību, nodrošinot sabiedrību ar drošiem, videi draudzīgiem un efektīviem mobilitātes risinājumiem.",
+      "objectives": [
+        "Sniegt zināšanas, prasmes un kompetences, ko pieprasa Eiropas autotransporta nozare un Latvijas darba devēji",
+        "Nodrošināt autotransporta nozares pamata, specializētas un augstāko sasniegumu zināšanas un veicināt to kritisku izpratni",
+        "Veidot prasmes izstrādāt, ieviest un pilnveidot autotransporta ekspluatācijas un remonta tehnoloģijas",
+        "Attīstīt spējas īstenot un vadīt autotransporta sistēmu attīstību un inovācijas"
+      ],
+      "learning_outcomes": {
+        "knowledge": [
+          "Autotransporta nozares pamata, specializētās un augstāko sasniegumu zināšanas",
+          "Autotransporta nozares svarīgāko jēdzienu un likumsakarību izpratne"
+        ],
+        "skills": [
+          "Izstrādāt, ieviest un pilnveidot autotransporta projektēšanas, konstruēšanas, ekspluatācijas un remonta tehnoloģijas",
+          "Veikt profesionālo izglītošanu un apmācības programmu veidošanu autotransporta jomā",
+          "Pielietot zināšanas integrētas automobiļu transporta sistēmas izveidošanā, pilnveidošanā un vadībā"
+        ],
+        "competencies": [
+          "Veicināt, īstenot un vadīt autotransporta sistēmu attīstības pasākumus un inovācijas",
+          "Parādīt autotransporta nozares svarīgāko jēdzienu un likumsakarību izpratni"
+        ]
+      },
+      "career": {
+        "description": "Autotransporta inženieris var strādāt transporta, ražošanas un projektēšanas uzņēmumos un organizācijās, pētniecības un izglītības iestādēs, kā arī uzņēmumos, kas nodarbojas ar kravu un pasažieru pārvadājumu, transportlīdzekļu tehniskās ekspluatācijas, remonta, tirdzniecības, autosporta un ceļu satiksmes drošības nodrošināšanu.",
+        "job_titles": [
+          "Autotransporta inženieris",
+          "Transportlīdzekļu remonta inženieris",
+          "Autoflotes vadītājs",
+          "Transporta sistēmu speciālists",
+          "Tehniskās ekspluatācijas vadītājs"
+        ],
+        "sectors": ["Transports un loģistika", "Rūpnieciskā ražošana", "Izglītība un zinātne", "Autosports"]
+      },
+      "matching": {
+        "interest_domains": ["inzenierija", "transports"],
+        "required_strengths": ["matematika", "fizika", "lieriskas_prasmes", "analitika"],
+        "personality_fit": ["analytisks", "praktisks", "pedants"],
+        "language_of_instruction": ["Latviešu"],
+        "math_intensive": true,
+        "creative_component": false,
+        "entry_exam_required": true,
+        "entry_exam_type": "standard",
+        "part_time_available": true,
+        "difficulty_level": "videja-augsta",
+        "research_oriented": false,
+        "postgrad_pathway": true
+      }
+    },
+    {
+      "id": "AVT",
+      "code": "MCA",
+      "name": "Aviācijas transports",
+      "name_en": "Aviation Transport",
+      "url": "https://www.rtu.lv/lv/studijas/visas-studiju-programmas/atvert/MCA?department=31000&type=P",
+      "faculty": "Būvniecības un mašīnzinību fakultāte",
+      "faculty_short": "BMF",
+      "program_type": "Pirmā cikla augstākās izglītības (profesionālās bakalaura) studijas",
+      "study_direction": "Mehānika un metālapstrāde, siltumenerģētika, siltumtehnika un mašīnzinības",
+      "study_field": "Būvniecība, mašīnzinības un medicīnas inženierija",
+      "degree": {
+        "title": "Profesionālais bakalaura grāds aviācijas transportā",
+        "title_en": "Professional Bachelor's Degree in Aviation Transport",
+        "professional_qualification": "Gaisa kuģa tehniskās apkopes inženiera kvalifikācija",
+        "ekf_level": 6,
+        "note": "No 2022./2023. akadēmiskā gada grāds mainīsies uz gaisa kuģa tehniskās apkopes mehānikas inženieris vai gaisa kuģa tehniskās apkopes avionikas inženieris"
+      },
+      "logistics": {
+        "duration_years": {
+          "full_time": 4
+        },
+        "credits": 240,
+        "formats": ["Pilna laika klātienes"],
+        "languages": ["Latviešu", "Angļu"],
+        "locations": ["Rīga"]
+      },
+      "finances": {
+        "budget_places": { "Rīga": 60 },
+        "annual_fee_eur": {
+          "full_time": 3500
+        }
+      },
+      "admission": {
+        "prior_education": "Vidējā izglītība",
+        "entry_exam": false,
+        "entry_exam_details": null,
+        "special_requirements": "Studijām angļu valodā nepieciešama angļu valodas prasme vismaz CEFR B2 līmenī. Pasaulē atzīts starptautisks sertifikāts."
+      },
+      "program_director": {
+        "name": "Andris Rijkuris",
+        "title": "Doktors, Studiju programmas direktors"
+      },
+      "description": "Programma nodrošina aviācijas transporta nozarei nepieciešamo profesionālo izglītību. Absolventi saņem pasaulē atzītu sertifikātu un kļūst par starptautiska līmeņa gaisakuģu mehānisko iekārtu, dzinēju un avionikas sistēmu tehniskās ekspluatācijas speciālistiem. Var analizēt un organizēt gaisa transporta sistēmu darbību un projektēt aviācijas tehniku.",
+      "goals": "Sagatavot plaša profila augstas kvalitātes starptautiskā līmeņa atzītus speciālistus aviācijas transporta nozarē, kuri spēj nodrošināt gaisa kuģu mehānisko un elektronisko iekārtu tehnisko apkopi un remontu, un sekmīgi integrēties starptautiskajā darba tirgū.",
+      "objectives": [
+        "Nodrošināt nepārtrauktu aviācijas nozares kvalitātes paaugstināšanu",
+        "Attīstīt spēju plānot inženiera uzdevumus gaisa kuģu iekārtu apkopē",
+        "Attīstīt spēju analizēt ekonomiskos aspektus un plānot izpildāmos darbus",
+        "Attīstīt spēju veikt profesionālo, inovatīvo un pētniecisko darbību aviācijas jomā",
+        "Rosināt interesi par studijām augstākā līmeņa programmās un mūžizglītību"
+      ],
+      "learning_outcomes": {
+        "knowledge": [
+          "Aviācijas transporta nozares mehānikas vai avionikas pamata un specializētās zināšanas",
+          "Nozares svarīgāko jēdzienu un likumsakarību izpratne"
+        ],
+        "skills": [
+          "Analītiski izskaidrot aviācijas transporta mehānisko vai elektronisko iekārtu sistēmu informāciju",
+          "Patstāvīgi iegūt, atlasīt un analītiski aprakstīt iekārtu informāciju un risināt problēmas",
+          "Argumentēti diskutēt par aviācijas transporta jautājumiem gan ar speciālistiem, gan ar nespeciālistiem"
+        ],
+        "competencies": [
+          "Patstāvīgi strukturēt mācīšanos un profesionālo pilnveidi starpdisciplinārajās jomās",
+          "Izprast profesionālo ētiku un izvērtēt darbības ietekmi uz vidi un sabiedrību",
+          "Uzņemties atbildību un iniciatīvu, strādājot individuāli, komandā vai vadot citus"
+        ]
+      },
+      "career": {
+        "description": "Gaisa kuģa tehniskās apkopes inženieris strādā organizācijās un uzņēmumos, kuros izmanto gaisa kuģus, veic tehnisko ekspluatāciju, apkopi un remontu. Integrēšanās starptautiskajā darba tirgū.",
+        "job_titles": [
+          "Gaisa kuģa tehniskās apkopes inženieris",
+          "Aviācijas mehānikas inženieris",
+          "Avionikas speciālists",
+          "Aviācijas tehnikas pētnieks"
+        ],
+        "sectors": ["Aviācija un gaisa transports", "Starptautiskie uzņēmumi"]
+      },
+      "matching": {
+        "interest_domains": ["inzenierija", "transports", "elektronika_it"],
+        "required_strengths": ["matematika", "fizika", "lieriskas_prasmes", "analitika"],
+        "personality_fit": ["analytisks", "praktisks", "pedants", "avantūrists"],
+        "language_of_instruction": ["Latviešu", "Angļu"],
+        "math_intensive": true,
+        "creative_component": false,
+        "entry_exam_required": false,
+        "entry_exam_type": "none",
+        "part_time_available": false,
+        "difficulty_level": "augsta",
+        "research_oriented": false,
+        "postgrad_pathway": true,
+        "international_certification": true,
+        "english_required_b2": true
+      }
+    },
+    {
+      "id": "BUV_PRO",
+      "code": "BCB",
+      "name": "Būvniecība",
+      "name_en": "Civil Engineering (Buildings)",
+      "url": "https://www.rtu.lv/lv/studijas/visas-studiju-programmas/atvert/BCB?department=31000&type=P",
+      "faculty": "Būvniecības un mašīnzinību fakultāte",
+      "faculty_short": "BMF",
+      "program_type": "Pirmā cikla augstākās izglītības (profesionālās bakalaura) studijas",
+      "study_direction": "Arhitektūra un būvniecība",
+      "study_field": "Būvniecība, mašīnzinības un medicīnas inženierija",
+      "degree": {
+        "title": "Profesionālais bakalaura grāds būvniecībā",
+        "title_en": "Professional Bachelor's Degree in Construction",
+        "professional_qualification": "Ēku būvinženiera kvalifikācija",
+        "ekf_level": 6,
+        "profession_classifier_codes": ["2142 01", "2141 02", "2142 05", "2142 27"]
+      },
+      "logistics": {
+        "duration_years": {
+          "full_time": 4.5,
+          "part_time_correspondence": 5
+        },
+        "credits": 270,
+        "formats": ["Pilna laika klātienes", "Nepilna laika neklātienes"],
+        "languages": ["Latviešu"],
+        "locations": ["Rīga"]
+      },
+      "finances": {
+        "budget_places": { "Rīga": 110 },
+        "annual_fee_eur": {
+          "full_time": 4300,
+          "part_time": 3470
+        }
+      },
+      "admission": {
+        "prior_education": "Vidējā izglītība",
+        "entry_exam": true,
+        "entry_exam_details": {
+          "subjects": ["matemātika", "fizika", "loģika", "sadarbības spējas"],
+          "dates_2026": ["6. jūnijs", "13. jūnijs"],
+          "paid": false
+        },
+        "special_requirements": "Obligātā prakse — vismaz 26 nedēļas"
+      },
+      "program_director": {
+        "name": "Baiba Gaujēna",
+        "title": "Doktors, Asociētais profesors"
+      },
+      "description": "Studējot šajā programmā iegūst mūsdienu prasībām atbilstošu profesionālo augstāko izglītību un praktiskās iemaņas būvniecības nozarē. Absolvents var plānot, piedalīties, organizēt un pārraudzīt jaunu ēku būvniecības procesus vai esošo ēku restaurāciju un pārbūvi — vienu no darba tirgū pieprasītākajām profesijām.",
+      "goals": "Sniegt profesionālo augstāko izglītību būvniecības nozarē, sagatavot inženieri patstāvīgam darbam, kā arī turpmākām studijām profesionālajā maģistrantūrā.",
+      "objectives": [
+        "Attīstīt pētnieciskā darba un tehniskās literatūras analīzes iemaņas būvniecības nozarē",
+        "Veidot prasmi izmantot teorētiskās zināšanas konkrētu uzdevumu formulēšanai un risināšanai",
+        "Veidot prasmi iegūt un izmantot eksperimentālos datus ar atbilstošām programmām",
+        "Nodrošināt vismaz 26 nedēļu ilgu praktiskā darba pieredzi"
+      ],
+      "learning_outcomes": {
+        "knowledge": [
+          "Vispusīgas faktu, teoriju un likumsakarību zināšanas būvzinātnē",
+          "Detalizēta izpratne par specifiskiem principiem, procesiem un jēdzieniem standarta un nestandarta situācijās",
+          "Tehnoloģijas un metodes darba uzdevumu veikšanai"
+        ],
+        "skills": [
+          "Plānot un organizēt darbu, izmantot dažādas tehnoloģijas, ierīces un materiālus",
+          "Atrast, izvērtēt un radoši izmantot informāciju profesionālo uzdevumu izpildei",
+          "Sadarboties un veikt uzdevumus individuāli, komandā vai vadot komandas darbu"
+        ],
+        "competencies": [
+          "Uzsākt patstāvīgu darbu kā ēku būvinženieris vai turpināt studijas",
+          "Kontaktēties ar Latvijas un ārzemju akadēmiskajām un profesionālajām aprindām"
+        ]
+      },
+      "career": {
+        "description": "Ēku būvinženieris — atkarībā no specializācijas sagatavots profesijām pēc profesiju klasifikatora: 2142 01, 2141 02, 2142 05, 2142 27. Strādā projektēšanas un būvniecības uzņēmumos.",
+        "job_titles": [
+          "Ēku būvinženieris",
+          "Projektēšanas inženieris",
+          "Būvprojektu vadītājs",
+          "Būvdarbu vadītājs",
+          "Konstrukciju inženieris"
+        ],
+        "sectors": ["Būvniecība un nekustamais īpašums", "Rūpnieciskā ražošana", "Valsts iestādes"]
+      },
+      "matching": {
+        "interest_domains": ["celtnieciba", "inzenierija"],
+        "required_strengths": ["matematika", "fizika", "analitika", "lieriskas_prasmes"],
+        "personality_fit": ["analytisks", "praktisks", "pedants"],
+        "language_of_instruction": ["Latviešu"],
+        "math_intensive": true,
+        "creative_component": false,
+        "entry_exam_required": true,
+        "entry_exam_type": "standard",
+        "part_time_available": true,
+        "difficulty_level": "augsta",
+        "research_oriented": false,
+        "postgrad_pathway": true,
+        "internship_weeks_min": 26,
+        "most_budget_places_bmf": true
+      }
+    },
+    {
+      "id": "IND",
+      "code": "MCX",
+      "name": "Industriālais dizains",
+      "name_en": "Industrial Design",
+      "url": "https://www.rtu.lv/lv/studijas/visas-studiju-programmas/atvert/MCX?department=31000&type=P",
+      "faculty": "Būvniecības un mašīnzinību fakultāte",
+      "faculty_short": "BMF",
+      "program_type": "Pirmā cikla augstākās izglītības (profesionālās bakalaura) studijas",
+      "study_direction": "Mehānika un metālapstrāde, siltumenerģētika, siltumtehnika un mašīnzinības",
+      "study_field": [
+        "Būvniecība, mašīnzinības un medicīnas inženierija",
+        "Arhitektūra, māksla un dizains"
+      ],
+      "degree": {
+        "title": "Profesionālā bakalaura grāds industriālajā dizainā",
+        "title_en": "Professional Bachelor's Degree in Industrial Design",
+        "professional_qualification": "Industriālā dizaina inženiera kvalifikācija",
+        "ekf_level": 6
+      },
+      "logistics": {
+        "duration_years": {
+          "full_time": 4
+        },
+        "credits": 240,
+        "formats": ["Pilna laika klātienes"],
+        "languages": ["Latviešu"],
+        "locations": ["Rīga"]
+      },
+      "finances": {
+        "budget_places": { "Rīga": 30 },
+        "annual_fee_eur": {
+          "full_time": 3500
+        }
+      },
+      "admission": {
+        "prior_education": "Vidējā izglītība",
+        "entry_exam": true,
+        "entry_exam_details": {
+          "subjects": ["zīmēšana"],
+          "dates_2026": ["6. jūnijs"],
+          "paid": true
+        },
+        "special_requirements": "Maksas iestājpārbaudījums zīmēšanā"
+      },
+      "program_director": {
+        "name": "Anita Geriņa-Ancāne",
+        "title": "Doktors, Docents"
+      },
+      "description": "Studiju programma nodrošina teorētiskās un profesionālās zināšanas industriālā dizaina jomā. Pievērsta uzmanība mākslinieciski rūpnieciskiem izstrādājumiem, videi draudzīgu materiālu izmantošanai. Mašīnbūvniecības dizaineri produktiem piešķirs estētikas, funkcionalitātes un ergonomikas īpašības.",
+      "goals": "Nodrošināt studējošajiem iespēju iegūt profesionālās zināšanas industriālajā dizainā, sniedzot teorētiskās un praktiskās zināšanas produktu un dizaina elementu projektēšanā un ražošanā.",
+      "objectives": [
+        "Sniegt vispusīgas zināšanas industriālajā dizainā atbilstoši darba tirgus prasībām",
+        "Sniegt zināšanas industriālo produktu konstruēšanā, ražošanas tehnoloģijās un materiālu izvēlē",
+        "Attīstīt prasmes inženieraprēķinu veikšanai projektēšanas vajadzībām",
+        "Sniegt zināšanas produkta estētikas un ergonomikas koncepciju izstrādē",
+        "Attīstīt prasmes maketēšanā un prototipa izveidē",
+        "Attīstīt uzņēmējdarbības kompetences un pētnieciskā darba iemaņas"
+      ],
+      "learning_outcomes": {
+        "knowledge": [
+          "Teorētiskās un praktiskās zināšanas inovatīvu produktu izstrādē",
+          "Funkcionālo, estētisko, ekonomisko priekšnoteikumu analīze"
+        ],
+        "skills": [
+          "Izstrādāt produktu konceptuālos risinājumus un vizualizēt tos skicēs, rasējumos, 3D un maketos",
+          "Izmantot tradicionālās un modernās datorizētās projektēšanas un izgatavošanas tehnoloģijas",
+          "Veidot izstrādājumus atbilstoši standartiem un vides prasībām par otrreizējo pārstrādi"
+        ],
+        "competencies": [
+          "Īstenot pētniecības pasākumus un pielietot normatīvos dokumentus",
+          "Strādāt darba grupās un prezentēt konceptuālos risinājumus",
+          "Darboties vietējos vai starptautiskos produkta izstrādes projektos vai kā individuālais komersants"
+        ]
+      },
+      "career": {
+        "description": "Absolventi strādā projektēšanas un ražošanas uzņēmumos, kas projektē vai ražo industriālos izstrādājumus, vai kļūst par individuālajiem komersantiem.",
+        "job_titles": [
+          "Industriālais dizainers",
+          "Produktu dizainers",
+          "Dizaina konsultants",
+          "Izstrādājumu projektētājs",
+          "Rūpnieciskā dizainera inženieris"
+        ],
+        "sectors": ["Radošās nozares un dizains", "Rūpnieciskā ražošana", "Uzņēmējdarbība"]
+      },
+      "matching": {
+        "interest_domains": ["dizains", "inzenierija"],
+        "required_strengths": ["rada", "zimesana", "matematika", "lieriskas_prasmes"],
+        "personality_fit": ["radoss", "analytisks", "praktisks"],
+        "language_of_instruction": ["Latviešu"],
+        "math_intensive": false,
+        "creative_component": true,
+        "entry_exam_required": true,
+        "entry_exam_type": "drawing_paid",
+        "part_time_available": false,
+        "difficulty_level": "videja",
+        "research_oriented": false,
+        "postgrad_pathway": true
+      }
+    },
+    {
+      "id": "MAB",
+      "code": "MCN",
+      "name": "Mašīnu un aparātu būvniecība",
+      "name_en": "Machine and Apparatus Engineering",
+      "url": "https://www.rtu.lv/lv/studijas/visas-studiju-programmas/atvert/MCN?department=31000&type=P",
+      "faculty": "Būvniecības un mašīnzinību fakultāte",
+      "faculty_short": "BMF",
+      "program_type": "Pirmā cikla augstākās izglītības (profesionālās bakalaura) studijas",
+      "study_direction": "Mehānika un metālapstrāde, siltumenerģētika, siltumtehnika un mašīnzinības",
+      "study_field": "Būvniecība, mašīnzinības un medicīnas inženierija",
+      "degree": {
+        "title": "Profesionālais bakalaura grāds mašīnu un aparātu būvniecībā",
+        "title_en": "Professional Bachelor's Degree in Machine and Apparatus Engineering",
+        "professional_qualification": "Mehānikas inženiera kvalifikācija",
+        "ekf_level": 6
+      },
+      "logistics": {
+        "duration_years": {
+          "full_time": 4,
+          "part_time_correspondence": 5
+        },
+        "credits": 240,
+        "formats": ["Pilna laika klātienes", "Nepilna laika neklātienes"],
+        "languages": ["Latviešu"],
+        "locations": ["Rīga"],
+        "specializations": [
+          "Tehnoloģiskais un projektēšanas virziens",
+          "Metalurģijas virziens",
+          "Spiedapstrādes virziens"
+        ]
+      },
+      "finances": {
+        "budget_places": { "Rīga": 30 },
+        "annual_fee_eur": {
+          "full_time": 3500,
+          "part_time": 3300
+        }
+      },
+      "admission": {
+        "prior_education": "Vidējā izglītība",
+        "entry_exam": false,
+        "entry_exam_details": null,
+        "special_requirements": null
+      },
+      "program_director": {
+        "name": "Anita Avišāne",
+        "title": "Doktors, Docents"
+      },
+      "description": "Apgūstot šo studiju programmu, students kļūst par mehānikas inženieri un var strādāt metālapstrādes, mašīnbūves, projektēšanas, lauksaimniecības, transporta, celtniecības, tirdzniecības un citos uzņēmumos, kas projektē, ražo, uzstāda, pilnveido un remontē dažādas iekārtas, ierīces un mašīnas. Programmā ir trīs specializāciju virzieni.",
+      "goals": "Nodrošināt praktiskai izmantošanai derīgu, uz zinātniskiem pamatiem balstītu mašīnbūves nozarei nepieciešamu izglītību, kas dod iespēju mehānikas inženierim adaptēties darba tirgū.",
+      "objectives": [
+        "Sniegt vispusīgas zināšanas mašīnbūves mehānikas nozarē atbilstoši darba tirgus prasībām",
+        "Attīstīt prasmes inženieraprēķinu veikšanai projektēšanas vajadzībām",
+        "Sniegt zināšanas ražošanai nepieciešamās tehniskās dokumentācijas izstrādē",
+        "Iepazīstināt ar ražošanas plānošanu, vadīšanu un kvalitātes vadību",
+        "Attīstīt uzņēmējdarbības kompetences un pētnieciskā darba iemaņas"
+      ],
+      "learning_outcomes": {
+        "knowledge": [
+          "Mašīnbūves zinātnes nozares pamata un specializētas zināšanas",
+          "Nozares svarīgāko jēdzienu un likumsakarību izpratne"
+        ],
+        "skills": [
+          "Veikt profesionālu inovatīvu vai pētniecisku darbību",
+          "Formulēt un analītiski aprakstīt informāciju un risinājumus mašīnbūves nozarē",
+          "Uzņemties atbildību un iniciatīvu komandā vai individuāli",
+          "Pieņemt lēmumus un rast radošus risinājumus mainīgos apstākļos"
+        ],
+        "competencies": [
+          "Patstāvīgi iegūt un analizēt mašīnbūves nozares informāciju",
+          "Izvērtēt profesionālās darbības ietekmi uz vidi un sabiedrību",
+          "Vadīt kolektīvu un nodrošināt drošības tehnikas prasību ievērošanu"
+        ]
+      },
+      "career": {
+        "description": "Mehānikas inženieris strādā metālapstrādes, mašīnbūves, projektēšanas, transporta, celtniecības, tirdzniecības un citos uzņēmumos, kuru darbība saistīta ar iekārtu, ierīču, mašīnu projektēšanu, ražošanu, pilnveidošanu un remontu.",
+        "job_titles": [
+          "Mehānikas inženieris",
+          "Konstruktors",
+          "Ražošanas inženieris",
+          "Tehnoloģu inženieris",
+          "Metalurģijas speciālists"
+        ],
+        "sectors": ["Rūpnieciskā ražošana", "Transports un loģistika", "Būvniecība", "Metālapstrāde"]
+      },
+      "matching": {
+        "interest_domains": ["inzenierija"],
+        "required_strengths": ["matematika", "fizika", "lieriskas_prasmes", "analitika"],
+        "personality_fit": ["analytisks", "praktisks", "pedants"],
+        "language_of_instruction": ["Latviešu"],
+        "math_intensive": true,
+        "creative_component": false,
+        "entry_exam_required": false,
+        "entry_exam_type": "none",
+        "part_time_available": true,
+        "difficulty_level": "videja-augsta",
+        "research_oriented": false,
+        "postgrad_pathway": true,
+        "specialization_count": 3
+      }
+    },
+    {
+      "id": "MIF",
+      "code": "MCF",
+      "name": "Medicīnas inženierija un fizika",
+      "name_en": "Medical Engineering and Physics",
+      "url": "https://www.rtu.lv/lv/studijas/visas-studiju-programmas/atvert/MCF?department=31000&type=P",
+      "faculty": "Būvniecības un mašīnzinību fakultāte (kopīga ar RSU)",
+      "faculty_short": "BMF+RSU",
+      "program_type": "Pirmā cikla augstākās izglītības (profesionālās bakalaura) studijas",
+      "study_direction": "Mehānika un metālapstrāde, siltumenerģētika, siltumtehnika un mašīnzinības",
+      "study_field": "Būvniecība, mašīnzinības un medicīnas inženierija",
+      "degree": {
+        "title": "Profesionālais bakalaura grāds medicīnas fizikā",
+        "title_en": "Professional Bachelor's Degree in Medical Physics",
+        "professional_qualification": "Medicīnas fizikālo tehnoloģiju inženiera kvalifikācija",
+        "ekf_level": 6,
+        "joint_program": true,
+        "joint_partners": ["Rīgas Stradiņa universitāte (RSU)"],
+        "diploma_note": "Absolventi iegūst kopīgu RSU un RTU diplomu"
+      },
+      "logistics": {
+        "duration_years": {
+          "full_time": 4.5
+        },
+        "credits": 270,
+        "formats": ["Pilna laika klātienes"],
+        "languages": ["Latviešu", "Angļu"],
+        "locations": ["Rīga"]
+      },
+      "finances": {
+        "budget_places": { "Rīga": 60 },
+        "annual_fee_eur": {
+          "full_time": 4500
+        }
+      },
+      "admission": {
+        "prior_education": "Vidējā izglītība",
+        "entry_exam": false,
+        "entry_exam_details": null,
+        "special_requirements": "Studijām angļu valodā nepieciešama angļu valodas prasme vismaz CEFR B2 līmenī. Kopīgs diploms ar RSU."
+      },
+      "program_director": {
+        "name": "Jurijs Dehtjars",
+        "title": "Habilitētais doktors, Profesors"
+      },
+      "description": "RTU un RSU kopīga studiju programma, kas sagatavo medicīnas fizikālo tehnoloģiju inženierus. Absolventi pārzina, veido un izmanto jaunākās medicīnas tehnoloģijas, kas balstās uz nanotehnoloģiju un fiziku. Var strādāt zinātnē, ražošanā, medicīnas iekārtu apkalpošanā slimnīcās un ārstniecības iestādēs. Iegūst kopīgu RSU un RTU diplomu.",
+      "goals": "Sagatavot kvalificētus speciālistus medicīnas fizikā un medicīnas fizikālo tehnoloģiju inženierus ar profesionālām zināšanām par medicīnā izmantojamo iekārtu uzbūvi, darbības principiem, izgatavošanu, izmantošanu un drošību, iemaņām radiācijas tehnoloģiju plānošanā un dozimetrijā.",
+      "objectives": [
+        "Sniegt nepieciešamās zināšanas medicīnas inženierijas un medicīnas fizikas profesionālajai darbībai",
+        "Nodrošināt prakses iespējas medicīnas inženierijas problēmu risināšanai",
+        "Veicināt studentu patstāvīgu zināšanu apguvi un pētniecisko darbību",
+        "Pilnveidot profesionālās svešvalodas prasmi",
+        "Attīstīt prasmes strādāt starpdisciplinārā komandā ar mediķiem un biologiem"
+      ],
+      "learning_outcomes": {
+        "knowledge": [
+          "Medicīnā izmantojamo iekārtu uzbūve, fizikālie un tehniskie darbības principi",
+          "Starojumu avotu aizsardzības inženieraprēķinu metodikas un dozimetrija",
+          "Radiācijas drošības un kodoldrošības pamatprincipi"
+        ],
+        "skills": [
+          "Projektēt un pilnveidot medicīniskās iekārtas, aparātus un instrumentus",
+          "Veikt dozimetriskos, radiometriskos un starojuma spektrometriskos mērījumus",
+          "Novērtēt medicīnisko iekārtu drošumu un drošību, analizēt bojājumu cēloņus"
+        ],
+        "competencies": [
+          "Piedalīties starptautiskajos projektos medicīnas jomā",
+          "Sadarbībā ar ārstniecības personām optimizēt medicīniskās fizikas metodes",
+          "Izvērtēt nozares projektu ietekmi uz vidi un sabiedrību, ievērojot profesionālo ētiku"
+        ]
+      },
+      "career": {
+        "description": "Medicīnas fizikālo tehnoloģiju inženieris projektē medicīniskās iekārtas, vada to uzstādīšanu un regulēšanu. Medicīnas fiziķis veic radiācijas tehnoloģiju plānošanu un uzraudzību slimnīcās.",
+        "job_titles": [
+          "Medicīnas fizikālo tehnoloģiju inženieris",
+          "Medicīnas fiziķis",
+          "Radiācijas drošības speciālists",
+          "Medicīnisko iekārtu apkopes speciālists",
+          "Biomedicīnas pētnieks"
+        ],
+        "sectors": ["Veselības aprūpe", "Rūpnieciskā ražošana", "Zinātne un pētniecība"]
+      },
+      "matching": {
+        "interest_domains": ["inzenierija", "medicinas_tehnologija"],
+        "required_strengths": ["matematika", "fizika", "analitika"],
+        "personality_fit": ["analytisks", "pedants"],
+        "language_of_instruction": ["Latviešu", "Angļu"],
+        "math_intensive": true,
+        "creative_component": false,
+        "entry_exam_required": false,
+        "entry_exam_type": "none",
+        "part_time_available": false,
+        "difficulty_level": "augsta",
+        "research_oriented": true,
+        "postgrad_pathway": true,
+        "joint_program": true,
+        "dual_diploma": true,
+        "english_required_b2": true
+      }
+    },
+    {
+      "id": "MEH",
+      "code": "MCE",
+      "name": "Mehatronika",
+      "name_en": "Mechatronics",
+      "url": "https://www.rtu.lv/lv/studijas/visas-studiju-programmas/atvert/MCE?department=31000&type=P",
+      "faculty": "Būvniecības un mašīnzinību fakultāte",
+      "faculty_short": "BMF",
+      "program_type": "Pirmā cikla augstākās izglītības (profesionālās bakalaura) studijas",
+      "study_direction": "Mehānika un metālapstrāde, siltumenerģētika, siltumtehnika un mašīnzinības",
+      "study_field": [
+        "Būvniecība, mašīnzinības un medicīnas inženierija",
+        "Datorzinātne, telekomunikācija un elektroenerģētika"
+      ],
+      "degree": {
+        "title": "Profesionālais bakalaura grāds mehatronikā",
+        "title_en": "Professional Bachelor's Degree in Mechatronics",
+        "professional_qualification": "Mehatronikas inženiera kvalifikācija",
+        "ekf_level": 6
+      },
+      "logistics": {
+        "duration_years": {
+          "full_time": 4
+        },
+        "credits": 240,
+        "formats": ["Pilna laika klātienes"],
+        "languages": ["Latviešu"],
+        "locations": ["Rīga", "Rēzekne", "Liepāja"],
+        "regional_notes": "RTU Liepājas akadēmijā — 20 budžeta vietas; RTU Rēzeknes akadēmijā — 30 budžeta vietas"
+      },
+      "finances": {
+        "budget_places": {
+          "Rīga": 60,
+          "Rēzekne": 30,
+          "Liepāja": 20
+        },
+        "annual_fee_eur": {
+          "full_time": 3600
+        }
+      },
+      "admission": {
+        "prior_education": "Vidējā izglītība",
+        "entry_exam": false,
+        "entry_exam_details": null,
+        "special_requirements": null
+      },
+      "program_director": {
+        "name": "Anita Avišāne",
+        "title": "Doktors, Docents"
+      },
+      "description": "Mehatronika apvieno trīs nozares — mehāniku, elektroniku un datortehniku. Mehatronikas inženieri strādā uzņēmumos, kuros tiek veikta elektromehānisku iekārtu vadība ar integrētu elektronikas un datortehnikas lietošanu — robotika, sarežģītas tehnoloģiskās mašīnas, automatizācijas algoritmi. Pieejama Rīgā, Rēzeknē un Liepājā.",
+      "goals": "Nodrošināt praktiskai izmantošanai derīgu mehatronikas nozarei nepieciešamu izglītību, sniedzot zināšanas, prasmes un kompetenci, kas dod iespēju mehatronikas inženierim adaptēties darba tirgū mašīnbūves, enerģētikas, automātikas un datortehnikas jomās.",
+      "objectives": [
+        "Apgūt fundamentālo zinātņu pamatus",
+        "Apgūt vispārizglītojošos humanitāros, sociālos un vides studiju kursus",
+        "Apgūt profilam atbilstošos teorētiskos, tehniskos un ekonomiskos studiju kursus",
+        "Apgūt praktisko uzdevumu risināšanai nepieciešamās zināšanas",
+        "Attīstīt prasmes veikt zinātnisko darbību"
+      ],
+      "learning_outcomes": {
+        "knowledge": [
+          "Mašīnbūves un mehatronikas inženiera profesijai raksturīgās pamata un specializētās zināšanas",
+          "Mašīnzinātnes nozares svarīgāko jēdzienu un likumsakarību izpratne"
+        ],
+        "skills": [
+          "Pielietot mehatronikas teorētiskos pamatus un prasmes profesionālā darbībā",
+          "Veikt profesionālu, inovatīvu vai pētniecisku darbību",
+          "Uzņemties atbildību un iniciatīvu, veicot darbu individuāli vai komandā",
+          "Pieņemt lēmumus un rast radošus risinājumus mainīgos apstākļos"
+        ],
+        "competencies": [
+          "Izstrādāt mehatronikas iekārtas",
+          "Vadīt kopīgu mehāniķu, elektriķu, elektroniķu un datorspeciālistu darba grupu",
+          "Veikt mehatronikas iekārtu darbības uzraudzību un komplektēšanu",
+          "Izvērtēt profesionālās darbības ietekmi uz vidi un sabiedrību"
+        ]
+      },
+      "career": {
+        "description": "Inženieris mehatronikā strādā tautsaimniecības nozarēs, kurās tiek veikta elektromehānisku iekārtu vadība ar integrētu elektronikas un datortehnikas pielietošanu — robotika, automatizācija, ražošana.",
+        "job_titles": [
+          "Mehatronikas inženieris",
+          "Automatizācijas inženieris",
+          "Robotikas speciālists",
+          "Industriālās automatizācijas speciālists"
+        ],
+        "sectors": ["Rūpnieciskā ražošana", "Informācijas tehnoloģijas", "Enerģētika", "Robotika"]
+      },
+      "matching": {
+        "interest_domains": ["inzenierija", "elektronika_it"],
+        "required_strengths": ["matematika", "fizika", "programmesana", "lieriskas_prasmes"],
+        "personality_fit": ["analytisks", "praktisks", "pedants"],
+        "language_of_instruction": ["Latviešu"],
+        "math_intensive": true,
+        "creative_component": false,
+        "entry_exam_required": false,
+        "entry_exam_type": "none",
+        "part_time_available": false,
+        "difficulty_level": "videja-augsta",
+        "research_oriented": false,
+        "postgrad_pathway": true,
+        "available_in_regions": ["Rīga", "Rēzekne", "Liepāja"],
+        "total_budget_places": 110
+      }
+    },
+    {
+      "id": "SGU",
+      "code": "BCS",
+      "name": "Siltuma, gāzes un ūdens tehnoloģija",
+      "name_en": "Heating, Gas and Water Technology",
+      "url": "https://www.rtu.lv/lv/studijas/visas-studiju-programmas/atvert/BCS?department=31000&type=P",
+      "faculty": "Būvniecības un mašīnzinību fakultāte",
+      "faculty_short": "BMF",
+      "program_type": "Pirmā cikla augstākās izglītības (profesionālās bakalaura) studijas",
+      "study_direction": "Arhitektūra un būvniecība",
+      "study_field": "Būvniecība, mašīnzinības un medicīnas inženierija",
+      "degree": {
+        "title": "Profesionālais bakalaura grāds siltuma, gāzes un ūdens inženiersistēmās",
+        "title_en": "Professional Bachelor's Degree in Heating, Gas and Water Engineering Systems",
+        "professional_qualification": "Inženiersistēmu būvinženiera kvalifikācija",
+        "ekf_level": 6
+      },
+      "logistics": {
+        "duration_years": {
+          "full_time": 5,
+          "part_time_correspondence": 6
+        },
+        "credits": 300,
+        "formats": ["Pilna laika klātienes", "Nepilna laika neklātienes"],
+        "languages": ["Latviešu"],
+        "locations": ["Rīga"],
+        "note": "Garākā un ar lielāko kredītpunktu skaitu RTU profesionālā bakalaura programma — 300 KP, 5 gadi pilna laika"
+      },
+      "finances": {
+        "budget_places": { "Rīga": 30 },
+        "annual_fee_eur": {
+          "full_time": 4300,
+          "part_time": 3470
+        }
+      },
+      "admission": {
+        "prior_education": "Vidējā izglītība",
+        "entry_exam": false,
+        "entry_exam_details": null,
+        "special_requirements": "Obligātā prakse — vismaz 24 nedēļas"
+      },
+      "program_director": {
+        "name": "Lana Migla",
+        "title": "Doktors, Asociētais profesors"
+      },
+      "description": "Programma sagatavo siltuma, gāzes un ūdens tehnoloģiju inženierus, kas prot projektēt un modernizēt ēku, pilsētu un citu apdzīvoto vietu siltuma, gāzes, ūdens apgādes un kanalizācijas sistēmas, rūpēties par to ekspluatāciju un apkopi. Pētījumi saistīti ar enerģētiku, mašīnbūvi, ekoloģiju un dabas aizsardzību.",
+      "goals": "Sagatavot tautsaimniecības vajadzībām atbilstošus speciālistus siltuma, gāzes un ūdens tehnoloģijas nozarē, kuri spēj konkurēt darbaspēka tirgū Latvijā un ārpus tās robežām.",
+      "objectives": [
+        "Nodrošināt profesionālā bakalaura studiju līmenim atbilstošu konkurētspējīgu izglītību",
+        "Sniegt teorētiskās zināšanas būvzinātnē, mehānikā un vides aizsardzībā",
+        "Sniegt padziļinātas zināšanas siltuma, gāzes un ūdens tehnoloģiju jautājumos",
+        "Veidot prasmi izmantot teorētiskās zināšanas inženiera darba veikšanai",
+        "Nodrošināt vismaz 24 nedēļu ilgu praktiskā darba pieredzi"
+      ],
+      "learning_outcomes": {
+        "knowledge": [
+          "Ēku inženiersistēmu un pilsētu infrastruktūras sistēmu projektēšanas normatīvo aktu prasības",
+          "Saimnieciskās darbības pamatrādītāji un operacionālās darbības budžeta veidošanas principi"
+        ],
+        "skills": [
+          "Projektēt ēku inženiersistēmas un pilsētu infrastruktūras sistēmas",
+          "Identificēt riskus un noteikt kvalitātes riskiem atbilstošus preventīvus pasākumus",
+          "Noteikt darbinieku nepieciešamo kompetenci un pienākumu sadalījumu"
+        ],
+        "competencies": [
+          "Veikt pētījumus ar zinātnisku vērtību un interpretēt to rezultātus",
+          "Veidot inženiera karjeru un turpināt studijas maģistrantūrā",
+          "Nodrošināt pilsētu infrastruktūras siltumapgādes, gāzes un ūdensapgādes sistēmu modernizāciju"
+        ]
+      },
+      "career": {
+        "description": "Sagatavo inženierus siltuma, gāzes un ūdens inženiersistēmu jomā. Darbavietas: A/S 'Latvijas gāze', A/S 'Rīgas siltums', SIA 'Rīgas ūdens', pašvaldību uzņēmumi un privātie projektēšanas birojs.",
+        "job_titles": [
+          "Inženiersistēmu būvinženieris",
+          "Siltumapgādes inženieris",
+          "Ūdensapgādes speciālists",
+          "Kanalizācijas sistēmu inženieris",
+          "Gāzes apgādes inženieris"
+        ],
+        "sectors": ["Būvniecība", "Enerģētika", "Vides aizsardzība", "Komunālie pakalpojumi"]
+      },
+      "matching": {
+        "interest_domains": ["celtnieciba", "inzenierija", "energetika"],
+        "required_strengths": ["matematika", "fizika", "analitika"],
+        "personality_fit": ["analytisks", "praktisks"],
+        "language_of_instruction": ["Latviešu"],
+        "math_intensive": true,
+        "creative_component": false,
+        "entry_exam_required": false,
+        "entry_exam_type": "none",
+        "part_time_available": true,
+        "difficulty_level": "augsta",
+        "research_oriented": true,
+        "postgrad_pathway": true,
+        "internship_weeks_min": 24,
+        "longest_program_rtu": true,
+        "max_credits_rtu": true
+      }
+    },
+    {
+      "id": "SET",
+      "code": "MCG",
+      "name": "Siltumenerģētika un siltumtehnika",
+      "name_en": "Thermal Energy and Heat Engineering",
+      "url": "https://www.rtu.lv/lv/studijas/visas-studiju-programmas/atvert/MCG?department=31000&type=P",
+      "faculty": "Būvniecības un mašīnzinību fakultāte",
+      "faculty_short": "BMF",
+      "program_type": "Pirmā cikla augstākās izglītības (profesionālās bakalaura) studijas",
+      "study_direction": "Mehānika un metālapstrāde, siltumenerģētika, siltumtehnika un mašīnzinības",
+      "study_field": "Būvniecība, mašīnzinības un medicīnas inženierija",
+      "degree": {
+        "title": "Profesionālais bakalaura grāds siltumenerģētikā un siltumtehnikā",
+        "title_en": "Professional Bachelor's Degree in Thermal Energy and Heat Engineering",
+        "professional_qualification": "Siltumenerģētikas un siltumtehnikas inženiera kvalifikācija",
+        "ekf_level": 6
+      },
+      "logistics": {
+        "duration_years": {
+          "full_time": 4,
+          "part_time_correspondence": 5
+        },
+        "credits": 240,
+        "formats": ["Nepilna laika neklātienes"],
+        "languages": ["Latviešu"],
+        "locations": ["Rīga"],
+        "note": "Pieejama tikai neklātienes formā. Nav budžeta vietu. Paredzēta strādājošiem speciālistiem."
+      },
+      "finances": {
+        "budget_places": {},
+        "annual_fee_eur": {
+          "part_time": 3300
+        },
+        "note": "Nav valsts finansētu (budžeta) vietu — pilnīgi maksas programma"
+      },
+      "admission": {
+        "prior_education": "Vidējā izglītība",
+        "entry_exam": false,
+        "entry_exam_details": null,
+        "special_requirements": null
+      },
+      "program_director": {
+        "name": "Dmitrijs Rusovs",
+        "title": "Doktors, Asociētais profesors"
+      },
+      "description": "Apgūstot programmu, students kļūst par siltumenerģētikas un siltumtehnikas nozares speciālistu un pārzinās primāro energoresursu — kurināmā, hidroresursu, vēja enerģijas, saules starojuma — piesaisti un izmantošanu energoapgādes mērķiem. Orientēsies siltumenerģijas ražošanas, pārvadīšanas, sadales un racionālas izmantošanas tehnoloģijās.",
+      "goals": "Sagatavot kvalificētus nozares speciālistus atbilstoši apstiprinātajam siltumenerģētikas un siltumtehnikas inženiera profesijas standartam ar darba tirgum atbilstošu izglītības līmeni.",
+      "objectives": [
+        "Attīstīt prasmes izmantot teorētiskās zināšanas nozares aktualitātēm konkrētu uzdevumu risināšanā",
+        "Attīstīt zaļo un analītisko domāšanu praktisko uzdevumu izpildē",
+        "Attīstīt spējas darboties komandā ar dažādu jomu speciālistiem",
+        "Veicināt interesi par turpmāku profesionālo pilnveidi un studijām maģistrantūrā"
+      ],
+      "learning_outcomes": {
+        "knowledge": [
+          "Siltumtehnisko, inženiertehnisko un tehniski-ekonomisko aprēķinu pamati",
+          "Centralizēto, lokālo un individuālo siltumapgādes sistēmu analīze un uzraudzība"
+        ],
+        "skills": [
+          "Organizēt siltumtehnisko iekārtu ekspluatāciju, tehniskās pārbaudes un montāžas darbus",
+          "Izstrādāt projektu siltumtehnisko daļu ar vides ietekmes un energoefektivitātes novērtējumu",
+          "Patstāvīgi izmantot informācijas tehnoloģijas profesionālo uzdevumu izpildē"
+        ],
+        "competencies": [
+          "Lietot profesionālo terminoloģiju valsts valodā un vismaz divās svešvalodās",
+          "Atbildīgi plānot, organizēt un uzraudzīt operatīvo profesionālo darbību"
+        ]
+      },
+      "career": {
+        "description": "Siltumenerģētikas un siltumtehnikas inženieri strādā nozares vadošajos uzņēmumos un energoobjektos: A/S Latvenergo, A/S Rīgas Siltums, Rīgas TEC-1, Rīgas TEC-2, SIA Liepājas enerģija, A/S UPB, SIA Adven Latvia u.c., kā arī siltumapgādes uzņēmumos, katlu mājās un namu apsaimniekošanas uzņēmumos.",
+        "job_titles": [
+          "Siltumenerģētikas inženieris",
+          "Siltumtehnikas speciālists",
+          "Energoapgādes inženieris",
+          "Katlu mājas speciālists"
+        ],
+        "sectors": ["Enerģētika", "Rūpnieciskā ražošana", "Vides aizsardzība", "Komunālie pakalpojumi"]
+      },
+      "matching": {
+        "interest_domains": ["energetika", "inzenierija"],
+        "required_strengths": ["matematika", "fizika", "analitika"],
+        "personality_fit": ["analytisks", "praktisks"],
+        "language_of_instruction": ["Latviešu"],
+        "math_intensive": true,
+        "creative_component": false,
+        "entry_exam_required": false,
+        "entry_exam_type": "none",
+        "part_time_available": true,
+        "full_time_available": false,
+        "difficulty_level": "videja",
+        "research_oriented": false,
+        "postgrad_pathway": true,
+        "correspondence_only": true,
+        "no_budget_places": true,
+        "suitable_for_working_professionals": true
+      }
+    },
+    {
+      "id": "TRB",
+      "code": "BCT",
+      "name": "Transportbūves",
+      "name_en": "Transport Structures Engineering",
+      "url": "https://www.rtu.lv/lv/studijas/visas-studiju-programmas/atvert/BCT?department=31000&type=P",
+      "faculty": "Būvniecības un mašīnzinību fakultāte",
+      "faculty_short": "BMF",
+      "program_type": "Pirmā cikla augstākās izglītības (profesionālās bakalaura) studijas",
+      "study_direction": "Arhitektūra un būvniecība",
+      "study_field": "Būvniecība, mašīnzinības un medicīnas inženierija",
+      "degree": {
+        "title": "Profesionālais bakalaura grāds transportbūvēs",
+        "title_en": "Professional Bachelor's Degree in Transport Construction",
+        "professional_qualification": "Transportbūvju būvinženiera kvalifikācija",
+        "ekf_level": 6
+      },
+      "logistics": {
+        "duration_years": {
+          "full_time": 4.5,
+          "part_time_correspondence": 5
+        },
+        "credits": 270,
+        "formats": ["Pilna laika klātienes", "Nepilna laika neklātienes"],
+        "languages": ["Latviešu"],
+        "locations": ["Rīga"]
+      },
+      "finances": {
+        "budget_places": { "Rīga": 30 },
+        "annual_fee_eur": {
+          "full_time": 4300,
+          "part_time": 3470
+        }
+      },
+      "admission": {
+        "prior_education": "Vidējā izglītība",
+        "entry_exam": false,
+        "entry_exam_details": null,
+        "special_requirements": null
+      },
+      "program_director": {
+        "name": "Baiba Gaujēna",
+        "title": "Doktors, Asociētais profesors"
+      },
+      "description": "Studiju programma izglīto kvalificētus un konkurētspējīgus transportbūvju inženierus, kas var praktiski strādāt savā profesijā, plānojot, projektējot un organizējot ceļu, tiltu un citu transportbūvju izveidi, modernizāciju un uzturēšanu.",
+      "goals": "Sagatavot konkurētspējīgus inženierus transportbūvju nozarē, kuri var praktiski darboties savā profesijā un sagatavot studējošos patstāvīgai zinātniskās pētniecības darbībai un tālākām studijām maģistrantūrā.",
+      "objectives": [
+        "Nodrošināt starptautiskajiem standartiem atbilstošu konkurētspējīgu izglītību ceļu un tiltu būves nozarē",
+        "Sniegt vispusīgas zināšanas, prasmes un kompetenci atbilstoši darba tirgus prasībām",
+        "Veicināt studentu interesi par turpmāko profesionālo pilnveidi un studijām maģistrantūrā",
+        "Attīstīt pētnieciskā darba prasmes un to izmantošanu",
+        "Stimulēt atbildīgas, ētiskas un rīcībspējīgas personības attīstību"
+      ],
+      "learning_outcomes": {
+        "knowledge": [
+          "Transportbūvju jomai atbilstošas teorijas, likumsakarības un tehnoloģijas",
+          "Ceļu, tiltu un citu transportbūvju projektēšana, vadīšana un uzturēšana"
+        ],
+        "skills": [
+          "Veikt praktiskus uzdevumus transportbūvju inženiera profesijā",
+          "Rast radošus risinājumus profesionālajām problēmām",
+          "Formulēt, aprakstīt un analizēt praktiskas problēmas transportbūvju jomā"
+        ],
+        "competencies": [
+          "Projektēt ceļus, tiltus un citas transportbūves un vadīt būvprojektus",
+          "Organizēt būvlaukuma resursus efektīvā veidā",
+          "Piedalīties attiecīgās profesionālas jomas attīstībā"
+        ]
+      },
+      "career": {
+        "description": "Transportbūvju būvinženieris projektē ceļus, tiltus un citas transportbūves, vada būvprojektus, uztur šīs būves ekspluatācijā. Var veikt konstrukciju aprēķinus, pārzina būvniecības materiālu tehnoloģiju, var veikt zinātniskās pētniecības darbus.",
+        "job_titles": [
+          "Transportbūvju būvinženieris",
+          "Ceļu inženieris",
+          "Tiltu projektētājs",
+          "Būvprojektu vadītājs",
+          "Infrastruktūras inženieris"
+        ],
+        "sectors": ["Būvniecība", "Transports un loģistika", "Valsts un pašvaldību iestādes"]
+      },
+      "matching": {
+        "interest_domains": ["celtnieciba", "inzenierija", "transports"],
+        "required_strengths": ["matematika", "fizika", "analitika"],
+        "personality_fit": ["analytisks", "praktisks", "leadership"],
+        "language_of_instruction": ["Latviešu"],
+        "math_intensive": true,
+        "creative_component": false,
+        "entry_exam_required": false,
+        "entry_exam_type": "none",
+        "part_time_available": true,
+        "difficulty_level": "augsta",
+        "research_oriented": true,
+        "postgrad_pathway": true
+      }
+    },
+    {
+      "id": "GEO",
+      "code": "BCE",
+      "name": "Ģeomātika",
+      "name_en": "Geomatics",
+      "url": "https://www.rtu.lv/lv/studijas/visas-studiju-programmas/atvert/BCE?department=31000&type=P",
+      "faculty": "Būvniecības un mašīnzinību fakultāte",
+      "faculty_short": "BMF",
+      "program_type": "Pirmā cikla augstākās izglītības (profesionālās bakalaura) studijas",
+      "study_direction": "Arhitektūra un būvniecība",
+      "study_field": "Būvniecība, mašīnzinības un medicīnas inženierija",
+      "degree": {
+        "title": "Profesionālais bakalaura grāds ģeomātikā",
+        "title_en": "Professional Bachelor's Degree in Geomatics",
+        "professional_qualification": "Ģeodēzijas un kartogrāfijas inženiera kvalifikācija",
+        "ekf_level": 6
+      },
+      "logistics": {
+        "duration_years": {
+          "full_time": 4.5,
+          "part_time_correspondence": 5
+        },
+        "credits": 270,
+        "formats": ["Pilna laika klātienes", "Nepilna laika neklātienes"],
+        "languages": ["Latviešu"],
+        "locations": ["Rīga"],
+        "specializations": [
+          "Ģeodēzija",
+          "Mērniecība",
+          "Kartogrāfija"
+        ]
+      },
+      "finances": {
+        "budget_places": { "Rīga": 30 },
+        "annual_fee_eur": {
+          "full_time": 3730,
+          "part_time": 2990
+        }
+      },
+      "admission": {
+        "prior_education": "Vidējā izglītība",
+        "entry_exam": false,
+        "entry_exam_details": null,
+        "special_requirements": null
+      },
+      "program_director": {
+        "name": "Jānis Kaminskis",
+        "title": "Doktors, Asociētais profesors"
+      },
+      "description": "Vienīgā studiju programma Latvijas augstskolās, kas sagatavo zinošus un darba tirgū konkurētspējīgus speciālistus profesionālai darbībai ģeodēzijā, mērniecībā, kartogrāfijā un zemes pārvaldībā, kā arī zinātniskai pētniecībai un pedagoģiskajam darbam šajos virzienos. Studentiem jāizvēlas viena no specializācijas jomām.",
+      "goals": "Sniegt profesionālo bakalaura izglītību un sagatavot darba tirgus prasībām atbilstošus speciālistus ģeodēzijā, mērniecībā un kartogrāfijā, kā arī sagatavot studentus turpmākām studijām maģistratūrā.",
+      "objectives": [
+        "Nodrošināt plašu, profesionālu, praktiski orientētu izglītību darba tirgus vajadzībām",
+        "Nodrošināt 6. EKI līmenim atbilstošu teorētisko un praktisko sagatavotību",
+        "Attīstīt iemaņas darbā ar specializētām programmatūrām un ģeodēziskajiem instrumentiem",
+        "Attīstīt akadēmiskā personāla un studentu pētniecisko darbu un starptautisko mobilitāti",
+        "Attīstīt spējas darboties komandā un sastrādāties ar dažādu jomu profesionāļiem"
+      ],
+      "learning_outcomes": {
+        "knowledge": [
+          "Reglamentējošo normatīvo aktu prasības un mērnieku sertifikācijas process",
+          "Ģeodēziskās, mērniecības un kartogrāfijas metodes un tehnoloģijas"
+        ],
+        "skills": [
+          "Patstāvīgi veikt darba uzdevumus un plānot un organizēt darbu",
+          "Strādāt ar specializētām programmatūrām un ģeodēziskajiem instrumentiem",
+          "Veikt zinātniskās pētniecības darbus ģeomātikā"
+        ],
+        "competencies": [
+          "Strādāt kā ģeodēzists, kartogrāfs vai mērnieks valsts un privātajos uzņēmumos",
+          "Aizstāvēt un pamatot pētnieciskā darba rezultātus",
+          "Darboties kā pašnodarbināta persona vai individuālais komersants"
+        ]
+      },
+      "career": {
+        "description": "Absolvents var strādāt par mērnieka palīgu, ģeodēzistu, kartogrāfu valsts un privātajos uzņēmumos vai kā pašnodarbināta persona. Mērnieks veic uzmērījumus, apstrādā datus. Kartogrāfs apstrādā slāņus un sadarbojas ar kartes redaktoru.",
+        "job_titles": [
+          "Ģeodēzists",
+          "Kartogrāfs",
+          "Mērnieks",
+          "Zemes pārvaldības speciālists",
+          "GIS speciālists"
+        ],
+        "sectors": ["Būvniecība un infrastruktūra", "Vides aizsardzība", "Valsts iestādes", "Nekustamais īpašums"]
+      },
+      "matching": {
+        "interest_domains": ["celtnieciba", "inzenierija"],
+        "required_strengths": ["matematika", "fizika", "analitika", "lieriskas_prasmes"],
+        "personality_fit": ["analytisks", "pedants", "avantūrists"],
+        "language_of_instruction": ["Latviešu"],
+        "math_intensive": true,
+        "creative_component": false,
+        "entry_exam_required": false,
+        "entry_exam_type": "none",
+        "part_time_available": true,
+        "difficulty_level": "videja",
+        "research_oriented": true,
+        "postgrad_pathway": true,
+        "unique_in_latvia": true,
+        "specialization_count": 3
+      }
+    }
+  ],
+  "quick_filter_presets": {
+    "entry_exam_required": ["ATI", "BUV_PRO", "IND"],
+    "no_entry_exam": ["AVT", "MAB", "MIF", "MEH", "SGU", "SET", "TRB", "GEO"],
+    "drawing_exam_paid": ["IND"],
+    "no_budget_places": ["SET"],
+    "part_time_available": ["ATI", "BUV_PRO", "MAB", "SGU", "SET", "TRB", "GEO"],
+    "full_time_only": ["AVT", "IND", "MIF", "MEH"],
+    "correspondence_only": ["SET"],
+    "english_available": ["AVT", "MIF"],
+    "english_required_b2": ["AVT", "MIF"],
+    "joint_program_dual_diploma": ["MIF"],
+    "creative_component": ["IND"],
+    "unique_in_latvia": ["GEO"],
+    "multi_location": ["MEH"],
+    "research_oriented": ["MIF", "SGU", "TRB", "GEO"],
+    "math_intensive": ["ATI", "AVT", "BUV_PRO", "MAB", "MIF", "MEH", "SGU", "SET", "TRB", "GEO"],
+    "for_working_professionals": ["SET", "ATI", "MAB", "TRB", "GEO"],
+    "international_certification": ["AVT"],
+    "most_budget_places": ["BUV_PRO"],
+    "highest_fee": ["MIF"],
+    "lowest_fee": ["GEO"],
+    "longest_program": ["SGU"],
+    "by_study_direction": {
+      "arhitektura_un_buvnieciba": ["BUV_PRO", "SGU", "TRB", "GEO"],
+      "mehanika_siltumenergetika_masinzinibas": ["ATI", "AVT", "IND", "MAB", "MIF", "MEH", "SET"]
+    },
+    "difficulty": {
+      "videja": ["IND", "SET", "GEO"],
+      "videja_augsta": ["ATI", "MAB", "MEH"],
+      "augsta": ["AVT", "BUV_PRO", "MIF", "SGU", "TRB"]
+    }
+  },
+  "comparison_summary": {
+    "total_budget_places_riga": 480,
+    "additional_budget_places_regions": { "Rēzekne": 30, "Liepāja": 20 },
+    "fee_range_eur": {
+      "cheapest_full_time": { "amount": 3500, "programs": ["ATI", "AVT", "IND", "MAB"] },
+      "most_expensive_full_time": { "amount": 4500, "programs": ["MIF"] },
+      "cheapest_part_time": { "amount": 2990, "programs": ["GEO"] },
+      "most_expensive_part_time": { "amount": 3470, "programs": ["BUV_PRO", "SGU", "TRB"] }
+    },
+    "duration_range": {
+      "shortest": { "years_full_time": 4, "programs": ["AVT", "IND", "MAB", "MEH", "SET"] },
+      "longest": { "years_full_time": 5, "programs": ["SGU"] }
+    },
+    "credits_range": {
+      "min": { "credits": 240, "programs": ["AVT", "IND", "MAB", "MEH", "SET"] },
+      "max": { "credits": 300, "programs": ["SGU"] }
+    }
+  }
+}

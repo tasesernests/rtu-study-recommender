@@ -1,0 +1,2081 @@
+{
+  "metadata": {
+    "source": "Rīgas Tehniskā universitāte (RTU)",
+    "generated": "2026-05-26",
+    "version": "1.0",
+    "total_programs": 15,
+    "description": "Structured data for RTU first-cycle (bachelor) professional study programs, optimized for student–program matching applications.",
+    "schema_notes": {
+      "annual_fee_eur": "Tuition fee in EUR per academic year. Null means no fee listed (no budget places or fee not published).",
+      "budget_places": "State-funded (budžeta) seats per intake. 0 means no budget places exist for this program.",
+      "credit_points": "ECTS-equivalent Latvian credit points (LKP). 1 LKP ≈ 1.5 ECTS.",
+      "entry_exam": "Whether a specific entrance examination is required beyond CE scores.",
+      "matching_profile": "Computed tags and weights for algorithmic student–program matching.",
+      "study_form_codes": { "FT": "Full-time (pilna laika klātienes)", "PT_E": "Part-time extramural (nepilna laika neklātienes)" }
+    }
+  },
+  "programs": [
+    {
+      "id": "ECV",
+      "url": "https://www.rtu.lv/lv/studijas/visas-studiju-programmas/atvert/ECV",
+      "name": {
+        "lv": "Viedās elektroniskās sistēmas",
+        "en": "Smart Electronic Systems"
+      },
+      "faculty": {
+        "name_lv": "Datorzinātnes, informācijas tehnoloģijas un enerģētikas fakultāte",
+        "name_en": "Faculty of Computer Science, Information Technology and Energy",
+        "abbreviation": "DITEF",
+        "address": "Zunda krastmala 10, Rīga",
+        "phone": "+371 28357727",
+        "email": "ditef@rtu.lv"
+      },
+      "program_type": "Profesionālās bakalaura studijas (1. cikls)",
+      "study_direction": {
+        "lv": "Informācijas tehnoloģijas, datortehnika, elektronika, telekomunikācijas, datorvadība un datorzinātne",
+        "en": "IT, Computer Engineering, Electronics, Telecommunications, Computer Control and Computer Science"
+      },
+      "study_field": {
+        "lv": "Datorzinātne, telekomunikācija un elektroenerģētika",
+        "en": "Computer Science, Telecommunications and Electrical Energy"
+      },
+      "degree": {
+        "lv": "Profesionālais bakalaura grāds elektrozinātnē un elektronikas inženiera kvalifikācija",
+        "en": "Professional Bachelor's degree in Electrical Science and Electronics Engineer qualification"
+      },
+      "budget_places": [
+        { "location": "Rīga", "count": 40 }
+      ],
+      "study_forms": [
+        {
+          "code": "FT",
+          "label_lv": "Pilna laika klātienes",
+          "label_en": "Full-time",
+          "duration_years": 4,
+          "annual_fee_eur": 3800,
+          "locations": ["Rīga"]
+        }
+      ],
+      "languages": ["Latviešu", "Angļu"],
+      "credit_points": 240,
+      "program_director": {
+        "name": "Dmitrijs Pikuļins",
+        "title": "Doktors, Profesors"
+      },
+      "prerequisites": {
+        "education_level": "Vidējā izglītība",
+        "details": "Secondary education (general or vocational)"
+      },
+      "entry_exam": {
+        "required": false,
+        "details": "Standard CE-based admissions via latvija.lv portal (9–20 July) or in-person (14–20 July)."
+      },
+      "admission_window": {
+        "online_from": "July 9",
+        "online_to": "July 20",
+        "inperson_from": "July 14",
+        "inperson_to": "July 20",
+        "portal": "latvija.lv"
+      },
+      "goal": "Sniegt profesionālā bakalaura izglītību elektronikas nozarē, sagatavojot speciālistus, kas izprot nozares attīstības tendences un spēj strādāt viedo elektronisko sistēmu analīzes un izstrādes jomā, kā arī sagatavot tālākām studijām nozares akadēmiskās vai profesionālās maģistra studiju programmās.",
+      "tasks": [
+        "Nodrošināt konkurētspējīgu izglītību viedo elektronisko sistēmu jomā atbilstoši starptautiskajiem standartiem.",
+        "Attīstīt fundamentālo zinātņu pamatus teorētisko kursu apguvei.",
+        "Nodrošināt elektronikas nozares pamatkursu apguvi specializēto studiju vajadzībām.",
+        "Sniegt specializētas zināšanas un prasmes uzdevumu formulēšanai un risināšanai viedajās elektroniskajās sistēmās.",
+        "Sniegt zināšanas par datorizētiem rīkiem elektronisko sistēmu analīzē, programmēšanā, modelēšanā un projektēšanā.",
+        "Nodrošināt studiju satura un procesa attīstību atbilstoši nozares izmaiņām.",
+        "Attīstīt kompetenci atbilstoši tirgus prasībām elektronikas inženieriem.",
+        "Attīstīt prasmes informācijas iegūšanā, analīzē un lēmumu pieņemšanā.",
+        "Sniegt profesionālās ētikas pamatus.",
+        "Veicināt interesi par turpmāku profesionālo pilnveidi un mūžizglītību."
+      ],
+      "learning_outcomes": [
+        "Pārzina fundamentālo zinātņu pamatus.",
+        "Pārzina elektronikas nozares teorētisko pamatkursu saturu.",
+        "Spēj strādāt ar angļu valodā pieejamo zinātnisko, tehnisko un metodisko literatūru.",
+        "Spēj pielietot teorētiskās zināšanas konkrētu uzdevumu risināšanai ar viedajām elektroniskajām sistēmām.",
+        "Prot veikt eksperimentālu datu apstrādi elektronisko shēmu un sistēmu analīzē.",
+        "Spēj izstrādāt ciparu, analogo un RF elektronisko iekārtu un sistēmu shēmas un prototipus.",
+        "Spēj pielietot aktuālās tehnoloģijas viedo elektronisko sistēmu projektēšanā.",
+        "Spēj izprojektēt elektroniskās iekārtas un sistēmas, veikt modelēšanu un vadības programmatūras izstrādi.",
+        "Spēj izstrādāt iespiedplates un tehnisko dokumentāciju.",
+        "Pārzina elektronikas nozares standartus un tehniskās normas.",
+        "Pārzina bezvadu sakaru sistēmu uzbūves principus.",
+        "Pārzina elektrodinamiku un antenu teoriju.",
+        "Pārzina analogo un ciparu shēmtehniku.",
+        "Pārzina analogo un diskrētu signālu apstrādes teoriju.",
+        "Pārzina mikrokontroleru un FPGA programmēšanu augsta līmeņa valodās.",
+        "Izprot mūžizglītības nozīmi."
+      ],
+      "career": {
+        "description": "Darbs modernu tehnoloģisku risinājumu izstrādē, attīstībā un pētniecībā; viedo iegulto sistēmu programmēšana, bezvadu sakaru sistēmu projektēšana, mobilo aplikāciju izveide. Darbs vietējos vai starptautiskos uzņēmumos vai sava augsti tehnoloģiskā jaunuzņēmuma dibināšana.",
+        "example_employers": [
+          "AS SAF Tehnika",
+          "SIA Mikrotīkls",
+          "VAS Latvijas Valsts Radio un Televīzijas Centrs",
+          "SIA Lattelekom",
+          "SIA TET",
+          "SIA Latvijas Mobilais Telefons",
+          "SIA Tele2",
+          "VAS Elektroniskie sakari",
+          "AS Alfa",
+          "AS HansaMatrix",
+          "SIA HansaMatrix Innovation",
+          "Accenture Latvijas filiāle",
+          "SIA UAVFactory",
+          "SIA Citrus Solutions",
+          "AS Draugiem Group",
+          "SIA Intelligent Systems",
+          "SIA AERONES",
+          "SIA Vizulo",
+          "SIA Regula Baltija",
+          "SIA Baltic Scientific Instruments"
+        ],
+        "roles": [
+          "Elektronikas inženieris",
+          "Iegulto sistēmu izstrādātājs",
+          "Bezvadu sakaru sistēmu inženieris",
+          "Mobilo aplikāciju izstrādātājs",
+          "Prototipēšanas inženieris"
+        ]
+      },
+      "matching_profile": {
+        "primary_domains": ["electronics", "embedded_systems", "wireless_communications", "iot", "programming"],
+        "secondary_domains": ["signal_processing", "pcb_design", "robotics", "mobile_development"],
+        "skill_interests": ["programming", "hardware", "design", "research", "prototyping"],
+        "subject_strengths_needed": ["mathematics", "physics", "informatics"],
+        "personality_fit": ["technical", "analytical", "creative", "hands_on", "innovation_driven"],
+        "math_intensity": 4,
+        "tech_intensity": 5,
+        "language_intensity": 2,
+        "business_intensity": 1,
+        "research_intensity": 3,
+        "practical_intensity": 4,
+        "international_exposure": 3,
+        "weights": {
+          "stem_affinity": 0.9,
+          "programming_affinity": 0.8,
+          "hardware_affinity": 0.9,
+          "entrepreneurship_affinity": 0.3,
+          "language_affinity": 0.2,
+          "social_sciences_affinity": 0.1
+        }
+      },
+      "keywords_lv": ["elektronika", "iegultās sistēmas", "mikrokontroleri", "bezvadu sakari", "IoT", "shēmtehnika", "programmēšana", "iespiedplates", "RF"],
+      "keywords_en": ["electronics", "embedded systems", "microcontrollers", "wireless communications", "IoT", "circuit design", "programming", "PCB", "RF engineering"],
+      "specializations": ["Viedās iegultās sistēmas", "Bezvadu sakaru sistēmas", "Mobilās aplikācijas"],
+      "further_studies": "Akadēmiskā vai profesionālā maģistrantūra elektronikas nozarē"
+    },
+
+    {
+      "id": "ECR",
+      "url": "https://www.rtu.lv/lv/studijas/visas-studiju-programmas/atvert/ECR",
+      "name": {
+        "lv": "Viedā elektroenerģētika",
+        "en": "Smart Power Engineering"
+      },
+      "faculty": {
+        "name_lv": "Datorzinātnes, informācijas tehnoloģijas un enerģētikas fakultāte",
+        "name_en": "Faculty of Computer Science, Information Technology and Energy",
+        "abbreviation": "DITEF",
+        "address": "Zunda krastmala 10, Rīga",
+        "phone": "+371 67089901",
+        "email": "ditef@rtu.lv"
+      },
+      "program_type": "Profesionālās bakalaura studijas (1. cikls)",
+      "study_direction": {
+        "lv": "Enerģētika, elektrotehnika un elektrotehnoloģijas",
+        "en": "Energy, Electrical Engineering and Electrical Technologies"
+      },
+      "study_field": {
+        "lv": "Datorzinātne, telekomunikācija un elektroenerģētika",
+        "en": "Computer Science, Telecommunications and Electrical Energy"
+      },
+      "degree": {
+        "lv": "Profesionālais bakalaura grāds enerģētikā un elektrotehnikā un elektroinženiera kvalifikācija",
+        "en": "Professional Bachelor's degree in Energy and Electrical Engineering and Electrical Engineer qualification"
+      },
+      "budget_places": [
+        { "location": "Rīga", "count": 40 }
+      ],
+      "study_forms": [
+        {
+          "code": "FT",
+          "label_lv": "Pilna laika klātienes",
+          "label_en": "Full-time",
+          "duration_years": 4,
+          "annual_fee_eur": 3990,
+          "locations": ["Rīga"]
+        },
+        {
+          "code": "PT_E",
+          "label_lv": "Nepilna laika neklātienes",
+          "label_en": "Part-time extramural",
+          "duration_years": 5,
+          "annual_fee_eur": 3240,
+          "locations": ["Rīga"]
+        }
+      ],
+      "languages": ["Latviešu", "Angļu"],
+      "credit_points": 240,
+      "program_director": {
+        "name": "Aleksandrs Dolgicers",
+        "title": "Doktors, Profesors"
+      },
+      "prerequisites": {
+        "education_level": "Vispārējā vai profesionālā vidējā izglītība",
+        "details": "General or vocational secondary education"
+      },
+      "entry_exam": {
+        "required": true,
+        "details": "Iestājpārbaudījums matemātikā, fizikā un loģikā, kā arī tiek vērtētas sadarbības spējas.",
+        "exam_dates_2026": ["June 6", "June 13"]
+      },
+      "goal": "Jaunas absolventu paaudzes sagatavošana elektroenerģētisko sistēmu un tīklu, elektroenerģijas pārvades un sadales, to režīmu, stabilitātes un drošuma jomā, aktīvi ieviešot viedās tehnoloģijas enerģijas tirgum, ražošanai, pārvadei, sadalei, patēriņam un enerģijas taupīšanai.",
+      "tasks": [
+        "Darba režīmu kontrole un vadība visiem dalībniekiem enerģijas ražošanas, pārvades un patēriņa procesā.",
+        "Ātra reakcija uz izmaiņām energosistēmas parametros un droša energoapgāde.",
+        "Decentralizētās vadības panākšana izkliedētai energosistēmai.",
+        "Izglītojošs darbs pasīvo patērētāju vidū, padarot tos par pieprasījumreakcijas aktīviem dalībniekiem."
+      ],
+      "learning_outcomes": [
+        "Identificēt, pamatot un formulēt energosistēmas stabilas darbības nodrošināšanas problēmas.",
+        "Identificēt avārijas režīmus, aprēķināt to parametrus un veikt pretavārijas automātikas analīzi un sintēzi.",
+        "Efektīvi pielietot skaitļošanas tehniku projektēšanai un procesu vadīšanai.",
+        "Parādīt izpratni un ētisko atbildību par zinātnes rezultātu ietekmi uz vidi un sabiedrību.",
+        "Ievērot darba aizsardzības noteikumus.",
+        "Attīstīt praktiskās iemaņas elektrisko iekārtu ekspluatācijas un remonta jomā.",
+        "Novērtēt un nodrošināt informāciju par valsts standartiem.",
+        "Komunicēt, konsultēt un argumentēt viedās enerģētikas mērķus."
+      ],
+      "career": {
+        "description": "Darbs elektroenerģētikas un energobūvniecības jomu uzņēmumos; speciālisti viedo energosistēmu, elektroapgādes, elektrisko tīklu un sistēmu vadības vai elektrisko mašīnu un aparātu specializācijā.",
+        "example_employers": [],
+        "roles": [
+          "Elektroinženieris",
+          "Energosistēmu speciālists",
+          "Tīklu vadības inženieris",
+          "Energoefektivitātes speciālists",
+          "Atjaunīgo energoresursu inženieris"
+        ]
+      },
+      "matching_profile": {
+        "primary_domains": ["power_engineering", "smart_grids", "energy_systems", "electrical_engineering"],
+        "secondary_domains": ["renewable_energy", "automation", "sustainability", "control_systems"],
+        "skill_interests": ["engineering", "problem_solving", "sustainability", "systems_thinking"],
+        "subject_strengths_needed": ["mathematics", "physics"],
+        "personality_fit": ["technical", "analytical", "collaborative", "sustainability_conscious"],
+        "math_intensity": 4,
+        "tech_intensity": 4,
+        "language_intensity": 1,
+        "business_intensity": 1,
+        "research_intensity": 3,
+        "practical_intensity": 4,
+        "international_exposure": 2,
+        "weights": {
+          "stem_affinity": 0.9,
+          "programming_affinity": 0.4,
+          "hardware_affinity": 0.7,
+          "entrepreneurship_affinity": 0.2,
+          "language_affinity": 0.1,
+          "social_sciences_affinity": 0.1
+        }
+      },
+      "keywords_lv": ["elektroenerģētika", "viedtīkli", "energosistēmas", "elektrotehnika", "atjaunīgā enerģija", "energoefektivitāte", "elektroapgāde", "enerģijas taupīšana"],
+      "keywords_en": ["power engineering", "smart grids", "energy systems", "electrical engineering", "renewable energy", "energy efficiency", "power supply", "energy saving"],
+      "specializations": ["Elektroapgāde", "Elektrisko tīklu un sistēmu vadība", "Elektriskās mašīnas un aparāti"],
+      "further_studies": "Profesionālā maģistrantūra ar vadoša elektroinženiera kvalifikācijas ieguvi"
+    },
+
+    {
+      "id": "ECS",
+      "url": "https://www.rtu.lv/lv/studijas/visas-studiju-programmas/atvert/ECS",
+      "name": {
+        "lv": "Telemātika un transporta elektroniskās sistēmas",
+        "en": "Telematics and Transport Electronic Systems"
+      },
+      "faculty": {
+        "name_lv": "Datorzinātnes, informācijas tehnoloģijas un enerģētikas fakultāte",
+        "name_en": "Faculty of Computer Science, Information Technology and Energy",
+        "abbreviation": "DITEF",
+        "address": "Zunda krastmala 10, Rīga",
+        "phone": "+371 28357727",
+        "email": "ditef@rtu.lv"
+      },
+      "program_type": "Profesionālās bakalaura studijas (1. cikls)",
+      "study_direction": {
+        "lv": "Informācijas tehnoloģijas, datortehnika, elektronika, telekomunikācijas, datorvadība un datorzinātne",
+        "en": "IT, Computer Engineering, Electronics, Telecommunications, Computer Control and Computer Science"
+      },
+      "study_field": {
+        "lv": "Datorzinātne, telekomunikācija un elektroenerģētika",
+        "en": "Computer Science, Telecommunications and Electrical Energy"
+      },
+      "degree": {
+        "lv": "Profesionālais bakalaura grāds telemātikā un transporta elektroniskajās sistēmās un elektronikas inženiera kvalifikācija",
+        "en": "Professional Bachelor's degree in Telematics and Transport Electronic Systems and Electronics Engineer qualification"
+      },
+      "budget_places": [
+        { "location": "Rīga", "count": 30 }
+      ],
+      "study_forms": [
+        {
+          "code": "FT",
+          "label_lv": "Pilna laika klātienes",
+          "label_en": "Full-time",
+          "duration_years": 4,
+          "annual_fee_eur": 3800,
+          "locations": ["Rīga"]
+        }
+      ],
+      "languages": ["Latviešu", "Angļu"],
+      "credit_points": 240,
+      "program_director": {
+        "name": "Aleksandrs Ipatovs",
+        "title": "Doktors, Profesors"
+      },
+      "prerequisites": {
+        "education_level": "Vidējā izglītība",
+        "details": "Secondary education"
+      },
+      "entry_exam": {
+        "required": true,
+        "details": "Iestājpārbaudījums matemātikā, fizikā un loģikā, kā arī tiek vērtētas sadarbības spējas.",
+        "exam_dates_2026": ["June 6", "June 13"]
+      },
+      "practical_training": {
+        "duration_months": 4,
+        "description": "Prakse nozares Latvijas transporta un telekomunikāciju uzņēmumos. Mācību ekskursijas uz nozares uzņēmumiem."
+      },
+      "specialization_modules": [
+        { "id": "M1", "name_lv": "Transporta telekomunikācijas", "name_en": "Transport Telecommunications" },
+        { "id": "M2", "name_lv": "Transporta datorsistēmas un tīkli", "name_en": "Transport Computer Systems and Networks" },
+        { "id": "M3", "name_lv": "Transporta radioelektroniskās sistēmas", "name_en": "Transport Radio-Electronic Systems" }
+      ],
+      "goal": "Sagatavot speciālistus transporta sakaru un transporta radioelektronikas jomās, kuri spēj analizēt bezvadu aprīkojuma darbību un projektēt telemātikas ierīces un sistēmas, un sagatavot studentus turpmākām maģistra studijām.",
+      "tasks": [
+        "Nodrošināt starptautiskiem standartiem atbilstošu konkurētspējīgu profesionālo izglītību telemātikā un transporta elektronikā.",
+        "Attīstīt fundamentālo zinātņu pamatus.",
+        "Sniegt zināšanas par datorizētiem rīkiem transporta elektronisko sistēmu analīzē, modelēšanā un projektēšanā.",
+        "Veicināt praktiskās iemaņas telemātikas uzdevumu risināšanā projektu līmenī.",
+        "Nodrošināt studiju programmas attīstību atbilstoši transporta elektronikas jomas izmaiņām.",
+        "Sniegt zināšanas par darba organizāciju, sociālajiem jautājumiem un ekonomiskās darbības principiem.",
+        "Veicināt interesi par turpmāku profesionālo pilnveidi."
+      ],
+      "learning_outcomes": [
+        "Pārzina vadu un bezvadu transporta telekomunikāciju tīklus, galvenās tehnoloģijas un standartus.",
+        "Pārzina elektriskās ķēdes un signālu apstrādi.",
+        "Pārzina transporta elektronikas un telemātikas iekārtu darbības principus.",
+        "Pārzina elektroniskās komponentes, analogo, ciparu un radioelektroniskās ierīces.",
+        "Pārzina mikrokontroleru un mikroprocesoru programmēšanu augstā līmeņa valodās.",
+        "Pārzina reāllaika transporta radioelektroniskās un navigācijas sistēmas.",
+        "Pārzina transporta intelektuālās un sensoru sistēmas.",
+        "Prot veikt eksperimentālu datu apstrādi telekomunikāciju sistēmu analīzē.",
+        "Spēj pielietot aktuālās tehnoloģijas transporta elektronisko sistēmu projektēšanā.",
+        "Spēj izprojektēt elektroniskās iekārtas un sistēmas, izstrādāt lietojumprogrammas un algoritmus.",
+        "Spēj izstrādāt iespiedplates ar atbilstošo tehnisko dokumentāciju.",
+        "Spēj strādāt ar svešvalodā pieejamo zinātnisko un tehnisko literatūru.",
+        "Spēj strādāt individuāli un komandā, rīkoties ētiski un ilgtspējīgi."
+      ],
+      "career": {
+        "description": "Darbs lielajās transporta un telekomunikāciju organizācijās, iespēja dibināt savu uzņēmumu, ieņemt vadošus amatus privātos uzņēmumos vai valsts iestādēs.",
+        "example_employers": [
+          "SIA TET",
+          "SIA Ubiquiti (Latvia)",
+          "AS SAF Tehnika",
+          "SIA Mikrotīkls",
+          "SIA Latvijas Mobilais Telefons",
+          "SIA Tele2",
+          "VAS Elektroniskie sakari",
+          "SIA Rīgas Satiksme",
+          "VAS Latvijas Dzelzceļš",
+          "Nacionālie bruņotie spēki"
+        ],
+        "roles": [
+          "Telemātikas inženieris",
+          "Transporta elektronisko sistēmu inženieris",
+          "Navigācijas sistēmu speciālists",
+          "Telekomunikāciju inženieris",
+          "Transporta IT inženieris"
+        ]
+      },
+      "matching_profile": {
+        "primary_domains": ["telematics", "transport_technology", "electronics", "telecommunications", "navigation_systems"],
+        "secondary_domains": ["IoT", "sensor_systems", "embedded_systems", "radio_electronics"],
+        "skill_interests": ["engineering", "programming", "transport", "communications", "hardware"],
+        "subject_strengths_needed": ["mathematics", "physics", "informatics"],
+        "personality_fit": ["technical", "analytical", "mobility_interested", "practical"],
+        "math_intensity": 4,
+        "tech_intensity": 5,
+        "language_intensity": 2,
+        "business_intensity": 1,
+        "research_intensity": 2,
+        "practical_intensity": 5,
+        "international_exposure": 2,
+        "weights": {
+          "stem_affinity": 0.9,
+          "programming_affinity": 0.7,
+          "hardware_affinity": 0.8,
+          "entrepreneurship_affinity": 0.3,
+          "language_affinity": 0.2,
+          "social_sciences_affinity": 0.1
+        }
+      },
+      "keywords_lv": ["telemātika", "transporta elektronika", "radioelektronika", "navigācija", "telekomunikācijas", "sensors", "dzelzceļš", "aviācija"],
+      "keywords_en": ["telematics", "transport electronics", "radio electronics", "navigation", "telecommunications", "sensors", "railway", "aviation"],
+      "specializations": [],
+      "further_studies": "Akadēmiskā vai profesionālā maģistrantūra telemātikas vai transporta elektronikas nozarē"
+    },
+
+    {
+      "id": "HCF",
+      "url": "https://www.rtu.lv/lv/studijas/visas-studiju-programmas/atvert/HCF",
+      "name": {
+        "lv": "Tehniskā tulkošana un tekstveide",
+        "en": "Technical Translation and Text Creation"
+      },
+      "faculty": {
+        "name_lv": "Datorzinātnes, informācijas tehnoloģijas un enerģētikas fakultāte",
+        "name_en": "Faculty of Computer Science, Information Technology and Energy",
+        "abbreviation": "DITEF",
+        "address": "Zunda krastmala 10, Rīga",
+        "email": "ditef@rtu.lv"
+      },
+      "program_type": "Profesionālās bakalaura studijas (1. cikls)",
+      "study_direction": {
+        "lv": "Tulkošana",
+        "en": "Translation"
+      },
+      "study_field": {
+        "lv": "Humanitārās zinātnes",
+        "en": "Humanities"
+      },
+      "degree": {
+        "lv": "Profesionālais bakalaura grāds tehniskajā tulkošanā un tulkotāja kvalifikācija",
+        "en": "Professional Bachelor's degree in Technical Translation and Translator qualification"
+      },
+      "budget_places": [],
+      "study_forms": [
+        {
+          "code": "FT",
+          "label_lv": "Pilna laika klātienes",
+          "label_en": "Full-time",
+          "duration_years": 4,
+          "annual_fee_eur": 2090,
+          "locations": ["Rīga"]
+        }
+      ],
+      "languages": ["Angļu"],
+      "credit_points": 240,
+      "program_director": {
+        "name": "Larisa Iļinska",
+        "title": "Doktors, Profesors"
+      },
+      "prerequisites": {
+        "education_level": "Vidējā izglītība",
+        "language_requirement": "Vismaz B2 līmenim pielīdzināma angļu valodas prasme",
+        "details": "Secondary education plus English at B2 level or above"
+      },
+      "entry_exam": {
+        "required": false,
+        "details": "English language proficiency at B2 level required. Standard CE-based admissions."
+      },
+      "goal": "Izglītot daudzpusīgus valodu pakalpojumu sniedzējus ar padziļinātām zināšanām tulkošanas teorijā un praksē, specializētās valodas pārvaldībā, tekstveide, terminoloģijā un tulkošanas projektu vadīšanā; nodrošināt iespēju attīstīt padziļinātu kompetenci jaunāko valodu tehnoloģiju izmantošanā.",
+      "tasks": [
+        "Sniegt teorētiskās zināšanas un praktisko iemaņu kopumu profesionālai mutiskai un rakstveida tulkošanai.",
+        "Pilnveidot lingvistisko kompetenci visās darba valodās.",
+        "Attīstīt prasmes rakstīt kopsavilkumus, rediģēt un pēcrediģēt tekstus.",
+        "Attīstīt digitālās kompetences darbam ar jaunākajām valodu tehnoloģijām un MI risinājumiem.",
+        "Attīstīt loģisko un kritisko domāšanu.",
+        "Sniegt praktiskā darba pieredzi tulkojumzinātnes aktuālo jautājumu risināšanā.",
+        "Izkopt pētniecības prasmes tulkojumzinātnē.",
+        "Veicināt izpratni par profesionālās ētikas normām un ilgtspējīgu attīstību."
+      ],
+      "learning_outcomes": [
+        "Izmantot atzīto teorētisko ietvaru tulkojumzinātnē pētījumu izstrādei.",
+        "Atlasīt un interpretēt informāciju konkrētu tulkošanas stratēģiju pamatošanai.",
+        "Radīt specializētā teksta tulkojumu mērķvalodā ar augstu precizitāti un terminoloģisko konsekvenci.",
+        "Veikt avotteksta pirmsrediģēšanu un mašīntulkojuma pēcrediģēšanu.",
+        "Piedalīties tulkošanas projekta vadīšanā un strādāt komandā.",
+        "Izmantot datorizētās tulkošanas rīkus, tulkošanas pārvaldības sistēmas un modernās valodu tehnoloģijas.",
+        "Piedāvāt lokalizācijas risinājumus multimodālā satura radīšanā.",
+        "Kritiski izvērtēt informācijas avotu ticamību.",
+        "Demonstrēt loģiskās, analītiskās un kritiskās domāšanas prasmes."
+      ],
+      "career": {
+        "description": "Darbs valodu pakalpojumu nozarē vietējā un starptautiskajā darba tirgū, kā arī saistītās jomās.",
+        "example_employers": [],
+        "roles": [
+          "Tehniskais tulkotājs",
+          "Tulks (konferences tulkošana)",
+          "Audiovizuālais tulkotājs",
+          "Digitālās tekstveides speciālists",
+          "Korektors un redaktors",
+          "Valodas analītiķis",
+          "Lokalizācijas speciālists"
+        ]
+      },
+      "matching_profile": {
+        "primary_domains": ["translation", "linguistics", "language_technology", "technical_writing"],
+        "secondary_domains": ["localization", "AI_language_tools", "project_management", "STEM_terminology"],
+        "skill_interests": ["languages", "writing", "technology", "communication", "analysis"],
+        "subject_strengths_needed": ["english", "latvian", "other_foreign_languages"],
+        "personality_fit": ["linguistic", "detail_oriented", "cross_cultural", "technology_curious", "communicative"],
+        "math_intensity": 1,
+        "tech_intensity": 2,
+        "language_intensity": 5,
+        "business_intensity": 1,
+        "research_intensity": 3,
+        "practical_intensity": 3,
+        "international_exposure": 5,
+        "weights": {
+          "stem_affinity": 0.1,
+          "programming_affinity": 0.1,
+          "hardware_affinity": 0.0,
+          "entrepreneurship_affinity": 0.2,
+          "language_affinity": 0.95,
+          "social_sciences_affinity": 0.5
+        }
+      },
+      "keywords_lv": ["tulkošana", "lingvistika", "lokalizācija", "tekstveide", "valodu tehnoloģijas", "mašīntulkošana", "terminoloģija", "redaktors"],
+      "keywords_en": ["translation", "linguistics", "localization", "technical writing", "language technology", "machine translation", "terminology", "editor"],
+      "specializations": ["STEM+ nozares specializācija (izvēles)"],
+      "further_studies": "Maģistrantūra tulkojumzinātnē vai valodu tehnoloģijās"
+    },
+
+    {
+      "id": "DCP",
+      "url": "https://www.rtu.lv/lv/studijas/visas-studiju-programmas/atvert/DCP",
+      "name": {
+        "lv": "Finanšu pārvaldības informācijas sistēmas (kopīga programma ar Banku augstskolu)",
+        "en": "Financial Management Information Systems (joint program with Banking Higher School)"
+      },
+      "faculty": {
+        "name_lv": "Datorzinātnes, informācijas tehnoloģijas un enerģētikas fakultāte",
+        "name_en": "Faculty of Computer Science, Information Technology and Energy",
+        "abbreviation": "DITEF",
+        "address": "Zunda krastmala 10, Rīga",
+        "phone": "+371 67089532",
+        "email": "ditef@rtu.lv"
+      },
+      "program_type": "Profesionālās bakalaura studijas (1. cikls)",
+      "study_direction": {
+        "lv": "Informācijas tehnoloģijas, datortehnika, elektronika, telekomunikācijas, datorvadība un datorzinātne",
+        "en": "IT, Computer Engineering, Electronics, Telecommunications, Computer Control and Computer Science"
+      },
+      "study_field": {
+        "lv": ["Datorzinātne, telekomunikācija un elektroenerģētika", "Uzņēmējdarbība, nekustamo īpašumu pārvaldība un loģistika"],
+        "en": ["Computer Science, Telecommunications and Electrical Energy", "Business, Real Estate Management and Logistics"]
+      },
+      "degree": {
+        "lv": "Profesionālais bakalaura grāds datorsistēmās un programmēšanas inženiera kvalifikācija",
+        "en": "Professional Bachelor's degree in Computer Systems and Programming Engineer qualification"
+      },
+      "joint_program": {
+        "partner_institution": "Banku augstskola (Banking Higher School of Latvia)",
+        "description": "Vienīgā šāda veida programma Latvijā un Baltijā, apvienojot IT un finanšu zināšanas FinTech industrijā."
+      },
+      "budget_places": [],
+      "study_forms": [
+        {
+          "code": "FT",
+          "label_lv": "Pilna laika klātienes",
+          "label_en": "Full-time",
+          "duration_years": 4,
+          "annual_fee_eur": 3480,
+          "locations": ["Rīga"]
+        }
+      ],
+      "languages": ["Angļu"],
+      "credit_points": 240,
+      "program_director": {
+        "name": "Ingars Eriņš",
+        "title": "Doktors, Asociētais profesors"
+      },
+      "prerequisites": {
+        "education_level": "Vidējā izglītība",
+        "details": "Secondary education"
+      },
+      "entry_exam": {
+        "required": false,
+        "details": "Standard CE-based admissions."
+      },
+      "goal": "Sagatavot augstas kvalifikācijas programmēšanas inženierus ar profesionālām zināšanām programmēšanas valodās, programmatūras izstrādes tehnoloģijās, datu struktūrās un algoritmos, projektu vadīšanā, datu bāzēs un ar konkurētspējīgām zināšanām finanšu vadībā.",
+      "tasks": [
+        "Sniegt konkurētspējīgu augstāko profesionālo izglītību programminženierijā un sagatavot praktiskam darbam finanšu jomā.",
+        "Sniegt zināšanas programminženierijā, datoru aparatūrā, datu bāzu tehnoloģijās un MI pamatmetodēs.",
+        "Sniegt zināšanas informācijas sistēmu projektēšanā, izstrādē un uzturēšanā.",
+        "Attīstīt spējas pielietot teorētiskās zināšanas konkrētu uzdevumu risināšanai.",
+        "Attīstīt prasmes izstrādāt programmatūru un pielietot programmatūras rīkus.",
+        "Sniegt studentiem vispusīgas zināšanas finanšu pārvaldībā, investīciju projektos, finanšu tirgos un finanšu riskos.",
+        "Attīstīt pētnieciskā un jaunrades darba iemaņas.",
+        "Attīstīt vispārējas kompetences, tai skaitā svešvalodu prasmes."
+      ],
+      "learning_outcomes": [
+        "Pārzina programmatūras izstrādi — analīzi, projektēšanu, kodēšanu, testēšanu, ieviešanu un uzturēšanu.",
+        "Spēj sagatavot programmatūras dokumentāciju.",
+        "Spēj saprast un analizēt programmatūras projektējuma aprakstus.",
+        "Spēj lietot programmatūras izstrādes vides un rīkus.",
+        "Spēj izvēlēties adekvātus algoritmus un metodes.",
+        "Spēj domāt radoši jaunas metodes izstrādē.",
+        "Spēj pārvaldīt aktīvus, sastādīt finanšu pārskatus un aprēķināt nodokļus.",
+        "Spēj pielietot finanšu analīzes kvantitatīvās metodes.",
+        "Spēj prognozēt finansiālos rezultātus, sastādīt finanšu plānus un novērtēt riskus.",
+        "Izprot aktuālās finanšu attīstības tendences.",
+        "Spēj apgūt jaunus modeļus un tehnoloģijas."
+      ],
+      "career": {
+        "description": "Programmēšanas inženieri sagatavoti darbam dažādos finanšu sektora uzņēmumos, bankās un citās finanšu iestādēs.",
+        "example_employers": [],
+        "roles": [
+          "FinTech izstrādātājs",
+          "Programmēšanas inženieris finanšu sektorā",
+          "Finanšu sistēmu analītiķis",
+          "Banku IT speciālists",
+          "Risku sistēmu izstrādātājs"
+        ]
+      },
+      "matching_profile": {
+        "primary_domains": ["fintech", "software_engineering", "financial_systems", "programming"],
+        "secondary_domains": ["AI", "databases", "project_management", "financial_analysis"],
+        "skill_interests": ["programming", "finance", "mathematics", "analysis", "technology"],
+        "subject_strengths_needed": ["mathematics", "informatics", "english"],
+        "personality_fit": ["analytical", "detail_oriented", "finance_interested", "tech_savvy"],
+        "math_intensity": 4,
+        "tech_intensity": 5,
+        "language_intensity": 3,
+        "business_intensity": 4,
+        "research_intensity": 2,
+        "practical_intensity": 4,
+        "international_exposure": 4,
+        "weights": {
+          "stem_affinity": 0.7,
+          "programming_affinity": 0.9,
+          "hardware_affinity": 0.1,
+          "entrepreneurship_affinity": 0.5,
+          "language_affinity": 0.3,
+          "social_sciences_affinity": 0.4
+        }
+      },
+      "keywords_lv": ["FinTech", "programmēšana", "finanšu sistēmas", "banku IT", "datu bāzes", "mākslīgais intelekts", "programminženierija", "finanšu analīze"],
+      "keywords_en": ["FinTech", "programming", "financial systems", "banking IT", "databases", "artificial intelligence", "software engineering", "financial analysis"],
+      "specializations": [],
+      "further_studies": "Maģistrantūra informācijas tehnoloģijās vai finanšu jomā",
+      "unique_selling_points": ["Vienīgā FinTech programma Latvijā un Baltijā", "Kopīga programma ar Banku augstskolu", "Pilnībā angļu valodā"]
+    },
+
+    {
+      "id": "DCM",
+      "url": "https://www.rtu.lv/lv/studijas/visas-studiju-programmas/atvert/DCM",
+      "name": {
+        "lv": "Finanšu inženierija",
+        "en": "Financial Engineering"
+      },
+      "faculty": {
+        "name_lv": "Datorzinātnes, informācijas tehnoloģijas un enerģētikas fakultāte",
+        "name_en": "Faculty of Computer Science, Information Technology and Energy",
+        "abbreviation": "DITEF",
+        "address": "Zunda krastmala 10, Rīga",
+        "phone": "+371 67089532",
+        "email": "ditef@rtu.lv"
+      },
+      "program_type": "Profesionālās bakalaura studijas (1. cikls)",
+      "study_direction": {
+        "lv": "Fizika, materiālzinātne, matemātika un statistika",
+        "en": "Physics, Materials Science, Mathematics and Statistics"
+      },
+      "study_field": {
+        "lv": ["Datorzinātne, telekomunikācija un elektroenerģētika", "Uzņēmējdarbība, nekustamo īpašumu pārvaldība un loģistika"],
+        "en": ["Computer Science, Telecommunications and Electrical Energy", "Business, Real Estate Management and Logistics"]
+      },
+      "degree": {
+        "lv": "Profesionālais bakalaura grāds finanšu inženierijā un datu analīzes vecākā speciālista kvalifikācija",
+        "en": "Professional Bachelor's degree in Financial Engineering and Senior Data Analysis Specialist qualification"
+      },
+      "budget_places": [
+        { "location": "Rīga", "count": 50 }
+      ],
+      "study_forms": [
+        {
+          "code": "FT",
+          "label_lv": "Pilna laika klātienes",
+          "label_en": "Full-time",
+          "duration_years": 4,
+          "annual_fee_eur": 3990,
+          "locations": ["Rīga"]
+        }
+      ],
+      "languages": ["Latviešu"],
+      "credit_points": 240,
+      "program_director": {
+        "name": "Andrejs Matvejevs",
+        "title": "Doktors, Profesors"
+      },
+      "prerequisites": {
+        "education_level": "Vidējā izglītība",
+        "details": "Secondary education"
+      },
+      "entry_exam": {
+        "required": false,
+        "details": "Standard CE-based admissions."
+      },
+      "goal": "Sagatavot starptautiski konkurētspējīgus speciālistus, kas var veikt darbus saistītos ar finansiālo darbību vadību, biznesa procesu analīzi, finanšu plūsmu analīzi, modelēšanu un prognozēšanu, vērtspapīru portfeļu optimizēšanu, izmantojot IT.",
+      "tasks": [
+        "Sniegt vispusīgas zināšanas specialitātē un veidot finanšu vadības un finanšu analītiķa prasmes.",
+        "Attīstīt darba tirgum atbilstošas kompetences un veicināt turpmāko izglītošanos.",
+        "Nodrošināt starptautiskiem standartiem atbilstošu izglītību.",
+        "Nodrošināt studiju programmas satura attīstību atbilstoši tirgus izmaiņām.",
+        "Veicināt akadēmiskā personāla un studentu savstarpējo mijiedarbību pētniecībā.",
+        "Nodrošināt nepieciešamās zināšanas tālākajām studijām maģistrantūrā."
+      ],
+      "learning_outcomes": [
+        "Izprot ekonomisko un finanšu situāciju Latvijā un pasaulē.",
+        "Spēj identificēt finanšu un aktuāra problēmas un izmantot IT metodes to risināšanai.",
+        "Spēj veikt biznesa procesu analīzi, izmantojot IT.",
+        "Spēj organizēt vērtspapīru portfeļa un investīciju optimizēšanu.",
+        "Prot analizēt, modelēt un prognozēt finanšu plūsmu.",
+        "Spēj izskaidrot finanšu instrumentu lietošanas pamatprincipus.",
+        "Prot noteikt finanšu ieguldījumu ienesīgumu un risku.",
+        "Prot risināt ekonomiskus un sociālus uzdevumus finanšu plūsmu statistiskajā analīzē.",
+        "Spēj veikt mirstības un citu datu statistisko analīzi ar IT.",
+        "Prot analizēt apdrošināšanas tirgus tendences.",
+        "Spēj lietot finanšu inženierijas modernās kvantitatīvās metodes.",
+        "Prot lietot matemātiskās un statistiskās datorprogrammas.",
+        "Spēj patstāvīgi rīkoties un pieņemt lēmumus."
+      ],
+      "career": {
+        "description": "Darbs bankās, apdrošināšanas sabiedrībās, investīciju fondos, pensiju fondos, līzinga sabiedrībās un citās iestādēs, kur nepieciešamas IT, finanšu matemātikas un statistikas zināšanas.",
+        "example_employers": [],
+        "roles": [
+          "Aktuārs",
+          "Aktuāra palīgs",
+          "Kredītrisku statistikas analītiķis",
+          "Finanšu analītiķis",
+          "Datu analīzes vecākais speciālists",
+          "Investīciju portfeļa pārvaldnieks"
+        ]
+      },
+      "matching_profile": {
+        "primary_domains": ["financial_mathematics", "data_analysis", "statistics", "actuarial_science"],
+        "secondary_domains": ["programming", "investment_management", "risk_analysis", "insurance"],
+        "skill_interests": ["mathematics", "statistics", "finance", "programming", "analysis"],
+        "subject_strengths_needed": ["mathematics", "statistics", "informatics"],
+        "personality_fit": ["quantitative", "analytical", "finance_minded", "detail_oriented"],
+        "math_intensity": 5,
+        "tech_intensity": 4,
+        "language_intensity": 1,
+        "business_intensity": 4,
+        "research_intensity": 3,
+        "practical_intensity": 3,
+        "international_exposure": 2,
+        "weights": {
+          "stem_affinity": 0.8,
+          "programming_affinity": 0.6,
+          "hardware_affinity": 0.0,
+          "entrepreneurship_affinity": 0.4,
+          "language_affinity": 0.1,
+          "social_sciences_affinity": 0.5
+        }
+      },
+      "keywords_lv": ["finanšu matemātika", "aktuārzinātne", "datu analīze", "statistika", "investīcijas", "risks", "vērtspapīri", "apdrošināšana"],
+      "keywords_en": ["financial mathematics", "actuarial science", "data analysis", "statistics", "investments", "risk", "securities", "insurance"],
+      "specializations": [],
+      "further_studies": "Maģistrantūra finanšu vai matemātikas jomā"
+    },
+
+    {
+      "id": "ECO",
+      "url": "https://www.rtu.lv/lv/studijas/visas-studiju-programmas/atvert/ECO",
+      "name": {
+        "lv": "Elektrotehnoloģiju datorvadība",
+        "en": "Computer Control of Electrotechnologies"
+      },
+      "faculty": {
+        "name_lv": "Datorzinātnes, informācijas tehnoloģijas un enerģētikas fakultāte",
+        "name_en": "Faculty of Computer Science, Information Technology and Energy",
+        "abbreviation": "DITEF",
+        "address": "Zunda krastmala 10, Rīga",
+        "phone": "+371 67089901",
+        "email": "ditef@rtu.lv"
+      },
+      "program_type": "Profesionālās bakalaura studijas (1. cikls)",
+      "study_direction": {
+        "lv": "Enerģētika, elektrotehnika un elektrotehnoloģijas",
+        "en": "Energy, Electrical Engineering and Electrical Technologies"
+      },
+      "study_field": {
+        "lv": "Datorzinātne, telekomunikācija un elektroenerģētika",
+        "en": "Computer Science, Telecommunications and Electrical Energy"
+      },
+      "degree": {
+        "lv": "Profesionālais bakalaura grāds elektrotehnikā un elektroinženiera kvalifikācija",
+        "en": "Professional Bachelor's degree in Electrical Engineering and Electrical Engineer qualification"
+      },
+      "budget_places": [
+        { "location": "Rīga", "count": 40 },
+        { "location": "Liepāja", "count": 15 }
+      ],
+      "study_forms": [
+        {
+          "code": "FT",
+          "label_lv": "Pilna laika klātienes",
+          "label_en": "Full-time",
+          "duration_years": 4,
+          "annual_fee_eur": 3990,
+          "locations": ["Rīga", "Liepāja"]
+        },
+        {
+          "code": "PT_E",
+          "label_lv": "Nepilna laika neklātienes",
+          "label_en": "Part-time extramural",
+          "duration_years": 5,
+          "annual_fee_eur": 3200,
+          "locations": ["Rīga", "Liepāja"]
+        }
+      ],
+      "languages": ["Latviešu"],
+      "credit_points": 240,
+      "program_director": {
+        "name": "Oskars Krievs",
+        "title": "Doktors, Vadošais pētnieks"
+      },
+      "prerequisites": {
+        "education_level": "Vidējā izglītība",
+        "details": "Secondary education"
+      },
+      "entry_exam": {
+        "required": true,
+        "details": "Iestājpārbaudījums matemātikā, fizikā un loģikā, kā arī tiek vērtētas sadarbības spējas.",
+        "exam_dates_2026": ["June 6", "June 13"]
+      },
+      "specialization_tracks": [
+        { "id": "A", "name_lv": "Industriālā elektronika un elektrotehnoloģijas", "name_en": "Industrial Electronics and Electrotechnologies" },
+        { "id": "B", "name_lv": "Elektrotransporta datorvadība", "name_en": "Computer Control of Electric Vehicles" }
+      ],
+      "goal": "Sniegt bakalaura profesionālo izglītību elektrotehnikas nozares elektrotehnoloģiju datorvadības apakšnozarē, kas atbilst 6. profesionālās kvalifikācijas līmenim (elektroinženieris), un sagatavot studentus tālākām studijām profesionālajā maģistrantūrā.",
+      "tasks": [
+        "Sniegt zināšanas matemātikā un fizikā praktisko elektrotehnisko uzdevumu risināšanai.",
+        "Iemācīt pielietot skaitļošanas tehniku gan uzdevumu risināšanai, gan automatizācijas sistēmu izveidei.",
+        "Iemācīt risināt praktiskus elektrotehniskos uzdevumus projektu līmenī.",
+        "Dot priekšstatu par elektrotehnisko iekārtu uzbūvi, darbības pamatiem un automatizāciju.",
+        "Iemācīt risināt elektrotehnisko iekārtu automatizācijas uzdevumus projektu līmenī.",
+        "Dot priekšstatu par elektroenerģētiskajiem aspektiem.",
+        "Nostiprināt svešvalodu zināšanas."
+      ],
+      "learning_outcomes": [
+        "Spēj pielietot teorētiskās zināšanas matemātikā un fizikā praktisko elektrotehnisko uzdevumu risināšanai.",
+        "Spēj efektīvi pielietot skaitļošanas tehniku gan uzdevumu risināšanai, gan automatizācijas sistēmu izveidei.",
+        "Spēj risināt praktiskus elektrotehniskos uzdevumus projektu līmenī.",
+        "Izprot elektrotehnisko iekārtu uzbūvi, darbības principus un automatizāciju.",
+        "Spēj risināt elektrotehnisko iekārtu automatizācijas uzdevumus projektu līmenī.",
+        "Izprot elektroenerģētiskos aspektus.",
+        "Spēj apgūt profesionālo literatūru svešvalodā."
+      ],
+      "career": {
+        "description": "Elektroinženieris ikvienā uzņēmumā, veicot darbus elektrisko tehnoloģiju ekspluatācijā, izveidē un projektēšanā.",
+        "example_employers": [],
+        "roles": [
+          "Elektroinženieris",
+          "Industriālās elektronikas inženieris",
+          "Elektrotransporta sistēmu inženieris",
+          "Automatizācijas inženieris",
+          "Energoelektronikas inženieris"
+        ]
+      },
+      "matching_profile": {
+        "primary_domains": ["electrical_engineering", "automation", "industrial_electronics", "power_electronics"],
+        "secondary_domains": ["electric_vehicles", "control_systems", "microprocessors", "energy_efficiency"],
+        "skill_interests": ["engineering", "automation", "hands_on", "electronics", "computing"],
+        "subject_strengths_needed": ["mathematics", "physics"],
+        "personality_fit": ["technical", "practical", "systematic", "problem_solver"],
+        "math_intensity": 4,
+        "tech_intensity": 4,
+        "language_intensity": 1,
+        "business_intensity": 1,
+        "research_intensity": 2,
+        "practical_intensity": 5,
+        "international_exposure": 1,
+        "weights": {
+          "stem_affinity": 0.9,
+          "programming_affinity": 0.5,
+          "hardware_affinity": 0.8,
+          "entrepreneurship_affinity": 0.2,
+          "language_affinity": 0.1,
+          "social_sciences_affinity": 0.1
+        }
+      },
+      "keywords_lv": ["elektrotehnika", "automatizācija", "elektromotors", "industriālā elektronika", "elektrotransports", "enerģoelektronika", "PLC", "datorvadība"],
+      "keywords_en": ["electrical engineering", "automation", "electric motors", "industrial electronics", "electric vehicles", "power electronics", "PLC", "computer control"],
+      "specializations": ["Industriālā elektronika un elektrotehnoloģijas", "Elektrotransporta datorvadība"],
+      "further_studies": "Profesionālā maģistrantūra elektrotehnikā"
+    },
+
+    {
+      "id": "ICO",
+      "url": "https://www.rtu.lv/lv/studijas/visas-studiju-programmas/atvert/ICO",
+      "name": {
+        "lv": "Drošības inženierija",
+        "en": "Safety Engineering"
+      },
+      "faculty": {
+        "name_lv": "Inženierekonomikas un vadības fakultāte",
+        "name_en": "Faculty of Engineering Economics and Management",
+        "abbreviation": "IEVF",
+        "address": "Kalnciema iela 6–202, Rīga",
+        "phone": "+371 67089394",
+        "email": "ievf@rtu.lv"
+      },
+      "program_type": "Profesionālās bakalaura studijas (1. cikls)",
+      "study_direction": {
+        "lv": "Iekšējā drošība un civilā aizsardzība",
+        "en": "Internal Security and Civil Protection"
+      },
+      "study_field": {
+        "lv": "Drošība un tiesību zinātne",
+        "en": "Security and Legal Science"
+      },
+      "degree": {
+        "lv": "Profesionālais bakalaura grāds darba aizsardzībā un darba aizsardzības inženiera kvalifikācija",
+        "en": "Professional Bachelor's degree in Occupational Safety and Occupational Safety Engineer qualification"
+      },
+      "budget_places": [
+        { "location": "Rīga", "count": 30 }
+      ],
+      "study_forms": [
+        {
+          "code": "FT",
+          "label_lv": "Pilna laika klātienes",
+          "label_en": "Full-time",
+          "duration_years": 4,
+          "annual_fee_eur": 3300,
+          "locations": ["Rīga"]
+        }
+      ],
+      "languages": ["Latviešu"],
+      "credit_points": 240,
+      "program_director": {
+        "name": "Inese Vilcāne",
+        "title": "Lektors"
+      },
+      "prerequisites": {
+        "education_level": "Vidējā izglītība",
+        "details": "Secondary education"
+      },
+      "entry_exam": {
+        "required": false,
+        "details": "Standard CE-based admissions."
+      },
+      "accreditation": {
+        "eu_compliant": true,
+        "international_accreditation": true,
+        "unique_in_baltics": true,
+        "description": "Baltijas valstīs unikāla programma, apvienojot darba aizsardzību, ugunsdrošību un civilo aizsardzību. Atbilst ES prasībām un ir starptautiski akreditēta."
+      },
+      "goal": "Sagatavot darba aizsardzības inženierus, kuri var arī īstenot ugunsdrošības un civilās aizsardzības speciālista funkcijas; veidot izpratni par profesionālo ētiku un labās prakses principiem.",
+      "tasks": [
+        "Nodrošināt konkurētspējīgu izglītību drošības inženierijā.",
+        "Sniegt vispusīgas zināšanas, veidot prasmes darba aizsardzības inženierim, ugunsdrošības un civilās aizsardzības speciālistam.",
+        "Veicināt interesi par turpmāko izglītošanos.",
+        "Nodrošināt studiju programmas attīstību atbilstoši jomas praksei.",
+        "Rosināt interesi par valstī notiekošajiem procesiem tehnogēnās vides drošības jomā.",
+        "Attīstīt starptautisko apmaiņu un dalību projektos."
+      ],
+      "learning_outcomes": [
+        "Spēj izveidot, ieviest un nodrošināt darba aizsardzības pārvaldības sistēmu.",
+        "Spēj novērtēt darba vides riska faktorus, pielietojot dažādas riska novērtēšanas metodes.",
+        "Spēj piedāvāt inženiertehniskus drošības risinājumus.",
+        "Spēj piedalīties darba vides pārveidē un jaunu tehnoloģiju ieviešanā.",
+        "Spēj piedalīties ugunsdrošības un civilās aizsardzības risinājumu plānošanā.",
+        "Spēj nodrošināt pirmās palīdzības pieejamību.",
+        "Spēj pastāvīgi pilnveidot profesionālo kvalifikāciju.",
+        "Spēj sazināties valsts valodā C2 līmenī un vienā vai vairākās svešvalodās."
+      ],
+      "career": {
+        "description": "Darba aizsardzības inženieris uzņēmumā veic darba vides iekšējo uzraudzību un pārvaldību, pielietojot inženiertehniskus risinājumus. Var darboties kā kompetents speciālists vai veikt valsts darba inspektora pienākumus.",
+        "example_employers": [],
+        "roles": [
+          "Darba aizsardzības inženieris",
+          "Ugunsdrošības speciālists",
+          "Civilās aizsardzības speciālists",
+          "Valsts darba inspektors",
+          "Drošības risku vadītājs",
+          "Kompetentās institūcijas speciālists"
+        ]
+      },
+      "matching_profile": {
+        "primary_domains": ["occupational_safety", "fire_safety", "civil_protection", "risk_management"],
+        "secondary_domains": ["engineering", "law", "environmental_protection", "crisis_management"],
+        "skill_interests": ["safety", "risk_assessment", "social_responsibility", "engineering", "law"],
+        "subject_strengths_needed": ["chemistry", "physics", "biology"],
+        "personality_fit": ["responsible", "methodical", "socially_oriented", "protective", "regulatory_minded"],
+        "math_intensity": 2,
+        "tech_intensity": 3,
+        "language_intensity": 1,
+        "business_intensity": 2,
+        "research_intensity": 2,
+        "practical_intensity": 4,
+        "international_exposure": 2,
+        "weights": {
+          "stem_affinity": 0.5,
+          "programming_affinity": 0.1,
+          "hardware_affinity": 0.2,
+          "entrepreneurship_affinity": 0.3,
+          "language_affinity": 0.2,
+          "social_sciences_affinity": 0.7
+        }
+      },
+      "keywords_lv": ["darba aizsardzība", "ugunsdrošība", "civilā aizsardzība", "riska novērtēšana", "drošības inženierija", "darba vide", "katastrofu pārvaldība"],
+      "keywords_en": ["occupational safety", "fire safety", "civil protection", "risk assessment", "safety engineering", "work environment", "disaster management"],
+      "specializations": [],
+      "further_studies": "Maģistrantūra drošības vai inženierekonomikas jomā",
+      "unique_selling_points": ["Unikāla programma Baltijā", "Trīs disciplīnu apvienojums (darba aizsardzība + ugunsdrošība + civilā aizsardzība)", "Starptautiski akreditēta", "Atbilst ES prasībām"]
+    },
+
+    {
+      "id": "ECA",
+      "url": "https://www.rtu.lv/lv/studijas/visas-studiju-programmas/atvert/ECA",
+      "name": {
+        "lv": "Adaptronika",
+        "en": "Adaptronic Systems"
+      },
+      "faculty": {
+        "name_lv": "Datorzinātnes, informācijas tehnoloģijas un enerģētikas fakultāte",
+        "name_en": "Faculty of Computer Science, Information Technology and Energy",
+        "abbreviation": "DITEF",
+        "address": "Zunda krastmala 10, Rīga",
+        "phone": "+371 67089901",
+        "email": "ditef@rtu.lv"
+      },
+      "program_type": "Profesionālās bakalaura studijas (1. cikls)",
+      "study_direction": {
+        "lv": "Enerģētika, elektrotehnika un elektrotehnoloģijas",
+        "en": "Energy, Electrical Engineering and Electrical Technologies"
+      },
+      "study_field": {
+        "lv": "Datorzinātne, telekomunikācija un elektroenerģētika",
+        "en": "Computer Science, Telecommunications and Electrical Energy"
+      },
+      "degree": {
+        "lv": "Profesionālais bakalaura grāds adaptronikā un elektroinženiera kvalifikācija",
+        "en": "Professional Bachelor's degree in Adaptronic Systems and Electrical Engineer qualification"
+      },
+      "budget_places": [
+        { "location": "Rīga", "count": 40 }
+      ],
+      "study_forms": [
+        {
+          "code": "FT",
+          "label_lv": "Pilna laika klātienes",
+          "label_en": "Full-time",
+          "duration_years": 4.5,
+          "annual_fee_eur": 3990,
+          "locations": ["Rīga"]
+        },
+        {
+          "code": "PT_E",
+          "label_lv": "Nepilna laika neklātienes",
+          "label_en": "Part-time extramural",
+          "duration_years": 6,
+          "annual_fee_eur": 3200,
+          "locations": ["Rīga"]
+        }
+      ],
+      "languages": ["Latviešu", "Angļu"],
+      "credit_points": 270,
+      "program_director": {
+        "name": "Oskars Krievs",
+        "title": "Doktors, Vadošais pētnieks"
+      },
+      "prerequisites": {
+        "education_level": "Vidējā izglītība",
+        "details": "Secondary education"
+      },
+      "entry_exam": {
+        "required": false,
+        "details": "Standard CE-based admissions."
+      },
+      "specialization_tracks": [
+        { "id": "S1", "name_lv": "Industriālā adaptronika", "name_en": "Industrial Adaptronic Systems" },
+        { "id": "S2", "name_lv": "Adaptronika medicīnā un veselības aprūpē", "name_en": "Adaptronic Systems in Medicine and Healthcare" },
+        { "id": "S3", "name_lv": "Adaptronika informācijas sistēmās", "name_en": "Adaptronic Systems in Information Systems" }
+      ],
+      "goal": "Nodrošināt profesionālo bakalaura izglītību elektrotehnikas un elektronikas nozarēs, iegūt teorētiskās un profesionālās zināšanas, attīstīt profesionālās un pētniecības prasmes darbam adaptronikas jomā, kas apvieno viedās tehnoloģijas, viedos materiālus, robottehniku un lietisko internetu.",
+      "tasks": [
+        "Sniegt zināšanas matemātikā, fizikā, datorikā, bioloģijā un materiālzinātnē.",
+        "Iemācīt pielietot datortehniku automatizācijas un adaptīvo sistēmu izveidē.",
+        "Iemācīt risināt iekārtu un sistēmu adaptācijas uzdevumus projektu līmenī.",
+        "Sniegt zināšanas par dzīvnieku un augu pielāgošanās spējām, kuras pielietojamas elektrotehnoloģijās.",
+        "Dot priekšstatu par adaptronisko iekārtu energoefektivitāti.",
+        "Nostiprināt svešvalodu zināšanas."
+      ],
+      "learning_outcomes": [
+        "Spēj pielietot teorētiskās zināšanas matemātikā, fizikā, bioloģijā un materiālzinātnē.",
+        "Spēj efektīvi pielietot datortehniku automatizācijas un adaptīvo sistēmu izveidei.",
+        "Spēj risināt sistēmu adaptācijas uzdevumus projektu līmenī.",
+        "Spēj atpazīt adaptīvās īpašības, kuras pielietojamas elektriskajās tehnoloģijās.",
+        "Izprot elektrotehnisko iekārtu uzbūvi un automatizācijas sistēmas.",
+        "Spēj risināt elektrotehnisko sistēmu adaptācijas uzdevumus.",
+        "Izprot energoefektivitātes un enerģijas uzkrāšanas aspektus.",
+        "Spēj apgūt profesionālo literatūru svešvalodā."
+      ],
+      "career": {
+        "description": "Elektroinženieris jebkurā uzņēmumā, veicot ar elektrotehnoloģiju apkalpošanu, izstrādi un projektēšanu saistītos pienākumus, tai skaitā medicīnas tehnoloģijās un industriālajā automatizācijā.",
+        "example_employers": [],
+        "roles": [
+          "Elektroinženieris",
+          "Adaptīvo sistēmu izstrādātājs",
+          "Mediciniskās tehnikas inženieris",
+          "Industriālās automatizācijas inženieris",
+          "IoT sistēmu inženieris",
+          "Robottehniku speciālists"
+        ]
+      },
+      "matching_profile": {
+        "primary_domains": ["adaptive_systems", "smart_materials", "robotics", "iot", "bioengineering"],
+        "secondary_domains": ["electrical_engineering", "medical_devices", "automation", "energy_efficiency"],
+        "skill_interests": ["engineering", "biology_tech", "robotics", "innovation", "interdisciplinary"],
+        "subject_strengths_needed": ["mathematics", "physics", "biology", "chemistry"],
+        "personality_fit": ["innovative", "interdisciplinary", "curious", "technical", "research_oriented"],
+        "math_intensity": 4,
+        "tech_intensity": 4,
+        "language_intensity": 1,
+        "business_intensity": 1,
+        "research_intensity": 4,
+        "practical_intensity": 4,
+        "international_exposure": 2,
+        "weights": {
+          "stem_affinity": 0.9,
+          "programming_affinity": 0.5,
+          "hardware_affinity": 0.8,
+          "entrepreneurship_affinity": 0.3,
+          "language_affinity": 0.1,
+          "social_sciences_affinity": 0.2
+        }
+      },
+      "keywords_lv": ["adaptronika", "viedie materiāli", "robotika", "IoT", "biomimikrija", "medicīnas tehnoloģijas", "adaptīvās sistēmas", "elektrotehnoloģijas"],
+      "keywords_en": ["adaptronic systems", "smart materials", "robotics", "IoT", "biomimicry", "medical technology", "adaptive systems", "electrotechnologies"],
+      "specializations": ["Industriālā adaptronika", "Adaptronika medicīnā un veselības aprūpē", "Adaptronika informācijas sistēmās"],
+      "further_studies": "Profesionālā maģistrantūra adaptronikas vai elektrotehniskajā virzienā"
+    },
+
+    {
+      "id": "ICM",
+      "url": "https://www.rtu.lv/lv/studijas/visas-studiju-programmas/atvert/ICM",
+      "name": {
+        "lv": "Muitas un nodokļu administrēšana",
+        "en": "Customs and Tax Administration"
+      },
+      "faculty": {
+        "name_lv": "Inženierekonomikas un vadības fakultāte",
+        "name_en": "Faculty of Engineering Economics and Management",
+        "abbreviation": "IEVF",
+        "address": "Kalnciema iela 6–202, Rīga",
+        "phone": "+371 67089394",
+        "email": "ievf@rtu.lv"
+      },
+      "program_type": "Profesionālās bakalaura studijas (1. cikls)",
+      "study_direction": {
+        "lv": "Iekšējā drošība un civilā aizsardzība",
+        "en": "Internal Security and Civil Protection"
+      },
+      "study_field": {
+        "lv": ["Uzņēmējdarbība, nekustamo īpašumu pārvaldība un loģistika", "Drošība un tiesību zinātne"],
+        "en": ["Business, Real Estate Management and Logistics", "Security and Legal Science"]
+      },
+      "degree": {
+        "lv": "Profesionālais bakalaura grāds muitas un nodokļu administrēšanā un muitas administrēšanas funkcionālā vadītāja vai nodokļu ekonomista kvalifikācija",
+        "en": "Professional Bachelor's degree in Customs and Tax Administration and Customs Administration Functional Manager or Tax Economist qualification"
+      },
+      "budget_places": [
+        { "location": "Rīga", "count": 30 }
+      ],
+      "study_forms": [
+        {
+          "code": "FT",
+          "label_lv": "Pilna laika klātienes",
+          "label_en": "Full-time",
+          "duration_years": 4,
+          "annual_fee_eur": 3300,
+          "locations": ["Rīga"]
+        },
+        {
+          "code": "PT_E",
+          "label_lv": "Nepilna laika neklātienes",
+          "label_en": "Part-time extramural",
+          "duration_years": 5,
+          "annual_fee_eur": 1890,
+          "locations": ["Rīga"]
+        }
+      ],
+      "languages": ["Latviešu", "Angļu"],
+      "credit_points": 240,
+      "program_director": {
+        "name": "Māris Jurušs",
+        "title": "Doktors, Asociētais profesors"
+      },
+      "prerequisites": {
+        "education_level": "Vidējā izglītība",
+        "details": "Secondary education"
+      },
+      "entry_exam": {
+        "required": false,
+        "details": "Pilna laika studijām uz budžeta vietām: divi CE no matemātikas, fizikas, svešvalodas (angļu/vācu/franču) vai latviešu valodas. Neklātienes un maksas studijām — bez iestājpārbaudījumiem."
+      },
+      "admission_specifics": {
+        "budget_places": "Divi CE no: matemātika, fizika, svešvaloda (angļu, vācu vai franču), latviešu valoda.",
+        "paid_and_extramural": "Bez iestājpārbaudījumiem."
+      },
+      "external_partnerships": [
+        "Pasaules Muitas organizācija (PMO / WCO)",
+        "Valsts ieņēmumu dienests (VID) — nodokļu un muitas iestādes"
+      ],
+      "sub_programs": [
+        {
+          "id": "ICM_A",
+          "name_lv": "Nodokļu administrēšana",
+          "name_en": "Tax Administration",
+          "qualification_lv": "Nodokļu ekonomists",
+          "key_competences": ["Nodokļu plūsmu analīze", "Nodokļu deklarācijas", "Nodokļu risks", "Klientu konsultēšana"]
+        },
+        {
+          "id": "ICM_B",
+          "name_lv": "Muitas administrēšana",
+          "name_en": "Customs Administration",
+          "qualification_lv": "Muitas administrēšanas funkcionālais vadītājs",
+          "key_competences": ["Preču muitošana", "Muitas risku pārvaldība", "Robežkontrole", "Starptautiskās tirdzniecības tiesības"]
+        }
+      ],
+      "goal": "Nodrošināt teorētisko zināšanu un praktisko iemaņu kopumu profesionālā bakalaura izglītības līmenim atbilstoši diviem profesijas standartiem, kas ļauj ieņemt muitas iestāžu vadītāja vai nodokļu ekonomista amatus.",
+      "tasks": [
+        "Nodrošināt plašu, profesionālu, praktiski orientētu izglītību.",
+        "Nodrošināt teorētisko un praktisko sagatavotību nodokļu ekonomista vai muitas iestādes vadītāja kvalifikācijai.",
+        "Radīt iespēju iegūt kvalifikāciju ciešā saistībā ar nākotnes darbu.",
+        "Attīstīt ekonomisko domāšanu un analītiskās spējas.",
+        "Attīstīt komandas darba spējas un svešvalodu zināšanas."
+      ],
+      "learning_outcomes": [
+        "Prot apkopot un analizēt ekonomiskās likumsakarības un izprast to ietekmi uz muitas un nodokļu procesiem.",
+        "Spēj interpretēt un piemērot nacionālos un starptautiskos tiesību aktus nodokļu un muitas jautājumos.",
+        "Spēj interpretēt un piemērot administratīvo tiesību un krimināltiesību aktus.",
+        "Pārvalda IT un spēj veikt zinātniskās pētniecības darbus.",
+        "Spēj plānot, vadīt un koordinēt muitas un nodokļu administrācijas struktūrvienību darbu."
+      ],
+      "career": {
+        "description": "Darbs muitas vai nodokļu struktūrvienību vadītāja funkcijās, transporta loģistikas, muitas brokeru un ražošanas uzņēmumos, kā arī iestādēs, kas nodarbojas ar ārējo ekonomisko darbību.",
+        "example_employers": [],
+        "roles": [
+          "Muitas administrēšanas funkcionālais vadītājs",
+          "Nodokļu ekonomists",
+          "Muitas brokeris",
+          "Valsts ieņēmumu dienesta darbinieks",
+          "Ārējās tirdzniecības speciālists"
+        ]
+      },
+      "matching_profile": {
+        "primary_domains": ["customs_law", "taxation", "public_administration", "trade_law"],
+        "secondary_domains": ["logistics", "international_trade", "economics", "risk_management"],
+        "skill_interests": ["law", "economics", "public_service", "international_trade", "analysis"],
+        "subject_strengths_needed": ["latvian", "mathematics", "social_sciences"],
+        "personality_fit": ["methodical", "detail_oriented", "civic_minded", "analytical", "structured"],
+        "math_intensity": 2,
+        "tech_intensity": 2,
+        "language_intensity": 3,
+        "business_intensity": 4,
+        "research_intensity": 2,
+        "practical_intensity": 4,
+        "international_exposure": 4,
+        "weights": {
+          "stem_affinity": 0.3,
+          "programming_affinity": 0.1,
+          "hardware_affinity": 0.0,
+          "entrepreneurship_affinity": 0.5,
+          "language_affinity": 0.4,
+          "social_sciences_affinity": 0.8
+        }
+      },
+      "keywords_lv": ["muita", "nodokļi", "valsts pārvalde", "tiesības", "ārējā tirdzniecība", "loģistika", "ekonomika", "administrēšana"],
+      "keywords_en": ["customs", "taxation", "public administration", "law", "foreign trade", "logistics", "economics", "administration"],
+      "specializations": ["Nodokļu administrēšana", "Muitas administrēšana"],
+      "further_studies": "Maģistrantūra muitas, nodokļu vai tiesību jomā",
+      "unique_selling_points": ["Unikāla programma Latvijā un Eiropā", "Izstrādāta sadarbībā ar PMO un VID", "Divas specializācijas vienā programmā"]
+    },
+
+    {
+      "id": "ICN",
+      "url": "https://www.rtu.lv/lv/studijas/visas-studiju-programmas/atvert/ICN",
+      "name": {
+        "lv": "Nekustamā īpašuma pārvaldība",
+        "en": "Real Estate Management"
+      },
+      "faculty": {
+        "name_lv": "Inženierekonomikas un vadības fakultāte",
+        "name_en": "Faculty of Engineering Economics and Management",
+        "abbreviation": "IEVF",
+        "address": "Kalnciema iela 6–202, Rīga",
+        "phone": "+371 67089394",
+        "email": "ievf@rtu.lv"
+      },
+      "program_type": "Profesionālās bakalaura studijas (1. cikls)",
+      "study_direction": {
+        "lv": "Vadība, administrēšana un nekustamo īpašumu pārvaldība",
+        "en": "Management, Administration and Real Estate Management"
+      },
+      "study_field": {
+        "lv": "Uzņēmējdarbība, nekustamo īpašumu pārvaldība un loģistika",
+        "en": "Business, Real Estate Management and Logistics"
+      },
+      "degree_variants": [
+        {
+          "variant": 1,
+          "degree_lv": "Profesionālais bakalaura grāds nekustamā īpašuma pārvaldībā un nekustamā īpašuma pārvaldnieka kvalifikācija",
+          "degree_en": "Professional Bachelor's degree in Real Estate Management and Real Estate Manager qualification",
+          "credit_points": 240,
+          "duration_ft_years": 4,
+          "duration_pt_years": 5,
+          "annual_fee_ft_eur": 3470,
+          "annual_fee_pt_eur": 2780
+        },
+        {
+          "variant": 2,
+          "degree_lv": "Profesionālais bakalaura grāds nekustamā īpašuma pārvaldībā un nekustamā īpašuma vērtētāja kvalifikācija",
+          "degree_en": "Professional Bachelor's degree in Real Estate Management and Real Estate Appraiser qualification",
+          "credit_points": 270,
+          "duration_ft_years": 4.5,
+          "duration_pt_years": 5.5,
+          "annual_fee_ft_eur": 3470,
+          "annual_fee_pt_eur": 2780
+        }
+      ],
+      "budget_places": [
+        { "location": "Rīga", "count": 30 }
+      ],
+      "study_forms": [
+        {
+          "code": "FT",
+          "label_lv": "Pilna laika klātienes",
+          "label_en": "Full-time",
+          "locations": ["Rīga"]
+        },
+        {
+          "code": "PT_E",
+          "label_lv": "Nepilna laika neklātienes",
+          "label_en": "Part-time extramural",
+          "locations": ["Rīga"]
+        }
+      ],
+      "languages": ["Latviešu"],
+      "program_director": {
+        "name": "Ineta Geipele",
+        "title": "Doktors, Profesors"
+      },
+      "prerequisites": {
+        "education_level": "Vispārējā vai profesionālā vidējā izglītība",
+        "details": "General or vocational secondary education"
+      },
+      "entry_exam": {
+        "required": false,
+        "details": "Divi CE no: matemātika, fizika, svešvaloda (angļu/vācu/franču), latviešu valoda. Neklātienes un maksas studijām — bez iestājpārbaudījumiem."
+      },
+      "admission_specifics": {
+        "budget_places": "Divi CE no: matemātika, fizika, svešvaloda (angļu, vācu vai franču), latviešu valoda.",
+        "paid_and_extramural": "Bez iestājpārbaudījumiem."
+      },
+      "goal": "Sniegt bakalaura profesionālo augstāko izglītību nekustamā īpašuma pārvaldībā atbilstoši profesiju standartiem — Nekustamā īpašuma pārvaldnieks un Nekustamā īpašuma vērtētājs.",
+      "tasks": [
+        "Nodrošināt plašu, profesionālu, praktiski orientētu izglītību.",
+        "Nodrošināt 6. EKI līmenim atbilstošu sagatavotību nekustamā īpašuma pārvaldnieka vai vērtētāja kvalifikācijai.",
+        "Nodrošināt teorētisko zināšanu un prasmju apguvi praktiskās darbības uzsākšanai.",
+        "Attīstīt ekonomisko domāšanu un analītiskās spējas.",
+        "Attīstīt komandas darba spējas un svešvalodu zināšanas."
+      ],
+      "learning_outcomes": {
+        "manager": [
+          "Veikt darbus saistītos ar dažādu nekustamo īpašumu pārvaldīšanu atbilstoši ES klasifikācijai.",
+          "Analizēt rekonstrukcijas vai renovācijas darbu plānošanu.",
+          "Pārzināt nekustamā īpašuma pārvaldīšanu un to ietekmējošos faktorus.",
+          "Izvēlēties efektīvākos pārvaldīšanas paņēmienus.",
+          "Veikt zinātniskās pētniecības darbus."
+        ],
+        "appraiser_additional": [
+          "Izmantot saimnieciskās darbības vērtēšanas metodes.",
+          "Izmantot vadības kvantitatīvās un kvalitatīvās metodes.",
+          "Izmantot nekustamā īpašuma attīstības metodes vērtības paaugstināšanai.",
+          "Nodrošināt efektīvu komunikāciju ar klientiem."
+        ]
+      },
+      "career": {
+        "description": "Darbs valsts budžeta iestādēs, komercsabiedrībās, nevalstiskajās un starptautiskajās organizācijās, kas darbojas dažādu īpašumu jomās.",
+        "example_employers": [],
+        "roles": [
+          "Nekustamā īpašuma pārvaldnieks",
+          "Nekustamā īpašuma vērtētājs",
+          "Nekustamā īpašuma ekonomists",
+          "Īpašumu portfeļa pārvaldnieks",
+          "Apsaimniekošanas uzņēmuma vadītājs"
+        ]
+      },
+      "matching_profile": {
+        "primary_domains": ["real_estate", "property_management", "property_valuation", "construction_economics"],
+        "secondary_domains": ["law", "economics", "urban_planning", "project_management"],
+        "skill_interests": ["economics", "law", "construction", "management", "valuation"],
+        "subject_strengths_needed": ["mathematics", "economics", "latvian"],
+        "personality_fit": ["pragmatic", "business_oriented", "analytical", "communicative", "organized"],
+        "math_intensity": 2,
+        "tech_intensity": 2,
+        "language_intensity": 2,
+        "business_intensity": 4,
+        "research_intensity": 2,
+        "practical_intensity": 4,
+        "international_exposure": 2,
+        "weights": {
+          "stem_affinity": 0.3,
+          "programming_affinity": 0.1,
+          "hardware_affinity": 0.0,
+          "entrepreneurship_affinity": 0.7,
+          "language_affinity": 0.2,
+          "social_sciences_affinity": 0.6
+        }
+      },
+      "keywords_lv": ["nekustamais īpašums", "vērtēšana", "pārvaldība", "būvniecība", "ekonomika", "apsaimniekošana", "renovācija"],
+      "keywords_en": ["real estate", "property valuation", "property management", "construction", "economics", "facility management", "renovation"],
+      "specializations": ["Nekustamā īpašuma pārvaldnieks", "Nekustamā īpašuma vērtētājs"],
+      "further_studies": "Maģistrantūra nekustamā īpašuma vai ekonomikas jomā"
+    },
+
+    {
+      "id": "ICH",
+      "url": "https://www.rtu.lv/lv/studijas/visas-studiju-programmas/atvert/ICH",
+      "name": {
+        "lv": "Reģionālās attīstības un pilsētekonomikas inženierija",
+        "en": "Regional Development and Urban Economics Engineering"
+      },
+      "faculty": {
+        "name_lv": "Inženierekonomikas un vadības fakultāte",
+        "name_en": "Faculty of Engineering Economics and Management",
+        "abbreviation": "IEVF",
+        "address": "Kalnciema iela 6–202, Rīga",
+        "phone": "+371 67089394",
+        "email": "ievf@rtu.lv"
+      },
+      "program_type": "Profesionālās bakalaura studijas (1. cikls)",
+      "study_direction": {
+        "lv": "Arhitektūra un būvniecība",
+        "en": "Architecture and Construction"
+      },
+      "study_field": {
+        "lv": "Uzņēmējdarbība, nekustamo īpašumu pārvaldība un loģistika",
+        "en": "Business, Real Estate Management and Logistics"
+      },
+      "degree": {
+        "lv": "Profesionālais bakalaura grāds reģionālās attīstības un pilsētekonomikas inženierijā un teritoriju attīstības plānošanas inženiera kvalifikācija",
+        "en": "Professional Bachelor's degree in Regional Development and Urban Economics Engineering and Territorial Development Planning Engineer qualification"
+      },
+      "budget_places": [
+        { "location": "Rīga", "count": 30 }
+      ],
+      "study_forms": [
+        {
+          "code": "FT",
+          "label_lv": "Pilna laika klātienes",
+          "label_en": "Full-time",
+          "duration_years": 4,
+          "annual_fee_eur": 3300,
+          "locations": ["Rīga"]
+        }
+      ],
+      "languages": ["Latviešu"],
+      "credit_points": 240,
+      "program_director": {
+        "name": "Uldis Kamols",
+        "title": "Docents (praktiskais)"
+      },
+      "prerequisites": {
+        "education_level": "Vidējā izglītība",
+        "details": "Secondary education"
+      },
+      "entry_exam": {
+        "required": true,
+        "details": "Iestājpārbaudījums matemātikā, fizikā un loģikā, kā arī tiek vērtētas sadarbības spējas.",
+        "exam_dates_2026": ["June 6", "June 13"]
+      },
+      "interdisciplinary_fields": ["Inženierzinātnes", "Ekonomika", "Vadībzinātne", "Arhitektūra", "Teritoriju plānošana", "Vides zinātne"],
+      "goal": "Sniegt bakalaura profesionālo izglītību reģionālās attīstības un pilsētekonomikas inženierijā, lai nodrošinātu zināšanu un prasmju kopumu, kas ļauj pildīt teritoriju attīstības plānošanas inženiera darbību.",
+      "tasks": [
+        "Sniegt zināšanas par teritoriju attīstības ekonomiskiem un inženiertehniskiem aspektiem.",
+        "Veicināt interesi par turpmāko izglītošanos.",
+        "Rosināt studentu interesi par sabiedrībā notiekošiem procesiem.",
+        "Nodrošināt studiju programmas attīstību atbilstoši jomas praksei.",
+        "Veicināt akadēmiskā personāla un studentu sadarbību pētniecībā.",
+        "Attīstīt starptautisko apmaiņu un dalību projektos."
+      ],
+      "learning_outcomes": [
+        "Spēj atbildīgi veikt pienākumus atbilstoši teritorijas attīstības plānošanas normatīvo aktu prasībām.",
+        "Spēj plānot, organizēt, uzraudzīt un novērtēt teritoriju attīstības procesus.",
+        "Spēj veikt ekonomiskos aprēķinus saistītos ar pilsētu un reģionu ilgtspējīgu attīstību.",
+        "Spēj izprast teritoriju inženiertehniskās infrastruktūras ekspluatācijas problēmas.",
+        "Spēj īstenot zaļās ekonomikas politiku reģiona ilgtspējīgā attīstībā.",
+        "Spēj plānot un izvērtēt budžeta procesu vietējā, reģionālā un valsts līmenī.",
+        "Spēj izmantot teritoriālās plānošanas specializētās programmatūras.",
+        "Spēj sagatavot un realizēt vietējos un starptautiskos projektus.",
+        "Spēj radoši sadarboties ar klientiem un speciālistiem."
+      ],
+      "career": {
+        "description": "Darbs valsts, pašvaldību un starptautiskās institūcijās, komercsabiedrībās un nevalstiskajās organizācijās; attīstības plānošanas amati.",
+        "example_employers": [],
+        "roles": [
+          "Teritoriju attīstības plānošanas inženieris",
+          "Pilsētas attīstības plānotājs",
+          "Reģionālās attīstības speciālists",
+          "Infrastruktūras plānošanas inženieris",
+          "Pašvaldības attīstības vadītājs",
+          "Vides inženieris"
+        ]
+      },
+      "matching_profile": {
+        "primary_domains": ["urban_planning", "regional_development", "economics", "environmental_science"],
+        "secondary_domains": ["architecture", "infrastructure", "public_administration", "green_economy"],
+        "skill_interests": ["planning", "economics", "sustainability", "civic_engagement", "interdisciplinary"],
+        "subject_strengths_needed": ["mathematics", "geography", "economics", "physics"],
+        "personality_fit": ["civic_minded", "interdisciplinary", "sustainability_conscious", "analytical", "collaborative"],
+        "math_intensity": 3,
+        "tech_intensity": 2,
+        "language_intensity": 1,
+        "business_intensity": 3,
+        "research_intensity": 3,
+        "practical_intensity": 3,
+        "international_exposure": 3,
+        "weights": {
+          "stem_affinity": 0.5,
+          "programming_affinity": 0.1,
+          "hardware_affinity": 0.0,
+          "entrepreneurship_affinity": 0.4,
+          "language_affinity": 0.2,
+          "social_sciences_affinity": 0.8
+        }
+      },
+      "keywords_lv": ["reģionālā attīstība", "pilsētekonomikas inženierija", "teritoriju plānošana", "urbanizācija", "zaļā ekonomika", "infrastruktūra", "pašvaldība"],
+      "keywords_en": ["regional development", "urban economics engineering", "territorial planning", "urbanization", "green economy", "infrastructure", "municipality"],
+      "specializations": [],
+      "further_studies": "Maģistrantūra pilsētekonomikas, arhitektūras vai vadībzinātnes jomā"
+    },
+
+    {
+      "id": "ICU",
+      "url": "https://www.rtu.lv/lv/studijas/visas-studiju-programmas/atvert/ICU",
+      "name": {
+        "lv": "Uzņēmējdarbība un vadīšana",
+        "en": "Entrepreneurship and Management"
+      },
+      "faculty": {
+        "name_lv": "Inženierekonomikas un vadības fakultāte",
+        "name_en": "Faculty of Engineering Economics and Management",
+        "abbreviation": "IEVF",
+        "address": "Kalnciema iela 6–202, Rīga",
+        "phone": "+371 67089394",
+        "email": "ievf@rtu.lv"
+      },
+      "program_type": "Profesionālās bakalaura studijas (1. cikls)",
+      "study_direction": {
+        "lv": "Vadība, administrēšana un nekustamo īpašumu pārvaldība",
+        "en": "Management, Administration and Real Estate Management"
+      },
+      "study_field": {
+        "lv": "Uzņēmējdarbība, nekustamo īpašumu pārvaldība un loģistika",
+        "en": "Business, Real Estate Management and Logistics"
+      },
+      "degree": {
+        "lv": "Profesionālais bakalaura grāds uzņēmējdarbībā un vadīšanā un uzņēmuma vadītāja vai finanšu vadītāja, vai tirgvedības (mārketinga) vadītāja, vai personāla vadītāja kvalifikācija",
+        "en": "Professional Bachelor's degree in Entrepreneurship and Management and Company Manager, Financial Manager, Marketing Manager, or HR Manager qualification"
+      },
+      "budget_places": [
+        { "location": "Rīga", "count": 20 },
+        { "location": "Liepāja", "count": 20 }
+      ],
+      "study_forms": [
+        {
+          "code": "FT",
+          "label_lv": "Pilna laika klātienes",
+          "label_en": "Full-time",
+          "duration_years": 4,
+          "annual_fee_eur": 2300,
+          "locations": ["Rīga", "Liepāja"],
+          "note": "Finanšu vadības virziens tiek īstenots tikai pilna laika studijās. RTU Liepājas akadēmija īsteno tikai pilna laika klātienes studijas."
+        },
+        {
+          "code": "PT_E",
+          "label_lv": "Nepilna laika neklātienes",
+          "label_en": "Part-time extramural",
+          "duration_years": 5,
+          "annual_fee_eur": 1850,
+          "locations": ["Rīga"],
+          "note": "Finanšu vadības virziens nav pieejams neklātienē."
+        }
+      ],
+      "languages": ["Latviešu", "Angļu"],
+      "credit_points": 240,
+      "program_director": {
+        "name": "Līga Kamola",
+        "title": "Docents (praktiskais)"
+      },
+      "prerequisites": {
+        "education_level": "Vispārējā vai profesionālā vidējā izglītība",
+        "details": "General or vocational secondary education"
+      },
+      "entry_exam": {
+        "required": false,
+        "details": "Bez specifikiem iestājpārbaudījumiem."
+      },
+      "specialization_tracks": [
+        {
+          "id": "ICU_A",
+          "name_lv": "Uzņēmuma vadība",
+          "name_en": "Company Management",
+          "qualification_lv": "Uzņēmuma vadītājs",
+          "available_forms": ["FT", "PT_E"]
+        },
+        {
+          "id": "ICU_B",
+          "name_lv": "Finanšu vadība",
+          "name_en": "Financial Management",
+          "qualification_lv": "Finanšu vadītājs",
+          "available_forms": ["FT"],
+          "note": "Tikai pilna laika studijās."
+        },
+        {
+          "id": "ICU_C",
+          "name_lv": "Mārketinga vadība",
+          "name_en": "Marketing Management",
+          "qualification_lv": "Tirgvedības (mārketinga) vadītājs",
+          "available_forms": ["FT", "PT_E"]
+        },
+        {
+          "id": "ICU_D",
+          "name_lv": "Personāla vadība",
+          "name_en": "HR Management",
+          "qualification_lv": "Personāla vadītājs",
+          "available_forms": ["FT", "PT_E"]
+        }
+      ],
+      "goal": "Sagatavot starptautiski konkurētspējīgus un dinamiskus uzņēmumu, finanšu, mārketinga un cilvēku resursu vadīšanas speciālistus; veidot izpratni par profesionālo ētiku un sociāli atbildīgu saimniekošanu.",
+      "tasks": [
+        "Sniegt vispusīgas zināšanas izvēlētajā specializācijā un veidot funkcionālā vadītāja kompetences.",
+        "Nodrošināt studiju programmas pilnveidi atbilstoši tautsaimniecības attīstībai.",
+        "Veicināt studentu interesi par turpmāku profesionālo pilnveidi.",
+        "Rosināt interesi par sabiedrībā notiekošajiem procesiem.",
+        "Attīstīt akadēmiskā personāla un studentu pētniecisko darbu.",
+        "Veicināt starptautisko mobilitāti un studentu iesaisti pētnieciskajā darbā."
+      ],
+      "learning_outcomes": {
+        "common": [
+          "Spēj analizēt komercdarbības vidi un sagatavot apskatus.",
+          "Spēj izstrādāt organizācijas attīstības plānus un noteikt mērķus.",
+          "Spēj apzināt resursus mērķu sasniegšanai un noteikt riskus.",
+          "Izprot organizācijas struktūras ietekmi uz mērķu sasniegšanu.",
+          "Spēj vadīt funkcionālās jomas struktūrvienību.",
+          "Pārzina tiesisko regulējumu.",
+          "Māk efektīvi komunicēt un ievērot ētikas principus.",
+          "Spēj brīvi komunicēt profesionālajā vidē vismaz vienā svešvalodā."
+        ],
+        "company_management": [
+          "Spēj plānot, organizēt un vadīt uzņēmuma darbu atbilstoši stratēģijai.",
+          "Spēj kontrolēt darbu izpildi un motivēt darbiniekus."
+        ],
+        "financial_management": [
+          "Spēj vadīt organizācijas finanses, balstoties uz ētikas principiem.",
+          "Spēj analizēt ekonomikas un finanšu tirgus situāciju.",
+          "Spēj nodrošināt finanšu plānošanu un risku pārvaldību."
+        ],
+        "marketing_management": [
+          "Spēj izstrādāt mārketinga stratēģiju.",
+          "Spēj veikt tirgus izpēti un analīzi.",
+          "Spēj organizēt mārketinga komunikāciju."
+        ],
+        "hr_management": [
+          "Spēj izstrādāt personāla vadības stratēģiju.",
+          "Spēj plānot un prognozēt personāla resursus.",
+          "Spēj veicināt darbinieku iesaisti un attīstību."
+        ]
+      },
+      "career": {
+        "description": "Karjera izvēlētajā specializācijā privātajā un publiskajā sektorā, kā arī sava uzņēmuma dibināšana un attīstīšana.",
+        "example_employers": [],
+        "roles": [
+          "Uzņēmuma vadītājs",
+          "Finanšu vadītājs",
+          "Mārketinga vadītājs",
+          "Personāla vadītājs",
+          "Uzņēmējs"
+        ]
+      },
+      "matching_profile": {
+        "primary_domains": ["business_management", "entrepreneurship", "marketing", "hr_management", "finance"],
+        "secondary_domains": ["strategy", "leadership", "economics", "communication"],
+        "skill_interests": ["leadership", "business", "communication", "people_management", "strategy"],
+        "subject_strengths_needed": ["social_sciences", "economics", "mathematics"],
+        "personality_fit": ["entrepreneurial", "social", "ambitious", "communicative", "team_oriented"],
+        "math_intensity": 2,
+        "tech_intensity": 2,
+        "language_intensity": 2,
+        "business_intensity": 5,
+        "research_intensity": 2,
+        "practical_intensity": 4,
+        "international_exposure": 3,
+        "weights": {
+          "stem_affinity": 0.2,
+          "programming_affinity": 0.1,
+          "hardware_affinity": 0.0,
+          "entrepreneurship_affinity": 0.9,
+          "language_affinity": 0.3,
+          "social_sciences_affinity": 0.8
+        }
+      },
+      "keywords_lv": ["uzņēmējdarbība", "vadīšana", "mārketings", "personāla vadība", "finanšu vadība", "vadītājs", "startups", "stratēģija"],
+      "keywords_en": ["entrepreneurship", "management", "marketing", "HR management", "financial management", "leadership", "startups", "strategy"],
+      "specializations": ["Uzņēmuma vadība", "Finanšu vadība", "Mārketinga vadība", "Personāla vadība"],
+      "further_studies": "Maģistrantūra uzņēmējdarbībā, vadīšanā vai saistītās jomās"
+    },
+
+    {
+      "id": "ICL",
+      "url": "https://www.rtu.lv/lv/studijas/visas-studiju-programmas/atvert/ICL",
+      "name": {
+        "lv": "Uzņēmējdarbības loģistika",
+        "en": "Business Logistics"
+      },
+      "faculty": {
+        "name_lv": "Inženierekonomikas un vadības fakultāte",
+        "name_en": "Faculty of Engineering Economics and Management",
+        "abbreviation": "IEVF",
+        "address": "Kalnciema iela 6–202, Rīga",
+        "phone": "+371 67089394",
+        "email": "ievf@rtu.lv"
+      },
+      "program_type": "Profesionālās bakalaura studijas (1. cikls)",
+      "study_direction": {
+        "lv": "Vadība, administrēšana un nekustamo īpašumu pārvaldība",
+        "en": "Management, Administration and Real Estate Management"
+      },
+      "study_field": {
+        "lv": "Uzņēmējdarbība, nekustamo īpašumu pārvaldība un loģistika",
+        "en": "Business, Real Estate Management and Logistics"
+      },
+      "degree": {
+        "lv": "Profesionālais bakalaura grāds uzņēmējdarbības loģistikā un loģistikas vadītāja kvalifikācija",
+        "en": "Professional Bachelor's degree in Business Logistics and Logistics Manager qualification"
+      },
+      "budget_places": [
+        { "location": "Rīga", "count": 20 }
+      ],
+      "study_forms": [
+        {
+          "code": "FT",
+          "label_lv": "Pilna laika klātienes",
+          "label_en": "Full-time",
+          "duration_years": 4,
+          "annual_fee_eur": 2300,
+          "locations": ["Rīga"]
+        },
+        {
+          "code": "PT_E",
+          "label_lv": "Nepilna laika neklātienes",
+          "label_en": "Part-time extramural",
+          "duration_years": 5,
+          "annual_fee_eur": 1850,
+          "locations": ["Rīga"]
+        }
+      ],
+      "languages": ["Latviešu"],
+      "credit_points": 240,
+      "program_director": {
+        "name": "Ingūna Jurgelāne-Kaldava",
+        "title": "Doktors, Asociētais profesors"
+      },
+      "prerequisites": {
+        "education_level": "Vispārējā vai profesionālā vidējā izglītība",
+        "details": "General or vocational secondary education"
+      },
+      "entry_exam": {
+        "required": false,
+        "details": "Bez specifikiem iestājpārbaudījumiem."
+      },
+      "goal": "Sagatavot kvalificētus, starptautiski konkurētspējīgus speciālistus loģistikas un transporta ekonomikas jomās atbilstoši loģistikas vadītāja profesijas standartam.",
+      "tasks": [
+        "Nodrošināt konkurētspējīgu izglītību loģistikas un transporta ekonomikas jomā.",
+        "Sniegt vispusīgas zināšanas, attīstīt analītisko domāšanu un praktiskā darba iemaņas.",
+        "Nodrošināt studiju programmas attīstību atbilstoši starptautiskajai praksei un jaunākajiem atklājumiem.",
+        "Veicināt interesi par turpmāko pilnveidi un studijām maģistrantūrā.",
+        "Stimulēt ētisku un sociāli atbildīgu personību veidošanos."
+      ],
+      "learning_outcomes": [
+        "Spēj plānot, organizēt, vadīt un analizēt loģistikas procesus.",
+        "Spēj īstenot un kontrolēt loģistikas kontroles pasākumus.",
+        "Spēj vadīt loģistikas struktūrvienības darbu.",
+        "Spēj plānot preču un pakalpojumu plūsmas reģionālos tirgos.",
+        "Spēj strādāt ar IT rīkiem.",
+        "Spēj pārvaldīt loģistikas izmaksu un ieņēmumu aprēķinus.",
+        "Nodrošina starptautiskos kravu pārvadājumus (jūras, gaisa, sauszemes).",
+        "Nosaka maršrutu plānošanas metodoloģiju."
+      ],
+      "career": {
+        "description": "Loģistikas vadītājs strādā uzņēmumos ar loģistiku, starptautiskiem pārvadājumiem, vairumtirdzniecību, ražošanu un pakalpojumiem, kā arī valsts un pašvaldību institūcijās.",
+        "example_employers": [],
+        "roles": [
+          "Loģistikas vadītājs",
+          "Piegādes ķēdes vadītājs",
+          "Transporta ekonomikas speciālists",
+          "Noliktavas vadītājs",
+          "Starptautisko kravu pārvadājumu vadītājs",
+          "Iepirkumu vadītājs"
+        ]
+      },
+      "matching_profile": {
+        "primary_domains": ["logistics", "supply_chain", "transport_economics", "operations_management"],
+        "secondary_domains": ["international_trade", "IT_systems", "warehousing", "procurement"],
+        "skill_interests": ["planning", "operations", "transport", "economics", "systems_thinking"],
+        "subject_strengths_needed": ["mathematics", "geography", "economics"],
+        "personality_fit": ["organized", "analytical", "operational", "pragmatic", "international_minded"],
+        "math_intensity": 2,
+        "tech_intensity": 2,
+        "language_intensity": 2,
+        "business_intensity": 4,
+        "research_intensity": 2,
+        "practical_intensity": 5,
+        "international_exposure": 4,
+        "weights": {
+          "stem_affinity": 0.3,
+          "programming_affinity": 0.1,
+          "hardware_affinity": 0.0,
+          "entrepreneurship_affinity": 0.6,
+          "language_affinity": 0.3,
+          "social_sciences_affinity": 0.6
+        }
+      },
+      "keywords_lv": ["loģistika", "piegādes ķēde", "transports", "noliktava", "kravu pārvadājumi", "iepirkumi", "transporta ekonomika"],
+      "keywords_en": ["logistics", "supply chain", "transport", "warehouse", "freight", "procurement", "transport economics"],
+      "specializations": [],
+      "further_studies": "Maģistrantūra loģistikā vai transporta ekonomikā"
+    },
+
+    {
+      "id": "ICK",
+      "url": "https://www.rtu.lv/lv/studijas/visas-studiju-programmas/atvert/ICK",
+      "name": {
+        "lv": "Visaptverošā kvalitātes vadība",
+        "en": "Total Quality Management"
+      },
+      "faculty": {
+        "name_lv": "Inženierekonomikas un vadības fakultāte",
+        "name_en": "Faculty of Engineering Economics and Management",
+        "abbreviation": "IEVF",
+        "address": "Kalnciema iela 6–202, Rīga",
+        "phone": "+371 67089394",
+        "email": "ievf@rtu.lv"
+      },
+      "program_type": "Profesionālās bakalaura studijas (1. cikls)",
+      "study_direction": {
+        "lv": "Vadība, administrēšana un nekustamo īpašumu pārvaldība",
+        "en": "Management, Administration and Real Estate Management"
+      },
+      "study_field": {
+        "lv": "Uzņēmējdarbība, nekustamo īpašumu pārvaldība un loģistika",
+        "en": "Business, Real Estate Management and Logistics"
+      },
+      "degree": {
+        "lv": "Profesionālais bakalaura grāds kvalitātes vadībā un procesu kvalitātes vadības inženiera kvalifikācija",
+        "en": "Professional Bachelor's degree in Quality Management and Process Quality Management Engineer qualification"
+      },
+      "budget_places": [
+        { "location": "Rīga", "count": 30 }
+      ],
+      "study_forms": [
+        {
+          "code": "FT",
+          "label_lv": "Pilna laika klātienes",
+          "label_en": "Full-time",
+          "duration_years": 4,
+          "annual_fee_eur": 3300,
+          "locations": ["Rīga"]
+        },
+        {
+          "code": "PT_E",
+          "label_lv": "Nepilna laika neklātienes",
+          "label_en": "Part-time extramural (advertised in description)",
+          "duration_years": 5,
+          "annual_fee_eur": null,
+          "locations": ["Rīga"],
+          "note": "Neklātienes forma minēta studiju ilgumā, bet maksa nav publicēta dokumentā."
+        }
+      ],
+      "languages": ["Latviešu"],
+      "credit_points": 240,
+      "program_director": {
+        "name": "Inga Lapiņa",
+        "title": "Doktors, Profesors"
+      },
+      "prerequisites": {
+        "education_level": "Vispārējā vai profesionālā vidējā izglītība",
+        "details": "General or vocational secondary education"
+      },
+      "entry_exam": {
+        "required": true,
+        "details": "Iestājpārbaudījums matemātikā, fizikā un loģikā, kā arī tiek vērtētas sadarbības spējas.",
+        "exam_dates_2026": ["June 6", "June 13"]
+      },
+      "specialization_tracks": [
+        { "id": "ICK_T", "name_lv": "Transports", "name_en": "Transport" },
+        { "id": "ICK_B", "name_lv": "Būvniecība", "name_en": "Construction" }
+      ],
+      "goal": "Sagatavot procesu kvalitātes vadības inženierus — speciālistus kvalitātes sistēmu inženierijā, kvalitātes nodrošināšanā, atbilstības novērtēšanā un risku pārvaldībā; veidot izpratni par profesionālo ētiku un sociāli atbildīgu saimniekošanu.",
+      "tasks": [
+        "Nodrošināt konkurētspējīgu izglītību kvalitātes inženierijā un atbilstības novērtēšanā.",
+        "Sniegt vispusīgas zināšanas, veidot prasmes un attīstīt kompetenci.",
+        "Nodrošināt studiju programmas satura attīstību.",
+        "Veicināt interesi par turpmāku profesionālo pilnveidi.",
+        "Rosināt interesi par sabiedrībā notiekošiem procesiem.",
+        "Attīstīt starptautisko mobilitāti un dalību projektos."
+      ],
+      "learning_outcomes": [
+        "Spēj izveidot un ieviest organizācijas kvalitātes vadības sistēmu.",
+        "Spēj noteikt, izvērtēt un uzraudzīt procesu kvalitāti.",
+        "Spēj noteikt kvalitāti ietekmējošos faktorus un riskus.",
+        "Spēj plānot un īstenot atbilstības novērtēšanas programmu.",
+        "Spēj plānot resursus kvalitātes nodrošināšanai.",
+        "Spēj novērtēt un pilnveidot organizācijas procesus.",
+        "Spēj nodrošināt standartu un normatīvo aktu prasību izpildi.",
+        "Spēj veikt pētījumus kvalitātes vadības jomā.",
+        "Spēj strādāt individuāli un komandā, rīkoties ētiski."
+      ],
+      "career": {
+        "description": "Darbs kā procesu kvalitātes vadības inženieris, kvalitātes inženieris vai kvalitātes vadības sistēmu speciālists publiskajā pārvaldē vai komercorganizācijās. Iespēja veikt individuālo komercdarbību.",
+        "example_employers": [],
+        "roles": [
+          "Procesu kvalitātes vadības inženieris",
+          "Kvalitātes inženieris",
+          "Kvalitātes vadības sistēmu speciālists",
+          "Atbilstības novērtēšanas speciālists",
+          "Kvalitātes auditors",
+          "Risku vadības speciālists"
+        ]
+      },
+      "matching_profile": {
+        "primary_domains": ["quality_management", "process_engineering", "compliance", "risk_management"],
+        "secondary_domains": ["standards", "auditing", "transport_quality", "construction_quality"],
+        "skill_interests": ["quality", "systems_thinking", "process_improvement", "standards", "management"],
+        "subject_strengths_needed": ["mathematics", "physics", "economics"],
+        "personality_fit": ["methodical", "systematic", "detail_oriented", "responsible", "process_minded"],
+        "math_intensity": 3,
+        "tech_intensity": 2,
+        "language_intensity": 1,
+        "business_intensity": 4,
+        "research_intensity": 3,
+        "practical_intensity": 4,
+        "international_exposure": 2,
+        "weights": {
+          "stem_affinity": 0.5,
+          "programming_affinity": 0.1,
+          "hardware_affinity": 0.1,
+          "entrepreneurship_affinity": 0.5,
+          "language_affinity": 0.2,
+          "social_sciences_affinity": 0.6
+        }
+      },
+      "keywords_lv": ["kvalitātes vadība", "procesu inženierija", "standarti", "atbilstības novērtēšana", "riski", "ISO", "audits", "TQM"],
+      "keywords_en": ["quality management", "process engineering", "standards", "compliance assessment", "risk management", "ISO", "audit", "TQM"],
+      "specializations": ["Transports", "Būvniecība"],
+      "further_studies": "Maģistrantūra kvalitātes vadībā vai inženierekonomikas jomā"
+    }
+  ],
+
+  "matching_dimensions": {
+    "description": "Dimensions used for scoring student–program fit. Each program has matching_profile.weights for these dimensions.",
+    "dimensions": [
+      {
+        "id": "stem_affinity",
+        "label_lv": "Dabaszinātņu un tehnikas interese",
+        "label_en": "STEM Affinity",
+        "description": "How much the student enjoys mathematics, physics, chemistry, biology, engineering."
+      },
+      {
+        "id": "programming_affinity",
+        "label_lv": "Programmēšanas interese",
+        "label_en": "Programming Affinity",
+        "description": "How much the student enjoys coding, algorithms, software development."
+      },
+      {
+        "id": "hardware_affinity",
+        "label_lv": "Aparatūras un elektronikasinterese",
+        "label_en": "Hardware Affinity",
+        "description": "How much the student enjoys electronics, circuits, physical devices, tinkering."
+      },
+      {
+        "id": "entrepreneurship_affinity",
+        "label_lv": "Uzņēmējdarbības interese",
+        "label_en": "Entrepreneurship Affinity",
+        "description": "How much the student is drawn to business, startups, management, economics."
+      },
+      {
+        "id": "language_affinity",
+        "label_lv": "Valodu un komunikācijas interese",
+        "label_en": "Language Affinity",
+        "description": "How much the student enjoys languages, writing, translation, communication."
+      },
+      {
+        "id": "social_sciences_affinity",
+        "label_lv": "Sociālo zinātņu un sabiedriskaā joma",
+        "label_en": "Social Sciences Affinity",
+        "description": "How much the student is drawn to social sciences, law, public administration, policy."
+      }
+    ],
+    "intensity_scale": {
+      "1": "Very low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very high"
+    }
+  },
+
+  "quick_filters": {
+    "by_faculty": {
+      "DITEF": ["ECV", "ECR", "ECS", "HCF", "DCP", "DCM", "ECO", "ECA"],
+      "IEVF": ["ICO", "ICM", "ICN", "ICH", "ICU", "ICL", "ICK"]
+    },
+    "by_entry_exam_required": {
+      "true": ["ECR", "ECS", "ECO", "ICH", "ICK"],
+      "false": ["ECV", "HCF", "DCP", "DCM", "ECA", "ICO", "ICM", "ICN", "ICU", "ICL"]
+    },
+    "by_budget_places_available": {
+      "true": ["ECV", "ECR", "ECS", "DCM", "ECO", "ICO", "ECA", "ICM", "ICN", "ICH", "ICU", "ICL", "ICK"],
+      "false": ["HCF", "DCP"]
+    },
+    "by_language_instruction": {
+      "latvian_only": ["DCM", "ECO", "ICO", "ICN", "ICH", "ICL", "ICK"],
+      "english_only": ["HCF", "DCP"],
+      "latvian_and_english": ["ECV", "ECR", "ECS", "ECA", "ICM", "ICU"]
+    },
+    "by_part_time_available": {
+      "true": ["ECR", "ECO", "ECA", "ICM", "ICN", "ICU", "ICL", "ICK"],
+      "false": ["ECV", "ECS", "HCF", "DCP", "DCM", "ICO", "ICH"]
+    },
+    "by_location": {
+      "riga_only": ["ECV", "ECR", "ECS", "HCF", "DCP", "DCM", "ICO", "ECA", "ICM", "ICN", "ICH", "ICK"],
+      "riga_and_liepaja": ["ECO", "ICU"]
+    },
+    "by_study_field_group": {
+      "technology_electronics": ["ECV", "ECS", "ECA"],
+      "energy_electrical": ["ECR", "ECO"],
+      "it_finance": ["DCP", "DCM"],
+      "languages_humanities": ["HCF"],
+      "safety_security": ["ICO", "ICM"],
+      "business_management": ["ICU", "ICL", "ICK"],
+      "real_estate_planning": ["ICN", "ICH"]
+    },
+    "by_credit_points": {
+      "240": ["ECV", "ECR", "ECS", "HCF", "DCP", "DCM", "ECO", "ICO", "ICM", "ICN_V1", "ICH", "ICU", "ICL", "ICK"],
+      "270": ["ECA", "ICN_V2"]
+    },
+    "unique_programs_in_latvia_or_baltics": ["ICM", "DCP", "ICO"],
+    "joint_programs": ["DCP"]
+  }
+}

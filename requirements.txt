@@ -1,0 +1,17 @@
+# RTU Study Programme AI Recommender — Python dependencies
+# Install with: pip install -r requirements.txt
+
+# Core framework
+streamlit>=1.35.0
+
+# Google Gemini API (new SDK — replaces deprecated google-generativeai)
+google-genai>=1.0.0
+
+# Environment variable management
+python-dotenv>=1.0.0
+
+# Data manipulation
+pandas>=2.0.0
+
+# Standard library extras (usually pre-installed)
+# pathlib, json, logging — part of Python stdlib
