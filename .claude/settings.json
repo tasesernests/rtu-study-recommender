@@ -7,7 +7,8 @@
       "PowerShell(try { $r = Invoke-WebRequest -Uri \"http://localhost:8501\" -TimeoutSec 5 -UseBasicParsing; \"HTTP $\\($r.StatusCode\\) — Streamlit is UP\" } catch { \"Not reachable: $_\" })",
       "Bash(python -c ' *)",
       "Bash(git commit -m 'fix: replace st.html\\(\\) inside expanders with st.markdown\\(unsafe_allow_html=True\\) *)",
-      "Bash(git push *)"
+      "Bash(git push *)",
+      "Bash(git add *)"
     ]
   }
 }
