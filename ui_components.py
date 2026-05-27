@@ -361,41 +361,32 @@ def _render_breakdown_details(summary: dict, breakdown: dict):
     col_l, col_r = st.columns(2)
 
     with col_l:
-        for section, items, bg, fg, icon in [
-            ("Matched interests",  summary.get("matched_interests", []),  "#dcfce7", "#166534", "✅"),
-            ("Matched strengths",  summary.get("matched_strengths", []),  "#dbeafe", "#1d4ed8", "💪"),
-            ("Personality match",  summary.get("matched_personality", []),"#ede9fe", "#7c3aed", "🧠"),
-            ("Sector match",       summary.get("matched_sectors", []),    "#fef3c7", "#92400e", "🏭"),
+        for section, items, icon in [
+            ("Matched interests",  summary.get("matched_interests", []),  "✅"),
+            ("Matched strengths",  summary.get("matched_strengths", []),  "💪"),
+            ("Personality match",  summary.get("matched_personality", []),"🧠"),
+            ("Sector match",       summary.get("matched_sectors", []),    "🏭"),
         ]:
             if items:
-                st.markdown(f"**{icon} {section}**")
-                st.markdown(" ".join(_badge(i, bg, fg) for i in items), unsafe_allow_html=True)
+                st.markdown(
+                    f"**{icon} {section}**  \n" +
+                    "  ·  ".join(f"`{i}`" for i in items)
+                )
 
     with col_r:
         missed = summary.get("missed_interests", [])
         if missed:
-            st.markdown("**⬜ Unmatched interests**")
             st.markdown(
-                " ".join(_badge(i, "#f1f5f9", "#64748b") for i in missed[:5]),
-                unsafe_allow_html=True,
+                "**⬜ Unmatched interests**  \n" +
+                "  ·  ".join(f"`{i}`" for i in missed[:5])
             )
 
         if summary.get("penalties"):
             st.markdown("**⚠️ Score penalties**")
             for p in summary["penalties"]:
-                st.markdown(
-                    f'<div style="background:#fef2f2;border-left:3px solid #dc2626;'
-                    f'border-radius:0 6px 6px 0;padding:6px 10px;margin:4px 0;'
-                    f'font-size:0.8rem;color:#991b1b;">{p}</div>',
-                    unsafe_allow_html=True,
-                )
+                st.warning(p)
         elif not missed:
-            st.markdown(
-                '<div style="background:#f0fdf4;border-radius:8px;padding:12px;'
-                'text-align:center;color:#166534;font-size:0.85rem;">'
-                '✨ No penalties — great match!</div>',
-                unsafe_allow_html=True,
-            )
+            st.success("✨ No penalties — great match!")
 
     st.markdown("---")
     st.markdown("**📊 Factor breakdown:**")
@@ -409,19 +400,11 @@ def _render_breakdown_details(summary: dict, breakdown: dict):
         pts     = breakdown.get(key, {}).get("points", 0)
         max_pts = breakdown.get(key, {}).get("max", 0)
         if max_pts and max_pts > 0:
-            pct   = (pts / max_pts) * 100
-            color = "#059669" if pct >= 75 else "#d97706" if pct >= 40 else "#dc2626"
-            st.markdown(
-                f'<div style="display:flex;align-items:center;gap:8px;margin:5px 0;">'
-                f'<span style="font-size:0.78rem;color:#374151;min-width:130px;">{label}</span>'
-                f'<div style="flex:1;height:7px;background:#f1f5f9;border-radius:4px;overflow:hidden;">'
-                f'<div style="width:{pct:.0f}%;height:100%;background:{color};border-radius:4px;"></div>'
-                f'</div>'
-                f'<span style="font-size:0.74rem;color:#94a3b8;min-width:40px;text-align:right;">'
-                f'{pts}/{max_pts}</span>'
-                f'</div>',
-                unsafe_allow_html=True,
-            )
+            pct = pts / max_pts
+            b1, b2, b3 = st.columns([3, 7, 1])
+            b1.caption(label)
+            b2.progress(pct)
+            b3.caption(f"{pts}/{max_pts}")
 
 
 # ─────────────────────────────────────────────────────────────────────────────
@@ -434,23 +417,21 @@ def _render_programme_details(programme: dict):
 
     c1, c2 = st.columns(2)
     with c1:
-        st.markdown("**📌 Basic information**")          # was st.html("**...**")
+        st.markdown("**📌 Basic information**")
+        lines = []
         for label, val in [
-            ("Name (LV)",   programme.get("name")),
-            ("Name (EN)",   programme.get("name_en")),
-            ("Faculty",     programme.get("faculty")),
-            ("Type",        programme.get("program_type")),
-            ("Direction",   programme.get("study_direction")),
-            ("Field",       programme.get("study_field")),
+            ("Name (LV)",  programme.get("name")),
+            ("Name (EN)",  programme.get("name_en")),
+            ("Faculty",    programme.get("faculty")),
+            ("Type",       programme.get("program_type")),
+            ("Direction",  programme.get("study_direction")),
+            ("Field",      programme.get("study_field")),
         ]:
             if val:
-                st.markdown(
-                    f"<div style='margin:3px 0;'>"
-                    f"<span style='color:#64748b;font-size:0.8rem;'>{label}:</span> "
-                    f"<span style='font-size:0.85rem;font-weight:500;color:#0f172a;'>{val}</span>"
-                    f"</div>",
-                    unsafe_allow_html=True,
-                )
+                lines.append(f"- **{label}:** {val}")
+        if lines:
+            st.markdown("\n".join(lines))
+
         st.markdown("**🎓 Degree awarded**")
         if degree.get("title"):
             st.markdown(f"*{degree['title']}*")
@@ -461,65 +442,45 @@ def _render_programme_details(programme: dict):
 
     with c2:
         st.markdown("**📋 Logistics & Finances**")
-        for label, val in [
-            ("Duration",  f"{programme.get('duration_years', 4)} years"),
-            ("Credits",   str(programme.get("credits", 240))),
-            ("Format",    programme.get("format", "Full-time")),
-            ("Languages", ", ".join(LANG_LABELS.get(l, l) for l in programme.get("languages", []))),
-            ("Location",  ", ".join(programme.get("locations", []))),
-        ]:
-            st.markdown(
-                f"<div style='margin:3px 0;'>"
-                f"<span style='color:#64748b;font-size:0.8rem;'>{label}:</span> "
-                f"<span style='font-size:0.85rem;font-weight:500;color:#0f172a;'>{val}</span>"
-                f"</div>",
-                unsafe_allow_html=True,
-            )
         fee    = programme.get("annual_fee_eur")
         budget = programme.get("budget_places", 0)
         exam   = programme.get("entry_exam", False)
-        st.markdown(
-            f"<div style='margin:3px 0;'><span style='color:#64748b;font-size:0.8rem;'>Annual fee:</span> "
-            f"<span style='font-size:0.85rem;font-weight:600;color:#0f172a;'>"
-            f"{'€' + str(int(fee)) if fee else '—'}</span></div>",
-            unsafe_allow_html=True,
-        )
-        st.markdown(
-            f"<div style='margin:3px 0;'><span style='color:#64748b;font-size:0.8rem;'>Budget places:</span> "
-            f"<span style='font-size:0.85rem;font-weight:600;"
-            f"color:{'#059669' if budget > 0 else '#dc2626'};'>"
-            f"{budget if budget > 0 else 'None'}</span></div>",
-            unsafe_allow_html=True,
-        )
-        st.markdown(
-            f"<div style='margin:3px 0;'><span style='color:#64748b;font-size:0.8rem;'>Entry exam:</span> "
-            f"<span style='font-size:0.85rem;font-weight:600;"
-            f"color:{'#dc2626' if exam else '#059669'};'>"
-            f"{'⚠️ Yes' if exam else '✅ No'}</span></div>",
-            unsafe_allow_html=True,
-        )
+        lines2 = []
+        for label, val in [
+            ("Duration",       f"{programme.get('duration_years', 4)} years"),
+            ("Credits",        str(programme.get("credits", 240))),
+            ("Format",         programme.get("format", "Full-time")),
+            ("Languages",      ", ".join(LANG_LABELS.get(l, l) for l in programme.get("languages", []))),
+            ("Location",       ", ".join(programme.get("locations", []))),
+            ("Annual fee",     f"€{int(fee)}" if fee else "—"),
+            ("Budget places",  str(budget) if budget > 0 else "None"),
+            ("Entry exam",     "⚠️ Yes" if exam else "✅ No"),
+        ]:
+            lines2.append(f"- **{label}:** {val}")
+        st.markdown("\n".join(lines2))
+
         if exam and programme.get("entry_exam_details"):
-            st.caption(programme["entry_exam_details"])
+            details = programme["entry_exam_details"]
+            if isinstance(details, dict):
+                subjects = details.get("subjects", [])
+                dates    = details.get("exam_dates_2026", [])
+                if subjects:
+                    st.caption(f"📝 Exam subjects: {', '.join(subjects)}")
+                if dates:
+                    st.caption(f"📅 2026 exam dates: {', '.join(dates)}")
+            else:
+                st.caption(str(details))
 
     if programme.get("description"):
         st.markdown("**📖 Description**")
-        desc = programme["description"]
-        st.markdown(
-            f'<div style="font-size:0.85rem;color:#374151;line-height:1.6;'
-            f'background:#f8fafc;border-radius:8px;padding:12px;">'
-            f'{desc[:600]}{"…" if len(desc) > 600 else ""}</div>',
-            unsafe_allow_html=True,
+        st.info(
+            programme["description"][:600] +
+            ("…" if len(programme["description"]) > 600 else "")
         )
 
     if career.get("job_titles"):
         st.markdown("**💼 Career paths**")
-        st.markdown(
-            " ".join(
-                _badge(f"→ {j}", "#f0fdf4", "#166534")
-                for j in career["job_titles"][:7]
-            ),
-            unsafe_allow_html=True,
-        )
+        st.markdown("  ·  ".join(f"→ {j}" for j in career["job_titles"][:7]))
         if career.get("description"):
             st.caption(career["description"][:250])
 

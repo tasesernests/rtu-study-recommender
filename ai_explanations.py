@@ -164,8 +164,8 @@ STRICT RULES — NEVER BREAK THESE:
 2. Do NOT mention RTU programmes that are not in the data provided.
 3. If information is missing, say "information not available" — do not guess.
 4. Be encouraging but honest about challenges.
-5. Keep the response under 400 words.
-6. Format as 5 numbered sections (use markdown **bold** for section headers).
+5. Keep the response under 380 words total.
+6. Use clean Markdown: ### for section headers, bullet points (- item) for lists, **bold** for key terms.
 
 {fact_sheet}
 
@@ -177,12 +177,14 @@ Matched interests: {', '.join(matched_interests) if matched_interests else 'none
 Matched strengths: {', '.join(matched_strengths) if matched_strengths else 'none'}
 Warnings: {', '.join(penalties) if penalties else 'none'}
 
-Write the explanation with exactly these 5 sections:
-**1. Kāpēc šī programma der tev** (Why this programme fits you)
-**2. Kuras tavās stiprajās pusēs palīdz** (Which of your strengths help)
-**3. Iespējamie izaicinājumi** (Possible challenges)
-**4. Ko uzlabot pirms iestāšanās** (What to improve before applying)
-**5. Karjeras iespējas** (Career opportunities — based ONLY on the provided job titles)
+Use EXACTLY these 5 Markdown sections (### header + 2-4 sentences or a short bullet list each):
+
+### 🎯 Kāpēc šī programma der tev
+### 💪 Tavās stiprajās pusēs, kas palīdz
+### ⚡ Iespējamie izaicinājumi
+### 📚 Ko uzlabot pirms iestāšanās
+### 💼 Karjeras iespējas
+(list job titles from the data ONLY; if none — say so)
 """
 
     response = _client.models.generate_content(
@@ -207,101 +209,97 @@ Write the explanation with exactly these 5 sections:
 def _local_explanation(student: dict, programme: dict, breakdown: dict) -> str:
     """
     Generate a structured local explanation without the AI API.
-    Produces a decent human-readable explanation from the scoring breakdown.
+    Produces clean, readable Markdown using ### headers and bullet lists.
     """
-    m = programme.get("matching", {}) or {}
+    m      = programme.get("matching", {}) or {}
     career = programme.get("career", {}) or {}
-    score = breakdown.get("final_pct", 0)
+    score  = breakdown.get("final_pct", 0)
 
-    name = programme.get("name", "šī programma")
+    name    = programme.get("name", "šī programma")
     faculty = programme.get("faculty", "RTU")
 
     matched_interests = breakdown.get("interests", {}).get("matched", [])
     matched_strengths = breakdown.get("strengths", {}).get("matched", [])
-    penalties = breakdown.get("penalties", [])
-    job_titles = (career.get("job_titles") or [])[:4]
+    penalties         = breakdown.get("penalties", [])
+    job_titles        = (career.get("job_titles") or [])[:5]
 
-    # Section 1: Why it fits
+    # ── Section 1: Why it fits ────────────────────────────────────────────────
     if matched_interests:
         from utils import get_label, INTEREST_DOMAINS
         interest_labels = [get_label(INTEREST_DOMAINS, k) for k in matched_interests[:3]]
-        why_fits = (
-            f"Tava interese par **{', '.join(interest_labels)}** tieši sakrīt ar šīs programmas "
-            f"mācību saturu. Programma ir daļa no {faculty}, kas nodrošina augsta līmeņa "
-            f"akadēmisko vai profesionālo izglītību šajā jomā."
+        sec1 = (
+            f"Tava interese par **{', '.join(interest_labels)}** tieši sakrīt ar "
+            f"**{name}** mācību saturu. "
+            f"Programma ({faculty}) nodrošina augsta līmeņa izglītību šajā jomā, "
+            f"kas kopā ar tavu profilu dod **{score:.0f}% atbilstību**."
         )
     else:
-        why_fits = (
-            f"Programma **{name}** nodrošina plašu zinātniski-tehnisko izglītību, kas var "
-            f"atbilst taviem karjeras mērķiem un interesēm."
+        sec1 = (
+            f"**{name}** var atbilst taviem karjeras mērķiem, lai gan tiešas interešu "
+            f"sakritības netika konstatētas. Atbilstība pašlaik ir **{score:.0f}%** — "
+            f"papildini profilu, lai iegūtu precīzāku novērtējumu."
         )
 
-    # Section 2: Strengths that help
+    # ── Section 2: Strengths ──────────────────────────────────────────────────
     if matched_strengths:
         from utils import get_label, STRENGTH_TAGS
-        strength_labels = [get_label(STRENGTH_TAGS, k) for k in matched_strengths[:3]]
-        strengths_text = (
-            f"Tavās stiprajās pusēs — **{', '.join(strength_labels)}** — ir tiešs sakars ar "
-            f"programmas prasībām. Tas nozīmē, ka studijās tev būs priekšrocība pār citiem "
-            f"studentiem, kuri šajās jomās ir vājāki."
-        )
+        s_labels = [get_label(STRENGTH_TAGS, k) for k in matched_strengths[:3]]
+        sec2_items = [f"- **{lbl}** atbilst programmas prasībām" for lbl in s_labels]
+        sec2 = "\n".join(sec2_items)
     else:
-        strengths_text = (
-            "Lai gan tiešas sakritības starp tavām stiprajām pusēm un programmas prasībām "
-            "nav atrasta, nav iemesla uztraukties — studijās apgūsi nepieciešamās prasmes."
+        sec2 = (
+            "- Tiešu sakritību starp stiprajām pusēm un programmas prasībām nav konstatēts\n"
+            "- Nepieciešamās prasmes var apgūt studiju laikā — tas nav šķērslis iestājam"
         )
 
-    # Section 3: Challenges
-    challenges_parts = []
+    # ── Section 3: Challenges ─────────────────────────────────────────────────
+    ch = []
     if m.get("math_intensive") and not student.get("math_friendly"):
-        challenges_parts.append("matemātika ir intensīva, un tas var būt izaicinājums")
-    if m.get("entry_exam_required") and not student.get("exam_ok", True):
-        challenges_parts.append("nepieciešams iestājpārbaudījums, kuram jāsagatavojas")
+        ch.append("- **Matemātika** ir intensīva — var būt izaicinājums")
+    if programme.get("entry_exam") and not student.get("exam_ok", True):
+        ch.append("- Nepieciešams **iestājpārbaudījums** — svarīgi sagatavoties laicīgi")
     if m.get("difficulty_level") in ("high", "medium_high"):
-        challenges_parts.append("programma ir pieprasīta — nepieciešama augsta motivācija un darba spējas")
+        ch.append("- Programma ir **pieprasīta** — nepieciešama augsta motivācija")
     if not matched_interests:
-        challenges_parts.append("interešu atbilstība ar programmu ir daļēja")
+        ch.append("- Interešu atbilstība ir **daļēja** — vēlams pārskatīt profilu")
+    sec3 = "\n".join(ch) if ch else "- Nav nopietnu izaicinājumu — tavs profils labi atbilst programmai ✅"
 
-    if challenges_parts:
-        challenges_text = "Potenciālie izaicinājumi: " + "; ".join(challenges_parts) + "."
-    else:
-        challenges_text = "Nopietnu izaicinājumu nav paredzēts — tavs profils labi atbilst programmas prasībām."
-
-    # Section 4: What to improve
-    improve_parts = []
+    # ── Section 4: What to improve ────────────────────────────────────────────
+    imp = []
     if m.get("math_intensive") and not student.get("math_friendly"):
-        improve_parts.append("nostiprināt matemātikas zināšanas (algebru, analīzi)")
-    if m.get("entry_exam_required"):
-        improve_parts.append("sagatavoties iestājpārbaudījumam laicīgi")
+        imp.append("- Nostiprināt **matemātikas** zināšanas (algebra, analīze)")
+    if programme.get("entry_exam"):
+        imp.append("- Sagatavoties **iestājpārbaudījumam** savlaicīgi")
     lang_ok = breakdown.get("language", {}).get("match", True)
     if not lang_ok:
-        pref_lang = student.get("preferred_language", "lv")
-        improve_parts.append(
-            f"uzlabot valodas prasmes ({'angļu' if pref_lang == 'en' else 'latviešu'} valodā)"
-        )
-    if not improve_parts:
-        improve_parts = ["turpināt attīstīt jau esošās stiprās puses", "iepazīties ar nozares jaunumiem"]
+        pref = student.get("preferred_language", "lv")
+        imp.append(f"- Uzlabot **{'angļu' if pref == 'en' else 'latviešu'} valodas** prasmes")
+    if not imp:
+        imp = [
+            "- Turpināt attīstīt esošās stiprās puses",
+            "- Iepazīties ar nozares jaunumiem un tendencēm",
+        ]
+    sec4 = "\n".join(imp)
 
-    improve_text = "Ieteikumi pirms iestāšanās: " + "; ".join(improve_parts) + "."
-
-    # Section 5: Career
+    # ── Section 5: Career ─────────────────────────────────────────────────────
     if job_titles:
-        career_text = f"Absolventi parasti strādā kā: **{', '.join(job_titles)}**."
+        sec5 = "\n".join(f"- {j}" for j in job_titles)
+        if career.get("description"):
+            sec5 += f"\n\n{career['description'][:180]}"
     else:
-        career_description = (career.get("description") or "")[:200]
-        career_text = career_description or "Plašas karjeras iespējas nozares uzņēmumos un organizācijās."
+        sec5 = career.get("description", "")[:250] or "Plašas iespējas nozares uzņēmumos un organizācijās."
 
     parts = [
-        f"**1. Kāpēc šī programma der tev** (Atbilstība: {score:.0f}%)\n{why_fits}",
-        f"**2. Tavās stiprajās pusēs, kas palīdz**\n{strengths_text}",
-        f"**3. Iespējamie izaicinājumi**\n{challenges_text}",
-        f"**4. Ko uzlabot pirms iestāšanās**\n{improve_text}",
-        f"**5. Karjeras iespējas**\n{career_text}",
+        f"### 🎯 Kāpēc šī programma der tev\n{sec1}",
+        f"### 💪 Tavās stiprajās pusēs, kas palīdz\n{sec2}",
+        f"### ⚡ Iespējamie izaicinājumi\n{sec3}",
+        f"### 📚 Ko uzlabot pirms iestāšanās\n{sec4}",
+        f"### 💼 Karjeras iespējas\n{sec5}",
     ]
 
     footer = (
         "\n\n---\n"
-        "*ℹ️ Šis paskaidrojums ģenerēts lokāli (AI API nav aktīva). "
-        "Aktivizē Gemini API pilnīgākam paskaidrojumam.*"
+        "*ℹ️ Lokāls paskaidrojums (Gemini API nav aktīva). "
+        "Aktivizē GEMINI\\_API\\_KEY pilnīgākam AI paskaidrojumam.*"
     )
     return "\n\n".join(parts) + footer
