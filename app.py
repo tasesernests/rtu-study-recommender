@@ -17,14 +17,14 @@ import streamlit as st
 import pandas as pd
 
 st.set_page_config(
-    page_title="RTU Studiju Ieteicējs",
+    page_title="RTU Study Programme Recommender",
     page_icon="🎓",
     layout="wide",
     initial_sidebar_state="expanded",
     menu_items={
         "Get Help": "https://www.rtu.lv",
         "Report a bug": None,
-        "About": "RTU Study Programme AI Recommender — v1.0",
+        "About": "RTU Study Programme AI Recommender — v1.1",
     },
 )
 
@@ -48,23 +48,26 @@ from utils import (
 # ─────────────────────────────────────────────────────────────────────────────
 st.html("""
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,300;0,14..32,400;0,14..32,500;0,14..32,600;0,14..32,700;0,14..32,800;0,14..32,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
 
-/* ── BASE ─────────────────────────────────────────────────── */
+/* ── BASE ─────────────────────────────────────────────────────── */
 *, html, body, [class*="css"] {
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif !important;
 }
+.stApp {
+    background: #f0f4f8 !important;
+}
 .main .block-container {
-    padding-top: 1rem !important;
+    padding-top: 1.25rem !important;
     padding-bottom: 3rem !important;
-    max-width: 1140px !important;
+    max-width: 1160px !important;
 }
 
-/* ── SIDEBAR ─────────────────────────────────────────────── */
+/* ── SIDEBAR ──────────────────────────────────────────────────── */
 [data-testid="stSidebar"] {
     background: linear-gradient(175deg, #0f172a 0%, #1e293b 60%, #0f172a 100%) !important;
 }
-[data-testid="stSidebar"] section > div { padding-top: 0.5rem; }
+[data-testid="stSidebar"] section > div { padding-top: 0.25rem; }
 [data-testid="stSidebar"] label,
 [data-testid="stSidebar"] p,
 [data-testid="stSidebar"] span,
@@ -74,9 +77,8 @@ st.html("""
 [data-testid="stSidebar"] h3 { color: #e2e8f0 !important; }
 [data-testid="stSidebar"] hr {
     border-color: #334155 !important;
-    margin: 0.8rem 0 !important;
+    margin: 0.75rem 0 !important;
 }
-/* Sidebar multiselect tags */
 [data-testid="stSidebar"] [data-baseweb="tag"] {
     background: #1e3a5f !important;
     border: 1px solid #2563eb40 !important;
@@ -84,9 +86,9 @@ st.html("""
 }
 [data-testid="stSidebar"] [data-baseweb="tag"] span { color: #93c5fd !important; }
 
-/* ── TABS ────────────────────────────────────────────────── */
+/* ── TABS ─────────────────────────────────────────────────────── */
 .stTabs [data-baseweb="tab-list"] {
-    background: #f1f5f9 !important;
+    background: #e8edf2 !important;
     padding: 4px !important;
     border-radius: 14px !important;
     gap: 2px !important;
@@ -109,7 +111,7 @@ st.html("""
 }
 .stTabs [data-baseweb="tab-panel"] { padding-top: 1.5rem !important; }
 
-/* ── BUTTONS ─────────────────────────────────────────────── */
+/* ── BUTTONS ──────────────────────────────────────────────────── */
 .stButton > button {
     border-radius: 10px !important;
     font-weight: 600 !important;
@@ -121,10 +123,10 @@ st.html("""
     background: linear-gradient(135deg, #c8102e 0%, #9b0022 100%) !important;
     color: white !important;
     border: none !important;
-    box-shadow: 0 4px 14px rgba(200,16,46,0.30) !important;
+    box-shadow: 0 4px 14px rgba(200,16,46,0.28) !important;
 }
 .stButton > button[kind="primary"]:hover {
-    box-shadow: 0 6px 22px rgba(200,16,46,0.45) !important;
+    box-shadow: 0 6px 22px rgba(200,16,46,0.42) !important;
     transform: translateY(-1px) !important;
 }
 .stButton > button[kind="secondary"],
@@ -140,17 +142,13 @@ st.html("""
     color: #c8102e !important;
 }
 
-/* ── METRICS ─────────────────────────────────────────────── */
+/* ── METRICS ──────────────────────────────────────────────────── */
 [data-testid="stMetric"] {
     background: white !important;
-    border: 1px solid #f0f4f8 !important;
+    border: 1px solid #e8ecf0 !important;
     border-radius: 14px !important;
     padding: 14px 18px !important;
     box-shadow: 0 1px 4px rgba(0,0,0,0.05) !important;
-    transition: box-shadow 0.2s !important;
-}
-[data-testid="stMetric"]:hover {
-    box-shadow: 0 4px 14px rgba(0,0,0,0.09) !important;
 }
 [data-testid="stMetricLabel"] {
     font-size: 0.68rem !important;
@@ -166,37 +164,41 @@ st.html("""
     letter-spacing: -0.02em !important;
 }
 
-/* ── EXPANDERS ───────────────────────────────────────────── */
+/* ── EXPANDERS ────────────────────────────────────────────────── */
 [data-testid="stExpander"] {
-    border: 1px solid #e8ecf0 !important;
+    border: 1px solid #e2e8f0 !important;
     border-radius: 12px !important;
     overflow: hidden !important;
-    margin-bottom: 8px !important;
+    margin-bottom: 6px !important;
     background: white !important;
     box-shadow: 0 1px 3px rgba(0,0,0,0.04) !important;
 }
+/* Only style background — never override padding on summary (it houses the icon) */
 [data-testid="stExpander"] summary {
-    font-weight: 600 !important;
-    font-size: 0.875rem !important;
-    color: #374151 !important;
-    padding: 12px 16px !important;
     background: #fafafa !important;
 }
 [data-testid="stExpander"] summary:hover { background: #f5f8fa !important; }
+/* Style the label text inside summary without touching the icon layout */
+[data-testid="stExpander"] summary p,
+[data-testid="stExpander"] summary span {
+    font-weight: 600 !important;
+    font-size: 0.875rem !important;
+    color: #374151 !important;
+}
 [data-testid="stExpander"] [data-testid="stExpanderDetails"] {
     padding: 16px !important;
 }
 
-/* ── FORM ────────────────────────────────────────────────── */
+/* ── FORM ─────────────────────────────────────────────────────── */
 [data-testid="stForm"] {
     background: white !important;
-    border: 1px solid #e8ecf0 !important;
+    border: 1px solid #e2e8f0 !important;
     border-radius: 20px !important;
     padding: 4px 2px !important;
-    box-shadow: 0 2px 12px rgba(0,0,0,0.05) !important;
+    box-shadow: 0 2px 16px rgba(0,0,0,0.06) !important;
 }
 
-/* ── MULTISELECT TAGS ────────────────────────────────────── */
+/* ── MULTISELECT TAGS ─────────────────────────────────────────── */
 [data-testid="stMultiSelect"] [data-baseweb="tag"] {
     background: #fef1f3 !important;
     border: 1px solid #fecdd3 !important;
@@ -204,25 +206,25 @@ st.html("""
 }
 [data-testid="stMultiSelect"] [data-baseweb="tag"] span { color: #be123c !important; }
 
-/* ── SELECT SLIDER ───────────────────────────────────────── */
+/* ── SELECT SLIDER ────────────────────────────────────────────── */
 [data-testid="stSlider"] [role="slider"] { background: #c8102e !important; }
 
-/* ── ALERTS ──────────────────────────────────────────────── */
+/* ── ALERTS ───────────────────────────────────────────────────── */
 [data-testid="stAlert"] { border-radius: 10px !important; border: none !important; }
 
-/* ── HR ──────────────────────────────────────────────────── */
+/* ── HR ───────────────────────────────────────────────────────── */
 hr {
     border: none !important;
-    border-top: 1px solid #e8ecf0 !important;
+    border-top: 1px solid #e2e8f0 !important;
     margin: 1rem 0 !important;
 }
 
-/* ── INPUTS ──────────────────────────────────────────────── */
+/* ── INPUTS ───────────────────────────────────────────────────── */
 [data-baseweb="input"] > div,
 [data-baseweb="textarea"] > div { border-radius: 10px !important; }
 
-/* ── MISC ────────────────────────────────────────────────── */
-footer { visibility: hidden; }
+/* ── MISC ─────────────────────────────────────────────────────── */
+footer    { visibility: hidden; }
 #MainMenu { visibility: hidden; }
 </style>
 """)
@@ -247,7 +249,7 @@ def _init_session():
 # DATA LOADING
 # ─────────────────────────────────────────────────────────────────────────────
 
-@st.cache_data(ttl=3600, show_spinner="⏳ Ielādē RTU programmu datu bāzi…")
+@st.cache_data(ttl=3600, show_spinner="⏳ Loading RTU programme database…")
 def _load_data() -> tuple[list, dict, dict]:
     programmes, stats = load_all_programmes()
     taxonomy = extract_taxonomy(programmes)
@@ -260,60 +262,60 @@ def _load_data() -> tuple[list, dict, dict]:
 
 def _section_label(icon: str, text: str):
     st.html(
-        f'<div style="font-size:0.7rem;font-weight:700;text-transform:uppercase;'
-        f'letter-spacing:0.08em;color:#475569;margin:12px 0 6px 0;">{icon} {text}</div>',
-        )
+        f'<div style="font-size:0.68rem;font-weight:700;text-transform:uppercase;'
+        f'letter-spacing:0.09em;color:#475569;margin:14px 0 6px 0;">{icon} {text}</div>',
+    )
 
 
 def render_sidebar(programmes: list[dict], taxonomy: dict) -> dict:
     with st.sidebar:
         # Brand header
         st.html("""
-        <div style="padding:16px 8px 20px 8px; text-align:center;">
-          <div style="font-size:2.8rem; line-height:1;">🎓</div>
-          <div style="font-size:1rem; font-weight:800; color:white; margin-top:8px;
-                      letter-spacing:-0.02em;">RTU Ieteicējs</div>
-          <div style="font-size:0.72rem; color:#64748b; margin-top:3px;
-                      text-transform:uppercase; letter-spacing:0.08em;">
+        <div style="padding:20px 8px 22px;text-align:center;">
+          <div style="font-size:2.8rem;line-height:1;">🎓</div>
+          <div style="font-size:1rem;font-weight:800;color:white;margin-top:8px;
+                      letter-spacing:-0.02em;">RTU Recommender</div>
+          <div style="font-size:0.68rem;color:#475569;margin-top:3px;
+                      text-transform:uppercase;letter-spacing:0.09em;">
             Riga Technical University</div>
         </div>
         """)
 
         st.markdown("---")
-        _section_label("⚡", "Ātrie filtri")
+        _section_label("⚡", "Quick filters")
 
-        no_exam = st.toggle("✅ Bez iestājpārbaudījuma", value=False, key="f_no_exam")
-        budget_only = st.toggle("🎓 Tikai budžeta vietas", value=False, key="f_budget")
+        no_exam     = st.toggle("✅ No entrance exam",    value=False, key="f_no_exam")
+        budget_only = st.toggle("🎓 Budget places only", value=False, key="f_budget")
 
         st.markdown("---")
-        _section_label("🏛️", "Fakultāte")
+        _section_label("🏛️", "Faculty")
         faculties = sorted({p.get("faculty", "") for p in programmes if p.get("faculty")})
         selected_faculties = st.multiselect(
-            "Fakultāte", options=faculties, default=[],
-            placeholder="Visas…", key="filter_faculties", label_visibility="collapsed",
+            "Faculty", options=faculties, default=[],
+            placeholder="All…", key="filter_faculties", label_visibility="collapsed",
         )
 
-        _section_label("🌐", "Studiju valoda")
-        lang_opts = {"lv": "🇱🇻 Latviešu", "en": "🇬🇧 Angļu", "ru": "🇷🇺 Krievu"}
+        _section_label("🌐", "Language of instruction")
+        lang_opts = {"lv": "🇱🇻 Latvian", "en": "🇬🇧 English", "ru": "🇷🇺 Russian"}
         selected_langs = st.multiselect(
-            "Valoda", options=list(lang_opts.keys()),
+            "Language", options=list(lang_opts.keys()),
             format_func=lambda k: lang_opts[k],
-            default=[], placeholder="Visas…",
+            default=[], placeholder="All…",
             key="filter_langs", label_visibility="collapsed",
         )
 
-        _section_label("📍", "Atrašanās vieta")
+        _section_label("📍", "Location")
         all_locations = sorted({loc for p in programmes for loc in (p.get("locations") or [])})
         selected_locations = st.multiselect(
-            "Vieta", options=all_locations, default=[],
-            placeholder="Visas…", key="filter_locations", label_visibility="collapsed",
+            "Location", options=all_locations, default=[],
+            placeholder="All…", key="filter_locations", label_visibility="collapsed",
         )
 
-        _section_label("📚", "Programmas tips")
+        _section_label("📚", "Programme type")
         prog_types = sorted({p.get("program_type", "") for p in programmes if p.get("program_type")})
         selected_types = st.multiselect(
-            "Tips", options=prog_types, default=[],
-            placeholder="Visi…", key="filter_types", label_visibility="collapsed",
+            "Type", options=prog_types, default=[],
+            placeholder="All…", key="filter_types", label_visibility="collapsed",
         )
 
         st.markdown("---")
@@ -324,27 +326,27 @@ def render_sidebar(programmes: list[dict], taxonomy: dict) -> dict:
                 f'<div style="background:#0d3b2e;border:1px solid #065f46;border-radius:10px;'
                 f'padding:10px 12px;margin-bottom:8px;">'
                 f'<div style="color:#34d399;font-weight:700;font-size:0.85rem;">'
-                f'❤️ {n_saved} saglabāta programma{"s" if n_saved != 1 else ""}</div></div>',
-                )
-            if st.button("🗑️ Notīrīt saglabātās", key="clear_saved", use_container_width=True):
-                st.session_state["saved_programmes"] = set()
+                f'❤️ {n_saved} saved programme{"s" if n_saved != 1 else ""}</div></div>',
+            )
+            if st.button("🗑️ Clear saved", key="clear_saved", use_container_width=True):
+                st.session_state["saved_programmes"]    = set()
                 st.session_state["saved_programme_data"] = {}
                 st.rerun()
 
         st.markdown("---")
         st.html(
-            f'<div style="color:#475569;font-size:0.72rem;text-align:center;line-height:1.8;">'
-            f'📦 {len(programmes)} programmas ielādētas<br>'
-            f'🗓️ Dati: RTU 2026</div>',
-            )
+            f'<div style="color:#475569;font-size:0.7rem;text-align:center;line-height:1.9;">'
+            f'📦 {len(programmes)} programmes loaded<br>'
+            f'🗓️ Data: RTU 2026</div>',
+        )
 
     return {
-        "faculties": selected_faculties or None,
-        "languages": selected_langs or None,
-        "locations": selected_locations or None,
-        "program_types": selected_types or None,
+        "faculties":    selected_faculties or None,
+        "languages":    selected_langs     or None,
+        "locations":    selected_locations or None,
+        "program_types":selected_types     or None,
         "no_exam_only": no_exam,
-        "budget_only": budget_only,
+        "budget_only":  budget_only,
     }
 
 
@@ -353,20 +355,20 @@ def render_sidebar(programmes: list[dict], taxonomy: dict) -> dict:
 # ─────────────────────────────────────────────────────────────────────────────
 
 def _form_section(icon: str, title: str, subtitle: str):
-    """Render a styled section header inside the form."""
+    """Render a styled section divider inside the form."""
     st.html(
         f"""<div style="
-          display:flex; align-items:center; gap:12px;
-          padding:14px 4px 10px 4px;
+          display:flex;align-items:center;gap:12px;
+          padding:16px 4px 12px;
           border-bottom:1.5px solid #f1f5f9;
           margin-bottom:4px;
         ">
           <div style="
             background:linear-gradient(135deg,#c8102e,#9b0022);
-            color:white; border-radius:10px;
-            width:36px; height:36px;
-            display:flex; align-items:center; justify-content:center;
-            font-size:1.1rem; flex-shrink:0;
+            color:white;border-radius:10px;
+            width:36px;height:36px;
+            display:flex;align-items:center;justify-content:center;
+            font-size:1.1rem;flex-shrink:0;
             box-shadow:0 3px 8px rgba(200,16,46,0.25);
           ">{icon}</div>
           <div>
@@ -375,150 +377,150 @@ def _form_section(icon: str, title: str, subtitle: str):
             <div style="font-size:0.75rem;color:#94a3b8;margin-top:1px;">{subtitle}</div>
           </div>
         </div>""",
-        )
+    )
 
 
 def render_student_form(programmes: list[dict], taxonomy: dict) -> dict | None:
     st.html("""
-    <div style="margin-bottom:16px;">
+    <div style="margin-bottom:18px;">
       <h2 style="margin:0;font-size:1.4rem;font-weight:800;color:#0f172a;
-                 letter-spacing:-0.02em;">📝 Mans Profils</h2>
-      <p style="margin:4px 0 0 0;color:#64748b;font-size:0.875rem;">
-        Jo precīzāk aizpildi, jo personalizētāki ieteikumi. Visi lauki ir brīvprātīgi.</p>
+                 letter-spacing:-0.02em;">📝 My Profile</h2>
+      <p style="margin:5px 0 0;color:#64748b;font-size:0.875rem;">
+        The more you fill in, the better your matches. All fields are optional.</p>
     </div>
     """)
 
     with st.form("student_profile_form", clear_on_submit=False):
 
         # ── SECTION 1: Interests & Skills ────────────────────────────────
-        _form_section("🎯", "Intereses & Spējas",
-                      "Ko tev patīk un kādās jomās esi stiprāks")
+        _form_section("🎯", "Interests & Strengths",
+                      "What you enjoy and what you're good at")
 
         col1, col2 = st.columns(2, gap="medium")
         with col1:
-            st.markdown("**💡 Interešu jomas** *(līdz 5)*")
+            st.markdown("**💡 Interest areas** *(up to 5)*")
             interests = st.multiselect(
-                "Intereses", options=list(INTEREST_DOMAINS.keys()),
+                "Interests", options=list(INTEREST_DOMAINS.keys()),
                 format_func=lambda k: INTEREST_DOMAINS[k]["label"],
                 max_selections=5, key="form_interests",
                 label_visibility="collapsed",
-                placeholder="Izvēlies, kas tevi interesē...",
+                placeholder="Choose what interests you…",
             )
-            st.markdown("**💪 Stiprās puses & Priekšmeti** *(līdz 6)*")
+            st.markdown("**💪 Strengths & Subjects** *(up to 6)*")
             strengths = st.multiselect(
-                "Stiprās puses", options=list(STRENGTH_TAGS.keys()),
+                "Strengths", options=list(STRENGTH_TAGS.keys()),
                 format_func=lambda k: STRENGTH_TAGS[k]["label"],
                 max_selections=6, key="form_strengths",
                 label_visibility="collapsed",
-                placeholder="Kuros priekšmetos esi stiprāks...",
+                placeholder="Which subjects are you strongest in…",
             )
         with col2:
-            st.markdown("**🧠 Personības tips** *(līdz 4)*")
+            st.markdown("**🧠 Personality type** *(up to 4)*")
             personality = st.multiselect(
-                "Personība", options=list(PERSONALITY_TRAITS.keys()),
+                "Personality", options=list(PERSONALITY_TRAITS.keys()),
                 format_func=lambda k: PERSONALITY_TRAITS[k]["label"],
                 max_selections=4, key="form_personality",
                 label_visibility="collapsed",
-                placeholder="Kā tu raksturotu sevi...",
+                placeholder="How would you describe yourself…",
             )
-            st.markdown("**🏭 Vēlamās nozares** *(līdz 5)*")
+            st.markdown("**🏭 Preferred industry sectors** *(up to 5)*")
             sectors = st.multiselect(
-                "Nozares", options=list(INDUSTRY_SECTORS.keys()),
+                "Sectors", options=list(INDUSTRY_SECTORS.keys()),
                 format_func=lambda k: INDUSTRY_SECTORS[k]["label"],
                 max_selections=5, key="form_sectors",
                 label_visibility="collapsed",
-                placeholder="Kurā nozarē vēlies strādāt...",
+                placeholder="Which sector do you want to work in…",
             )
 
         # ── SECTION 2: Study Preferences ─────────────────────────────────
-        _form_section("⚙️", "Studiju Preferences",
-                      "Valoda, grūtības pakāpe un citas vēlmes")
+        _form_section("⚙️", "Study Preferences",
+                      "Language, difficulty level and personal preferences")
 
         col3, col4 = st.columns(2, gap="medium")
         with col3:
-            st.markdown("**🌐 Studiju valoda**")
+            st.markdown("**🌐 Language of instruction**")
             preferred_language = st.selectbox(
-                "Valoda", options=["lv", "en", "ru", "any"],
+                "Language", options=["lv", "en", "ru", "any"],
                 format_func=lambda k: {
-                    "lv": "🇱🇻 Latviešu",
-                    "en": "🇬🇧 Angļu",
-                    "ru": "🇷🇺 Krievu",
-                    "any": "🌍 Jebkura",
+                    "lv": "🇱🇻 Latvian",
+                    "en": "🇬🇧 English",
+                    "ru": "🇷🇺 Russian",
+                    "any": "🌍 Any language",
                 }[k],
                 key="form_language", label_visibility="collapsed",
             )
-            st.markdown("**📊 Grūtības pakāpe**")
+            st.markdown("**📊 Difficulty level**")
             preferred_difficulty = st.select_slider(
-                "Grūtība",
+                "Difficulty",
                 options=["low", "medium", "medium_high", "high"],
                 value="medium",
                 format_func=lambda k: DIFFICULTY_LEVELS.get(k, k),
                 key="form_difficulty", label_visibility="collapsed",
             )
-            st.markdown("**🤝 Darba stils**")
+            st.markdown("**🤝 Work style**")
             teamwork = st.select_slider(
                 "Teamwork",
                 options=["team", "both", "independent"],
                 value="both",
                 format_func=lambda k: {
-                    "team": "👥 Komandas darbs",
-                    "both": "🔄 Abos labi",
-                    "independent": "🦅 Patstāvīgs",
+                    "team": "👥 Team work",
+                    "both": "🔄 Both",
+                    "independent": "🦅 Independent",
                 }[k],
                 key="form_teamwork", label_visibility="collapsed",
             )
 
         with col4:
-            st.markdown("**Personīgās Preferences**")
+            st.markdown("**Personal preferences**")
             st.html("<div style='height:4px'></div>")
 
             math_friendly = st.toggle(
-                "📐 Matemātika ir mana stiprā puse",
-                key="form_math", value=False
+                "📐 Maths is one of my strengths",
+                key="form_math", value=False,
             )
             creative = st.toggle(
-                "🎨 Man patīk radošs / dizaina darbs",
-                key="form_creative", value=False
+                "🎨 I enjoy creative / design work",
+                key="form_creative", value=False,
             )
             research = st.toggle(
-                "🔬 Interesē pētnieciskās studijas",
-                key="form_research", value=False
+                "🔬 I'm interested in research-oriented studies",
+                key="form_research", value=False,
             )
             international = st.toggle(
-                "🌍 Vēlos studēt vai strādāt ārzemēs",
-                key="form_intl", value=False
+                "🌍 I want to study or work abroad",
+                key="form_intl", value=False,
             )
             exam_ok = st.toggle(
-                "📝 Esmu gatavs iestājpārbaudījumam",
-                key="form_exam", value=True
+                "📝 I'm willing to sit an entrance exam",
+                key="form_exam", value=True,
             )
 
         # ── SECTION 3: Career Goals ───────────────────────────────────────
-        _form_section("🚀", "Karjeras Mērķi",
-                      "Apraksti savus nākotnes plānus (brīvi, neobligāti)")
+        _form_section("🚀", "Career Goals",
+                      "Describe your future plans in your own words (optional)")
 
         career_text = st.text_area(
-            "Karjera",
+            "Career goals",
             placeholder=(
-                "Piemēram: \"Vēlos kļūt par datorsistēmu inženieri un strādāt AI jomā\" "
-                "vai \"Interesē arhitektūra un ilgtspējīga būvniecība\"…"
+                'e.g. "I want to become a software engineer working in AI" '
+                'or "Interested in architecture and sustainable construction"...'
             ),
             max_chars=300, height=90,
             key="form_career_text", label_visibility="collapsed",
         )
 
-        # ── Submit area ───────────────────────────────────────────────────
+        # ── Submit ────────────────────────────────────────────────────────
         st.html("<div style='height:8px'></div>")
         c1, c2, c3 = st.columns([1, 3, 1])
         with c2:
             submitted = st.form_submit_button(
-                "🔍  Atrast Manai Personībai Atbilstošās Programmas",
+                "🔍  Find My Best-Matching Programmes",
                 use_container_width=True,
                 type="primary",
             )
         with c3:
             load_test = st.form_submit_button(
-                "📋 Testa profils",
+                "📋 Load test profile",
                 use_container_width=True,
             )
 
@@ -548,7 +550,7 @@ def _load_test_profile():
             data = json.load(f)
         profiles = data.get("profiles", [])
         if profiles:
-            chosen = random.choice(profiles)
+            chosen  = random.choice(profiles)
             profile = chosen.get("profile", {})
             mapping = {
                 "form_interests": "interests", "form_strengths": "strengths",
@@ -562,9 +564,9 @@ def _load_test_profile():
             for form_key, profile_key in mapping.items():
                 if profile_key in profile:
                     st.session_state[form_key] = profile[profile_key]
-            st.toast(f"✅ Testa profils ielādēts: **{chosen.get('name', 'Nezināms')}**")
+            st.toast(f"✅ Test profile loaded: **{chosen.get('name', 'Unknown')}**")
     except Exception as e:
-        st.toast(f"⚠️ Neizdevās ielādēt testa profilu: {e}", icon="⚠️")
+        st.toast(f"⚠️ Could not load test profile: {e}", icon="⚠️")
 
 
 # ─────────────────────────────────────────────────────────────────────────────
@@ -572,66 +574,59 @@ def _load_test_profile():
 # ─────────────────────────────────────────────────────────────────────────────
 
 def render_results(student: dict, programmes: list[dict], filters: dict):
-    with loading_spinner_context("🔍 Aprēķina atbilstību visām programmām…"):
+    with loading_spinner_context("🔍 Calculating compatibility for all programmes…"):
         top_results = rank_programmes(student, programmes, top_n=3, filters=filters)
-        all_scored = score_all_programmes(student, programmes, filters=filters)
+        all_scored  = score_all_programmes(student, programmes, filters=filters)
 
     scores_map = {r["programme"].get("id", ""): r["score"] for r in all_scored}
     st.session_state["last_scores"] = scores_map
 
     if not top_results:
         st.warning(
-            "⚠️ Nav atrasta neviena programma ar šādiem filtriem. "
-            "Mēģini mainīt filtrus sānjoslā vai papildināt savu profilu."
+            "⚠️ No programmes found with the current filters. "
+            "Try adjusting the sidebar filters or adding more profile details."
         )
         return
 
     top_score = top_results[0]["score"]
     avg_score = sum(r["score"] for r in top_results) / len(top_results)
 
-    # Result summary banner
+    # Confidence banner
     if top_score >= 75:
-        badge_color, badge_bg, badge_text = "#059669", "#ecfdf5", "Augsta pārliecība"
-        badge_icon = "🟢"
+        b_color, b_bg, b_text, b_icon = "#059669", "#ecfdf5", "High confidence", "🟢"
     elif top_score >= 50:
-        badge_color, badge_bg, badge_text = "#d97706", "#fffbeb", "Vidēja pārliecība"
-        badge_icon = "🟡"
+        b_color, b_bg, b_text, b_icon = "#d97706", "#fffbeb", "Good match", "🟡"
     else:
-        badge_color, badge_bg, badge_text = "#dc2626", "#fef2f2", "Zema pārliecība"
-        badge_icon = "🟠"
+        b_color, b_bg, b_text, b_icon = "#dc2626", "#fef2f2", "Partial match", "🟠"
 
     st.html(f"""
     <div style="
-      background:{badge_bg};
-      border:1.5px solid {badge_color}30;
-      border-left:5px solid {badge_color};
-      border-radius:14px;
-      padding:14px 20px;
-      margin-bottom:24px;
-      display:flex; align-items:center; gap:16px;
-    ">
-      <div style="font-size:2rem;">{badge_icon}</div>
+      background:{b_bg};border:1.5px solid {b_color}30;
+      border-left:5px solid {b_color};border-radius:14px;
+      padding:14px 20px;margin-bottom:24px;
+      display:flex;align-items:center;gap:16px;">
+      <div style="font-size:2rem;">{b_icon}</div>
       <div>
-        <div style="font-size:1rem;font-weight:700;color:{badge_color};">
-          {badge_text} — labākā atbilstība: {top_score:.0f}%
+        <div style="font-size:1rem;font-weight:700;color:{b_color};">
+          {b_text} — best match: {top_score:.0f}%
         </div>
         <div style="font-size:0.8rem;color:#64748b;margin-top:2px;">
-          Top-3 vidēji: {avg_score:.0f}% ·
-          {"Profils lieliski atbilst šīm programmām." if top_score >= 75
-           else "Laba atbilstība ar dažiem kompromisiem." if top_score >= 50
-           else "Apsver papildināt profilu vai pielāgot filtrus."}
+          Top-3 average: {avg_score:.0f}% ·
+          {"Your profile is a great fit for these programmes." if top_score >= 75
+           else "Good match with some trade-offs." if top_score >= 50
+           else "Consider adding more profile details or adjusting filters."}
         </div>
       </div>
     </div>
     """)
 
     for rank_i, result in enumerate(top_results, start=1):
-        prog = result["programme"]
-        score = result["score"]
+        prog      = result["programme"]
+        score     = result["score"]
         breakdown = result["breakdown"]
         bd_summary = breakdown_summary(breakdown)
 
-        with st.spinner(f"✨ Ģenerē AI paskaidrojumu programmai #{rank_i}…"):
+        with st.spinner(f"✨ Generating AI explanation for programme #{rank_i}…"):
             explanation, is_ai = generate_ai_explanation(
                 student_profile=student,
                 programme=prog,
@@ -647,17 +642,17 @@ def render_results(student: dict, programmes: list[dict], filters: dict):
 
 
 def _save_programme(prog_id: str, programme: dict):
-    saved = st.session_state.get("saved_programmes", set())
+    saved      = st.session_state.get("saved_programmes", set())
     saved_data = st.session_state.get("saved_programme_data", {})
     if prog_id in saved:
         saved.discard(prog_id)
         saved_data.pop(prog_id, None)
-        st.toast("Programma noņemta no saglabātajām.", icon="🗑️")
+        st.toast("Programme removed from saved.", icon="🗑️")
     else:
         saved.add(prog_id)
         saved_data[prog_id] = programme
-        st.toast(f"Saglabāts: **{programme.get('name', prog_id)}**", icon="❤️")
-    st.session_state["saved_programmes"] = saved
+        st.toast(f"Saved: **{programme.get('name', prog_id)}**", icon="❤️")
+    st.session_state["saved_programmes"]     = saved
     st.session_state["saved_programme_data"] = saved_data
     st.rerun()
 
@@ -668,27 +663,26 @@ def _save_programme(prog_id: str, programme: dict):
 
 def render_compare_tab():
     saved_data = st.session_state.get("saved_programme_data", {})
-    scores = st.session_state.get("last_scores", {})
+    scores     = st.session_state.get("last_scores", {})
     saved_list = list(saved_data.values())
 
     if not saved_list:
         st.html("""
-        <div style="text-align:center;padding:48px 24px;color:#94a3b8;">
+        <div style="text-align:center;padding:52px 24px;color:#94a3b8;">
           <div style="font-size:3.5rem;">⚖️</div>
-          <h3 style="color:#64748b;font-weight:700;margin:12px 0 8px 0;">
-            Nav saglabātu programmu</h3>
+          <h3 style="color:#64748b;font-weight:700;margin:12px 0 8px;">No saved programmes</h3>
           <p style="max-width:400px;margin:0 auto;font-size:0.9rem;line-height:1.6;">
-            Atrod savai personībai atbilstošas programmas cilnē <strong>🔍 Atrast</strong>,
-            tad nospied <strong>🤍 Saglabāt</strong> pie katra interesējošā rezultāta.
+            Find matching programmes in the <strong>🔍 Recommendations</strong> tab,
+            then click <strong>🤍 Save</strong> on any result.
           </p>
         </div>
         """)
         return
 
     st.html(
-        f'<h3 style="margin:0 0 20px 0;font-size:1.2rem;font-weight:700;color:#0f172a;">'
-        f'⚖️ Salīdzinājums — {len(saved_list)} programmas</h3>',
-        )
+        f'<h3 style="margin:0 0 20px;font-size:1.2rem;font-weight:700;color:#0f172a;">'
+        f'⚖️ Comparison — {len(saved_list)} programme{"s" if len(saved_list) != 1 else ""}</h3>',
+    )
     render_comparison_table(saved_list, scores)
 
 
@@ -700,13 +694,13 @@ def render_all_programmes_tab(programmes: list[dict]):
     col_title, col_search = st.columns([2, 3])
     with col_title:
         st.html(
-            '<h3 style="margin:0 0 4px 0;font-size:1.1rem;font-weight:700;color:#0f172a;">'
-            '📋 Visas RTU Programmas</h3>',
-            )
+            '<h3 style="margin:0 0 4px;font-size:1.1rem;font-weight:700;color:#0f172a;">'
+            '📋 All RTU Programmes</h3>',
+        )
     with col_search:
         search = st.text_input(
-            "Meklēt",
-            placeholder="🔍  Meklēt pēc nosaukuma, fakultātes, atslēgvārdiem…",
+            "Search",
+            placeholder="🔍  Search by name, faculty, keywords…",
             key="search_bar", label_visibility="collapsed",
         )
 
@@ -715,8 +709,8 @@ def render_all_programmes_tab(programmes: list[dict]):
         sl = search.lower()
         filtered = [
             p for p in programmes if (
-                sl in (p.get("name") or "").lower()
-                or sl in (p.get("name_en") or "").lower()
+                sl in (p.get("name")    or "").lower()
+                or sl in (p.get("name_en")  or "").lower()
                 or sl in (p.get("description") or "").lower()
                 or sl in (p.get("faculty") or "").lower()
                 or any(sl in kw.lower() for kw in p.get("keywords", []))
@@ -727,22 +721,24 @@ def render_all_programmes_tab(programmes: list[dict]):
 
     col_info, col_sort = st.columns([3, 2])
     with col_info:
-        st.caption(f"Rāda **{len(filtered)}** no {len(programmes)} programmām"
-                   + (f" · kārtots pēc Tavas atbilstības" if scores else ""))
+        st.caption(
+            f"Showing **{len(filtered)}** of {len(programmes)} programmes"
+            + (" · sorted by your match %" if scores else "")
+        )
     with col_sort:
         sort_by = st.selectbox(
-            "Kārtot pēc:",
-            ["Atbilstība %", "Nosaukums A–Z", "Gada maksa ↑", "Budžeta vietas ↓"],
+            "Sort by:",
+            ["Match %", "Name A–Z", "Annual fee ↑", "Budget places ↓"],
             key="sort_by", label_visibility="collapsed",
         )
 
-    if sort_by == "Atbilstība %" and scores:
+    if sort_by == "Match %" and scores:
         filtered = sorted(filtered, key=lambda p: scores.get(p.get("id", ""), 0), reverse=True)
-    elif sort_by == "Nosaukums A–Z":
+    elif sort_by == "Name A–Z":
         filtered = sorted(filtered, key=lambda p: p.get("name", ""))
-    elif sort_by == "Gada maksa ↑":
+    elif sort_by == "Annual fee ↑":
         filtered = sorted(filtered, key=lambda p: p.get("annual_fee_eur") or 0)
-    elif sort_by == "Budžeta vietas ↓":
+    elif sort_by == "Budget places ↓":
         filtered = sorted(filtered, key=lambda p: p.get("budget_places", 0), reverse=True)
 
     render_programme_table(filtered, scores if scores else None)
@@ -756,70 +752,70 @@ def render_about_tab():
     col1, col2 = st.columns([3, 2])
     with col1:
         st.markdown("""
-## ℹ️ Par šo rīku
+## ℹ️ About this tool
 
-**RTU Studiju Programmu AI Ieteicējs** palīdz vidusskolas skolēniem izvēlēties
-piemērotākās RTU bakalaura studiju programmas, pamatojoties uz personīgo profilu.
+**RTU Study Programme AI Recommender** helps high-school students choose the
+best-fitting RTU bachelor programmes based on their personal profile.
 
 ---
 
-### 🏗️ Kā tas strādā?
+### 🏗️ How it works
 
-**1. Profila aizpildīšana**
-Norādi savas intereses, stiprās puses, personības tipu un preferences.
+**1. Fill in your profile**
+Add your interests, strengths, personality type and preferences.
 
-**2. Svērtā vērtēšana (13 faktori)**
-Katra programma saņem punktus par atbilstību Tavam profilam:
+**2. Weighted scoring (13 factors)**
+Each programme receives points based on how well it matches your profile:
 
-| Faktors | Svars | Sods |
+| Factor | Weight | Penalty |
 |---|---|---|
-| Interešu jomas | +4/sakritību | — |
-| Stiprās puses | +3/sakritību | — |
-| Personība | +2/sakritību | — |
-| Nozares | +3/sakritību | — |
-| Studiju valoda | +2 | −20% (nav pieejama) |
-| Grūtības pakāpe | +2 | −10% (par grūtu) |
-| Matemātika | +2 | −8% (nemīl, bet intensīva) |
-| Iestājpārbaudījums | +2 | −15% (neatbilst) |
-| Pētnieciskā, Starptautisks, Radošais, Komandas darbs | +1–2 | — |
+| Interest areas | +4/match | — |
+| Strengths | +3/match | — |
+| Personality | +2/match | — |
+| Industry sectors | +3/match | — |
+| Study language | +2 | −20% (not available) |
+| Difficulty | +2 | −10% (too hard) |
+| Maths | +2 | −8% (dislikes, but intensive) |
+| Entrance exam | +2 | −15% (mismatch) |
+| Research, International, Creative, Teamwork | +1–2 | — |
 
-**3. AI Paskaidrojums (Gemini 2.5 Flash)**
-Personalizēts paskaidrojums katrai top-3 programmai, pamatojoties uz Tavu profilu.
+**3. AI Explanation (Gemini 2.5 Flash)**
+A personalised explanation for each top-3 programme, based on your profile.
 
 ---
 
-### ⚠️ Ierobežojumi
-- Ieteikumi ir orientējoši — galīgo izvēli veic Students
-- Dati balstīti uz 2026. gada RTU programmu aprakstiem
-- Vienmēr pārbaudi aktuālo info: [rtu.lv](https://www.rtu.lv)
+### ⚠️ Limitations
+- Recommendations are indicative — the final choice is always yours
+- Data is based on RTU 2026 programme descriptions
+- Always verify current info at [rtu.lv](https://www.rtu.lv)
         """)
     with col2:
         st.markdown("""
-### 🚀 Ātrā palaišana
+### 🚀 Run locally
 
 ```bash
 pip install -r requirements.txt
 streamlit run app.py
 ```
 
-### 📁 Struktūra
+### 📁 Project structure
 ```
 rtu-study-recommender/
-├── app.py           ← Galvenā UI
-├── data_loader.py   ← JSON ielāde
-├── scoring.py       ← Vērtēšana
-├── ai_explanations.py ← Gemini AI
-├── ui_components.py ← UI bloki
-├── utils.py         ← Taksonomija
-└── datasets/        ← 64 programmas
+├── app.py              ← Main UI
+├── data_loader.py      ← JSON loader
+├── scoring.py          ← Match engine
+├── ai_explanations.py  ← Gemini AI
+├── ui_components.py    ← UI blocks
+├── utils.py            ← Taxonomy
+└── datasets/           ← 64 programmes
 ```
 
-### 🔮 Nākotnes plāni
-- [ ] PDF eksports
-- [ ] CE eksāmena prasību integrācija
-- [ ] RTU live API
-- [ ] Pilns EN/LV UI
-- [ ] Lietotāju profili
+### 🔮 Planned improvements
+- [ ] CE exam requirement integration
+- [ ] PDF export of results
+- [ ] Top-10 results view
+- [ ] Score a minimum profile threshold
+- [ ] RTU live data API
         """)
 
 
@@ -832,17 +828,17 @@ def main():
     programmes, stats, taxonomy = _load_data()
 
     if not programmes:
-        st.error("❌ Nav atrasta neviena programma! Pārliecinies, ka `datasets/` mapē ir RTU JSON datnes.")
+        st.error("❌ No programmes found! Make sure the `datasets/` folder contains RTU JSON files.")
         st.stop()
 
     render_hero(stats, len(programmes))
     filters = render_sidebar(programmes, taxonomy)
 
     tab_search, tab_compare, tab_all, tab_about = st.tabs([
-        "🔍  Atrast Programmu",
-        "⚖️  Salīdzināt",
-        "📋  Visas Programmas",
-        "ℹ️  Par Rīku",
+        "🔍  Recommendations",
+        "⚖️  Compare",
+        "📋  All Programmes",
+        "ℹ️  About",
     ])
 
     with tab_search:
@@ -851,17 +847,17 @@ def main():
 
         if profile:
             st.session_state["student_profile"] = profile
-            st.session_state["search_done"] = True
+            st.session_state["search_done"]     = True
 
         if st.session_state.get("search_done") and st.session_state.get("student_profile"):
             st.markdown("---")
             st.html("""
-            <h2 style="margin:0 0 4px 0;font-size:1.4rem;font-weight:800;
+            <h2 style="margin:0 0 4px;font-size:1.4rem;font-weight:800;
                        color:#0f172a;letter-spacing:-0.02em;">
-              🏆 Tavai personībai atbilstošākās programmas
+              🏆 Your top matching programmes
             </h2>
-            <p style="margin:0 0 20px 0;color:#64748b;font-size:0.875rem;">
-              Trīs labākās atbilstības ar detalizētu AI analīzi
+            <p style="margin:0 0 20px;color:#64748b;font-size:0.875rem;">
+              The three best matches with detailed AI analysis
             </p>
             """)
             render_results(
