@@ -303,3 +303,107 @@ def _local_explanation(student: dict, programme: dict, breakdown: dict) -> str:
         "Aktivizē GEMINI\\_API\\_KEY pilnīgākam AI paskaidrojumam.*"
     )
     return "\n\n".join(parts) + footer
+
+
+# ─────────────────────────────────────────────────────────────────────────────
+# AI SEMANTIC RERANKING
+# ─────────────────────────────────────────────────────────────────────────────
+
+def ai_rerank_programmes(
+    student: dict,
+    scored_programmes: list[dict],
+) -> tuple[list[dict], bool]:
+    """
+    Optionally rerank top programmes using Gemini based on the student's
+    free-text career goal.
+
+    Only active when:
+      • student["career_text"] is ≥ 15 characters
+      • Gemini API is reachable (GEMINI_API_KEY set)
+
+    Args:
+        student:           Student profile dict
+        scored_programmes: [{programme, score, breakdown}, ...] sorted desc
+
+    Returns:
+        (result_list, was_reranked)
+        - result_list:  same items, possibly reordered
+        - was_reranked: True when Gemini changed the top-3 order
+    """
+    career_text = (student.get("career_text") or "").strip()
+    if len(career_text) < 15:
+        return scored_programmes, False
+
+    if not _init_genai() or _client is None:
+        return scored_programmes, False
+
+    # Only send top-10 to keep the prompt small and latency low
+    to_rerank = scored_programmes[:10]
+    rest      = scored_programmes[10:]
+
+    lines = []
+    for i, r in enumerate(to_rerank, 1):
+        p    = r["programme"]
+        c    = p.get("career", {}) or {}
+        jobs = ", ".join((c.get("job_titles") or [])[:4])
+        lines.append(
+            f'{i}. ID="{p.get("id")}" | '
+            f'{p.get("name_en") or p.get("name")} '
+            f'({p.get("faculty", "")}) | '
+            f'Jobs: {jobs or "—"} | '
+            f'Score: {r["score"]:.0f}%'
+        )
+
+    prompt = (
+        "You are an RTU (Riga Technical University) admissions advisor.\n"
+        f'Student career goal: "{career_text}"\n\n'
+        "Programmes sorted by algorithmic compatibility score:\n"
+        + "\n".join(lines)
+        + "\n\nTask: Reorder these programmes so the one whose job roles BEST "
+        "match the student's stated career goal comes first.\n"
+        "Keep ALL programme IDs — do not drop any.\n"
+        "Return ONLY a valid JSON array of IDs in your preferred order. "
+        'No explanation. Example: ["CS","EE","ME"]'
+    )
+
+    try:
+        response = _client.models.generate_content(
+            model=_MODEL,
+            contents=prompt,
+            config=genai_types.GenerateContentConfig(
+                temperature=0.1,
+                max_output_tokens=400,
+                thinking_config=genai_types.ThinkingConfig(thinking_budget=0),
+            ),
+        )
+        import json, re
+        text  = (response.text or "").strip()
+        m     = re.search(r'\[.*?\]', text, re.DOTALL)
+        if not m:
+            return scored_programmes, False
+
+        ids = json.loads(m.group())
+        if not isinstance(ids, list) or len(ids) < 2:
+            return scored_programmes, False
+
+        id_map: dict[str, dict] = {r["programme"].get("id"): r for r in to_rerank}
+        reranked: list[dict]    = []
+        seen: set[str]          = set()
+        for pid in ids:
+            if pid in id_map and pid not in seen:
+                reranked.append(id_map[pid])
+                seen.add(pid)
+        # Append any programmes the AI dropped (shouldn't happen, defensive)
+        for r in to_rerank:
+            if r["programme"].get("id") not in seen:
+                reranked.append(r)
+
+        reranked += rest
+
+        top3_before = [r["programme"].get("id") for r in scored_programmes[:3]]
+        top3_after  = [r["programme"].get("id") for r in reranked[:3]]
+        return reranked, top3_before != top3_after
+
+    except Exception as e:
+        logger.warning(f"AI reranking failed: {e}")
+        return scored_programmes, False

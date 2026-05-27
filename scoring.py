@@ -32,18 +32,125 @@ W_CREATIVE = 2        # creative component match
 W_MATH = 2            # math-intensity match
 W_EXAM = 2            # entrance exam compatibility
 W_TEAMWORK = 1        # teamwork preference match
+W_CAREER_TEXT = 3     # career-text keyword alignment bonus
 
 # Minimum denominator — prevents blank / sparse profiles from inflating scores.
-# A blank profile has max_possible ≈ 9 (language + difficulty + math + exam +
-# teamwork). Without a floor, 9/9 = 100%.  With floor=25, blank → 9/25 = 36%.
-# Students who fill in 2-3 categories will typically reach ≥ 25 naturally.
 _MIN_MAX_POSSIBLE = 25
+
+# ─────────────────────────────────────────────────────────────────────────────
+# DOMAIN & STRENGTH AFFINITY
+# ─────────────────────────────────────────────────────────────────────────────
+# When a student's interest/strength doesn't exactly match a programme tag but
+# is semantically related, award partial credit.
+
+_DOMAIN_AFFINITY: dict[str, list[str]] = {
+    "it_programming":             ["data_science_ai", "software_engineering", "electronics_telecom", "robotics_automation"],
+    "data_science_ai":            ["it_programming", "software_engineering"],
+    "software_engineering":       ["it_programming", "data_science_ai"],
+    "electronics_telecom":        ["it_programming", "robotics_automation", "energy_power"],
+    "robotics_automation":        ["electronics_telecom", "mechanics_engineering", "it_programming"],
+    "mechanics_engineering":      ["robotics_automation", "energy_power", "transport_aviation"],
+    "transport_aviation":         ["mechanics_engineering", "robotics_automation", "maritime"],
+    "construction_civil":         ["architecture", "environment_sustainability", "mechanics_engineering"],
+    "architecture":               ["construction_civil", "art_design"],
+    "art_design":                 ["architecture"],
+    "chemistry_biotech":          ["environment_sustainability", "medical_technology"],
+    "environment_sustainability": ["chemistry_biotech", "energy_power", "construction_civil"],
+    "energy_power":               ["environment_sustainability", "electronics_telecom", "mechanics_engineering"],
+    "medical_technology":         ["chemistry_biotech", "education_research"],
+    "business_management":        ["data_science_ai", "education_research"],
+    "education_research":         ["business_management", "medical_technology"],
+    "maritime":                   ["transport_aviation", "mechanics_engineering"],
+}
+_AFFINITY_FACTOR = 0.35          # 35 % of W_INTEREST per related-domain hit
+
+_STRENGTH_AFFINITY: dict[str, list[str]] = {
+    "mathematics":         ["physics", "analytical_thinking"],
+    "physics":             ["mathematics", "technical_thinking"],
+    "programming":         ["analytical_thinking", "technical_thinking"],
+    "analytical_thinking": ["mathematics", "research"],
+    "technical_thinking":  ["physics", "practical_skills"],
+    "creativity":          ["drawing_design"],
+    "drawing_design":      ["creativity"],
+    "research":            ["analytical_thinking"],
+    "economics_finance":   ["analytical_thinking"],
+}
+_STRENGTH_AFFINITY_FACTOR = 0.30  # 30 % of W_STRENGTH per related-strength hit
+
+# Career text keyword → interest domain hints  (local semantic matching)
+_CAREER_HINTS: list[tuple[str, str]] = [
+    ("software",    "it_programming"),   ("coding",       "it_programming"),
+    ("developer",   "it_programming"),   ("programmer",   "it_programming"),
+    ("web dev",     "it_programming"),   ("cyber",        "it_programming"),
+    ("network",     "it_programming"),   ("cloud",        "it_programming"),
+    ("ai ",         "data_science_ai"),  ("machine learn","data_science_ai"),
+    (" data ",      "data_science_ai"),  ("neural",       "data_science_ai"),
+    ("artificial intelligence", "data_science_ai"),
+    ("robot",       "robotics_automation"), ("automat",   "robotics_automation"),
+    ("mechatron",   "robotics_automation"),
+    ("electronic",  "electronics_telecom"), ("telecom",   "electronics_telecom"),
+    ("power grid",  "energy_power"),     ("solar",        "energy_power"),
+    ("wind energy", "energy_power"),     ("renewable",    "environment_sustainability"),
+    ("architect",   "architecture"),     ("urban plan",   "architecture"),
+    ("construction","construction_civil"),("civil eng",   "construction_civil"),
+    (" design",     "art_design"),       ("graphic",      "art_design"),
+    ("visual art",  "art_design"),       ("illustration", "art_design"),
+    ("chemical",    "chemistry_biotech"),("chemistry",    "chemistry_biotech"),
+    ("biotech",     "chemistry_biotech"),("pharma",       "chemistry_biotech"),
+    ("environment", "environment_sustainability"), ("climate",  "environment_sustainability"),
+    ("sustainab",   "environment_sustainability"),
+    ("transport",   "transport_aviation"), ("aviation",   "transport_aviation"),
+    ("pilot",       "transport_aviation"), ("aircraft",   "transport_aviation"),
+    ("logistic",    "transport_aviation"),
+    ("ship eng",    "maritime"),         ("marine eng",   "maritime"),
+    ("navigation",  "maritime"),         ("naval",        "maritime"),
+    ("business",    "business_management"), ("management","business_management"),
+    ("entrepreneur","business_management"), ("finance",   "business_management"),
+    ("econom",      "business_management"), ("marketing", "business_management"),
+    ("mechanic",    "mechanics_engineering"), ("manufactur","mechanics_engineering"),
+    ("industrial eng","mechanics_engineering"),
+    ("medical",     "medical_technology"), ("biomedical", "medical_technology"),
+    ("health tech", "medical_technology"),
+    ("research",    "education_research"), ("scientist",  "education_research"),
+    ("teaching",    "education_research"),
+]
 
 # Penalties (applied after normalisation, as percentage-point deductions)
 P_LANGUAGE = 20       # preferred language not offered (large — deal-breaker)
 P_EXAM = 15           # student avoids exams but programme requires one
 P_DIFFICULTY_HARD = 10  # student wants easy but programme is hard
 P_MATH = 8            # student dislikes maths but programme is math-intensive
+
+
+# ─────────────────────────────────────────────────────────────────────────────
+# CAREER TEXT BONUS SCORER
+# ─────────────────────────────────────────────────────────────────────────────
+
+def _career_text_bonus(career_text: str, programme: dict) -> float:
+    """
+    Award raw bonus points when student career-text keywords align with
+    programme domains.  Uses _CAREER_HINTS + domain-affinity expansion.
+    Returns float in [0, W_CAREER_TEXT].
+    """
+    if not career_text or len(career_text.strip()) < 10:
+        return 0.0
+    text      = f" {career_text.lower()} "
+    m         = programme.get("matching", {}) or {}
+    p_domains = set(m.get("interest_domains", []))
+
+    hinted: set[str] = set()
+    for kw, domain in _CAREER_HINTS:
+        if kw in text:
+            hinted.add(domain)
+
+    # Expand via affinity so adjacent domains also count (at reduced weight)
+    expanded: set[str] = set(hinted)
+    for d in hinted:
+        for rel in _DOMAIN_AFFINITY.get(d, []):
+            expanded.add(rel)
+
+    domain_hits = len(expanded & p_domains)
+    return min(domain_hits * (W_CAREER_TEXT / 3.0), float(W_CAREER_TEXT))
 
 
 # ─────────────────────────────────────────────────────────────────────────────
@@ -68,40 +175,58 @@ def score_programme(student: dict, programme: dict) -> tuple[float, dict]:
     raw_score = 0
     max_positive = 0
 
-    # ── 1. INTEREST DOMAINS ──────────────────────────────────────────────────
-    s_interests = set(student.get("interests", []))
-    p_interests = set(m.get("interest_domains", []))
+    # ── 1. INTEREST DOMAINS (exact match + affinity partial credit) ──────────
+    s_interests       = set(student.get("interests", []))
+    p_interests       = set(m.get("interest_domains", []))
     matched_interests = s_interests & p_interests
-    pts = len(matched_interests) * W_INTEREST
-    max_i = len(s_interests) * W_INTEREST
-    raw_score += pts
+
+    pts_i = len(matched_interests) * W_INTEREST
+    # Related-domain partial credit: 35 % per affinity hit
+    affinity_interests: list[str] = [
+        si for si in (s_interests - matched_interests)
+        if set(_DOMAIN_AFFINITY.get(si, [])) & p_interests
+    ]
+    pts_i += len(affinity_interests) * W_INTEREST * _AFFINITY_FACTOR
+
+    max_i         = len(s_interests) * W_INTEREST
+    raw_score    += pts_i
     max_positive += max_i
     breakdown["interests"] = {
-        "student": list(s_interests),
+        "student":   list(s_interests),
         "programme": list(p_interests),
-        "matched": list(matched_interests),
-        "points": pts,
-        "max": max_i,
-        "weight": W_INTEREST,
-        "label": "Interešu jomas",
+        "matched":   list(matched_interests),
+        "affinity":  affinity_interests,
+        "points":    round(pts_i, 2),
+        "max":       max_i,
+        "weight":    W_INTEREST,
+        "label":     "Interešu jomas",
     }
 
-    # ── 2. STRENGTHS / SUBJECTS ───────────────────────────────────────────────
-    s_strengths = set(student.get("strengths", []))
-    p_strengths = set(m.get("required_strengths", []))
+    # ── 2. STRENGTHS / SUBJECTS (exact + affinity partial credit) ────────────
+    s_strengths       = set(student.get("strengths", []))
+    p_strengths       = set(m.get("required_strengths", []))
     matched_strengths = s_strengths & p_strengths
-    pts = len(matched_strengths) * W_STRENGTH
-    max_s = len(s_strengths) * W_STRENGTH
-    raw_score += pts
+
+    pts_s = len(matched_strengths) * W_STRENGTH
+    # Related-strength partial credit: 30 % per affinity hit
+    affinity_strengths: list[str] = [
+        ss for ss in (s_strengths - matched_strengths)
+        if set(_STRENGTH_AFFINITY.get(ss, [])) & p_strengths
+    ]
+    pts_s += len(affinity_strengths) * W_STRENGTH * _STRENGTH_AFFINITY_FACTOR
+
+    max_s         = len(s_strengths) * W_STRENGTH
+    raw_score    += pts_s
     max_positive += max_s
     breakdown["strengths"] = {
-        "student": list(s_strengths),
+        "student":   list(s_strengths),
         "programme": list(p_strengths),
-        "matched": list(matched_strengths),
-        "points": pts,
-        "max": max_s,
-        "weight": W_STRENGTH,
-        "label": "Stiprās puses & Priekšmeti",
+        "matched":   list(matched_strengths),
+        "affinity":  affinity_strengths,
+        "points":    round(pts_s, 2),
+        "max":       max_s,
+        "weight":    W_STRENGTH,
+        "label":     "Stiprās puses & Priekšmeti",
     }
 
     # ── 3. PERSONALITY TRAITS ────────────────────────────────────────────────
@@ -284,6 +409,36 @@ def score_programme(student: dict, programme: dict) -> tuple[float, dict]:
         "label": "Komandas darbs",
     }
 
+    # ── 13. CAREER TEXT BONUS ─────────────────────────────────────────────────
+    # The student's free-text career goal is matched against programme domains
+    # (using keyword hints + affinity expansion).  Only counted in the
+    # denominator when there is substantive text (≥ 10 chars).
+    career_text  = (student.get("career_text") or "").strip()
+    career_bonus = _career_text_bonus(career_text, programme)
+    raw_score   += career_bonus
+    # Career text is a pure additive bonus — it NEVER increases the denominator,
+    # so it can only raise scores (or be neutral when 0).  This ensures students
+    # are not penalised for filling in the career goal field.
+    breakdown["career_text"] = {
+        "bonus": round(career_bonus, 2),
+        "max":   W_CAREER_TEXT,
+        "label": "Karjeras mērķi",
+    }
+
+    # ── 14. DEEP MATCH BONUS ──────────────────────────────────────────────────
+    # Reward strong cross-dimension alignment: when both interests AND strengths
+    # match well, the programme is a genuinely excellent fit — give a confidence
+    # boost that helps it clearly separate from weaker alternatives.
+    n_i        = len(matched_interests)
+    n_s        = len(matched_strengths)
+    deep_bonus = (
+        W_INTEREST if (n_i >= 3 and n_s >= 2) else  # strong fit: +4 pts
+        W_STRENGTH if (n_i >= 2 and n_s >= 2) else  # good fit:   +3 pts
+        0
+    )
+    raw_score                     += deep_bonus
+    breakdown["deep_match_bonus"]  = deep_bonus
+
     # ── NORMALISE TO PERCENTAGE ───────────────────────────────────────────────
     # Apply a minimum denominator floor so that sparse / blank profiles cannot
     # inflate their percentage via a tiny max_possible.
@@ -431,21 +586,28 @@ def breakdown_summary(breakdown: dict) -> dict:
     def _labels(keys: list, mapping: dict) -> list[str]:
         return [get_label(mapping, k) for k in keys if k]
 
+    int_bd = breakdown.get("interests", {})
+    str_bd = breakdown.get("strengths", {})
     return {
-        "matched_interests": _labels(breakdown.get("interests", {}).get("matched", []), INTEREST_DOMAINS),
-        "missed_interests": _labels(
+        "matched_interests":  _labels(int_bd.get("matched",  []), INTEREST_DOMAINS),
+        "affinity_interests": _labels(int_bd.get("affinity", []), INTEREST_DOMAINS),
+        "missed_interests":   _labels(
             list(
-                set(breakdown.get("interests", {}).get("student", []))
-                - set(breakdown.get("interests", {}).get("matched", []))
+                set(int_bd.get("student", []))
+                - set(int_bd.get("matched", []))
+                - set(int_bd.get("affinity", []))
             ),
             INTEREST_DOMAINS,
         ),
-        "matched_strengths": _labels(breakdown.get("strengths", {}).get("matched", []), STRENGTH_TAGS),
+        "matched_strengths":  _labels(str_bd.get("matched",  []), STRENGTH_TAGS),
+        "affinity_strengths": _labels(str_bd.get("affinity", []), STRENGTH_TAGS),
         "matched_personality": _labels(breakdown.get("personality", {}).get("matched", []), PERSONALITY_TRAITS),
-        "matched_sectors": _labels(breakdown.get("sectors", {}).get("matched", []), INDUSTRY_SECTORS),
-        "language_ok": breakdown.get("language", {}).get("match", False),
-        "exam_ok": breakdown.get("exam", {}).get("compatible", True),
-        "penalties": breakdown.get("penalties", []),
-        "final_pct": breakdown.get("final_pct", 0),
-        "base_pct": breakdown.get("base_pct", 0),
+        "matched_sectors":    _labels(breakdown.get("sectors",    {}).get("matched",  []), INDUSTRY_SECTORS),
+        "language_ok":    breakdown.get("language",   {}).get("match",      False),
+        "exam_ok":        breakdown.get("exam",       {}).get("compatible",  True),
+        "penalties":      breakdown.get("penalties",  []),
+        "final_pct":      breakdown.get("final_pct",  0),
+        "base_pct":       breakdown.get("base_pct",   0),
+        "career_bonus":   breakdown.get("career_text", {}).get("bonus", 0),
+        "deep_bonus":     breakdown.get("deep_match_bonus", 0),
     }

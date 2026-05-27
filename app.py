@@ -32,7 +32,7 @@ sys.path.insert(0, str(Path(__file__).parent))
 
 from data_loader import load_all_programmes, extract_taxonomy
 from scoring import rank_programmes, score_all_programmes, breakdown_summary
-from ai_explanations import generate_ai_explanation
+from ai_explanations import generate_ai_explanation, ai_rerank_programmes
 from ui_components import (
     render_hero, render_result_card,
     render_comparison_table, render_programme_table,
@@ -592,8 +592,12 @@ def render_results(student: dict, programmes: list[dict], filters: dict):
         )
 
     with loading_spinner_context("🔍 Calculating compatibility for all programmes…"):
-        top_results = rank_programmes(student, programmes, top_n=3, filters=filters)
-        all_scored  = score_all_programmes(student, programmes, filters=filters)
+        all_scored = score_all_programmes(student, programmes, filters=filters)
+
+    # AI semantic reranking: uses Gemini to reorder by career goal.
+    # Returns instantly (no-op) when career_text is empty or API is unavailable.
+    all_scored, _ai_reranked = ai_rerank_programmes(student, all_scored)
+    top_results = all_scored[:3]
 
     scores_map = {r["programme"].get("id", ""): r["score"] for r in all_scored}
     st.session_state["last_scores"] = scores_map
@@ -604,6 +608,9 @@ def render_results(student: dict, programmes: list[dict], filters: dict):
             "Try adjusting the sidebar filters or adding more profile details."
         )
         return
+
+    if _ai_reranked:
+        st.caption("🧠 Order adjusted by Gemini AI based on your stated career goal.")
 
     top_score = top_results[0]["score"]
     avg_score = sum(r["score"] for r in top_results) / len(top_results)

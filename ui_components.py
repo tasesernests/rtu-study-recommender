@@ -362,16 +362,32 @@ def _render_breakdown_details(summary: dict, breakdown: dict):
 
     with col_l:
         for section, items, icon in [
-            ("Matched interests",  summary.get("matched_interests", []),  "✅"),
-            ("Matched strengths",  summary.get("matched_strengths", []),  "💪"),
-            ("Personality match",  summary.get("matched_personality", []),"🧠"),
-            ("Sector match",       summary.get("matched_sectors", []),    "🏭"),
+            ("Matched interests",  summary.get("matched_interests",  []), "✅"),
+            ("Matched strengths",  summary.get("matched_strengths",  []), "💪"),
+            ("Personality match",  summary.get("matched_personality",[]), "🧠"),
+            ("Sector match",       summary.get("matched_sectors",    []), "🏭"),
         ]:
             if items:
                 st.markdown(
                     f"**{icon} {section}**  \n" +
                     "  ·  ".join(f"`{i}`" for i in items)
                 )
+
+        # Related-domain / related-strength affinity partial credit
+        aff_i = summary.get("affinity_interests", [])
+        aff_s = summary.get("affinity_strengths", [])
+        if aff_i or aff_s:
+            combined = [f"~{x}" for x in (aff_i + aff_s)[:6]]
+            st.markdown(
+                "**🔗 Related field bonus**  \n" +
+                "  ·  ".join(f"`{x}`" for x in combined)
+            )
+
+        # Career goal + deep-match bonus indicators
+        if summary.get("career_bonus", 0) > 0:
+            st.caption(f"✍️ Career goal match: +{summary['career_bonus']:.1f} pts")
+        if summary.get("deep_bonus", 0) > 0:
+            st.caption(f"🎯 Strong multi-match bonus: +{summary['deep_bonus']} pts")
 
     with col_r:
         missed = summary.get("missed_interests", [])
