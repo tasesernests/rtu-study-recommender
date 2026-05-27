@@ -30,7 +30,6 @@ logger = logging.getLogger("data_loader")
 # ── Default dataset locations (tried in order) ───────────────────────────────
 _DEFAULT_DIRS = [
     Path(__file__).parent / "datasets",
-    Path(r"C:\Users\ernes\Downloads\rtu programmas"),
     Path(os.environ.get("RTU_DATASET_DIR", "datasets")),
 ]
 

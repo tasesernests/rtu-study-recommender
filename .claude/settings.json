@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(streamlit run *)",
+      "PowerShell(Get-Process -Name \"streamlit\" -ErrorAction SilentlyContinue)",
+      "PowerShell(Stop-Process -Force -Confirm:$false)",
+      "PowerShell(try { $r = Invoke-WebRequest -Uri \"http://localhost:8501\" -TimeoutSec 5 -UseBasicParsing; \"HTTP $\\($r.StatusCode\\) — Streamlit is UP\" } catch { \"Not reachable: $_\" })",
+      "Bash(python -c ' *)"
+    ]
+  }
+}

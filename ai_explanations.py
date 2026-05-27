@@ -37,7 +37,14 @@ def _init_genai() -> bool:
     if not _GENAI_AVAILABLE:
         return False
 
+    # Check env var first, then Streamlit secrets (for cloud deployment)
     api_key = os.environ.get("GEMINI_API_KEY", "").strip()
+    if not api_key:
+        try:
+            import streamlit as st
+            api_key = st.secrets.get("GEMINI_API_KEY", "")
+        except Exception:
+            pass
     if not api_key:
         logger.warning("GEMINI_API_KEY not set — using local fallback explanations.")
         return False
