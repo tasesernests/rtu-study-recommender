@@ -574,6 +574,23 @@ def _load_test_profile():
 # ─────────────────────────────────────────────────────────────────────────────
 
 def render_results(student: dict, programmes: list[dict], filters: dict):
+    # ── Profile completeness warning ──────────────────────────────────────────
+    _filled = sum(1 for k in ("interests", "strengths", "personality", "sectors")
+                  if student.get(k))
+    _flags  = sum(1 for k in ("research_oriented", "international", "creative")
+                  if student.get(k))
+    if _filled == 0 and _flags == 0:
+        st.warning(
+            "⚠️ **Your profile is empty.** Scores are rough estimates — they reflect "
+            "general programme characteristics, not your personal fit. Select some "
+            "**Interests** and **Strengths** to get meaningful recommendations."
+        )
+    elif _filled < 2:
+        st.info(
+            "💡 **Tip:** Only one profile category is filled — adding **Interests**, "
+            "**Strengths**, and **Personality traits** will make your scores much more accurate."
+        )
+
     with loading_spinner_context("🔍 Calculating compatibility for all programmes…"):
         top_results = rank_programmes(student, programmes, top_n=3, filters=filters)
         all_scored  = score_all_programmes(student, programmes, filters=filters)

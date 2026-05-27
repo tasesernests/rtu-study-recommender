@@ -33,6 +33,12 @@ W_MATH = 2            # math-intensity match
 W_EXAM = 2            # entrance exam compatibility
 W_TEAMWORK = 1        # teamwork preference match
 
+# Minimum denominator — prevents blank / sparse profiles from inflating scores.
+# A blank profile has max_possible ≈ 9 (language + difficulty + math + exam +
+# teamwork). Without a floor, 9/9 = 100%.  With floor=25, blank → 9/25 = 36%.
+# Students who fill in 2-3 categories will typically reach ≥ 25 naturally.
+_MIN_MAX_POSSIBLE = 25
+
 # Penalties (applied after normalisation, as percentage-point deductions)
 P_LANGUAGE = 20       # preferred language not offered (large — deal-breaker)
 P_EXAM = 15           # student avoids exams but programme requires one
@@ -167,45 +173,65 @@ def score_programme(student: dict, programme: dict) -> tuple[float, dict]:
     }
 
     # ── 7. RESEARCH ORIENTATION ───────────────────────────────────────────────
+    # Dimension is only included in scoring when the student actively expressed
+    # the preference (toggle=True).  When student=False the toggle was left at
+    # its default — no opinion → exclude from both numerator AND denominator so
+    # a blank profile cannot accumulate free half-points here.
     s_research = bool(student.get("research_oriented", False))
     p_research = bool(m.get("research_oriented", False))
-    research_match = (s_research == p_research) or (s_research and p_research)
-    research_pts = W_RESEARCH if (s_research and p_research) else (W_RESEARCH // 2 if not s_research else 0)
-    raw_score += research_pts
-    max_positive += W_RESEARCH
+    if s_research:
+        research_pts  = W_RESEARCH if p_research else 0
+        raw_score    += research_pts
+        max_positive += W_RESEARCH
+        _research_max = W_RESEARCH
+    else:
+        research_pts  = 0
+        _research_max = 0   # excluded — no preference expressed
     breakdown["research"] = {
         "student": s_research,
         "programme": p_research,
         "points": research_pts,
-        "max": W_RESEARCH,
+        "max": _research_max,
         "label": "Pētnieciskā orientācija",
     }
 
     # ── 8. INTERNATIONAL ──────────────────────────────────────────────────────
+    # Same principle: only score when student actively wants international study.
     s_intl = bool(student.get("international", False))
     p_intl = bool(m.get("international_potential", False))
-    intl_pts = W_INTERNATIONAL if (s_intl and p_intl) else (W_INTERNATIONAL // 2 if not s_intl else 0)
-    raw_score += intl_pts
-    max_positive += W_INTERNATIONAL
+    if s_intl:
+        intl_pts     = W_INTERNATIONAL if p_intl else 0
+        raw_score   += intl_pts
+        max_positive += W_INTERNATIONAL
+        _intl_max    = W_INTERNATIONAL
+    else:
+        intl_pts  = 0
+        _intl_max = 0
     breakdown["international"] = {
         "student": s_intl,
         "programme": p_intl,
         "points": intl_pts,
-        "max": W_INTERNATIONAL,
+        "max": _intl_max,
         "label": "Starptautiskās iespējas",
     }
 
     # ── 9. CREATIVE COMPONENT ────────────────────────────────────────────────
+    # Same principle: only score when student enjoys creative / design work.
     s_creative = bool(student.get("creative", False))
     p_creative = bool(m.get("creative_component", False))
-    creative_pts = W_CREATIVE if (s_creative and p_creative) else (W_CREATIVE // 2 if not s_creative else 0)
-    raw_score += creative_pts
-    max_positive += W_CREATIVE
+    if s_creative:
+        creative_pts  = W_CREATIVE if p_creative else 0
+        raw_score    += creative_pts
+        max_positive += W_CREATIVE
+        _creative_max = W_CREATIVE
+    else:
+        creative_pts  = 0
+        _creative_max = 0
     breakdown["creative"] = {
         "student": s_creative,
         "programme": p_creative,
         "points": creative_pts,
-        "max": W_CREATIVE,
+        "max": _creative_max,
         "label": "Radošā / dizaina komponente",
     }
 
@@ -259,10 +285,13 @@ def score_programme(student: dict, programme: dict) -> tuple[float, dict]:
     }
 
     # ── NORMALISE TO PERCENTAGE ───────────────────────────────────────────────
-    if max_positive == 0:
-        base_pct = 50.0
-    else:
-        base_pct = (raw_score / max_positive) * 100.0
+    # Apply a minimum denominator floor so that sparse / blank profiles cannot
+    # inflate their percentage via a tiny max_possible.
+    # A blank profile accumulates ~9 pts (language + difficulty + math + exam +
+    # teamwork).  Without floor: 9/9 = 100%.  With floor=25: 9/25 = 36%.
+    profile_sparse = max_positive < _MIN_MAX_POSSIBLE
+    effective_max  = max(max_positive, _MIN_MAX_POSSIBLE)
+    base_pct       = (raw_score / effective_max) * 100.0
 
     # ── PENALTIES ─────────────────────────────────────────────────────────────
     penalty = 0
@@ -284,11 +313,12 @@ def score_programme(student: dict, programme: dict) -> tuple[float, dict]:
         penalty += P_MATH
         penalties_applied.append(f"Matemātikas intensīvā programma neatbilst (−{P_MATH}%)")
 
-    breakdown["penalties"] = penalties_applied
-    breakdown["raw_score"] = round(raw_score, 2)
-    breakdown["max_possible"] = round(max_positive, 2)
-    breakdown["base_pct"] = round(base_pct, 1)
-    breakdown["penalty_pct"] = penalty
+    breakdown["penalties"]      = penalties_applied
+    breakdown["raw_score"]      = round(raw_score, 2)
+    breakdown["max_possible"]   = round(effective_max, 2)   # includes floor
+    breakdown["profile_sparse"] = profile_sparse            # UI warning flag
+    breakdown["base_pct"]       = round(base_pct, 1)
+    breakdown["penalty_pct"]    = penalty
 
     compatibility = max(0.0, min(100.0, base_pct - penalty))
     breakdown["final_pct"] = round(compatibility, 1)
