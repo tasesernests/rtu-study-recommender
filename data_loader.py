@@ -259,7 +259,7 @@ def _norm_academic(r: dict, src: str) -> dict:
             "sectors": raw_sectors,
             "sectors_canonical": sectors_canonical,
         },
-        "keywords": [],
+        "keywords": r.get("keywords", []),
         "source_file": src,
         "matching": {
             "interest_domains": map_tags(raw_domains, map_to_canonical_domain),
@@ -273,7 +273,7 @@ def _norm_academic(r: dict, src: str) -> dict:
             "entry_exam_required": bool(matching_raw.get("entry_exam_required", entry_exam)),
             "difficulty_level": normalize_difficulty(matching_raw.get("difficulty_level", "medium")),
             "postgrad_pathway": bool(matching_raw.get("postgrad_pathway", True)),
-            "teamwork_oriented": matching_raw.get("teamwork") in ("team", "both", None),
+            "teamwork_oriented": bool(matching_raw.get("teamwork_oriented", matching_raw.get("teamwork") in ("team", "both", None))),
         },
     }
 
@@ -365,7 +365,7 @@ def _norm_bmf(r: dict, src: str) -> dict:
             "sectors": raw_sectors,
             "sectors_canonical": sectors_canonical,
         },
-        "keywords": [],
+        "keywords": r.get("keywords", []),
         "source_file": src,
         "matching": {
             "interest_domains": map_tags(raw_domains, map_to_canonical_domain),
@@ -382,7 +382,7 @@ def _norm_bmf(r: dict, src: str) -> dict:
             "entry_exam_required": entry_exam,
             "difficulty_level": difficulty,
             "postgrad_pathway": bool(matching_raw.get("postgrad_pathway", True)),
-            "teamwork_oriented": True,
+            "teamwork_oriented": bool(matching_raw.get("teamwork_oriented", True)),
         },
     }
 
@@ -491,6 +491,9 @@ def _norm_ditef(r: dict, src: str) -> dict:
     keywords_lv = r.get("keywords_lv", []) or []
     keywords_en = r.get("keywords_en", []) or []
 
+    # Enriched override written by enrich_dataset.py into r["matching"]
+    enriched = r.get("matching", {}) or {}
+
     pd_field = r.get("program_director", {}) or {}
     if isinstance(pd_field, dict):
         director_str = f"{pd_field.get('name', '')} — {pd_field.get('title', '')}".strip(" —")
@@ -531,21 +534,21 @@ def _norm_ditef(r: dict, src: str) -> dict:
             "sectors": raw_sectors,
             "sectors_canonical": sectors_canonical,
         },
-        "keywords": keywords_lv + keywords_en,
+        "keywords": list(dict.fromkeys(keywords_lv + keywords_en + (r.get("keywords") or []))),
         "source_file": src,
         "matching": {
-            "interest_domains": map_tags(all_domains, map_to_canonical_domain),
-            "required_strengths": map_tags(all_strengths, map_to_canonical_strength),
-            "personality_fit": map_tags(personality, map_to_canonical_personality),
+            "interest_domains": enriched.get("interest_domains") or map_tags(all_domains, map_to_canonical_domain),
+            "required_strengths": enriched.get("required_strengths") or map_tags(all_strengths, map_to_canonical_strength),
+            "personality_fit": enriched.get("personality_fit") or map_tags(personality, map_to_canonical_personality),
             "language_codes": lang_codes,
-            "math_intensive": math_intensive,
-            "creative_component": creative,
-            "research_oriented": research_oriented,
+            "math_intensive": enriched.get("math_intensive", math_intensive),
+            "creative_component": enriched.get("creative_component", creative),
+            "research_oriented": enriched.get("research_oriented", research_oriented),
             "international_potential": international_potential,
             "entry_exam_required": entry_exam,
             "difficulty_level": difficulty,
             "postgrad_pathway": True,
-            "teamwork_oriented": "collaborative" in [p.lower() for p in personality],
+            "teamwork_oriented": enriched.get("teamwork_oriented", "collaborative" in [p.lower() for p in personality]),
         },
     }
 
@@ -633,12 +636,14 @@ def _norm_rezekne(r: dict, src: str) -> dict:
         or intl.get("international_study_possible")
     )
 
-    # If no rec_meta, try matching section (some rezekne entries have matching)
+    # Prefer enriched matching from enrich_dataset.py over rec_meta tags
     matching_raw = r.get("matching", {}) or {}
-    if not interest_tags and matching_raw.get("interest_domains"):
-        interest_tags = matching_raw.get("interest_domains", [])
-    if not personality_raw and matching_raw.get("personality_fit"):
-        personality_raw = matching_raw.get("personality_fit", [])
+    if matching_raw.get("interest_domains"):
+        interest_tags = matching_raw["interest_domains"]
+    elif not interest_tags:
+        interest_tags = []
+    if matching_raw.get("personality_fit"):
+        personality_raw = matching_raw["personality_fit"]
 
     # Keywords from description for enrichment
     description = r.get("description", "")
@@ -687,7 +692,7 @@ def _norm_rezekne(r: dict, src: str) -> dict:
             "sectors": raw_sectors,
             "sectors_canonical": sectors_canonical,
         },
-        "keywords": specializations,
+        "keywords": list(dict.fromkeys(specializations + (r.get("keywords") or []))),
         "source_file": src,
         "matching": {
             "interest_domains": map_tags(interest_tags, map_to_canonical_domain),
@@ -696,13 +701,13 @@ def _norm_rezekne(r: dict, src: str) -> dict:
             ),
             "personality_fit": map_tags(personality_raw, map_to_canonical_personality),
             "language_codes": lang_codes,
-            "math_intensive": math_intensive,
-            "creative_component": creative,
-            "research_oriented": research_oriented,
+            "math_intensive": matching_raw.get("math_intensive", math_intensive),
+            "creative_component": matching_raw.get("creative_component", creative),
+            "research_oriented": matching_raw.get("research_oriented", research_oriented),
             "international_potential": international_potential,
             "entry_exam_required": entry_exam,
             "difficulty_level": difficulty,
             "postgrad_pathway": bool(career_raw.get("can_continue_masters", True)),
-            "teamwork_oriented": True,
+            "teamwork_oriented": bool(matching_raw.get("teamwork_oriented", True)),
         },
     }
