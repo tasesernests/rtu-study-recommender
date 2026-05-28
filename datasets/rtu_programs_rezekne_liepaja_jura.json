@@ -13,15 +13,12 @@
     "intended_use": "Student program recommendation engine",
     "notes": "Some programs (e.g. Skolotājs, Sākumizglītības skolotājs) are offered at multiple campuses and appear as separate entries. Budget quota data reflects the 2026 intake cycle."
   },
-
   "programs": [
-
     {
       "id": "JCD",
       "slug": "uznemejdarbiba-rezekne",
       "name_lv": "Uzņēmējdarbība",
       "name_en": "Entrepreneurship / Business Administration",
-
       "institution": {
         "unit": "RTU Rēzeknes akadēmija",
         "city": "Rēzekne",
@@ -30,7 +27,6 @@
         "email": "rezekne@rtu.lv",
         "website": "https://www.rtu.lv/lv/rezeknes-akademija"
       },
-
       "program_details": {
         "type": "Pirmā cikla augstākās izglītības (profesionālās bakalaura) studijas",
         "level": 6,
@@ -38,7 +34,6 @@
         "study_field": "Uzņēmējdarbība, nekustamo īpašumu pārvaldība un loģistika",
         "url": "https://www.rtu.lv/lv/studijas/visas-studiju-programmas/atvert/JCD?department=0R000&type=P"
       },
-
       "admission": {
         "required_education": "Vidējā izglītība",
         "requires_entrance_exam": false,
@@ -47,9 +42,11 @@
         "requires_prior_professional_qualification": false,
         "prior_qualification_details": null,
         "specific_admission_notes": null,
-        "languages_of_instruction": ["Latviešu", "Angļu"]
+        "languages_of_instruction": [
+          "Latviešu",
+          "Angļu"
+        ]
       },
-
       "study_forms": [
         {
           "form": "Pilna laika klātienes",
@@ -66,30 +63,23 @@
           "budget_note": "Nav budžeta vietu"
         }
       ],
-
       "degree": {
         "degree_lv": "Profesionālais bakalaura grāds uzņēmējdarbībā",
         "qualification_lv": "Uzņēmuma vadītāja kvalifikācija",
         "lki_level": 6
       },
-
       "credits": 240,
-
       "director": {
         "name": "Iveta Dembovska",
         "title": "Pasniedzējs"
       },
-
       "description": "Studiju programma apvieno uzņēmējdarbības nozares teorētiskos un profesionālās specializācijas kursus, piedāvājot izvēles moduļus trīs specializācijās: mārketings, tūrisma uzņēmējdarbība un ēdināšanas uzņēmumu vadība. Ierobežotās izvēles daļā ietverti moduļi atbilstoši uzņēmējdarbības vides un reģiona aktualitātēm. Studijas atbilst uzņēmuma vadītāja profesijas standarta prasībām.",
-
       "specializations": [
         "Mārketings",
         "Tūrisma uzņēmējdarbība",
         "Ēdināšanas uzņēmumu vadība"
       ],
-
       "goals": "Sagatavot kvalificētus, reģiona un valsts darba tirgū konkurētspējīgus speciālistus uzņēmējdarbības jomā saskaņā ar uzņēmuma vadītāja profesijas standarta prasībām, kas atbilst LKI 6. līmeņa zināšanām, prasmēm un kompetencēm.",
-
       "objectives": [
         "Veidot un attīstīt studentu prasmes, iemaņas un profesionālās kompetences uzņēmējdarbībā",
         "Attīstīt prasmes pielietot zinātnisko pieeju problēmu risināšanā un veikt pētniecisko darbību",
@@ -97,7 +87,6 @@
         "Nodrošināt studiju programmas satura pilnveidošanu atbilstoši tirgus prasībām",
         "Sagatavot absolventus studijām maģistratūrā un veicināt pašizglītību"
       ],
-
       "learning_outcomes": {
         "knowledge": [
           "Uzņēmuma vadītāja profesijai raksturīgās pamata un specializētas zināšanas un to kritiska izpratne",
@@ -115,7 +104,6 @@
           "Izpratne par profesionālo ētiku uzņēmuma vadītāja profesijā"
         ]
       },
-
       "career_prospects": {
         "description": "Absolventiem ir iespējas strādāt pakalpojumu sfērā, tostarp tirdzniecības, finanšu, sabiedrisko pakalpojumu, ražošanas pakalpojumu un transporta pakalpojumu jomā.",
         "example_roles": [
@@ -136,13 +124,11 @@
         "can_continue_masters": true,
         "can_start_own_business": true
       },
-
       "international": {
         "erasmus_available": true,
         "foreign_lecturers": true,
         "international_study_possible": true
       },
-
       "recommendation_metadata": {
         "interest_tags": [
           "bizness",
@@ -180,15 +166,46 @@
           "Tiem, kas vēlas tehnisku vai eksaktu specialitāti",
           "Tiem, kam nepatīk komunikācija un cilvēki"
         ]
-      }
+      },
+      "matching": {
+        "interest_domains": [
+          "business_management",
+          "education_research"
+        ],
+        "required_strengths": [
+          "communication",
+          "leadership",
+          "economics_finance",
+          "analytical_thinking"
+        ],
+        "personality_fit": [
+          "entrepreneurial",
+          "social",
+          "team_player"
+        ],
+        "math_intensive": false,
+        "creative_component": false,
+        "research_oriented": false,
+        "teamwork_oriented": true,
+        "difficulty_level": "medium"
+      },
+      "keywords": [
+        "entrepreneur",
+        "business manager",
+        "tourism manager",
+        "hospitality manager",
+        "marketing specialist",
+        "small business owner",
+        "restaurant manager",
+        "hotel manager",
+        "catering"
+      ]
     },
-
     {
       "id": "ICE",
       "slug": "ekonomika-rezekne",
       "name_lv": "Ekonomika",
       "name_en": "Economics",
-
       "institution": {
         "unit": "RTU Rēzeknes akadēmija",
         "city": "Rēzekne",
@@ -197,7 +214,6 @@
         "email": "rezekne@rtu.lv",
         "website": "https://www.rtu.lv/lv/rezeknes-akademija"
       },
-
       "program_details": {
         "type": "Pirmā cikla augstākās izglītības (profesionālās bakalaura) studijas",
         "level": 6,
@@ -205,7 +221,6 @@
         "study_field": "Uzņēmējdarbība, nekustamo īpašumu pārvaldība un loģistika",
         "url": "https://www.rtu.lv/lv/studijas/visas-studiju-programmas/atvert/ICE?department=0R000&type=P"
       },
-
       "admission": {
         "required_education": "Vidējā izglītība",
         "requires_entrance_exam": false,
@@ -214,9 +229,10 @@
         "requires_prior_professional_qualification": false,
         "prior_qualification_details": null,
         "specific_admission_notes": null,
-        "languages_of_instruction": ["Latviešu"]
+        "languages_of_instruction": [
+          "Latviešu"
+        ]
       },
-
       "study_forms": [
         {
           "form": "Pilna laika klātienes",
@@ -233,26 +249,19 @@
           "budget_note": "Nav budžeta vietu"
         }
       ],
-
       "degree": {
         "degree_lv": "Profesionālais bakalaura grāds ekonomikā",
         "qualification_lv": "Ekonomista kvalifikācija",
         "lki_level": 6
       },
-
       "credits": 240,
-
       "director": {
         "name": "Aija Čerpinska",
         "title": "Lektors"
       },
-
       "description": "Studiju programma ir piemērota gan tiem, kas vēlas uzsākt karjeru ekonomikā, gan pieredzējušiem speciālistiem, kas vēlas papildināt zināšanas. Tiek attīstīts plašs prasmju loks: ekonomikas procesu izpratne, aprites ekonomika, globālās tendences, grāmatvedība, nodokļu politika, finanšu pārvaldība un projektu vadība.",
-
       "specializations": [],
-
       "goals": "Sagatavot kvalificētus un konkurētspējīgus speciālistus ekonomikas jomā saskaņā ar ekonomista profesijas standarta prasībām, kas atbilst LKI 6. līmeņa zināšanām, prasmēm un kompetencēm.",
-
       "objectives": [
         "Nodrošināt vispusīgas zināšanas ekonomikas nozarē un makro/mikro vides novērtēšanā",
         "Veidot prasmes komercdarbības un publiskā sektora resursu pārvaldībā",
@@ -260,7 +269,6 @@
         "Sekmēt prezentācijas, komunikācijas, komandas darba un līderības prasmes",
         "Sagatavot absolventus studijām maģistrantūrā"
       ],
-
       "learning_outcomes": {
         "knowledge": [
           "Ekonomista profesijai raksturīgās pamata un specializētas zināšanas un to kritiska izpratne",
@@ -278,7 +286,6 @@
           "Profesionālās ētikas ievērošana un piedalīšanās ekonomikas jomas attīstībā"
         ]
       },
-
       "career_prospects": {
         "description": "Absolventiem paveras daudzpusīgas karjeras iespējas komercdarbības organizēšanā, finanšu un grāmatvedības datu analīzē, uzņēmumu vadībā, valsts un pašvaldību institūcijās, kā arī starptautiskajos uzņēmumos.",
         "example_roles": [
@@ -300,13 +307,11 @@
         "can_continue_masters": true,
         "can_start_own_business": true
       },
-
       "international": {
         "erasmus_available": false,
         "foreign_lecturers": false,
         "international_study_possible": false
       },
-
       "recommendation_metadata": {
         "interest_tags": [
           "ekonomika",
@@ -342,15 +347,46 @@
           "Tiem, kas vēlas radošu vai tehnisku specialitāti",
           "Tiem, kam nepatīk skaitļi un analīze"
         ]
-      }
+      },
+      "matching": {
+        "interest_domains": [
+          "business_management",
+          "education_research"
+        ],
+        "required_strengths": [
+          "mathematics",
+          "economics_finance",
+          "analytical_thinking",
+          "research"
+        ],
+        "personality_fit": [
+          "analytical",
+          "precise",
+          "entrepreneurial"
+        ],
+        "math_intensive": true,
+        "creative_component": false,
+        "research_oriented": false,
+        "teamwork_oriented": false,
+        "difficulty_level": "medium"
+      },
+      "keywords": [
+        "economist",
+        "financial analyst",
+        "accountant",
+        "project manager",
+        "budget planner",
+        "tax specialist",
+        "statistics analyst",
+        "public sector economist",
+        "macroeconomics"
+      ]
     },
-
     {
       "id": "DCZ",
       "slug": "programmsanas-inzenieris-rezekne",
       "name_lv": "Programmēšanas inženieris",
       "name_en": "Software Engineering",
-
       "institution": {
         "unit": "RTU Rēzeknes akadēmija",
         "city": "Rēzekne",
@@ -359,7 +395,6 @@
         "email": "rezekne@rtu.lv",
         "website": "https://www.rtu.lv/lv/rezeknes-akademija"
       },
-
       "program_details": {
         "type": "Pirmā cikla augstākās izglītības (profesionālās bakalaura) studijas",
         "level": 6,
@@ -367,7 +402,6 @@
         "study_field": "Datorzinātne, telekomunikācija un elektroenerģētika",
         "url": "https://www.rtu.lv/lv/studijas/visas-studiju-programmas/atvert/DCZ?department=0R000&type=P"
       },
-
       "admission": {
         "required_education": "Vidējā izglītība",
         "requires_entrance_exam": false,
@@ -376,9 +410,10 @@
         "requires_prior_professional_qualification": false,
         "prior_qualification_details": null,
         "specific_admission_notes": null,
-        "languages_of_instruction": ["Latviešu"]
+        "languages_of_instruction": [
+          "Latviešu"
+        ]
       },
-
       "study_forms": [
         {
           "form": "Pilna laika klātienes",
@@ -388,26 +423,19 @@
           "budget_note": "Nav budžeta vietu"
         }
       ],
-
       "degree": {
         "degree_lv": "Profesionālais bakalaura grāds informācijas tehnoloģijā",
         "qualification_lv": "Programmēšanas inženiera kvalifikācija",
         "lki_level": 6
       },
-
       "credits": 240,
-
       "director": {
         "name": "Pēteris Grabusts",
         "title": "Doktors, Profesors"
       },
-
       "description": "Programmēšanas inženieris izstrādā lielu un kompleksu sistēmu programmatūru, ievieš un uztur to, sagatavo testēšanas plānus un konsultē lietotājus. Programma ietver teorētiskas studijas, praktiskas nodarbības, laboratorijas darbus un trīs prakses (ievadprakse, ražošanas prakse, pirmsdiploma prakse).",
-
       "specializations": [],
-
       "goals": "Nodrošināt augstas kvalifikācijas speciālistu programminženierijas jomā sagatavošanu, kuri būs gatavi profesionāli iekļauties programmatūras izstrādes projektos, adaptēties darba tirgus prasībām un turpināt izglītību maģistrantūrā.",
-
       "objectives": [
         "Apgūt programmēšanas inženiera kvalifikācijai nepieciešamās zinātnes un tehnoloģiju pamatzināšanas",
         "Attīstīt spējas formulēt un risināt IT nozarei raksturīgās problēmas",
@@ -416,7 +444,6 @@
         "Attīstīt spējas darboties speciālistu komandā",
         "Izkopt svešvalodu zināšanas darbam starptautiskā vidē"
       ],
-
       "learning_outcomes": {
         "knowledge": [
           "Programmētāja profesijai raksturīgās pamata un specializētās zināšanas",
@@ -434,7 +461,6 @@
           "Dalība nozares attīstībā"
         ]
       },
-
       "career_prospects": {
         "description": "Programmēšanas inženieri var strādāt praktiski jebkurā uzņēmumā, kas veic programmatūras izstrādi, ieviešanu vai uzturēšanu. Šobrīd ir vieni no visvairāk pieprasītajiem darba tirgū.",
         "example_roles": [
@@ -456,13 +482,11 @@
         "can_continue_masters": true,
         "can_start_own_business": true
       },
-
       "international": {
         "erasmus_available": false,
         "foreign_lecturers": false,
         "international_study_possible": true
       },
-
       "recommendation_metadata": {
         "interest_tags": [
           "programmēšana",
@@ -499,15 +523,48 @@
           "Tiem, kam nepatīk loģika un matemātika",
           "Tiem, kas vēlas ļoti daudz sociālas mijiedarbības darbā"
         ]
-      }
+      },
+      "matching": {
+        "interest_domains": [
+          "software_engineering",
+          "it_programming",
+          "data_science_ai"
+        ],
+        "required_strengths": [
+          "programming",
+          "mathematics",
+          "analytical_thinking",
+          "technical_thinking"
+        ],
+        "personality_fit": [
+          "analytical",
+          "technical",
+          "independent"
+        ],
+        "math_intensive": true,
+        "creative_component": false,
+        "research_oriented": false,
+        "teamwork_oriented": true,
+        "difficulty_level": "medium_high"
+      },
+      "keywords": [
+        "software engineer",
+        "programmer",
+        "web developer",
+        "database developer",
+        "mobile developer",
+        "AI developer",
+        "software tester",
+        "IT project manager",
+        "backend developer",
+        "full stack"
+      ]
     },
-
     {
       "id": "MCE",
       "slug": "mehatronika-rezekne",
       "name_lv": "Mehatronika",
       "name_en": "Mechatronics",
-
       "institution": {
         "unit": "RTU Rēzeknes akadēmija",
         "city": "Rēzekne",
@@ -517,7 +574,6 @@
         "also_available_in": "Liepāja (RTU Liepājas akadēmija), Rīga (Būvniecības un mašīnzinību fakultāte, Ķīpsalas iela 6A)",
         "website": "https://www.rtu.lv/lv/rezeknes-akademija"
       },
-
       "program_details": {
         "type": "Pirmā cikla augstākās izglītības (profesionālās bakalaura) studijas",
         "level": 6,
@@ -525,7 +581,6 @@
         "study_field": "Būvniecība, mašīnzinības un medicīnas inženierija; Datorzinātne, telekomunikācija un elektroenerģētika",
         "url": "https://www.rtu.lv/lv/studijas/visas-studiju-programmas/atvert/MCE?department=0R000&type=P"
       },
-
       "admission": {
         "required_education": "Vidējā izglītība",
         "requires_entrance_exam": false,
@@ -534,9 +589,11 @@
         "requires_prior_professional_qualification": false,
         "prior_qualification_details": null,
         "specific_admission_notes": null,
-        "languages_of_instruction": ["Latviešu", "Angļu"]
+        "languages_of_instruction": [
+          "Latviešu",
+          "Angļu"
+        ]
       },
-
       "study_forms": [
         {
           "form": "Pilna laika klātienes",
@@ -546,33 +603,25 @@
           "budget_note": "90 budžeta vietas Rēzeknē; Liepājā – 20"
         }
       ],
-
       "degree": {
         "degree_lv": "Profesionālais bakalaura grāds mehatronikā",
         "qualification_lv": "Mehatronikas inženiera kvalifikācija",
         "lki_level": 6
       },
-
       "credits": 240,
-
       "director": {
         "name": "Andris Martinovs",
         "title": "Doktors, Profesors"
       },
-
       "description": "Mehatronika apvieno trīs nozares – mehāniku, elektroniku un datortehnika. Mehatronikas inženieri strādā ar sarežģītām tehnoloģiskajām mašīnām, piemēram, robotiem, izstrādā to vadības algoritmus, veic apkopi un uzlabošanu uzņēmumos, kur tiek veikta elektromehānisku iekārtu vadība.",
-
       "specializations": [],
-
       "goals": "Sagatavot mehatronikas inženierus, kuri izstrādā, modernizē un ievieš ražošanā mehatronikas sistēmas, veic to uzraudzību, diagnostiku, apkopes un remontus, organizē ražošanas procesu un vada projektus.",
-
       "objectives": [
         "Sniegt zināšanas inženierzinātņu pamatkursos un mehatronikas specializācijas kursos",
         "Izglītot vispusīgi attīstītu personību, kas spēj strādāt komandā un vadīt projektus",
         "Sniegt nepieciešamās prasmes mehatronikas sistēmu izstrādei, modernizācijai un ieviešanai",
         "Orientēt studentus uz zinātnisko pētniecību, inovatīvu produktu radīšanu un uzņēmējdarbību"
       ],
-
       "learning_outcomes": {
         "knowledge": [
           "Mehatronikas sistēmu projektēšana, izstrāde un modernizācija",
@@ -590,7 +639,6 @@
           "Zināšanu pastāvīga pilnveide profesionālās darbības jomā"
         ]
       },
-
       "career_prospects": {
         "description": "Absolventiem ir iespējas strādāt par mehatronikas inženieri mašīnbūves, metālapstrādes, kokapstrādes, plastmasu, pārtikas vai farmācijas uzņēmumos, kā arī dibināt savu uzņēmumu.",
         "example_roles": [
@@ -612,13 +660,11 @@
         "can_continue_masters": true,
         "can_start_own_business": true
       },
-
       "international": {
         "erasmus_available": false,
         "foreign_lecturers": false,
         "international_study_possible": false
       },
-
       "recommendation_metadata": {
         "interest_tags": [
           "mehānika",
@@ -655,15 +701,48 @@
           "Tiem, kas nevēlas strādāt ar tehniskām iekārtām",
           "Tiem, kam nepatīk fizika un matemātika"
         ]
-      }
+      },
+      "matching": {
+        "interest_domains": [
+          "robotics_automation",
+          "mechanics_engineering",
+          "electronics_telecom"
+        ],
+        "required_strengths": [
+          "mathematics",
+          "physics",
+          "technical_thinking",
+          "practical_skills",
+          "programming"
+        ],
+        "personality_fit": [
+          "technical",
+          "practical",
+          "analytical"
+        ],
+        "math_intensive": true,
+        "creative_component": false,
+        "research_oriented": false,
+        "teamwork_oriented": true,
+        "difficulty_level": "medium_high"
+      },
+      "keywords": [
+        "mechatronics engineer",
+        "robotics engineer",
+        "CNC programmer",
+        "automation engineer",
+        "industrial robot",
+        "machine design",
+        "manufacturing engineer",
+        "PLC programmer",
+        "servo systems"
+      ]
     },
-
     {
       "id": "WCU",
       "slug": "dizaina-tehnologijas-rezekne",
       "name_lv": "Dizaina tehnoloģijas",
       "name_en": "Design Technologies",
-
       "institution": {
         "unit": "RTU Rēzeknes akadēmija",
         "city": "Rēzekne",
@@ -672,7 +751,6 @@
         "email": "rezekne@rtu.lv",
         "website": "https://www.rtu.lv/lv/rezeknes-akademija"
       },
-
       "program_details": {
         "type": "Pirmā cikla augstākās izglītības (profesionālās bakalaura) studijas",
         "level": 6,
@@ -680,7 +758,6 @@
         "study_field": "Arhitektūra, māksla un dizains",
         "url": "https://www.rtu.lv/lv/studijas/visas-studiju-programmas/atvert/WCU?department=0R000&type=P"
       },
-
       "admission": {
         "required_education": "Vidējā izglītība",
         "requires_entrance_exam": true,
@@ -689,9 +766,10 @@
         "requires_prior_professional_qualification": false,
         "prior_qualification_details": null,
         "specific_admission_notes": "Iestājpārbaudījums kompozīcijā obligāts.",
-        "languages_of_instruction": ["Latviešu"]
+        "languages_of_instruction": [
+          "Latviešu"
+        ]
       },
-
       "study_forms": [
         {
           "form": "Pilna laika klātienes",
@@ -701,37 +779,29 @@
           "budget_note": "25 budžeta vietas Rēzeknē"
         }
       ],
-
       "degree": {
         "degree_lv": "Profesionālais bakalaura grāds dizainā",
         "qualification_lv": "Produktu dizainera vai interjera dizainera kvalifikācija",
         "lki_level": 6
       },
-
       "credits": 240,
-
       "director": {
         "name": "Diāna Apele",
         "title": "Docents (praktiskais)"
       },
-
       "description": "Programma sagatavo produktu un interjera dizainerus ar trim specializācijas moduļiem: Industriālais dizains un tehnoloģijas, Interjera dizains un izstrādājumu tehnoloģijas, Apģērbu dizains un tehnoloģija. Praksē studenti nostiprinājas dizaina uzņēmumos un birojos.",
-
       "specializations": [
         "Industriālais dizains un tehnoloģijas",
         "Interjera dizains un izstrādājumu tehnoloģijas",
         "Apģērbu dizains un tehnoloģija"
       ],
-
       "goals": "Nodrošināt darba tirgū konkurētspējīgas starpdisciplināras dizaina un inženierzinātņu jomu teorijā balstītas studijas 6. līmeņa profesionālās kvalifikācijas ieguvei, specializējoties apģērbu, industriālā vai interjera dizainā un tehnoloģijās.",
-
       "objectives": [
         "Teorētiski un praktiski sagatavot produktu vai interjera dizainerus atbilstoši profesijas standartam",
         "Nodrošināt pirmā cikla bakalaura studiju prasību izpildi",
         "Veicināt vispārējo prasmju un kompetences attīstību",
         "Sagatavot absolventus studijām maģistra līmenī"
       ],
-
       "learning_outcomes": {
         "knowledge": [
           "Dizainera profesijai nepieciešamās vispārējās un specializētas zināšanas faktu, teoriju un tehnoloģiju līmenī",
@@ -749,7 +819,6 @@
           "Profesionālās darbības ietekmes uz vidi un sabiedrību izvērtēšana"
         ]
       },
-
       "career_prospects": {
         "description": "Interjera dizainers – projektē telpas, strādā arhitektu un dizaina birojos, muzejos. Produktu dizainers – izstrādā apģērbus un to kolekcijas, strādā ražošanas uzņēmumos un dizaina studijās.",
         "example_roles": [
@@ -771,13 +840,11 @@
         "can_continue_masters": true,
         "can_start_own_business": true
       },
-
       "international": {
         "erasmus_available": true,
         "foreign_lecturers": false,
         "international_study_possible": true
       },
-
       "recommendation_metadata": {
         "interest_tags": [
           "dizains",
@@ -813,15 +880,47 @@
           "Tiem, kam nav vizuālās un radošās apdāvinātības",
           "Tiem, kas nevēlas kārtot iestājpārbaudījumu"
         ]
-      }
+      },
+      "matching": {
+        "interest_domains": [
+          "art_design",
+          "architecture"
+        ],
+        "required_strengths": [
+          "creativity",
+          "drawing_design",
+          "practical_skills",
+          "analytical_thinking"
+        ],
+        "personality_fit": [
+          "creative",
+          "practical",
+          "precise"
+        ],
+        "math_intensive": false,
+        "creative_component": true,
+        "research_oriented": false,
+        "teamwork_oriented": true,
+        "difficulty_level": "medium"
+      },
+      "keywords": [
+        "designer",
+        "interior designer",
+        "fashion designer",
+        "textile designer",
+        "product designer",
+        "industrial design",
+        "3D modelling",
+        "visual design",
+        "pattern design",
+        "furniture design"
+      ]
     },
-
     {
       "id": "WCH",
       "slug": "materialu-tehnologija-un-dizains-riga",
       "name_lv": "Materiālu tehnoloģija un dizains",
       "name_en": "Materials Technology and Design",
-
       "institution": {
         "unit": "RTU Arhitektūras un dizaina institūts (ADI)",
         "city": "Rīga",
@@ -830,7 +929,6 @@
         "email": "adi@rtu.lv",
         "website": "https://www.rtu.lv/lv/adi"
       },
-
       "program_details": {
         "type": "Pirmā cikla augstākās izglītības (profesionālās bakalaura) studijas",
         "level": 6,
@@ -838,7 +936,6 @@
         "study_field": "Arhitektūra, māksla un dizains",
         "url": "https://www.rtu.lv/lv/studijas/visas-studiju-programmas/atvert/WCH?department=01T00&type=P"
       },
-
       "admission": {
         "required_education": "Vispārējā vai profesionālā vidējā izglītība",
         "requires_entrance_exam": true,
@@ -847,9 +944,10 @@
         "requires_prior_professional_qualification": false,
         "prior_qualification_details": null,
         "specific_admission_notes": "Maksas iestājpārbaudījums zīmēšanā.",
-        "languages_of_instruction": ["Latviešu"]
+        "languages_of_instruction": [
+          "Latviešu"
+        ]
       },
-
       "study_forms": [
         {
           "form": "Pilna laika klātienes",
@@ -859,38 +957,30 @@
           "budget_note": "45 budžeta vietas Rīgā"
         }
       ],
-
       "degree": {
         "degree_lv": "Profesionālais bakalaura grāds materiālu tehnoloģijā un dizainā",
         "qualification_lv": "Produktu dizainera kvalifikācija",
         "lki_level": 6
       },
-
       "credits": 240,
-
       "director": {
         "name": "Inga Zotova",
         "title": "Doktors, Docents"
       },
-
       "description": "Programma ietver visu produkta izgatavošanas ciklu – no koncepcijas, tirgus izpētes, konstruktīvo un tehnoloģisko risinājumu izstrādes, materiālu studijām līdz izgatavošanai un pārdošanas stratēģijai. Specializāciju klāsts aptveroša – tekstils, metāls, koks, plastmasa, interjers.",
-
       "specializations": [
         "Apģērbu dizains un tehnoloģijas",
         "Tekstila dizains un tehnoloģijas",
         "Koka izstrādājumu dizains",
         "Interjera dizains"
       ],
-
       "goals": "Nodrošināt starptautiskiem standartiem atbilstošu konkurētspējīgu augstāko izglītību un sagatavot studējošos darbam dizaina un tehnoloģiju jomā, specializējot viņus jaunu materiālu, daudzfunkcionālu, estētiski augstvērtīgu produktu koncepciju izstrādē un materializēšanā.",
-
       "objectives": [
         "Izglītot piektā kvalifikācijas līmeņa speciālistus produktu dizaina jomā starptautiskam darba tirgum",
         "Sniegt plašu starpdisciplināru izglītību atbilstoši Latvijas un Eiropas prasībām",
         "Veidot produktu dizainera prasmes atbilstoši profesijas standartam",
         "Veicināt dizaina izglītības attīstību Latvijā"
       ],
-
       "learning_outcomes": {
         "knowledge": [
           "Sasniegto zinātības līmeni profesijā un saistītās zinātnes nozarēs",
@@ -908,7 +998,6 @@
           "Pētnieciskā darbība un inovāciju ieviešana"
         ]
       },
-
       "career_prospects": {
         "description": "Absolventi var strādāt par dizaineriem un konsultantiem, projektēšanas grupas vadītājiem, atvērt savu uzņēmumu, veidot mazsēriju un rūpnieciskās kolekcijas, strādāt dizaina studijās un arhitektu birojos.",
         "example_roles": [
@@ -929,13 +1018,11 @@
         "can_continue_masters": true,
         "can_start_own_business": true
       },
-
       "international": {
         "erasmus_available": false,
         "foreign_lecturers": false,
         "international_study_possible": false
       },
-
       "recommendation_metadata": {
         "interest_tags": [
           "dizains",
@@ -972,15 +1059,47 @@
           "Tiem, kam nav radošuma vai vizuālas apdāvinātības",
           "Tiem, kas izvairās no iestājpārbaudījumiem"
         ]
-      }
+      },
+      "matching": {
+        "interest_domains": [
+          "art_design",
+          "chemistry_biotech"
+        ],
+        "required_strengths": [
+          "creativity",
+          "drawing_design",
+          "practical_skills",
+          "chemistry"
+        ],
+        "personality_fit": [
+          "creative",
+          "practical",
+          "precise"
+        ],
+        "math_intensive": false,
+        "creative_component": true,
+        "research_oriented": false,
+        "teamwork_oriented": true,
+        "difficulty_level": "medium"
+      },
+      "keywords": [
+        "materials designer",
+        "textile designer",
+        "fashion designer",
+        "wood technology",
+        "metal craft",
+        "interior designer",
+        "product designer",
+        "materials technology",
+        "design engineer",
+        "craft"
+      ]
     },
-
     {
       "id": "JCR",
       "slug": "robezapsardze-rezekne",
       "name_lv": "Robežapsardze",
       "name_en": "Border Guard",
-
       "institution": {
         "unit": "RTU Rēzeknes akadēmija",
         "city": "Rēzekne",
@@ -989,7 +1108,6 @@
         "email": "rezekne@rtu.lv",
         "website": "https://www.rtu.lv/lv/rezeknes-akademija"
       },
-
       "program_details": {
         "type": "Pirmā cikla augstākās izglītības (profesionālās bakalaura) studijas",
         "level": 6,
@@ -997,7 +1115,6 @@
         "study_field": "Drošība un tiesību zinātne",
         "url": "https://www.rtu.lv/lv/studijas/visas-studiju-programmas/atvert/JCR?department=0R000&type=P"
       },
-
       "admission": {
         "required_education": "Iegūta 5. līmeņa profesionālā kvalifikācija 'Valsts robežsardzes jaunākais virsnieks'",
         "requires_entrance_exam": false,
@@ -1006,9 +1123,10 @@
         "requires_prior_professional_qualification": true,
         "prior_qualification_details": "Nepieciešama 5. līmeņa profesionālā kvalifikācija 'Valsts robežsardzes jaunākais virsnieks' un VRS rekomendācija. Studējošie tiek atlasīti pēc VRS noteiktiem kritērijiem.",
         "specific_admission_notes": "Pirmie divi īsā cikla augstākās izglītības programmas studiju gadi (117 KP) tiek atzīti. Studenti uzsāk studijas no 3. studiju gada. Programma pilnībā finansēta no VRS budžeta – studentiem nav finansiālu izmaksu.",
-        "languages_of_instruction": ["Latviešu"]
+        "languages_of_instruction": [
+          "Latviešu"
+        ]
       },
-
       "study_forms": [
         {
           "form": "Nepilna laika neklātienes",
@@ -1018,26 +1136,19 @@
           "budget_note": "Pilnībā finansēts no VRS budžeta – studentiem nav izmaksu"
         }
       ],
-
       "degree": {
         "degree_lv": "Profesionālā bakalaura grāds robežsardzē",
         "qualification_lv": "Valsts robežsardzes vecākā virsnieka kvalifikācija",
         "lki_level": 6
       },
-
       "credits": 243,
-
       "director": {
         "name": "Iluta Arbidāne",
         "title": "Doktors, Profesors"
       },
-
       "description": "Programma paredzēta dienestā esošiem robežsargiem ar 5. līmeņa kvalifikāciju. Pilnībā finansēta no VRS budžeta. Studenti turpina pildīt dienesta pienākumus studiju laikā. Programma nodrošina tiesības ieņemt augstāka līmeņa virsnieku amatus un piedalīties Frontex misijās.",
-
       "specializations": [],
-
       "goals": "Sagatavot profesionālā bakalaura grādu robežapsardzē un 6. līmeņa profesionālo kvalifikāciju ieguvušus vecākos virsniekus, kas kompetenti nodrošināt Latvijas un ES ārējās robežas aizsardzību, veikt robežkontroli un organizēt dienesta darbu atbilstoši nacionālajiem un starptautiskajiem normatīvajiem aktiem.",
-
       "objectives": [
         "Nodrošināt padziļinātas zināšanas par robežapsardzības, migrācijas un drošības normatīvo regulējumu",
         "Attīstīt prasmes veikt robežkontroli, izmantojot mūsdienīgas tehnoloģijas",
@@ -1046,7 +1157,6 @@
         "Sekmēt profesionālās ētikas un cilvēktiesību ievērošanu",
         "Pilnveidot pētnieciskās prasmes robežapsardzības un migrācijas analīzē"
       ],
-
       "learning_outcomes": {
         "knowledge": [
           "Latvijas, ES un starptautiskie normatīvie akti robežapsardzībā, migrācijā un drošībā",
@@ -1067,7 +1177,6 @@
           "Gatavība studijām maģistra līmenī"
         ]
       },
-
       "career_prospects": {
         "description": "100% nodarbinātības līmenis – visi studenti studiju laikā ir nodarbināti VRS. Absolventi iegūst tiesības ieņemt augstāka līmeņa virsnieku amatus un var piedalīties Frontex misijās.",
         "example_roles": [
@@ -1086,14 +1195,12 @@
         "can_continue_masters": true,
         "can_start_own_business": false
       },
-
       "international": {
         "erasmus_available": false,
         "foreign_lecturers": false,
         "international_study_possible": true,
         "international_notes": "Frontex misijas un starpvalstu robežsardzes sadarbība"
       },
-
       "recommendation_metadata": {
         "interest_tags": [
           "drošība",
@@ -1128,15 +1235,46 @@
           "Tiem bez 5. līmeņa VRS kvalifikācijas",
           "Tiem, kas meklē civilas profesijas iespējas"
         ]
-      }
+      },
+      "matching": {
+        "interest_domains": [
+          "education_research",
+          "transport_aviation"
+        ],
+        "required_strengths": [
+          "analytical_thinking",
+          "communication",
+          "languages",
+          "practical_skills"
+        ],
+        "personality_fit": [
+          "analytical",
+          "precise",
+          "adventurous"
+        ],
+        "math_intensive": false,
+        "creative_component": false,
+        "research_oriented": false,
+        "teamwork_oriented": true,
+        "difficulty_level": "medium"
+      },
+      "keywords": [
+        "border guard officer",
+        "customs officer",
+        "immigration specialist",
+        "Frontex officer",
+        "security officer",
+        "migration management",
+        "border control",
+        "law enforcement",
+        "patrol officer"
+      ]
     },
-
     {
       "id": "GCT-R",
       "slug": "sakumizglitibas-skolotajs-rezekne",
       "name_lv": "Sākumizglītības skolotājs",
       "name_en": "Primary School Teacher",
-
       "institution": {
         "unit": "RTU Rēzeknes akadēmija",
         "city": "Rēzekne",
@@ -1145,7 +1283,6 @@
         "email": "rezekne@rtu.lv",
         "website": "https://www.rtu.lv/lv/rezeknes-akademija"
       },
-
       "program_details": {
         "type": "Pirmā cikla augstākās izglītības (profesionālās bakalaura) studijas",
         "level": 6,
@@ -1153,7 +1290,6 @@
         "study_field": "Izglītība, kultūra un sociālā labklājība",
         "url": "https://www.rtu.lv/lv/studijas/visas-studiju-programmas/atvert/GCT?department=0R000&type=P"
       },
-
       "admission": {
         "required_education": "Vidējā izglītība un iestājpārbaudījums",
         "requires_entrance_exam": true,
@@ -1162,9 +1298,10 @@
         "requires_prior_professional_qualification": false,
         "prior_qualification_details": null,
         "specific_admission_notes": null,
-        "languages_of_instruction": ["Latviešu"]
+        "languages_of_instruction": [
+          "Latviešu"
+        ]
       },
-
       "study_forms": [
         {
           "form": "Pilna laika klātienes",
@@ -1181,33 +1318,25 @@
           "budget_note": "30 budžeta vietas Rēzeknē (neklātienē)"
         }
       ],
-
       "degree": {
         "degree_lv": "Profesionālais bakalaura grāds pedagogu izglītībā",
         "qualification_lv": "Skolotāja kvalifikācija",
         "lki_level": 6
       },
-
       "credits": 240,
-
       "director": {
         "name": "Jānis Dzerviniks",
         "title": "Doktors, Profesors"
       },
-
       "description": "Programma nodrošina skolotāja kvalifikācijas ieguvi darbam pamatizglītības pirmajā posmā (1.–6. klase). Apvienota pedagoģijas, psiholoģijas un metodiku teorija ar plašu praksi. Liela uzmanība pievērsta inovatīvām metodēm un digitālajām tehnoloģijām izglītībā.",
-
       "specializations": [],
-
       "goals": "Nodrošināt konkurētspējīgas un kvalitatīvas, starptautiski salīdzināmas profesionālās augstākās izglītības un skolotāja kvalifikācijas ieguvi darbam pamatizglītības pirmajā posmā.",
-
       "objectives": [
         "Nodrošināt vispārēju zināšanu un kompetences apguvi skolotāja profesionālajai darbībai",
         "Apvienot pedagoģijas, psiholoģijas un metodiku teoriju ar praksi",
         "Veicināt zinātniski pētniecisko darbību, integrējot teoriju praktiskajā darbībā",
         "Atbalstīt radošo un sociālo aktivitāšu attīstību"
       ],
-
       "learning_outcomes": {
         "knowledge": [
           "Izglītības zinātņu nozares pamatjēdzieni un profesionālās darbības pamatnostādnes",
@@ -1225,7 +1354,6 @@
           "Profesionālās ētikas ievērošana un savas pieredzes izvērtēšana"
         ]
       },
-
       "career_prospects": {
         "description": "Absolventi var strādāt par sākumskolas skolotājiem (1.–6. klase). Skolotāju kompetenci raksturo ne tikai zināšanas, bet arī prasmes vadīt mācību procesu.",
         "example_roles": [
@@ -1241,13 +1369,11 @@
         "can_continue_masters": true,
         "can_start_own_business": false
       },
-
       "international": {
         "erasmus_available": false,
         "foreign_lecturers": false,
         "international_study_possible": false
       },
-
       "recommendation_metadata": {
         "interest_tags": [
           "pedagoģija",
@@ -1283,15 +1409,45 @@
           "Tiem, kas nevēlas strādāt ar bērniem",
           "Tiem, kas izvairās no sabiedriskās komunikācijas"
         ]
-      }
+      },
+      "matching": {
+        "interest_domains": [
+          "education_research"
+        ],
+        "required_strengths": [
+          "communication",
+          "social_sciences",
+          "creativity",
+          "analytical_thinking"
+        ],
+        "personality_fit": [
+          "social",
+          "practical",
+          "team_player"
+        ],
+        "math_intensive": false,
+        "creative_component": true,
+        "research_oriented": false,
+        "teamwork_oriented": true,
+        "difficulty_level": "medium"
+      },
+      "keywords": [
+        "primary school teacher",
+        "elementary teacher",
+        "classroom teacher",
+        "pedagogy",
+        "child education",
+        "educational methodology",
+        "special pedagogy",
+        "tutor",
+        "primary education"
+      ]
     },
-
     {
       "id": "GCT-L",
       "slug": "sakumizglitibas-skolotajs-liepaja",
       "name_lv": "Sākumizglītības skolotājs",
       "name_en": "Primary School Teacher",
-
       "institution": {
         "unit": "RTU Liepājas akadēmija",
         "city": "Liepāja",
@@ -1300,7 +1456,6 @@
         "email": "airita.lindberga@rtu.lv",
         "website": "https://www.rtu.lv/lv/liepajas-akademija"
       },
-
       "program_details": {
         "type": "Pirmā cikla augstākās izglītības (profesionālās bakalaura) studijas",
         "level": 6,
@@ -1308,7 +1463,6 @@
         "study_field": "Izglītība, kultūra un sociālā labklājība",
         "url": "https://www.rtu.lv/lv/studijas/visas-studiju-programmas/atvert/GCT?department=0L000&type=P"
       },
-
       "admission": {
         "required_education": "Vidējā izglītība, iestājpārbaudījums",
         "requires_entrance_exam": true,
@@ -1317,9 +1471,10 @@
         "requires_prior_professional_qualification": false,
         "prior_qualification_details": null,
         "specific_admission_notes": null,
-        "languages_of_instruction": ["Latviešu"]
+        "languages_of_instruction": [
+          "Latviešu"
+        ]
       },
-
       "study_forms": [
         {
           "form": "Pilna laika klātienes",
@@ -1336,33 +1491,25 @@
           "budget_note": "20 budžeta vietas Liepājā (neklātienē)"
         }
       ],
-
       "degree": {
         "degree_lv": "Profesionālais bakalaura grāds pedagogu izglītībā",
         "qualification_lv": "Skolotāja kvalifikācija",
         "lki_level": 6
       },
-
       "credits": 240,
-
       "director": {
         "name": "Ivita Pelnēna",
         "title": "Lektors"
       },
-
       "description": "Identiski saturs kā Rēzeknes programmai. Nodrošina skolotāja kvalifikāciju darbam pamatizglītības pirmajā posmā. Studiju vieta – Liepāja.",
-
       "specializations": [],
-
       "goals": "Nodrošināt konkurētspējīgas un kvalitatīvas, starptautiski salīdzināmas profesionālās augstākās izglītības un skolotāja kvalifikācijas ieguvi darbam pamatizglītības pirmajā posmā.",
-
       "objectives": [
         "Nodrošināt vispārēju zināšanu un kompetences apguvi skolotāja profesionālajai darbībai",
         "Apvienot pedagoģijas, psiholoģijas un metodiku teoriju ar praksi",
         "Veicināt zinātniski pētniecisko darbību",
         "Atbalstīt radošo un sociālo aktivitāšu attīstību"
       ],
-
       "learning_outcomes": {
         "knowledge": [
           "Izglītības zinātņu nozares pamatjēdzieni",
@@ -1380,26 +1527,39 @@
           "Profesionālās ētikas ievērošana"
         ]
       },
-
       "career_prospects": {
         "description": "Sākumskolas skolotājs (1.–6. klase).",
-        "example_roles": ["Sākumskolas skolotājs", "Klases audzinātājs"],
-        "sectors": ["Vispārējā izglītība", "Sākumskolas"],
+        "example_roles": [
+          "Sākumskolas skolotājs",
+          "Klases audzinātājs"
+        ],
+        "sectors": [
+          "Vispārējā izglītība",
+          "Sākumskolas"
+        ],
         "can_continue_masters": true,
         "can_start_own_business": false
       },
-
       "international": {
         "erasmus_available": false,
         "foreign_lecturers": false,
         "international_study_possible": false
       },
-
       "recommendation_metadata": {
         "interest_tags": [
-          "pedagoģija", "bērni", "izglītība", "skolotājs", "psiholoģija"
+          "pedagoģija",
+          "bērni",
+          "izglītība",
+          "skolotājs",
+          "psiholoģija"
         ],
-        "personality_fit": ["pacietīgs", "empātisks", "komunikabls", "radošs", "organizēts"],
+        "personality_fit": [
+          "pacietīgs",
+          "empātisks",
+          "komunikabls",
+          "radošs",
+          "organizēts"
+        ],
         "math_intensity": "zema",
         "science_intensity": "zema",
         "creativity_intensity": "augsta",
@@ -1413,15 +1573,45 @@
         "not_suitable_for": [
           "Tiem, kas nevēlas strādāt ar bērniem"
         ]
-      }
+      },
+      "matching": {
+        "interest_domains": [
+          "education_research"
+        ],
+        "required_strengths": [
+          "communication",
+          "social_sciences",
+          "creativity",
+          "analytical_thinking"
+        ],
+        "personality_fit": [
+          "social",
+          "practical",
+          "team_player"
+        ],
+        "math_intensive": false,
+        "creative_component": true,
+        "research_oriented": false,
+        "teamwork_oriented": true,
+        "difficulty_level": "medium"
+      },
+      "keywords": [
+        "primary school teacher",
+        "elementary teacher",
+        "classroom teacher",
+        "pedagogy",
+        "child education",
+        "educational methodology",
+        "special pedagogy",
+        "tutor",
+        "primary education"
+      ]
     },
-
     {
       "id": "GCS-R",
       "slug": "skolotajs-rezekne",
       "name_lv": "Skolotājs",
       "name_en": "Teacher",
-
       "institution": {
         "unit": "RTU Rēzeknes akadēmija",
         "city": "Rēzekne",
@@ -1430,7 +1620,6 @@
         "email": "rezekne@rtu.lv",
         "website": "https://www.rtu.lv/lv/rezeknes-akademija"
       },
-
       "program_details": {
         "type": "Pirmā cikla augstākās izglītības (profesionālās bakalaura) studijas",
         "level": 6,
@@ -1438,7 +1627,6 @@
         "study_field": "Izglītība, kultūra un sociālā labklājība",
         "url": "https://www.rtu.lv/lv/studijas/visas-studiju-programmas/atvert/GCS?department=0R000&type=P"
       },
-
       "admission": {
         "required_education": "Vidējā izglītība; iestājpārbaudījums",
         "requires_entrance_exam": true,
@@ -1447,9 +1635,10 @@
         "requires_prior_professional_qualification": false,
         "prior_qualification_details": null,
         "specific_admission_notes": null,
-        "languages_of_instruction": ["Latviešu"]
+        "languages_of_instruction": [
+          "Latviešu"
+        ]
       },
-
       "study_forms": [
         {
           "form": "Pilna laika klātienes",
@@ -1466,33 +1655,25 @@
           "budget_note": "Nav budžeta vietu"
         }
       ],
-
       "degree": {
         "degree_lv": "Skolotāja kvalifikācija",
         "qualification_lv": "Skolotāja kvalifikācija",
         "lki_level": 6
       },
-
       "credits": 240,
-
       "director": {
         "name": "Jānis Dzerviniks",
         "title": "Doktors, Profesors"
       },
-
       "description": "Programma sagatavo skolotājus darbam dažādās izglītības pakāpēs atbilstoši izvēlētajām mācību jomām. Ietver skolotāja vispārējo un profesionālo kompetenču attīstību saskaņā ar profesijas standartu 'Skolotājs'.",
-
       "specializations": [],
-
       "goals": "Nodrošināt vietējā un starptautiskā līmenī konkurētspējīgas profesionālā bakalaura studijas pedagogu izglītībā, sekmējot skolotāja vispārējās un profesionālās kompetences attīstību.",
-
       "objectives": [
         "Attīstīt skolotāja profesionālo kompetenci izvēlētajās mācību jomās",
         "Veicināt prasmes integrēt izglītības zinātņu saturu praksē",
         "Iesaistīt lietišķajā pētniecībā",
         "Sekmēt atbildīgu profesionālās meistarības pilnveidi"
       ],
-
       "learning_outcomes": {
         "knowledge": [
           "Izglītības zinātņu nozares jēdzieni un likumsakarības",
@@ -1510,24 +1691,40 @@
           "Pastāvīga profesionālās kompetences pilnveide"
         ]
       },
-
       "career_prospects": {
         "description": "Absolventi var strādāt izglītības iestādēs dažādās izglītības pakāpēs atbilstoši apgūtajiem mācību priekšmetiem.",
-        "example_roles": ["Skolotājs (dažādos priekšmetos)", "Klases audzinātājs"],
-        "sectors": ["Pamatskolas", "Vidusskolas", "Privātskolas"],
+        "example_roles": [
+          "Skolotājs (dažādos priekšmetos)",
+          "Klases audzinātājs"
+        ],
+        "sectors": [
+          "Pamatskolas",
+          "Vidusskolas",
+          "Privātskolas"
+        ],
         "can_continue_masters": true,
         "can_start_own_business": false
       },
-
       "international": {
         "erasmus_available": false,
         "foreign_lecturers": false,
         "international_study_possible": false
       },
-
       "recommendation_metadata": {
-        "interest_tags": ["pedagoģija", "izglītība", "skolotājs", "mācību jomas", "psiholoģija"],
-        "personality_fit": ["pacietīgs", "empātisks", "komunikabls", "radošs", "organizēts"],
+        "interest_tags": [
+          "pedagoģija",
+          "izglītība",
+          "skolotājs",
+          "mācību jomas",
+          "psiholoģija"
+        ],
+        "personality_fit": [
+          "pacietīgs",
+          "empātisks",
+          "komunikabls",
+          "radošs",
+          "organizēts"
+        ],
         "math_intensity": "zema",
         "science_intensity": "zema-vidēja",
         "creativity_intensity": "augsta",
@@ -1541,15 +1738,45 @@
         "not_suitable_for": [
           "Tiem, kas nevēlas strādāt skolā"
         ]
-      }
+      },
+      "matching": {
+        "interest_domains": [
+          "education_research"
+        ],
+        "required_strengths": [
+          "communication",
+          "social_sciences",
+          "analytical_thinking",
+          "languages"
+        ],
+        "personality_fit": [
+          "social",
+          "analytical",
+          "team_player"
+        ],
+        "math_intensive": false,
+        "creative_component": false,
+        "research_oriented": false,
+        "teamwork_oriented": true,
+        "difficulty_level": "medium"
+      },
+      "keywords": [
+        "secondary school teacher",
+        "high school teacher",
+        "subject teacher",
+        "pedagogy",
+        "curriculum development",
+        "educational specialist",
+        "mentor",
+        "tutor",
+        "teaching"
+      ]
     },
-
     {
       "id": "GCS-L",
       "slug": "skolotajs-liepaja",
       "name_lv": "Skolotājs",
       "name_en": "Teacher",
-
       "institution": {
         "unit": "RTU Liepājas akadēmija",
         "city": "Liepāja",
@@ -1558,7 +1785,6 @@
         "email": "airita.lindberga@rtu.lv",
         "website": "https://www.rtu.lv/lv/liepajas-akademija"
       },
-
       "program_details": {
         "type": "Pirmā cikla augstākās izglītības (profesionālās bakalaura) studijas",
         "level": 6,
@@ -1566,7 +1792,6 @@
         "study_field": "Izglītība, kultūra un sociālā labklājība",
         "url": "https://www.rtu.lv/lv/studijas/visas-studiju-programmas/atvert/GCS?department=0L000&type=P"
       },
-
       "admission": {
         "required_education": "Vidējā izglītība, iestājpārbaudījums",
         "requires_entrance_exam": true,
@@ -1575,9 +1800,10 @@
         "requires_prior_professional_qualification": false,
         "prior_qualification_details": null,
         "specific_admission_notes": null,
-        "languages_of_instruction": ["Latviešu"]
+        "languages_of_instruction": [
+          "Latviešu"
+        ]
       },
-
       "study_forms": [
         {
           "form": "Pilna laika klātienes",
@@ -1594,33 +1820,25 @@
           "budget_note": "25 budžeta vietas Liepājā (neklātienē)"
         }
       ],
-
       "degree": {
         "degree_lv": "Profesionālais bakalaura grāds pedagogu izglītībā",
         "qualification_lv": "Skolotāja kvalifikācija",
         "lki_level": 6
       },
-
       "credits": 240,
-
       "director": {
         "name": "Linda Pavītola",
         "title": "Doktors, Profesors"
       },
-
       "description": "Programma sagatavo skolotājus darbam dažādās izglītības pakāpēs atbilstoši izvēlētajām mācību jomām. Studiju vieta – Liepāja. Ietver skolotāja vispārējo un profesionālo kompetenču attīstību saskaņā ar profesijas standartu 'Skolotājs'.",
-
       "specializations": [],
-
       "goals": "Nodrošināt vietējā un starptautiskā līmenī konkurētspējīgas profesionālā bakalaura studijas pedagogu izglītībā atbilstoši profesijas standartam 'Skolotājs'.",
-
       "objectives": [
         "Attīstīt skolotāja profesionālo kompetenci izvēlētajās mācību jomās",
         "Veicināt prasmes integrēt izglītības zinātņu saturu praksē",
         "Iesaistīt lietišķajā pētniecībā",
         "Sekmēt personības izaugsmi"
       ],
-
       "learning_outcomes": {
         "knowledge": [
           "Izglītības zinātņu nozares jēdzieni",
@@ -1638,24 +1856,37 @@
           "Koleģiāls atbalsts un savstarpēja mācīšanās"
         ]
       },
-
       "career_prospects": {
         "description": "Skolotājs izglītības iestādēs dažādās pakāpēs.",
-        "example_roles": ["Skolotājs", "Klases audzinātājs"],
-        "sectors": ["Pamatskolas", "Vidusskolas"],
+        "example_roles": [
+          "Skolotājs",
+          "Klases audzinātājs"
+        ],
+        "sectors": [
+          "Pamatskolas",
+          "Vidusskolas"
+        ],
         "can_continue_masters": true,
         "can_start_own_business": false
       },
-
       "international": {
         "erasmus_available": false,
         "foreign_lecturers": false,
         "international_study_possible": false
       },
-
       "recommendation_metadata": {
-        "interest_tags": ["pedagoģija", "izglītība", "skolotājs", "mācību jomas"],
-        "personality_fit": ["pacietīgs", "empātisks", "komunikabls", "organizēts"],
+        "interest_tags": [
+          "pedagoģija",
+          "izglītība",
+          "skolotājs",
+          "mācību jomas"
+        ],
+        "personality_fit": [
+          "pacietīgs",
+          "empātisks",
+          "komunikabls",
+          "organizēts"
+        ],
         "math_intensity": "zema",
         "science_intensity": "zema-vidēja",
         "creativity_intensity": "augsta",
@@ -1669,15 +1900,45 @@
         "not_suitable_for": [
           "Tiem, kas nevēlas strādāt skolā"
         ]
-      }
+      },
+      "matching": {
+        "interest_domains": [
+          "education_research"
+        ],
+        "required_strengths": [
+          "communication",
+          "social_sciences",
+          "analytical_thinking",
+          "languages"
+        ],
+        "personality_fit": [
+          "social",
+          "analytical",
+          "team_player"
+        ],
+        "math_intensive": false,
+        "creative_component": false,
+        "research_oriented": false,
+        "teamwork_oriented": true,
+        "difficulty_level": "medium"
+      },
+      "keywords": [
+        "secondary school teacher",
+        "high school teacher",
+        "subject teacher",
+        "pedagogy",
+        "curriculum development",
+        "educational specialist",
+        "mentor",
+        "tutor",
+        "teaching"
+      ]
     },
-
     {
       "id": "GCU",
       "slug": "speciala-izglitiba-rezekne",
       "name_lv": "Speciālā izglītība",
       "name_en": "Special Education",
-
       "institution": {
         "unit": "RTU Rēzeknes akadēmija",
         "city": "Rēzekne",
@@ -1686,7 +1947,6 @@
         "email": "rezekne@rtu.lv",
         "website": "https://www.rtu.lv/lv/rezeknes-akademija"
       },
-
       "program_details": {
         "type": "Pirmā cikla augstākās izglītības (profesionālās bakalaura) studijas",
         "level": 6,
@@ -1694,7 +1954,6 @@
         "study_field": "Izglītība, kultūra un sociālā labklājība",
         "url": "https://www.rtu.lv/lv/studijas/visas-studiju-programmas/atvert/GCU?department=0R000&type=P"
       },
-
       "admission": {
         "required_education": "Vidējā izglītība, iestājpārbaudījums",
         "requires_entrance_exam": true,
@@ -1703,9 +1962,10 @@
         "requires_prior_professional_qualification": false,
         "prior_qualification_details": null,
         "specific_admission_notes": null,
-        "languages_of_instruction": ["Latviešu"]
+        "languages_of_instruction": [
+          "Latviešu"
+        ]
       },
-
       "study_forms": [
         {
           "form": "Pilna laika klātienes",
@@ -1722,22 +1982,17 @@
           "budget_note": "30 budžeta vietas Rēzeknē (neklātienē)"
         }
       ],
-
       "degree": {
         "degree_lv": "Profesionālais bakalaura grāds pedagogu izglītībā",
         "qualification_lv": "Skolotāja kvalifikācija (speciālās izglītības skolotājs)",
         "lki_level": 6
       },
-
       "credits": 240,
-
       "director": {
         "name": "Mārīte Rozenfelde",
         "title": "Doktors, Asociētais profesors"
       },
-
       "description": "Programma sagatavo speciālās izglītības skolotājus darbam ar izglītojamiem ar dažādiem attīstības traucējumiem. Papildspecializācija ietver darbu ar garīgās attīstības, redzes, dzirdes, mācīšanās vai valodas un runas traucējumiem, kā arī zīmju valodas moduli.",
-
       "specializations": [
         "Darbs ar izglītojamiem ar garīgās attīstības traucējumiem",
         "Darbs ar izglītojamiem ar redzes traucējumiem",
@@ -1746,16 +2001,13 @@
         "Darbs ar izglītojamiem ar valodas un runas traucējumiem",
         "Darbs zīmju valodā"
       ],
-
       "goals": "Nodrošināt izglītības zinātņu teorētiskajos pamatos un praksē balstītas profesionālās studijas, sagatavojot kompetentus speciālās izglītības skolotājus.",
-
       "objectives": [
         "Īstenot studijas ciešā sasaistē ar darba vidi",
         "Sekmēt pieredzes ieguvi pedagoģiskajā darbībā speciālās izglītības jomā",
         "Veicināt pētnieciskās prasmes attīstību izglītības zinātnēs",
         "Sekmēt sabiedrībai nozīmīgu vērtību attīstību studējošajiem"
       ],
-
       "learning_outcomes": {
         "knowledge": [
           "Izglītības zinātņu un speciālās izglītības jomas pamata un specializētās zināšanas",
@@ -1771,7 +2023,6 @@
           "Dalība speciālās izglītības jomas attīstībā"
         ]
       },
-
       "career_prospects": {
         "description": "Absolventi var strādāt jebkurā vispārējās vai speciālās izglītības iestādē kā speciālie pedagogi, veikt korekcijas darbu ar pirmsskolas un skolas vecuma bērniem, strādāt sociālās aprūpes iestādēs un sertificētās privātpraksēs.",
         "example_roles": [
@@ -1790,13 +2041,11 @@
         "can_continue_masters": true,
         "can_start_own_business": true
       },
-
       "international": {
         "erasmus_available": false,
         "foreign_lecturers": false,
         "international_study_possible": false
       },
-
       "recommendation_metadata": {
         "interest_tags": [
           "speciālā izglītība",
@@ -1832,15 +2081,45 @@
           "Tiem, kuri nevēlas strādāt ar bērniem ar īpašām vajadzībām",
           "Tiem, kuri nav pacietīgi un empātiski"
         ]
-      }
+      },
+      "matching": {
+        "interest_domains": [
+          "education_research",
+          "medical_technology"
+        ],
+        "required_strengths": [
+          "communication",
+          "social_sciences",
+          "practical_skills",
+          "analytical_thinking"
+        ],
+        "personality_fit": [
+          "social",
+          "practical",
+          "team_player"
+        ],
+        "math_intensive": false,
+        "creative_component": false,
+        "research_oriented": false,
+        "teamwork_oriented": true,
+        "difficulty_level": "medium"
+      },
+      "keywords": [
+        "special education teacher",
+        "special pedagogue",
+        "inclusive education",
+        "child rehabilitation",
+        "sign language specialist",
+        "correction pedagogue",
+        "speech support",
+        "learning disabilities"
+      ]
     },
-
     {
       "id": "GCL",
       "slug": "logopedija-liepaja",
       "name_lv": "Logopēdija",
       "name_en": "Speech Therapy (Logopedics)",
-
       "institution": {
         "unit": "RTU Liepājas akadēmija",
         "city": "Liepāja",
@@ -1849,7 +2128,6 @@
         "email": "airita.lindberga@rtu.lv",
         "website": "https://www.rtu.lv/lv/liepajas-akademija"
       },
-
       "program_details": {
         "type": "Pirmā cikla augstākās izglītības (profesionālās bakalaura) studijas",
         "level": 6,
@@ -1857,7 +2135,6 @@
         "study_field": "Izglītība, kultūra un sociālā labklājība",
         "url": "https://www.rtu.lv/lv/studijas/visas-studiju-programmas/atvert/GCL?department=0L000&type=P"
       },
-
       "admission": {
         "required_education": "Vidējā izglītība, iestājpārbaudījums",
         "requires_entrance_exam": true,
@@ -1866,9 +2143,10 @@
         "requires_prior_professional_qualification": false,
         "prior_qualification_details": null,
         "specific_admission_notes": null,
-        "languages_of_instruction": ["Latviešu"]
+        "languages_of_instruction": [
+          "Latviešu"
+        ]
       },
-
       "study_forms": [
         {
           "form": "Pilna laika klātienes",
@@ -1885,26 +2163,19 @@
           "budget_note": "20 budžeta vietas Liepājā (neklātienē)"
         }
       ],
-
       "degree": {
         "degree_lv": "Profesionālais bakalaura grāds logopēdijā",
         "qualification_lv": "Skolotāja logopēda kvalifikācija",
         "lki_level": 6
       },
-
       "credits": 240,
-
       "director": {
         "name": "Gundega Tomele",
         "title": "Doktors, Docents"
       },
-
       "description": "Programma sagatavo skolotājus logopēdus darbam ar jebkura vecuma personām ar runas, valodas, komunikācijas vai orofaringeālās funkcijas traucējumiem. Integrētas zinātnes – logopēdija, medicīna, lingvistika, psiholoģija, pedagoģija. Absolventi var strādāt izglītības iestādēs, veselības un sociālās aprūpes iestādēs un privātpraksēs.",
-
       "specializations": [],
-
       "goals": "Izglītot kvalificētus logopēdus, kas konkurētspējīgi Latvijas un Eiropas darba tirgū un spēj veikt logopēda darbu ar personām ar dažādiem runas un valodas traucējumiem.",
-
       "objectives": [
         "Apgūt zināšanas logopēdijā, izglītības zinātnēs, medicīnā, psiholoģijā un lingvistikā",
         "Apgūt runas un valodas novērtēšanas, traucējumu noteikšanas un korekcijas kompetences",
@@ -1912,7 +2183,6 @@
         "Nodrošināt zinātniski pētnieciskās darbības izaugsmi",
         "Veicināt patstāvīgas un radošas personības attīstību"
       ],
-
       "learning_outcomes": {
         "knowledge": [
           "Logopēdijas, izglītības zinātņu, medicīnas, psiholoģijas un lingvistikas pamatjēdzieni",
@@ -1930,7 +2200,6 @@
           "Pētniecības īstenošana un inovāciju ieviešana logopēdijā"
         ]
       },
-
       "career_prospects": {
         "description": "Skolotāji logopēdi vispārējās un speciālās izglītības iestādēs, veselības un sociālās aprūpes iestādēs, privātpraksēs.",
         "example_roles": [
@@ -1948,13 +2217,11 @@
         "can_continue_masters": true,
         "can_start_own_business": true
       },
-
       "international": {
         "erasmus_available": false,
         "foreign_lecturers": false,
         "international_study_possible": false
       },
-
       "recommendation_metadata": {
         "interest_tags": [
           "logopēdija",
@@ -1992,15 +2259,46 @@
           "Tiem, kurus neinteresē valoda un komunikācija",
           "Tiem, kam nav pacietības darbā ar cilvēkiem ar runas grūtībām"
         ]
-      }
+      },
+      "matching": {
+        "interest_domains": [
+          "education_research",
+          "medical_technology"
+        ],
+        "required_strengths": [
+          "communication",
+          "social_sciences",
+          "analytical_thinking",
+          "research"
+        ],
+        "personality_fit": [
+          "social",
+          "analytical",
+          "precise"
+        ],
+        "math_intensive": false,
+        "creative_component": false,
+        "research_oriented": true,
+        "teamwork_oriented": true,
+        "difficulty_level": "medium"
+      },
+      "keywords": [
+        "speech therapist",
+        "logopedist",
+        "speech language pathologist",
+        "communication disorders",
+        "rehabilitation",
+        "clinical logopedics",
+        "child speech development",
+        "voice therapy",
+        "dyslexia"
+      ]
     },
-
     {
       "id": "SCE",
       "slug": "socialais-darbs-un-sociala-rehabilitacija-rezekne",
       "name_lv": "Sociālais darbs un sociālā rehabilitācija",
       "name_en": "Social Work and Social Rehabilitation",
-
       "institution": {
         "unit": "RTU Rēzeknes akadēmija",
         "city": "Rēzekne",
@@ -2009,7 +2307,6 @@
         "email": "rezekne@rtu.lv",
         "website": "https://www.rtu.lv/lv/rezeknes-akademija"
       },
-
       "program_details": {
         "type": "Pirmā cikla augstākās izglītības (profesionālās bakalaura) studijas",
         "level": 6,
@@ -2017,7 +2314,6 @@
         "study_field": "Izglītība, kultūra un sociālā labklājība",
         "url": "https://www.rtu.lv/lv/studijas/visas-studiju-programmas/atvert/SCE?department=0R000&type=P"
       },
-
       "admission": {
         "required_education": "Vidējā izglītība",
         "requires_entrance_exam": false,
@@ -2026,9 +2322,10 @@
         "requires_prior_professional_qualification": false,
         "prior_qualification_details": null,
         "specific_admission_notes": null,
-        "languages_of_instruction": ["Latviešu"]
+        "languages_of_instruction": [
+          "Latviešu"
+        ]
       },
-
       "study_forms": [
         {
           "form": "Pilna laika klātienes",
@@ -2038,26 +2335,19 @@
           "budget_note": "Nav budžeta vietu"
         }
       ],
-
       "degree": {
         "degree_lv": "Profesionālais bakalaura grāds sociālajā darbā",
         "qualification_lv": "Sociālā darbinieka kvalifikācija",
         "lki_level": 6
       },
-
       "credits": 240,
-
       "director": {
         "name": "Rita Orska",
         "title": "Lektors"
       },
-
       "description": "Studiju programma sagatavo sociālā darba speciālistus darbam ar daudzveidīgām klientu grupām. Moduļu sistēma ļauj studētajiem individuāli veidot studiju saturu. Ietver gan individuālo sociālo darbu, gan darbu ar grupām un kopienām, sociālo rehabilitāciju un sociālo politiku.",
-
       "specializations": [],
-
       "goals": "Sagatavot sociālā darba speciālistus ar augstām profesionālajām un starpkultūru kompetencēm, kuri, vadoties pēc sociālā darba mūsdienu teorijām, spēs kompleksi vērtēt personas, grupas un sabiedrības sociālās vajadzības un risināt sociālās problēmas.",
-
       "objectives": [
         "Nodrošināt zināšanu apguvi sociālajā darbā, rehabilitācijā un psiholoģijā",
         "Radīt apstākļus sociālo problēmu identificēšanas un palīdzības sniegšanas metodiku apguvei",
@@ -2065,7 +2355,6 @@
         "Veidot prasmes izvērtēt sociālos procesus un piedāvāt risinājumus",
         "Pilnveidot pētnieciskā darba iemaņas"
       ],
-
       "learning_outcomes": {
         "knowledge": [
           "Sociālās politikas, sociālās likumdošanas un sociālā darbinieka profesijas zināšanas",
@@ -2083,7 +2372,6 @@
           "Profesionālās darbības ietekmes izvērtēšana"
         ]
       },
-
       "career_prospects": {
         "description": "Absolventi var strādāt valsts sociālās aprūpes centros, izglītības iestādēs, pašvaldību sociālajos dienestos vai nevalstiskā sektorā (biedrības, apvienības, nodibinājumi).",
         "example_roles": [
@@ -2102,13 +2390,11 @@
         "can_continue_masters": true,
         "can_start_own_business": false
       },
-
       "international": {
         "erasmus_available": false,
         "foreign_lecturers": false,
         "international_study_possible": false
       },
-
       "recommendation_metadata": {
         "interest_tags": [
           "sociālais darbs",
@@ -2146,15 +2432,45 @@
           "Tiem, kas nevēlas strādāt ar cilvēkiem un sociālām problēmām",
           "Tiem, kurus biedē augstā studiju maksa bez budžeta vietām"
         ]
-      }
+      },
+      "matching": {
+        "interest_domains": [
+          "education_research"
+        ],
+        "required_strengths": [
+          "communication",
+          "social_sciences",
+          "analytical_thinking",
+          "practical_skills"
+        ],
+        "personality_fit": [
+          "social",
+          "practical",
+          "team_player"
+        ],
+        "math_intensive": false,
+        "creative_component": false,
+        "research_oriented": false,
+        "teamwork_oriented": true,
+        "difficulty_level": "medium"
+      },
+      "keywords": [
+        "social worker",
+        "social rehabilitologist",
+        "social services specialist",
+        "family support worker",
+        "social care",
+        "community worker",
+        "crisis intervention",
+        "social rehabilitation",
+        "welfare"
+      ]
     },
-
     {
       "id": "SCD",
       "slug": "socialais-darbinieks-liepaja",
       "name_lv": "Sociālais darbinieks",
       "name_en": "Social Worker",
-
       "institution": {
         "unit": "RTU Liepājas akadēmija",
         "city": "Liepāja",
@@ -2163,7 +2479,6 @@
         "email": "airita.lindberga@rtu.lv",
         "website": "https://www.rtu.lv/lv/liepajas-akademija"
       },
-
       "program_details": {
         "type": "Pirmā cikla augstākās izglītības (profesionālās bakalaura) studijas",
         "level": 6,
@@ -2171,7 +2486,6 @@
         "study_field": "Izglītība, kultūra un sociālā labklājība",
         "url": "https://www.rtu.lv/lv/studijas/visas-studiju-programmas/atvert/SCD?department=0L000&type=P"
       },
-
       "admission": {
         "required_education": "Vidējā izglītība",
         "requires_entrance_exam": false,
@@ -2180,9 +2494,10 @@
         "requires_prior_professional_qualification": false,
         "prior_qualification_details": null,
         "specific_admission_notes": null,
-        "languages_of_instruction": ["Latviešu"]
+        "languages_of_instruction": [
+          "Latviešu"
+        ]
       },
-
       "study_forms": [
         {
           "form": "Pilna laika klātienes",
@@ -2199,33 +2514,25 @@
           "budget_note": "Nav info par neklātienes budžetu"
         }
       ],
-
       "degree": {
         "degree_lv": "Profesionālais bakalaura grāds sociālajā darbā",
         "qualification_lv": "Sociālā darbinieka profesionālā kvalifikācija",
         "lki_level": 6
       },
-
       "credits": 240,
-
       "director": {
         "name": "Santa Meļķe",
         "title": "Lektors"
       },
-
       "description": "Programma sagatavo sociālos darbiniekus darbam ar daudzveidīgām klientu grupām. Orientēta uz holistisku un ilgtspējīgu attīstību un sociālajām vajadzībām atbilstošu sociālo pakalpojumu sniegšanu. Studenti var apgūt arī ar pedagoģiju saistītu programmas daļu.",
-
       "specializations": [],
-
       "goals": "Sagatavot radošus, motivētus un konkurētspējīgus sociālā darba profesionāļus, kuri spēj īstenot sociālā darba vērtībām atbilstošus sociālos pakalpojumus Latvijas un Eiropas darba tirgū.",
-
       "objectives": [
         "Veicināt izpratni par sociālo problēmu būtību, cēloņiem un attīstību",
         "Attīstīt profesionālās iemaņas ar daudzveidīgu diferencētu prakšu palīdzību",
         "Aktivizēt zinātniski pētniecisko darbu",
         "Sniegt atbalstu studenta personības pašrealizācijai"
       ],
-
       "learning_outcomes": {
         "knowledge": [
           "Sociālo problēmu cēloņi un ietekme uz dzīves kvalitāti",
@@ -2243,7 +2550,6 @@
           "Informācijas un komunikāciju tehnoloģiju pielietošana"
         ]
       },
-
       "career_prospects": {
         "description": "Absolventi var strādāt valsts sociālās aprūpes centros, pašvaldību sociālajos dienestos vai nevalstiskajā sektorā.",
         "example_roles": [
@@ -2259,13 +2565,11 @@
         "can_continue_masters": true,
         "can_start_own_business": false
       },
-
       "international": {
         "erasmus_available": false,
         "foreign_lecturers": false,
         "international_study_possible": false
       },
-
       "recommendation_metadata": {
         "interest_tags": [
           "sociālais darbs",
@@ -2275,7 +2579,12 @@
           "cilvēktiesības",
           "kopienas darbs"
         ],
-        "personality_fit": ["empātisks", "sabiedrisks", "komunikabls", "analītisks"],
+        "personality_fit": [
+          "empātisks",
+          "sabiedrisks",
+          "komunikabls",
+          "analītisks"
+        ],
         "math_intensity": "zema",
         "science_intensity": "zema",
         "creativity_intensity": "vidēja",
@@ -2291,15 +2600,44 @@
         "not_suitable_for": [
           "Tiem, kas nevēlas strādāt ar sociālām problēmām"
         ]
-      }
+      },
+      "matching": {
+        "interest_domains": [
+          "education_research"
+        ],
+        "required_strengths": [
+          "communication",
+          "social_sciences",
+          "analytical_thinking"
+        ],
+        "personality_fit": [
+          "social",
+          "practical",
+          "team_player"
+        ],
+        "math_intensive": false,
+        "creative_component": false,
+        "research_oriented": false,
+        "teamwork_oriented": true,
+        "difficulty_level": "medium"
+      },
+      "keywords": [
+        "social worker",
+        "municipal social worker",
+        "NGO worker",
+        "social policy",
+        "child welfare",
+        "community social worker",
+        "social case manager",
+        "human rights",
+        "social protection"
+      ]
     },
-
     {
       "id": "UCZ",
       "slug": "juras-transports-kuga-vadisana",
       "name_lv": "Jūras transports - kuģa vadīšana",
       "name_en": "Maritime Transport - Navigation",
-
       "institution": {
         "unit": "RTU Latvijas Jūras akadēmija",
         "city": "Rīga",
@@ -2308,7 +2646,6 @@
         "email": null,
         "website": "https://www.rtu.lv/lv/latvijas-juras-akademija"
       },
-
       "program_details": {
         "type": "Pirmā cikla augstākās izglītības (profesionālās bakalaura) studijas",
         "level": 6,
@@ -2316,7 +2653,6 @@
         "study_field": "Jūrniecība",
         "url": "https://www.rtu.lv/lv/studijas/visas-studiju-programmas/atvert/UCZ?department=0J000&type=P"
       },
-
       "admission": {
         "required_education": "Vidējā izglītība",
         "requires_entrance_exam": false,
@@ -2326,9 +2662,11 @@
         "requires_prior_professional_qualification": false,
         "prior_qualification_details": null,
         "specific_admission_notes": "Obligāta medicīniskā izziņa par atbilstību darbam uz kuģa.",
-        "languages_of_instruction": ["Latviešu", "Angļu"]
+        "languages_of_instruction": [
+          "Latviešu",
+          "Angļu"
+        ]
       },
-
       "study_forms": [
         {
           "form": "Pilna laika klātienes",
@@ -2345,26 +2683,19 @@
           "budget_note": "Nav budžeta vietu neklātienē"
         }
       ],
-
       "degree": {
         "degree_lv": "Profesionālais bakalaura grāds jūras transportā",
         "qualification_lv": "Kuģu vadītāja (vadības līmenī) kvalifikācija",
         "lki_level": 6
       },
-
       "credits": 265,
-
       "director": {
         "name": "Svetlana Izmailova",
         "title": "Docents"
       },
-
       "description": "Programma sagatavo vadības līmeņa speciālistus jūrniecībā – kuģu virsnieks un kapteinis. Atbilst STCW Kodeksa A-II/1 un A-II/2 standartiem. Ietver kuģa vadīšanu, kravas operācijas, radiosakarus, kuģa drošību un vides aizsardzību uz kuģiem.",
-
       "specializations": [],
-
       "goals": "Sagatavot augstas kvalitātes starptautiski atzītus vadības līmeņa speciālistus jūrniecības nozarē, kas spēj nodrošināt kuģa vadīšanu, kravas apstrādi, radiosakarus, kuģa un cilvēku drošību.",
-
       "objectives": [
         "Sniegt zināšanas par drošu kuģa ekspluatāciju kravu un pasažieru pārvadājumos",
         "Iemācīt kontrolēt kuģa vadīšanu un plānot kravas operācijas",
@@ -2372,7 +2703,6 @@
         "Iemācīt risināt līderības un vadības uzdevumus",
         "Nostiprināt svešvalodu zināšanas"
       ],
-
       "learning_outcomes": {
         "knowledge": [
           "Pārgājienu plānošana un atrašanās vietas noteikšana",
@@ -2392,7 +2722,6 @@
           "Vadītāja prasmju pielietošana"
         ]
       },
-
       "career_prospects": {
         "description": "Darbs uz tirdzniecības flotes kuģiem sardzes stūrmaņa amatā un vēlāk kapteiņa amatā. Var strādāt uz Latvijas vai citu valstu karogu kuģiem starptautiskajā kuģošanā.",
         "example_roles": [
@@ -2410,14 +2739,12 @@
         "can_continue_masters": true,
         "can_start_own_business": false
       },
-
       "international": {
         "erasmus_available": false,
         "foreign_lecturers": false,
         "international_study_possible": true,
         "international_notes": "Darbs uz starptautiskās flotes kuģiem. STCW starptautisks sertifikāts."
       },
-
       "recommendation_metadata": {
         "interest_tags": [
           "jūra",
@@ -2455,15 +2782,49 @@
           "Tiem, kas nevēlas ilgstoši uzturēties ārpus mājas",
           "Tiem ar jūras slimību"
         ]
-      }
+      },
+      "matching": {
+        "interest_domains": [
+          "maritime",
+          "transport_aviation"
+        ],
+        "required_strengths": [
+          "mathematics",
+          "physics",
+          "practical_skills",
+          "analytical_thinking",
+          "languages"
+        ],
+        "personality_fit": [
+          "adventurous",
+          "international",
+          "precise"
+        ],
+        "math_intensive": true,
+        "creative_component": false,
+        "research_oriented": false,
+        "teamwork_oriented": true,
+        "difficulty_level": "medium_high"
+      },
+      "keywords": [
+        "navigator",
+        "ship captain",
+        "deck officer",
+        "helmsman",
+        "maritime officer",
+        "port operations",
+        "STCW",
+        "navigation officer",
+        "maritime logistics",
+        "sea voyage",
+        "vessel routing"
+      ]
     },
-
     {
       "id": "UCN",
       "slug": "juras-transports-kuga-mehanika",
       "name_lv": "Jūras transports - kuģa mehānika",
       "name_en": "Maritime Transport - Marine Engineering",
-
       "institution": {
         "unit": "RTU Latvijas Jūras akadēmija",
         "city": "Rīga",
@@ -2472,7 +2833,6 @@
         "email": null,
         "website": "https://www.rtu.lv/lv/latvijas-juras-akademija"
       },
-
       "program_details": {
         "type": "Pirmā cikla augstākās izglītības (profesionālās bakalaura) studijas",
         "level": 6,
@@ -2480,7 +2840,6 @@
         "study_field": "Jūrniecība",
         "url": "https://www.rtu.lv/lv/studijas/visas-studiju-programmas/atvert/UCN?department=0J000&type=P"
       },
-
       "admission": {
         "required_education": "Vidējā izglītība",
         "requires_entrance_exam": false,
@@ -2490,9 +2849,11 @@
         "requires_prior_professional_qualification": false,
         "prior_qualification_details": null,
         "specific_admission_notes": "Obligāta medicīniskā izziņa.",
-        "languages_of_instruction": ["Latviešu", "Angļu"]
+        "languages_of_instruction": [
+          "Latviešu",
+          "Angļu"
+        ]
       },
-
       "study_forms": [
         {
           "form": "Pilna laika klātienes",
@@ -2509,26 +2870,19 @@
           "budget_note": "Nav budžeta vietu neklātienē"
         }
       ],
-
       "degree": {
         "degree_lv": "Profesionālais bakalaura grāds jūras transportā",
         "qualification_lv": "Kuģa mehāniķa (vadības līmenī) kvalifikācija",
         "lki_level": 6
       },
-
       "credits": 265,
-
       "director": {
         "name": "Edijs Štāls",
         "title": "LJA direktors"
       },
-
       "description": "Programma nodrošina vecākā/otrā mehāniķa kvalifikāciju kuģiem ar galveno dzinēju jaudu 3000 kW un lielāku. Atbilst STCW A-III/1 un A-III/2 standartiem. Ietver kuģa dzinēju, mehānismu, elektrisko un automātiskās vadības sistēmu ekspluatāciju un remontu.",
-
       "specializations": [],
-
       "goals": "Sagatavot augstas kvalitātes starptautiski atzītu vadības līmeņa kuģu virsnieku, kas spēj uzturēt drošu mašīntelpas sardzi un veikt kuģa galveno dzinēju un palīgmehānismu ekspluatāciju, apkopi un remontu.",
-
       "objectives": [
         "Sniegt zināšanas par kuģu dzinēju un iekārtu ekspluatācijas principiem",
         "Iemācīt risināt mehānisko un elektrisko sistēmu remonta uzdevumus",
@@ -2536,7 +2890,6 @@
         "Iemācīt risināt vadības uzdevumus",
         "Nostiprināt angļu valodas zināšanas"
       ],
-
       "learning_outcomes": {
         "knowledge": [
           "Drošas mašīntelpas sardzes īstenošana",
@@ -2554,7 +2907,6 @@
           "Vadītāja un komandas darba prasmju pielietošana"
         ]
       },
-
       "career_prospects": {
         "description": "Darbs uz tirdzniecības flotes kuģiem (tankkuģi, konteinerkuģi, pasažieru kuģi u.c.), kā arī iekšējo ūdeņu kuģiem. Var strādāt arī kuģu remonta un tehniskā menedžmenta uzņēmumos.",
         "example_roles": [
@@ -2572,14 +2924,12 @@
         "can_continue_masters": true,
         "can_start_own_business": false
       },
-
       "international": {
         "erasmus_available": false,
         "foreign_lecturers": false,
         "international_study_possible": true,
         "international_notes": "Darbs uz starptautiskās flotes kuģiem. STCW starptautisks sertifikāts."
       },
-
       "recommendation_metadata": {
         "interest_tags": [
           "jūra",
@@ -2615,15 +2965,49 @@
           "Tiem, kuru veselība neatbilst jūrnieku prasībām",
           "Tiem, kas nevēlas strādāt uz kuģa"
         ]
-      }
+      },
+      "matching": {
+        "interest_domains": [
+          "maritime",
+          "mechanics_engineering",
+          "energy_power"
+        ],
+        "required_strengths": [
+          "mathematics",
+          "physics",
+          "practical_skills",
+          "technical_thinking",
+          "analytical_thinking"
+        ],
+        "personality_fit": [
+          "technical",
+          "practical",
+          "adventurous"
+        ],
+        "math_intensive": true,
+        "creative_component": false,
+        "research_oriented": false,
+        "teamwork_oriented": true,
+        "difficulty_level": "medium_high"
+      },
+      "keywords": [
+        "marine engineer",
+        "ship engineer",
+        "chief engineer",
+        "engine room officer",
+        "ship mechanic",
+        "maritime engineering",
+        "propulsion systems",
+        "STCW",
+        "vessel maintenance",
+        "diesel engine"
+      ]
     },
-
     {
       "id": "UCE",
       "slug": "juras-transports-kuga-elektroautomatika",
       "name_lv": "Jūras transports - kuģa elektroautomātika",
       "name_en": "Maritime Transport - Marine Electro-automation",
-
       "institution": {
         "unit": "RTU Latvijas Jūras akadēmija",
         "city": "Rīga",
@@ -2632,7 +3016,6 @@
         "email": null,
         "website": "https://www.rtu.lv/lv/latvijas-juras-akademija"
       },
-
       "program_details": {
         "type": "Pirmā cikla augstākās izglītības (profesionālās bakalaura) studijas",
         "level": 6,
@@ -2640,7 +3023,6 @@
         "study_field": "Jūrniecība",
         "url": "https://www.rtu.lv/lv/studijas/visas-studiju-programmas/atvert/UCE?department=0J000&type=P"
       },
-
       "admission": {
         "required_education": "Vidējā izglītība",
         "requires_entrance_exam": false,
@@ -2650,9 +3032,11 @@
         "requires_prior_professional_qualification": false,
         "prior_qualification_details": null,
         "specific_admission_notes": "Obligāta medicīniskā izziņa.",
-        "languages_of_instruction": ["Latviešu", "Angļu"]
+        "languages_of_instruction": [
+          "Latviešu",
+          "Angļu"
+        ]
       },
-
       "study_forms": [
         {
           "form": "Pilna laika klātienes",
@@ -2669,33 +3053,25 @@
           "budget_note": "Nav budžeta vietu neklātienē"
         }
       ],
-
       "degree": {
         "degree_lv": "Profesionālais bakalaura grāds jūras transportā",
         "qualification_lv": "Kuģa elektromehāniķa kvalifikācija",
         "lki_level": 6
       },
-
       "credits": 265,
-
       "director": {
         "name": "Edijs Štāls",
         "title": "LJA direktors"
       },
-
       "description": "Programma nodrošina 6. līmeņa profesionālās kvalifikācijas ieguvi kuģa elektrotehnikā. Atbilst STCW A-III/6 standartam. Ietver kuģu elektrisko, elektronisko, automātiskās vadības sistēmu, sakaru un datorsistēmu ekspluatāciju un remontu.",
-
       "specializations": [],
-
       "goals": "Sagatavot augstas kvalitātes starptautiski atzītu kuģa virsnieku, kas spēj veikt kuģu inženiertehnisko sistēmu, elektrisko un elektronisko vadības sistēmu, sakaru un datorsistēmu ekspluatāciju, apkopi un remontu.",
-
       "objectives": [
         "Sniegt zināšanas par elektrisko un elektronisko vadības sistēmu teorētiskajiem pamatiem",
         "Iemācīt risināt sistēmu apkopes un remonta uzdevumus",
         "Sniegt zināšanas par drošības pārvaldību",
         "Nostiprināt angļu valodas zināšanas"
       ],
-
       "learning_outcomes": {
         "knowledge": [
           "Kuģa elektrisko sistēmu un iekārtu uzraudzība",
@@ -2713,7 +3089,6 @@
           "Komandas darba prasmju pielietošana"
         ]
       },
-
       "career_prospects": {
         "description": "Darbs uz dažādu tipu tirdzniecības flotes kuģiem. Var strādāt arī kuģu remonta krasta uzņēmumos un loģistikas uzņēmumos.",
         "example_roles": [
@@ -2729,14 +3104,12 @@
         "can_continue_masters": true,
         "can_start_own_business": false
       },
-
       "international": {
         "erasmus_available": false,
         "foreign_lecturers": false,
         "international_study_possible": true,
         "international_notes": "Darbs uz starptautiskās flotes kuģiem. STCW starptautisks sertifikāts."
       },
-
       "recommendation_metadata": {
         "interest_tags": [
           "jūra",
@@ -2771,113 +3144,446 @@
           "Tiem, kuru veselība neatbilst jūrnieku prasībām",
           "Tiem, kas nevēlas strādāt uz kuģa"
         ]
-      }
+      },
+      "matching": {
+        "interest_domains": [
+          "maritime",
+          "electronics_telecom",
+          "energy_power"
+        ],
+        "required_strengths": [
+          "mathematics",
+          "physics",
+          "programming",
+          "technical_thinking",
+          "practical_skills"
+        ],
+        "personality_fit": [
+          "technical",
+          "precise",
+          "adventurous"
+        ],
+        "math_intensive": true,
+        "creative_component": false,
+        "research_oriented": false,
+        "teamwork_oriented": true,
+        "difficulty_level": "medium_high"
+      },
+      "keywords": [
+        "marine electro engineer",
+        "ship electrician",
+        "electro automation engineer",
+        "shipboard electronics",
+        "marine automation systems",
+        "vessel electrical systems",
+        "STCW",
+        "maritime electronics",
+        "navigation electronics"
+      ]
     }
-
   ],
-
   "filter_taxonomy": {
     "interest_domains": {
-      "Tehnoloģijas un inženierija": ["DCZ", "MCE", "UCN", "UCE"],
-      "Jūrniecība": ["UCZ", "UCN", "UCE"],
-      "Bizness un ekonomika": ["JCD", "ICE"],
-      "Dizains un māksla": ["WCU", "WCH"],
-      "Izglītība un pedagoģija": ["GCT-R", "GCT-L", "GCS-R", "GCS-L", "GCU"],
-      "Sociālais darbs un veselība": ["SCE", "SCD", "GCL"],
-      "Drošība un tieslietas": ["JCR"]
+      "Tehnoloģijas un inženierija": [
+        "DCZ",
+        "MCE",
+        "UCN",
+        "UCE"
+      ],
+      "Jūrniecība": [
+        "UCZ",
+        "UCN",
+        "UCE"
+      ],
+      "Bizness un ekonomika": [
+        "JCD",
+        "ICE"
+      ],
+      "Dizains un māksla": [
+        "WCU",
+        "WCH"
+      ],
+      "Izglītība un pedagoģija": [
+        "GCT-R",
+        "GCT-L",
+        "GCS-R",
+        "GCS-L",
+        "GCU"
+      ],
+      "Sociālais darbs un veselība": [
+        "SCE",
+        "SCD",
+        "GCL"
+      ],
+      "Drošība un tieslietas": [
+        "JCR"
+      ]
     },
     "locations": {
-      "Rēzekne": ["JCD", "ICE", "DCZ", "MCE", "WCU", "JCR", "GCT-R", "GCS-R", "GCU", "SCE"],
-      "Liepāja": ["GCT-L", "GCS-L", "GCL", "SCD", "MCE"],
-      "Rīga": ["UCZ", "UCN", "UCE", "WCH"]
+      "Rēzekne": [
+        "JCD",
+        "ICE",
+        "DCZ",
+        "MCE",
+        "WCU",
+        "JCR",
+        "GCT-R",
+        "GCS-R",
+        "GCU",
+        "SCE"
+      ],
+      "Liepāja": [
+        "GCT-L",
+        "GCS-L",
+        "GCL",
+        "SCD",
+        "MCE"
+      ],
+      "Rīga": [
+        "UCZ",
+        "UCN",
+        "UCE",
+        "WCH"
+      ]
     },
-    "budget_places_available": ["MCE", "WCU", "WCH", "GCT-R", "GCT-L", "GCS-L", "GCU", "GCL", "UCZ", "UCN", "UCE", "SCD"],
-    "requires_entrance_exam": ["GCT-R", "GCT-L", "GCS-R", "GCS-L", "GCU", "GCL", "WCU", "WCH"],
-    "requires_special_health": ["UCZ", "UCN", "UCE"],
-    "requires_prior_qualification": ["JCR"],
-    "part_time_available": ["JCD", "ICE", "GCT-R", "GCT-L", "GCS-R", "GCS-L", "GCU", "GCL", "JCR", "UCZ", "UCN", "UCE", "SCD"],
-    "erasmus_available": ["JCD", "WCU"],
+    "budget_places_available": [
+      "MCE",
+      "WCU",
+      "WCH",
+      "GCT-R",
+      "GCT-L",
+      "GCS-L",
+      "GCU",
+      "GCL",
+      "UCZ",
+      "UCN",
+      "UCE",
+      "SCD"
+    ],
+    "requires_entrance_exam": [
+      "GCT-R",
+      "GCT-L",
+      "GCS-R",
+      "GCS-L",
+      "GCU",
+      "GCL",
+      "WCU",
+      "WCH"
+    ],
+    "requires_special_health": [
+      "UCZ",
+      "UCN",
+      "UCE"
+    ],
+    "requires_prior_qualification": [
+      "JCR"
+    ],
+    "part_time_available": [
+      "JCD",
+      "ICE",
+      "GCT-R",
+      "GCT-L",
+      "GCS-R",
+      "GCS-L",
+      "GCU",
+      "GCL",
+      "JCR",
+      "UCZ",
+      "UCN",
+      "UCE",
+      "SCD"
+    ],
+    "erasmus_available": [
+      "JCD",
+      "WCU"
+    ],
     "instruction_languages": {
-      "Latviešu": ["JCD", "ICE", "DCZ", "WCU", "WCH", "JCR", "GCT-R", "GCT-L", "GCS-R", "GCS-L", "GCU", "GCL", "SCE", "SCD"],
-      "Angļu (papildus)": ["JCD", "MCE", "UCZ", "UCN", "UCE"]
+      "Latviešu": [
+        "JCD",
+        "ICE",
+        "DCZ",
+        "WCU",
+        "WCH",
+        "JCR",
+        "GCT-R",
+        "GCT-L",
+        "GCS-R",
+        "GCS-L",
+        "GCU",
+        "GCL",
+        "SCE",
+        "SCD"
+      ],
+      "Angļu (papildus)": [
+        "JCD",
+        "MCE",
+        "UCZ",
+        "UCN",
+        "UCE"
+      ]
     },
     "tuition_ranges_eur_per_year": {
-      "under_2500": ["JCD", "ICE", "GCT-R_part", "GCT-L_part", "GCS-L_part", "JCR"],
-      "2500_to_3500": ["GCT-R", "GCT-L", "GCS-R", "GCS-L", "GCU", "GCL", "DCZ", "MCE"],
-      "3500_to_4500": ["WCU", "WCH"],
-      "above_4500": ["UCZ", "UCN", "UCE", "SCE", "SCD"]
+      "under_2500": [
+        "JCD",
+        "ICE",
+        "GCT-R_part",
+        "GCT-L_part",
+        "GCS-L_part",
+        "JCR"
+      ],
+      "2500_to_3500": [
+        "GCT-R",
+        "GCT-L",
+        "GCS-R",
+        "GCS-L",
+        "GCU",
+        "GCL",
+        "DCZ",
+        "MCE"
+      ],
+      "3500_to_4500": [
+        "WCU",
+        "WCH"
+      ],
+      "above_4500": [
+        "UCZ",
+        "UCN",
+        "UCE",
+        "SCE",
+        "SCD"
+      ]
     },
     "math_intensity_levels": {
-      "zema": ["GCT-R", "GCT-L", "GCS-R", "GCS-L", "GCU", "GCL", "SCE", "SCD"],
-      "videja": ["JCD", "ICE", "WCU", "WCH", "JCR"],
-      "augsta": ["DCZ", "MCE", "UCZ", "UCN", "UCE"]
+      "zema": [
+        "GCT-R",
+        "GCT-L",
+        "GCS-R",
+        "GCS-L",
+        "GCU",
+        "GCL",
+        "SCE",
+        "SCD"
+      ],
+      "videja": [
+        "JCD",
+        "ICE",
+        "WCU",
+        "WCH",
+        "JCR"
+      ],
+      "augsta": [
+        "DCZ",
+        "MCE",
+        "UCZ",
+        "UCN",
+        "UCE"
+      ]
     },
     "career_sectors": {
-      "IT un tehnoloģijas": ["DCZ"],
-      "Inženierija un ražošana": ["MCE", "UCN", "UCE"],
-      "Jūrniecība": ["UCZ", "UCN", "UCE"],
-      "Bizness un vadība": ["JCD", "ICE"],
-      "Dizains": ["WCU", "WCH"],
-      "Izglītība": ["GCT-R", "GCT-L", "GCS-R", "GCS-L", "GCU", "GCL"],
-      "Sociālais darbs": ["SCE", "SCD"],
-      "Drošība": ["JCR"]
+      "IT un tehnoloģijas": [
+        "DCZ"
+      ],
+      "Inženierija un ražošana": [
+        "MCE",
+        "UCN",
+        "UCE"
+      ],
+      "Jūrniecība": [
+        "UCZ",
+        "UCN",
+        "UCE"
+      ],
+      "Bizness un vadība": [
+        "JCD",
+        "ICE"
+      ],
+      "Dizains": [
+        "WCU",
+        "WCH"
+      ],
+      "Izglītība": [
+        "GCT-R",
+        "GCT-L",
+        "GCS-R",
+        "GCS-L",
+        "GCU",
+        "GCL"
+      ],
+      "Sociālais darbs": [
+        "SCE",
+        "SCD"
+      ],
+      "Drošība": [
+        "JCR"
+      ]
     }
   },
-
   "quick_reference": [
     {
-      "id": "JCD", "name": "Uzņēmējdarbība", "city": "Rēzekne", "tuition_min": 2210, "budget_places": 0, "duration_years": 4, "entrance_exam": false
+      "id": "JCD",
+      "name": "Uzņēmējdarbība",
+      "city": "Rēzekne",
+      "tuition_min": 2210,
+      "budget_places": 0,
+      "duration_years": 4,
+      "entrance_exam": false
     },
     {
-      "id": "ICE", "name": "Ekonomika", "city": "Rēzekne", "tuition_min": 2210, "budget_places": 0, "duration_years": 4, "entrance_exam": false
+      "id": "ICE",
+      "name": "Ekonomika",
+      "city": "Rēzekne",
+      "tuition_min": 2210,
+      "budget_places": 0,
+      "duration_years": 4,
+      "entrance_exam": false
     },
     {
-      "id": "DCZ", "name": "Programmēšanas inženieris", "city": "Rēzekne", "tuition_min": 3600, "budget_places": 0, "duration_years": 4, "entrance_exam": false
+      "id": "DCZ",
+      "name": "Programmēšanas inženieris",
+      "city": "Rēzekne",
+      "tuition_min": 3600,
+      "budget_places": 0,
+      "duration_years": 4,
+      "entrance_exam": false
     },
     {
-      "id": "MCE", "name": "Mehatronika", "city": "Rēzekne / Liepāja", "tuition_min": 3600, "budget_places": 90, "duration_years": 4, "entrance_exam": false
+      "id": "MCE",
+      "name": "Mehatronika",
+      "city": "Rēzekne / Liepāja",
+      "tuition_min": 3600,
+      "budget_places": 90,
+      "duration_years": 4,
+      "entrance_exam": false
     },
     {
-      "id": "WCU", "name": "Dizaina tehnoloģijas", "city": "Rēzekne", "tuition_min": 3990, "budget_places": 25, "duration_years": 4, "entrance_exam": true
+      "id": "WCU",
+      "name": "Dizaina tehnoloģijas",
+      "city": "Rēzekne",
+      "tuition_min": 3990,
+      "budget_places": 25,
+      "duration_years": 4,
+      "entrance_exam": true
     },
     {
-      "id": "WCH", "name": "Materiālu tehnoloģija un dizains", "city": "Rīga", "tuition_min": 4330, "budget_places": 45, "duration_years": 4, "entrance_exam": true
+      "id": "WCH",
+      "name": "Materiālu tehnoloģija un dizains",
+      "city": "Rīga",
+      "tuition_min": 4330,
+      "budget_places": 45,
+      "duration_years": 4,
+      "entrance_exam": true
     },
     {
-      "id": "JCR", "name": "Robežapsardze", "city": "Rēzekne", "tuition_min": 0, "budget_places": 0, "duration_years": 4.5, "entrance_exam": false, "requires_prior_qualification": true
+      "id": "JCR",
+      "name": "Robežapsardze",
+      "city": "Rēzekne",
+      "tuition_min": 0,
+      "budget_places": 0,
+      "duration_years": 4.5,
+      "entrance_exam": false,
+      "requires_prior_qualification": true
     },
     {
-      "id": "GCT-R", "name": "Sākumizglītības skolotājs", "city": "Rēzekne", "tuition_min": 2210, "budget_places": 50, "duration_years": 4, "entrance_exam": true
+      "id": "GCT-R",
+      "name": "Sākumizglītības skolotājs",
+      "city": "Rēzekne",
+      "tuition_min": 2210,
+      "budget_places": 50,
+      "duration_years": 4,
+      "entrance_exam": true
     },
     {
-      "id": "GCT-L", "name": "Sākumizglītības skolotājs", "city": "Liepāja", "tuition_min": 2210, "budget_places": 40, "duration_years": 4, "entrance_exam": true
+      "id": "GCT-L",
+      "name": "Sākumizglītības skolotājs",
+      "city": "Liepāja",
+      "tuition_min": 2210,
+      "budget_places": 40,
+      "duration_years": 4,
+      "entrance_exam": true
     },
     {
-      "id": "GCS-R", "name": "Skolotājs", "city": "Rēzekne", "tuition_min": 2730, "budget_places": 0, "duration_years": 4, "entrance_exam": true
+      "id": "GCS-R",
+      "name": "Skolotājs",
+      "city": "Rēzekne",
+      "tuition_min": 2730,
+      "budget_places": 0,
+      "duration_years": 4,
+      "entrance_exam": true
     },
     {
-      "id": "GCS-L", "name": "Skolotājs", "city": "Liepāja", "tuition_min": 2210, "budget_places": 40, "duration_years": 4, "entrance_exam": true
+      "id": "GCS-L",
+      "name": "Skolotājs",
+      "city": "Liepāja",
+      "tuition_min": 2210,
+      "budget_places": 40,
+      "duration_years": 4,
+      "entrance_exam": true
     },
     {
-      "id": "GCU", "name": "Speciālā izglītība", "city": "Rēzekne", "tuition_min": 2210, "budget_places": 50, "duration_years": 4, "entrance_exam": true
+      "id": "GCU",
+      "name": "Speciālā izglītība",
+      "city": "Rēzekne",
+      "tuition_min": 2210,
+      "budget_places": 50,
+      "duration_years": 4,
+      "entrance_exam": true
     },
     {
-      "id": "GCL", "name": "Logopēdija", "city": "Liepāja", "tuition_min": 2420, "budget_places": 40, "duration_years": 4, "entrance_exam": true
+      "id": "GCL",
+      "name": "Logopēdija",
+      "city": "Liepāja",
+      "tuition_min": 2420,
+      "budget_places": 40,
+      "duration_years": 4,
+      "entrance_exam": true
     },
     {
-      "id": "SCE", "name": "Sociālais darbs un sociālā rehabilitācija", "city": "Rēzekne", "tuition_min": 5990, "budget_places": 0, "duration_years": 4, "entrance_exam": false
+      "id": "SCE",
+      "name": "Sociālais darbs un sociālā rehabilitācija",
+      "city": "Rēzekne",
+      "tuition_min": 5990,
+      "budget_places": 0,
+      "duration_years": 4,
+      "entrance_exam": false
     },
     {
-      "id": "SCD", "name": "Sociālais darbinieks", "city": "Liepāja", "tuition_min": 6200, "budget_places": 25, "duration_years": 4, "entrance_exam": false
+      "id": "SCD",
+      "name": "Sociālais darbinieks",
+      "city": "Liepāja",
+      "tuition_min": 6200,
+      "budget_places": 25,
+      "duration_years": 4,
+      "entrance_exam": false
     },
     {
-      "id": "UCZ", "name": "Jūras transports - kuģa vadīšana", "city": "Rīga (LJA)", "tuition_min": 4130, "budget_places": 60, "duration_years": 4.5, "entrance_exam": false, "requires_health_cert": true
+      "id": "UCZ",
+      "name": "Jūras transports - kuģa vadīšana",
+      "city": "Rīga (LJA)",
+      "tuition_min": 4130,
+      "budget_places": 60,
+      "duration_years": 4.5,
+      "entrance_exam": false,
+      "requires_health_cert": true
     },
     {
-      "id": "UCN", "name": "Jūras transports - kuģa mehānika", "city": "Rīga (LJA)", "tuition_min": 4130, "budget_places": 30, "duration_years": 4.5, "entrance_exam": false, "requires_health_cert": true
+      "id": "UCN",
+      "name": "Jūras transports - kuģa mehānika",
+      "city": "Rīga (LJA)",
+      "tuition_min": 4130,
+      "budget_places": 30,
+      "duration_years": 4.5,
+      "entrance_exam": false,
+      "requires_health_cert": true
     },
     {
-      "id": "UCE", "name": "Jūras transports - kuģa elektroautomātika", "city": "Rīga (LJA)", "tuition_min": 4130, "budget_places": 20, "duration_years": 4.5, "entrance_exam": false, "requires_health_cert": true
+      "id": "UCE",
+      "name": "Jūras transports - kuģa elektroautomātika",
+      "city": "Rīga (LJA)",
+      "tuition_min": 4130,
+      "budget_places": 20,
+      "duration_years": 4.5,
+      "entrance_exam": false,
+      "requires_health_cert": true
     }
   ]
 }

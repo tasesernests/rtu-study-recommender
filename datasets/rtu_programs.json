@@ -91,12 +91,19 @@
         "duration_years": 4,
         "credits": 240,
         "format": "Pilna laika klātienes",
-        "language": ["Latviešu", "Angļu"],
-        "locations": ["Rīga"],
+        "language": [
+          "Latviešu",
+          "Angļu"
+        ],
+        "locations": [
+          "Rīga"
+        ],
         "start_location": "Rīga"
       },
       "finances": {
-        "budget_places": { "Rīga": 30 },
+        "budget_places": {
+          "Rīga": 30
+        },
         "annual_fee_eur": 3500,
         "fee_type": "Pilna laika klātienes"
       },
@@ -157,21 +164,48 @@
       },
       "matching": {
         "interest_domains": [
-          "butransports_un_aviacija",
-          "mehaanika_un_maashiinbuuve",
-          "robotika_un_automatizacija"
+          "transport_aviation",
+          "mechanics_engineering",
+          "robotics_automation"
         ],
-        "required_strengths": ["matemātika", "fizika", "analītiskā domāšana", "tehniskā domāšana"],
-        "personality_fit": ["analitisks", "tehniski orientēts", "praktiski orientēts"],
-        "language_of_instruction": ["lv", "en"],
+        "required_strengths": [
+          "mathematics",
+          "physics",
+          "analytical_thinking",
+          "technical_thinking",
+          "practical_skills"
+        ],
+        "personality_fit": [
+          "analytical",
+          "technical",
+          "practical"
+        ],
+        "language_of_instruction": [
+          "lv",
+          "en"
+        ],
         "international_potential": true,
         "research_oriented": true,
         "postgrad_pathway": true,
-        "difficulty_level": "augsts",
+        "difficulty_level": "high",
         "math_intensive": true,
         "creative_component": false,
-        "entry_exam_required": false
-      }
+        "entry_exam_required": false,
+        "teamwork_oriented": true
+      },
+      "keywords": [
+        "aeronautics",
+        "transport engineer",
+        "logistics",
+        "UAV operator",
+        "drone",
+        "aviation technician",
+        "transport systems",
+        "fleet management",
+        "CAD CAM",
+        "aerospace",
+        "air traffic"
+      ]
     },
     {
       "id": "BUV_EN",
@@ -190,8 +224,12 @@
         "duration_years": 3,
         "credits": 180,
         "format": "Pilna laika klātienes",
-        "language": ["Angļu"],
-        "locations": ["Rīga"],
+        "language": [
+          "Angļu"
+        ],
+        "locations": [
+          "Rīga"
+        ],
         "start_location": "Rīga"
       },
       "finances": {
@@ -244,23 +282,54 @@
           "Būvniecības normatīvo aktu speciālists",
           "Pētniecības speciālists inženierbūvēs"
         ],
-        "sectors": ["būvniecība", "enerģētika", "izglītība_un_pētniecība"]
+        "sectors": [
+          "būvniecība",
+          "enerģētika",
+          "izglītība_un_pētniecība"
+        ]
       },
       "matching": {
-        "interest_domains": ["buuvenieciba", "vides_zinatne_un_ilgtspeejiba"],
-        "required_strengths": ["matemātika", "fizika", "tehniskā domāšana", "valodas"],
-        "personality_fit": ["tehniski orientēts", "starptautiski orientēts", "analitisks"],
-        "language_of_instruction": ["en"],
+        "interest_domains": [
+          "construction_civil",
+          "environment_sustainability"
+        ],
+        "required_strengths": [
+          "mathematics",
+          "physics",
+          "technical_thinking",
+          "analytical_thinking",
+          "languages"
+        ],
+        "personality_fit": [
+          "technical",
+          "analytical",
+          "international"
+        ],
+        "language_of_instruction": [
+          "en"
+        ],
         "international_potential": true,
         "research_oriented": false,
         "postgrad_pathway": true,
-        "difficulty_level": "vidējs",
+        "difficulty_level": "medium_high",
         "math_intensive": true,
         "creative_component": false,
         "entry_exam_required": false,
         "target_audience": "ārvalstu studenti",
-        "note": "Nav pieejams Latvijas pilsoņiem uz budžeta vietām"
-      }
+        "note": "Nav pieejams Latvijas pilsoņiem uz budžeta vietām",
+        "teamwork_oriented": true
+      },
+      "keywords": [
+        "civil engineer",
+        "structural engineer",
+        "construction manager",
+        "infrastructure",
+        "sustainable construction",
+        "BIM",
+        "project manager",
+        "building design",
+        "concrete structures"
+      ]
     },
     {
       "id": "BTBI",
@@ -279,13 +348,19 @@
         "duration_years": 3,
         "credits": 180,
         "format": "Pilna laika klātienes",
-        "language": ["Angļu"],
-        "locations": ["Rīga"],
+        "language": [
+          "Angļu"
+        ],
+        "locations": [
+          "Rīga"
+        ],
         "start_location": "Rīga",
         "note": "Uzņemšana notiek Latvijas Universitātē. Kopīga LU un RTU programma."
       },
       "finances": {
-        "budget_places": { "Rīga": 8 },
+        "budget_places": {
+          "Rīga": 8
+        },
         "annual_fee_eur": 3600,
         "fee_type": "Pilna laika klātienes"
       },
@@ -344,20 +419,50 @@
         ]
       },
       "matching": {
-        "interest_domains": ["kiiimija_un_biotehnoloGija", "materiaalu_zinatne"],
-        "required_strengths": ["bioloģija", "ķīmija", "matemātika", "pētniecība", "analītiskā domāšana"],
-        "personality_fit": ["zinātniski orientēts", "analitisks", "patstāvīgs"],
-        "language_of_instruction": ["en"],
+        "interest_domains": [
+          "chemistry_biotech",
+          "medical_technology",
+          "environment_sustainability"
+        ],
+        "required_strengths": [
+          "biology",
+          "chemistry",
+          "mathematics",
+          "research",
+          "analytical_thinking"
+        ],
+        "personality_fit": [
+          "scientific",
+          "analytical",
+          "independent"
+        ],
+        "language_of_instruction": [
+          "en"
+        ],
         "international_potential": true,
         "research_oriented": true,
         "postgrad_pathway": true,
-        "difficulty_level": "augsts",
+        "difficulty_level": "high",
         "math_intensive": true,
         "creative_component": false,
         "entry_exam_required": false,
         "joint_program": true,
-        "partner_institution": "Latvijas Universitāte"
-      }
+        "partner_institution": "Latvijas Universitāte",
+        "teamwork_oriented": false
+      },
+      "keywords": [
+        "biotechnologist",
+        "bioengineering",
+        "lab scientist",
+        "pharmaceutical",
+        "bioreactor",
+        "molecular biology",
+        "biotech startup",
+        "food technology",
+        "genetic engineering",
+        "bioproducts",
+        "fermentation"
+      ]
     },
     {
       "id": "MATI",
@@ -376,12 +481,19 @@
         "duration_years": 3,
         "credits": 180,
         "format": "Pilna laika klātienes",
-        "language": ["Latviešu", "Angļu"],
-        "locations": ["Rīga"],
+        "language": [
+          "Latviešu",
+          "Angļu"
+        ],
+        "locations": [
+          "Rīga"
+        ],
         "start_location": "Rīga"
       },
       "finances": {
-        "budget_places": { "Rīga": 30 },
+        "budget_places": {
+          "Rīga": 30
+        },
         "annual_fee_eur": 3340,
         "fee_type": "Pilna laika klātienes"
       },
@@ -440,19 +552,48 @@
         ]
       },
       "matching": {
-        "interest_domains": ["materiaalu_zinatne", "kiiimija_un_biotehnoloGija", "buuvenieciba"],
-        "required_strengths": ["ķīmija", "fizika", "matemātika", "programmēšana", "pētniecība"],
-        "personality_fit": ["zinātniski orientēts", "analitisks", "tehniski orientēts"],
-        "language_of_instruction": ["lv", "en"],
+        "interest_domains": [
+          "chemistry_biotech",
+          "mechanics_engineering"
+        ],
+        "required_strengths": [
+          "chemistry",
+          "physics",
+          "mathematics",
+          "research",
+          "practical_skills"
+        ],
+        "personality_fit": [
+          "scientific",
+          "analytical",
+          "technical"
+        ],
+        "language_of_instruction": [
+          "lv",
+          "en"
+        ],
         "international_potential": true,
         "research_oriented": true,
         "postgrad_pathway": true,
-        "difficulty_level": "augsts",
+        "difficulty_level": "high",
         "math_intensive": true,
         "creative_component": false,
         "entry_exam_required": false,
-        "unique_in_latvia": true
-      }
+        "unique_in_latvia": true,
+        "teamwork_oriented": false
+      },
+      "keywords": [
+        "materials scientist",
+        "materials engineer",
+        "quality control",
+        "nanomaterials",
+        "composite materials",
+        "polymer",
+        "metallurgy",
+        "surface engineering",
+        "3D printing materials",
+        "materials testing"
+      ]
     },
     {
       "id": "VIDE",
@@ -471,12 +612,19 @@
         "duration_years": 3,
         "credits": 180,
         "format": "Pilna laika klātienes",
-        "language": ["Latviešu", "Angļu"],
-        "locations": ["Rīga"],
+        "language": [
+          "Latviešu",
+          "Angļu"
+        ],
+        "locations": [
+          "Rīga"
+        ],
         "start_location": "Rīga"
       },
       "finances": {
-        "budget_places": { "Rīga": 30 },
+        "budget_places": {
+          "Rīga": 30
+        },
         "annual_fee_eur": 3730,
         "fee_type": "Pilna laika klātienes"
       },
@@ -532,19 +680,48 @@
         ]
       },
       "matching": {
-        "interest_domains": ["vides_zinatne_un_ilgtspeejiba", "kiiimija_un_biotehnoloGija"],
-        "required_strengths": ["matemātika", "fizika", "ķīmija", "analītiskā domāšana", "pētniecība"],
-        "personality_fit": ["zinātniski orientēts", "analitisks", "starptautiski orientēts"],
-        "language_of_instruction": ["lv", "en"],
+        "interest_domains": [
+          "environment_sustainability",
+          "chemistry_biotech",
+          "energy_power"
+        ],
+        "required_strengths": [
+          "mathematics",
+          "chemistry",
+          "physics",
+          "analytical_thinking",
+          "research"
+        ],
+        "personality_fit": [
+          "analytical",
+          "sustainability_conscious",
+          "scientific"
+        ],
+        "language_of_instruction": [
+          "lv",
+          "en"
+        ],
         "international_potential": true,
         "research_oriented": true,
         "postgrad_pathway": true,
-        "difficulty_level": "vidējs-augsts",
+        "difficulty_level": "medium_high",
         "math_intensive": true,
         "creative_component": false,
         "entry_exam_required": false,
-        "sustainability_focus": true
-      }
+        "sustainability_focus": true,
+        "teamwork_oriented": false
+      },
+      "keywords": [
+        "environmental engineer",
+        "climate technology",
+        "waste management",
+        "water treatment",
+        "pollution control",
+        "renewable energy",
+        "sustainability consultant",
+        "environmental inspector",
+        "green tech"
+      ]
     },
     {
       "id": "KKT",
@@ -563,12 +740,19 @@
         "duration_years": 4,
         "credits": 240,
         "format": "Pilna laika klātienes",
-        "language": ["Latviešu", "Angļu"],
-        "locations": ["Rīga"],
+        "language": [
+          "Latviešu",
+          "Angļu"
+        ],
+        "locations": [
+          "Rīga"
+        ],
         "start_location": "Rīga"
       },
       "finances": {
-        "budget_places": { "Rīga": 60 },
+        "budget_places": {
+          "Rīga": 60
+        },
         "annual_fee_eur": 3340,
         "fee_type": "Pilna laika klātienes"
       },
@@ -625,19 +809,48 @@
         ]
       },
       "matching": {
-        "interest_domains": ["kiiimija_un_biotehnoloGija", "materiaalu_zinatne"],
-        "required_strengths": ["ķīmija", "matemātika", "fizika", "pētniecība", "analītiskā domāšana"],
-        "personality_fit": ["zinātniski orientēts", "analitisks", "praktiski orientēts"],
-        "language_of_instruction": ["lv", "en"],
+        "interest_domains": [
+          "chemistry_biotech",
+          "environment_sustainability"
+        ],
+        "required_strengths": [
+          "chemistry",
+          "mathematics",
+          "physics",
+          "research",
+          "analytical_thinking",
+          "practical_skills"
+        ],
+        "personality_fit": [
+          "scientific",
+          "analytical",
+          "practical"
+        ],
+        "language_of_instruction": [
+          "lv",
+          "en"
+        ],
         "international_potential": true,
         "research_oriented": true,
         "postgrad_pathway": true,
-        "difficulty_level": "augsts",
+        "difficulty_level": "high",
         "math_intensive": true,
         "creative_component": false,
         "entry_exam_required": false,
-        "unique_in_latvia": true
-      }
+        "unique_in_latvia": true,
+        "teamwork_oriented": false
+      },
+      "keywords": [
+        "chemical engineer",
+        "process engineer",
+        "quality analyst",
+        "laboratory chemist",
+        "chemical technologist",
+        "pharmaceutical",
+        "polymer",
+        "petrochemical",
+        "industrial chemistry"
+      ]
     },
     {
       "id": "DS",
@@ -656,12 +869,23 @@
         "duration_years": 3,
         "credits": 180,
         "format": "Pilna laika klātienes",
-        "language": ["Latviešu", "Angļu"],
-        "locations": ["Rīga", "Rēzekne", "Liepāja"],
+        "language": [
+          "Latviešu",
+          "Angļu"
+        ],
+        "locations": [
+          "Rīga",
+          "Rēzekne",
+          "Liepāja"
+        ],
         "start_location": "Rīga, Rēzekne, Liepāja"
       },
       "finances": {
-        "budget_places": { "Rīga": 140, "Rēzekne": 30, "Liepāja": 30 },
+        "budget_places": {
+          "Rīga": 140,
+          "Rēzekne": 30,
+          "Liepāja": 30
+        },
         "annual_fee_eur": 3990,
         "fee_type": "Pilna laika klātienes",
         "note": "30 budžeta vietas Liepājā (RTU Liepājas akadēmija)"
@@ -712,23 +936,59 @@
           "Datorsistēmu analītiķis",
           "Programminženieris"
         ],
-        "sectors": ["IT", "ražošana_un_rūpniecība"]
+        "sectors": [
+          "IT",
+          "ražošana_un_rūpniecība"
+        ]
       },
       "matching": {
-        "interest_domains": ["IT_un_programmeeshana", "datu_zinatne_un_MI"],
-        "required_strengths": ["matemātika", "programmēšana", "analītiskā domāšana", "tehniskā domāšana"],
-        "personality_fit": ["analitisks", "tehniski orientēts", "patstāvīgs"],
-        "language_of_instruction": ["lv", "en"],
+        "interest_domains": [
+          "it_programming",
+          "software_engineering",
+          "data_science_ai"
+        ],
+        "required_strengths": [
+          "mathematics",
+          "programming",
+          "analytical_thinking",
+          "technical_thinking"
+        ],
+        "personality_fit": [
+          "analytical",
+          "technical",
+          "independent"
+        ],
+        "language_of_instruction": [
+          "lv",
+          "en"
+        ],
         "international_potential": true,
         "research_oriented": false,
         "postgrad_pathway": true,
-        "difficulty_level": "vidējs-augsts",
+        "difficulty_level": "medium_high",
         "math_intensive": true,
         "creative_component": false,
         "entry_exam_required": false,
         "quality_label": "Euro-Inf",
-        "available_in_regions": ["Rīga", "Rēzekne", "Liepāja"]
-      }
+        "available_in_regions": [
+          "Rīga",
+          "Rēzekne",
+          "Liepāja"
+        ],
+        "teamwork_oriented": true
+      },
+      "keywords": [
+        "software developer",
+        "programmer",
+        "computer engineer",
+        "systems analyst",
+        "AI developer",
+        "database engineer",
+        "software testing",
+        "DevOps",
+        "backend developer",
+        "computer science"
+      ]
     },
     {
       "id": "IT",
@@ -747,12 +1007,18 @@
         "duration_years": 3,
         "credits": 180,
         "format": "Pilna laika klātienes",
-        "language": ["Latviešu"],
-        "locations": ["Rīga"],
+        "language": [
+          "Latviešu"
+        ],
+        "locations": [
+          "Rīga"
+        ],
         "start_location": "Rīga"
       },
       "finances": {
-        "budget_places": { "Rīga": 115 },
+        "budget_places": {
+          "Rīga": 115
+        },
         "annual_fee_eur": 3990,
         "fee_type": "Pilna laika klātienes"
       },
@@ -803,22 +1069,53 @@
           "Datu analītiķis",
           "IT projektu vadītājs"
         ],
-        "sectors": ["IT", "bizness_un_finanses"]
+        "sectors": [
+          "IT",
+          "bizness_un_finanses"
+        ]
       },
       "matching": {
-        "interest_domains": ["IT_un_programmeeshana", "datu_zinatne_un_MI"],
-        "required_strengths": ["matemātika", "programmēšana", "analītiskā domāšana"],
-        "personality_fit": ["analitisks", "tehniski orientēts", "komandas spēlētājs"],
-        "language_of_instruction": ["lv"],
+        "interest_domains": [
+          "it_programming",
+          "data_science_ai",
+          "software_engineering"
+        ],
+        "required_strengths": [
+          "mathematics",
+          "programming",
+          "analytical_thinking",
+          "technical_thinking"
+        ],
+        "personality_fit": [
+          "analytical",
+          "technical",
+          "team_player"
+        ],
+        "language_of_instruction": [
+          "lv"
+        ],
         "international_potential": false,
         "research_oriented": false,
         "postgrad_pathway": true,
-        "difficulty_level": "vidējs",
+        "difficulty_level": "medium",
         "math_intensive": true,
         "creative_component": false,
         "entry_exam_required": false,
-        "business_oriented": true
-      }
+        "business_oriented": true,
+        "teamwork_oriented": true
+      },
+      "keywords": [
+        "IT consultant",
+        "software developer",
+        "systems analyst",
+        "data analyst",
+        "IT manager",
+        "project manager",
+        "e-business",
+        "enterprise software",
+        "web developer",
+        "IT solutions"
+      ]
     },
     {
       "id": "IRS",
@@ -837,12 +1134,18 @@
         "duration_years": 3,
         "credits": 180,
         "format": "Pilna laika klātienes",
-        "language": ["Latviešu"],
-        "locations": ["Rīga"],
+        "language": [
+          "Latviešu"
+        ],
+        "locations": [
+          "Rīga"
+        ],
         "start_location": "Rīga"
       },
       "finances": {
-        "budget_places": { "Rīga": 35 },
+        "budget_places": {
+          "Rīga": 35
+        },
         "annual_fee_eur": 3990,
         "fee_type": "Pilna laika klātienes"
       },
@@ -851,9 +1154,18 @@
         "special_requirements": "Iestājpārbaudījums matemātikā, fizikā un loģikā. Tiek vērtētas sadarbības spējas.",
         "entry_exam": true,
         "entry_exam_details": {
-          "subjects": ["matemātika", "fizika", "loģika"],
-          "also_assessed": ["sadarbības spējas"],
-          "exam_dates_2026": ["2026-06-06", "2026-06-13"]
+          "subjects": [
+            "matemātika",
+            "fizika",
+            "loģika"
+          ],
+          "also_assessed": [
+            "sadarbības spējas"
+          ],
+          "exam_dates_2026": [
+            "2026-06-06",
+            "2026-06-13"
+          ]
         },
         "centralized_exams_needed": null
       },
@@ -903,20 +1215,50 @@
         ]
       },
       "matching": {
-        "interest_domains": ["robotika_un_automatizacija", "IT_un_programmeeshana", "elektronika_un_telekomunikacijas"],
-        "required_strengths": ["matemātika", "fizika", "programmēšana", "analītiskā domāšana", "tehniskā domāšana"],
-        "personality_fit": ["analitisks", "tehniski orientēts", "komandas spēlētājs", "zinātniski orientēts"],
-        "language_of_instruction": ["lv"],
+        "interest_domains": [
+          "robotics_automation",
+          "it_programming",
+          "electronics_telecom"
+        ],
+        "required_strengths": [
+          "mathematics",
+          "physics",
+          "programming",
+          "analytical_thinking",
+          "technical_thinking"
+        ],
+        "personality_fit": [
+          "analytical",
+          "technical",
+          "team_player",
+          "scientific"
+        ],
+        "language_of_instruction": [
+          "lv"
+        ],
         "international_potential": false,
         "research_oriented": true,
         "postgrad_pathway": true,
-        "difficulty_level": "augsts",
+        "difficulty_level": "high",
         "math_intensive": true,
         "creative_component": false,
         "entry_exam_required": true,
         "first_in_baltics": true,
-        "competitive_admission": true
-      }
+        "competitive_admission": true,
+        "teamwork_oriented": true
+      },
+      "keywords": [
+        "robotics engineer",
+        "automation engineer",
+        "AI programmer",
+        "robot developer",
+        "embedded systems",
+        "control systems",
+        "industrial automation",
+        "machine learning",
+        "mechatronics",
+        "computer vision"
+      ]
     },
     {
       "id": "TTDP",
@@ -935,12 +1277,19 @@
         "duration_years": 3,
         "credits": 180,
         "format": "Pilna laika klātienes",
-        "language": ["Latviešu", "Angļu"],
-        "locations": ["Rīga"],
+        "language": [
+          "Latviešu",
+          "Angļu"
+        ],
+        "locations": [
+          "Rīga"
+        ],
         "start_location": "Rīga"
       },
       "finances": {
-        "budget_places": { "Rīga": 40 },
+        "budget_places": {
+          "Rīga": 40
+        },
         "annual_fee_eur": 3800,
         "fee_type": "Pilna laika klātienes"
       },
@@ -999,18 +1348,46 @@
         ]
       },
       "matching": {
-        "interest_domains": ["elektronika_un_telekomunikacijas", "IT_un_programmeeshana"],
-        "required_strengths": ["matemātika", "fizika", "programmēšana", "analītiskā domāšana"],
-        "personality_fit": ["tehniski orientēts", "analitisks", "starptautiski orientēts"],
-        "language_of_instruction": ["lv", "en"],
+        "interest_domains": [
+          "electronics_telecom",
+          "it_programming"
+        ],
+        "required_strengths": [
+          "mathematics",
+          "physics",
+          "programming",
+          "analytical_thinking"
+        ],
+        "personality_fit": [
+          "technical",
+          "analytical",
+          "international"
+        ],
+        "language_of_instruction": [
+          "lv",
+          "en"
+        ],
         "international_potential": true,
         "research_oriented": true,
         "postgrad_pathway": true,
-        "difficulty_level": "vidējs-augsts",
+        "difficulty_level": "medium_high",
         "math_intensive": true,
         "creative_component": false,
-        "entry_exam_required": false
-      }
+        "entry_exam_required": false,
+        "teamwork_oriented": true
+      },
+      "keywords": [
+        "telecom engineer",
+        "network engineer",
+        "wireless engineer",
+        "data transmission",
+        "signal processing",
+        "5G networks",
+        "IoT",
+        "cybersecurity",
+        "network administrator",
+        "radio frequency"
+      ]
     },
     {
       "id": "VDT",
@@ -1029,12 +1406,18 @@
         "duration_years": 3,
         "credits": 180,
         "format": "Pilna laika klātienes",
-        "language": ["Latviešu"],
-        "locations": ["Rīga"],
+        "language": [
+          "Latviešu"
+        ],
+        "locations": [
+          "Rīga"
+        ],
         "start_location": "Rīga"
       },
       "finances": {
-        "budget_places": { "Rīga": 90 },
+        "budget_places": {
+          "Rīga": 90
+        },
         "annual_fee_eur": 3660,
         "fee_type": "Pilna laika klātienes"
       },
@@ -1093,18 +1476,45 @@
         ]
       },
       "matching": {
-        "interest_domains": ["IT_un_programmeeshana", "robotika_un_automatizacija", "maaksla_un_dizains"],
-        "required_strengths": ["matemātika", "programmēšana", "analītiskā domāšana", "tehniskā domāšana"],
-        "personality_fit": ["analitisks", "tehniski orientēts", "radošs"],
-        "language_of_instruction": ["lv"],
+        "interest_domains": [
+          "it_programming",
+          "robotics_automation",
+          "data_science_ai"
+        ],
+        "required_strengths": [
+          "mathematics",
+          "programming",
+          "analytical_thinking",
+          "technical_thinking"
+        ],
+        "personality_fit": [
+          "analytical",
+          "technical",
+          "creative"
+        ],
+        "language_of_instruction": [
+          "lv"
+        ],
         "international_potential": false,
         "research_oriented": false,
         "postgrad_pathway": true,
-        "difficulty_level": "vidējs",
+        "difficulty_level": "medium",
         "math_intensive": true,
         "creative_component": true,
-        "entry_exam_required": false
-      }
+        "entry_exam_required": false,
+        "teamwork_oriented": true
+      },
+      "keywords": [
+        "computer vision engineer",
+        "3D graphics specialist",
+        "IoT developer",
+        "automation specialist",
+        "image processing",
+        "machine learning",
+        "AR VR developer",
+        "smart systems",
+        "industrial IoT"
+      ]
     },
     {
       "id": "RIND",
@@ -1123,13 +1533,19 @@
         "duration_years": 3,
         "credits": 180,
         "format": "Pilna laika klātienes",
-        "language": ["Latviešu"],
-        "locations": ["Rīga"],
+        "language": [
+          "Latviešu"
+        ],
+        "locations": [
+          "Rīga"
+        ],
         "start_location": "Rīga",
         "note": "Kopīgi īsteno RTU un Latvijas Kultūras akadēmija."
       },
       "finances": {
-        "budget_places": { "LKA": 12 },
+        "budget_places": {
+          "LKA": 12
+        },
         "annual_fee_eur": 2900,
         "fee_type": "Pilna laika klātienes",
         "note": "12 budžeta vietas Latvijas Kultūras akadēmijā"
@@ -1139,7 +1555,11 @@
         "special_requirements": "CE matemātikā, angļu (vai vācu/franču) valodā un latviešu valodā obligāti.",
         "entry_exam": false,
         "entry_exam_details": null,
-        "centralized_exams_needed": ["matemātika", "angļu_valoda_vai_cita", "latviešu_valoda"]
+        "centralized_exams_needed": [
+          "matemātika",
+          "angļu_valoda_vai_cita",
+          "latviešu_valoda"
+        ]
       },
       "program_director": {
         "name": "Rita Greitāne",
@@ -1187,20 +1607,47 @@
         ]
       },
       "matching": {
-        "interest_domains": ["radosa_industrija", "maaksla_un_dizains"],
-        "required_strengths": ["radošums", "komunikācija", "valodas", "vadība"],
-        "personality_fit": ["radošs", "uzņēmīgs", "sociāli orientēts", "humanitāri orientēts"],
-        "language_of_instruction": ["lv"],
+        "interest_domains": [
+          "art_design",
+          "business_management",
+          "education_research"
+        ],
+        "required_strengths": [
+          "creativity",
+          "communication",
+          "languages",
+          "leadership"
+        ],
+        "personality_fit": [
+          "creative",
+          "entrepreneurial",
+          "social"
+        ],
+        "language_of_instruction": [
+          "lv"
+        ],
         "international_potential": false,
         "research_oriented": false,
         "postgrad_pathway": true,
-        "difficulty_level": "vidējs",
+        "difficulty_level": "medium",
         "math_intensive": false,
         "creative_component": true,
         "entry_exam_required": false,
         "joint_program": true,
-        "partner_institution": "Latvijas Kultūras akadēmija"
-      }
+        "partner_institution": "Latvijas Kultūras akadēmija",
+        "teamwork_oriented": true
+      },
+      "keywords": [
+        "creative industries manager",
+        "cultural entrepreneur",
+        "startup founder",
+        "media production",
+        "cultural organization",
+        "event organizer",
+        "marketing creative",
+        "arts management",
+        "content creator"
+      ]
     },
     {
       "id": "ARH",
@@ -1219,12 +1666,18 @@
         "duration_years": 3.5,
         "credits": 210,
         "format": "Pilna laika klātienes",
-        "language": ["Latviešu"],
-        "locations": ["Rīga"],
+        "language": [
+          "Latviešu"
+        ],
+        "locations": [
+          "Rīga"
+        ],
         "start_location": "Rīga"
       },
       "finances": {
-        "budget_places": { "Rīga": 30 },
+        "budget_places": {
+          "Rīga": 30
+        },
         "annual_fee_eur": 6800,
         "fee_type": "Pilna laika klātienes"
       },
@@ -1233,9 +1686,13 @@
         "special_requirements": "Maksas iestājpārbaudījums zīmēšanā.",
         "entry_exam": true,
         "entry_exam_details": {
-          "subjects": ["zīmēšana"],
+          "subjects": [
+            "zīmēšana"
+          ],
           "paid": true,
-          "exam_dates_2026": ["2026-06-06"]
+          "exam_dates_2026": [
+            "2026-06-06"
+          ]
         },
         "centralized_exams_needed": null
       },
@@ -1275,25 +1732,57 @@
           "Projektēšanas asistents",
           "Būvprojektu speciālists"
         ],
-        "sectors": ["būvniecība", "māksla_un_kultūra"],
+        "sectors": [
+          "būvniecība",
+          "māksla_un_kultūra"
+        ],
         "note": "Pilna profesionālā kvalifikācija (arhitekts) prasa papildu maģistrantūru"
       },
       "matching": {
-        "interest_domains": ["arhitektura", "maaksla_un_dizains", "buuvenieciba"],
-        "required_strengths": ["zīmēšana", "radošums", "matemātika", "fizika", "analītiskā domāšana"],
-        "personality_fit": ["radošs", "tehniski orientēts", "analitisks"],
-        "language_of_instruction": ["lv"],
+        "interest_domains": [
+          "architecture",
+          "art_design",
+          "construction_civil"
+        ],
+        "required_strengths": [
+          "drawing_design",
+          "creativity",
+          "mathematics",
+          "physics",
+          "analytical_thinking"
+        ],
+        "personality_fit": [
+          "creative",
+          "technical",
+          "analytical"
+        ],
+        "language_of_instruction": [
+          "lv"
+        ],
         "international_potential": false,
         "research_oriented": false,
         "postgrad_pathway": true,
-        "difficulty_level": "augsts",
+        "difficulty_level": "high",
         "math_intensive": true,
         "creative_component": true,
         "entry_exam_required": true,
         "entry_exam_paid": true,
         "competitive_admission": true,
-        "pathway_note": "Beidzot nepieciešams turpināt maģistrantūrā, lai iegūtu pilnvērtīgu arhitekta kvalifikāciju"
-      }
+        "pathway_note": "Beidzot nepieciešams turpināt maģistrantūrā, lai iegūtu pilnvērtīgu arhitekta kvalifikāciju",
+        "teamwork_oriented": false
+      },
+      "keywords": [
+        "architect",
+        "architectural designer",
+        "urban planner",
+        "CAD designer",
+        "BIM specialist",
+        "interior design",
+        "structural design",
+        "architectural visualization",
+        "building design",
+        "city planning"
+      ]
     },
     {
       "id": "DZOT",
@@ -1312,8 +1801,12 @@
         "duration_years": 4,
         "credits": 240,
         "format": "Pilna laika klātienes",
-        "language": ["Angļu"],
-        "locations": ["Rīga"],
+        "language": [
+          "Angļu"
+        ],
+        "locations": [
+          "Rīga"
+        ],
         "start_location": "Rīga",
         "note": "Programma izstrādāta sadarbībā ar LU un State University of New York at Buffalo. Iespēja iegūt Buffalo Universitātes grādu."
       },
@@ -1384,22 +1877,49 @@
         ]
       },
       "matching": {
-        "interest_domains": ["IT_un_programmeeshana", "datu_zinatne_un_MI"],
-        "required_strengths": ["matemātika", "programmēšana", "valodas", "analītiskā domāšana", "vadība"],
-        "personality_fit": ["analitisks", "starptautiski orientēts", "uzņēmīgs"],
-        "language_of_instruction": ["en"],
+        "interest_domains": [
+          "it_programming",
+          "data_science_ai",
+          "business_management"
+        ],
+        "required_strengths": [
+          "mathematics",
+          "programming",
+          "analytical_thinking",
+          "languages",
+          "leadership"
+        ],
+        "personality_fit": [
+          "analytical",
+          "technical",
+          "entrepreneurial"
+        ],
+        "language_of_instruction": [
+          "en"
+        ],
         "international_potential": true,
-        "research_oriented": true,
+        "research_oriented": false,
         "postgrad_pathway": true,
-        "difficulty_level": "augsts",
+        "difficulty_level": "medium",
         "math_intensive": true,
         "creative_component": false,
         "entry_exam_required": false,
         "premium_program": true,
         "dual_degree_option": true,
         "partner_university": "State University of New York at Buffalo",
-        "joint_program": true
-      }
+        "joint_program": true,
+        "teamwork_oriented": true
+      },
+      "keywords": [
+        "IT manager",
+        "information systems",
+        "cybersecurity analyst",
+        "system administrator",
+        "network security",
+        "data systems manager",
+        "digital transformation",
+        "IT governance"
+      ]
     },
     {
       "id": "VSU",
@@ -1418,8 +1938,12 @@
         "duration_years": 3,
         "credits": 180,
         "format": "Pilna laika klātienes",
-        "language": ["Angļu"],
-        "locations": ["Rīga"],
+        "language": [
+          "Angļu"
+        ],
+        "locations": [
+          "Rīga"
+        ],
         "start_location": "Rīga",
         "note": "Izstrādāta sadarbībā ar BI Norvēģijas Biznesa skolu un Bufalo Universitātes Vadības skolu. Iespēja iegūt dubulto diplomu."
       },
@@ -1475,25 +1999,54 @@
           "Finanšu analītiķis",
           "Uzņēmuma attīstības speciālists"
         ],
-        "sectors": ["bizness_un_finanses", "izglītība_un_pētniecība"]
+        "sectors": [
+          "bizness_un_finanses",
+          "izglītība_un_pētniecība"
+        ]
       },
       "matching": {
-        "interest_domains": [],
-        "required_strengths": ["valodas", "komunikācija", "vadība", "analītiskā domāšana"],
-        "personality_fit": ["uzņēmīgs", "starptautiski orientēts", "sociāli orientēts"],
-        "language_of_instruction": ["en"],
+        "interest_domains": [
+          "business_management",
+          "education_research"
+        ],
+        "required_strengths": [
+          "languages",
+          "communication",
+          "leadership",
+          "analytical_thinking",
+          "economics_finance"
+        ],
+        "personality_fit": [
+          "entrepreneurial",
+          "international",
+          "social"
+        ],
+        "language_of_instruction": [
+          "en"
+        ],
         "international_potential": true,
         "research_oriented": false,
         "postgrad_pathway": true,
-        "difficulty_level": "vidējs",
+        "difficulty_level": "medium",
         "math_intensive": false,
         "creative_component": false,
         "entry_exam_required": false,
         "premium_program": true,
         "dual_degree_option": true,
         "internship_required": true,
-        "internship_weeks": 12
-      }
+        "internship_weeks": 12,
+        "teamwork_oriented": true
+      },
+      "keywords": [
+        "international business manager",
+        "project manager",
+        "marketing manager",
+        "financial analyst",
+        "business development",
+        "export manager",
+        "global business",
+        "trade specialist"
+      ]
     },
     {
       "id": "EVKS",
@@ -1512,12 +2065,18 @@
         "duration_years": 3,
         "credits": 180,
         "format": "Pilna laika klātienes",
-        "language": ["Latviešu"],
-        "locations": ["Liepāja"],
+        "language": [
+          "Latviešu"
+        ],
+        "locations": [
+          "Liepāja"
+        ],
         "start_location": "Liepāja"
       },
       "finances": {
-        "budget_places": { "Liepāja": 30 },
+        "budget_places": {
+          "Liepāja": 30
+        },
         "annual_fee_eur": 2210,
         "fee_type": "Pilna laika klātienes"
       },
@@ -1526,8 +2085,13 @@
         "special_requirements": "Iestājpārrunas (2026: 6. un 13. jūnijā).",
         "entry_exam": true,
         "entry_exam_details": {
-          "subjects": ["iestājpārrunas"],
-          "exam_dates_2026": ["2026-06-06", "2026-06-13"]
+          "subjects": [
+            "iestājpārrunas"
+          ],
+          "exam_dates_2026": [
+            "2026-06-06",
+            "2026-06-13"
+          ]
         },
         "centralized_exams_needed": null
       },
@@ -1578,20 +2142,50 @@
         ]
       },
       "matching": {
-        "interest_domains": ["valodas_un_kulturas"],
-        "required_strengths": ["valodas", "komunikācija", "pētniecība", "analītiskā domāšana"],
-        "personality_fit": ["humanitāri orientēts", "starptautiski orientēts", "zinātniski orientēts"],
-        "language_of_instruction": ["lv"],
+        "interest_domains": [
+          "education_research",
+          "business_management"
+        ],
+        "required_strengths": [
+          "languages",
+          "communication",
+          "research",
+          "analytical_thinking"
+        ],
+        "personality_fit": [
+          "analytical",
+          "international",
+          "social"
+        ],
+        "language_of_instruction": [
+          "lv"
+        ],
         "international_potential": true,
         "research_oriented": true,
         "postgrad_pathway": true,
-        "difficulty_level": "vidējs",
+        "difficulty_level": "medium",
         "math_intensive": false,
         "creative_component": false,
         "entry_exam_required": true,
         "location": "Liepāja",
-        "languages_taught": ["angļu", "franču_vai_spāņu_vai_vācu", "latviešu"]
-      }
+        "languages_taught": [
+          "angļu",
+          "franču_vai_spāņu_vai_vācu",
+          "latviešu"
+        ],
+        "teamwork_oriented": false
+      },
+      "keywords": [
+        "translator",
+        "interpreter",
+        "language specialist",
+        "teacher",
+        "cultural studies",
+        "European languages",
+        "linguistics",
+        "communication specialist",
+        "foreign language teacher"
+      ]
     },
     {
       "id": "JMMD",
@@ -1610,12 +2204,18 @@
         "duration_years": 3,
         "credits": 180,
         "format": "Pilna laika klātienes",
-        "language": ["Latviešu"],
-        "locations": ["Liepāja"],
+        "language": [
+          "Latviešu"
+        ],
+        "locations": [
+          "Liepāja"
+        ],
         "start_location": "Liepāja"
       },
       "finances": {
-        "budget_places": { "Liepāja": 30 },
+        "budget_places": {
+          "Liepāja": 30
+        },
         "annual_fee_eur": 8090,
         "fee_type": "Pilna laika klātienes"
       },
@@ -1624,7 +2224,9 @@
         "special_requirements": "Iestājpārbaudījums (mākslas jomā).",
         "entry_exam": true,
         "entry_exam_details": {
-          "subjects": ["mākslas iestājpārbaudījums"]
+          "subjects": [
+            "mākslas iestājpārbaudījums"
+          ]
         },
         "centralized_exams_needed": null
       },
@@ -1673,19 +2275,46 @@
         ]
       },
       "matching": {
-        "interest_domains": ["maaksla_un_dizains", "radosa_industrija"],
-        "required_strengths": ["radošums", "dizains", "analītiskā domāšana"],
-        "personality_fit": ["radošs", "humanitāri orientēts", "patstāvīgs"],
-        "language_of_instruction": ["lv"],
+        "interest_domains": [
+          "art_design",
+          "it_programming"
+        ],
+        "required_strengths": [
+          "creativity",
+          "drawing_design",
+          "programming",
+          "analytical_thinking"
+        ],
+        "personality_fit": [
+          "creative",
+          "technical",
+          "analytical"
+        ],
+        "language_of_instruction": [
+          "lv"
+        ],
         "international_potential": false,
-        "research_oriented": true,
+        "research_oriented": false,
         "postgrad_pathway": true,
-        "difficulty_level": "vidējs",
+        "difficulty_level": "medium",
         "math_intensive": false,
         "creative_component": true,
         "entry_exam_required": true,
-        "location": "Liepāja"
-      }
+        "location": "Liepāja",
+        "teamwork_oriented": true
+      },
+      "keywords": [
+        "media artist",
+        "graphic designer",
+        "web designer",
+        "VR AR developer",
+        "digital art",
+        "motion graphics",
+        "UI UX designer",
+        "multimedia",
+        "game designer",
+        "visual artist"
+      ]
     },
     {
       "id": "BV",
@@ -1704,13 +2333,23 @@
         "duration_years_full_time": 3,
         "duration_years_part_time": 3.5,
         "credits": 180,
-        "format": ["Pilna laika klātienes", "Nepilna laika neklātienes"],
-        "language": ["Latviešu", "Angļu"],
-        "locations": ["Rēzekne"],
+        "format": [
+          "Pilna laika klātienes",
+          "Nepilna laika neklātienes"
+        ],
+        "language": [
+          "Latviešu",
+          "Angļu"
+        ],
+        "locations": [
+          "Rēzekne"
+        ],
         "start_location": "Rēzekne"
       },
       "finances": {
-        "budget_places": { "Rēzekne": 20 },
+        "budget_places": {
+          "Rēzekne": 20
+        },
         "annual_fee_eur": 2210,
         "fee_type": "Pilna laika klātienes un nepilna laika neklātienes"
       },
@@ -1759,24 +2398,55 @@
           "Mārketinga speciālists",
           "Finanšu vadītājs"
         ],
-        "sectors": ["bizness_un_finanses", "izglītība_un_pētniecība"]
+        "sectors": [
+          "bizness_un_finanses",
+          "izglītība_un_pētniecība"
+        ]
       },
       "matching": {
-        "interest_domains": [],
-        "required_strengths": ["vadība", "analītiskā domāšana", "komunikācija"],
-        "personality_fit": ["uzņēmīgs", "sociāli orientēts", "analitisks"],
-        "language_of_instruction": ["lv", "en"],
+        "interest_domains": [
+          "business_management",
+          "education_research"
+        ],
+        "required_strengths": [
+          "communication",
+          "leadership",
+          "economics_finance",
+          "analytical_thinking"
+        ],
+        "personality_fit": [
+          "entrepreneurial",
+          "analytical",
+          "social"
+        ],
+        "language_of_instruction": [
+          "lv",
+          "en"
+        ],
         "international_potential": false,
         "research_oriented": false,
         "postgrad_pathway": true,
-        "difficulty_level": "vidējs",
+        "difficulty_level": "medium",
         "math_intensive": false,
         "creative_component": false,
         "entry_exam_required": false,
         "part_time_available": true,
         "location": "Rēzekne",
-        "affordable": true
-      }
+        "affordable": true,
+        "teamwork_oriented": true
+      },
+      "keywords": [
+        "business manager",
+        "entrepreneur",
+        "marketing manager",
+        "HR manager",
+        "financial manager",
+        "operations manager",
+        "business consultant",
+        "SME owner",
+        "startup founder",
+        "management"
+      ]
     },
     {
       "id": "TZ",
@@ -1795,13 +2465,21 @@
         "duration_years_full_time": 3,
         "duration_years_part_time": 3.5,
         "credits": 180,
-        "format": ["Pilna laika klātienes"],
-        "language": ["Latviešu"],
-        "locations": ["Rēzekne"],
+        "format": [
+          "Pilna laika klātienes"
+        ],
+        "language": [
+          "Latviešu"
+        ],
+        "locations": [
+          "Rēzekne"
+        ],
         "start_location": "Rēzekne"
       },
       "finances": {
-        "budget_places": { "Rēzekne": 30 },
+        "budget_places": {
+          "Rēzekne": 30
+        },
         "annual_fee_eur": 2580,
         "fee_type": "Pilna laika klātienes"
       },
@@ -1847,25 +2525,56 @@
           "Bāriņtiesas darbinieks",
           "Valsts pārvaldes juridiskais darbinieks"
         ],
-        "sectors": ["tieslietas", "bizness_un_finanses"],
+        "sectors": [
+          "tieslietas",
+          "bizness_un_finanses"
+        ],
         "note": "Pilna jurista kvalifikācija prasa maģistrantūru (6. līmenis)"
       },
       "matching": {
-        "interest_domains": [],
-        "required_strengths": ["analītiskā domāšana", "komunikācija", "valodas"],
-        "personality_fit": ["analitisks", "sociāli orientēts", "humanitāri orientēts"],
-        "language_of_instruction": ["lv"],
+        "interest_domains": [
+          "education_research",
+          "business_management"
+        ],
+        "required_strengths": [
+          "analytical_thinking",
+          "communication",
+          "languages",
+          "social_sciences"
+        ],
+        "personality_fit": [
+          "analytical",
+          "precise",
+          "social"
+        ],
+        "language_of_instruction": [
+          "lv"
+        ],
         "international_potential": false,
-        "research_oriented": false,
+        "research_oriented": true,
         "postgrad_pathway": true,
-        "difficulty_level": "vidējs",
+        "difficulty_level": "medium_high",
         "math_intensive": false,
         "creative_component": false,
         "entry_exam_required": false,
         "location": "Rēzekne",
         "affordable": true,
-        "pathway_note": "Bakalaurs ir tikai pirmais solis – jurista kvalifikācijai nepieciešama maģistrantūra"
-      }
+        "pathway_note": "Bakalaurs ir tikai pirmais solis – jurista kvalifikācijai nepieciešama maģistrantūra",
+        "teamwork_oriented": false
+      },
+      "keywords": [
+        "lawyer",
+        "jurist",
+        "legal adviser",
+        "legal consultant",
+        "judge",
+        "prosecutor",
+        "notary",
+        "legal analyst",
+        "compliance officer",
+        "contract law",
+        "public law"
+      ]
     },
     {
       "id": "ITMM",
@@ -1884,12 +2593,19 @@
         "duration_years": 3,
         "credits": 180,
         "format": "Pilna laika klātienes",
-        "language": ["Latviešu", "Angļu"],
-        "locations": ["Rīga"],
+        "language": [
+          "Latviešu",
+          "Angļu"
+        ],
+        "locations": [
+          "Rīga"
+        ],
         "start_location": "Rīga"
       },
       "finances": {
-        "budget_places": { "Rīga": 35 },
+        "budget_places": {
+          "Rīga": 35
+        },
         "annual_fee_eur": 3500,
         "fee_type": "Pilna laika klātienes"
       },
@@ -1946,39 +2662,235 @@
         ]
       },
       "matching": {
-        "interest_domains": ["mehaanika_un_maashiinbuuve", "robotika_un_automatizacija"],
-        "required_strengths": ["matemātika", "fizika", "tehniskā domāšana", "analītiskā domāšana"],
-        "personality_fit": ["tehniski orientēts", "analitisks", "praktiski orientēts"],
-        "language_of_instruction": ["lv", "en"],
+        "interest_domains": [
+          "mechanics_engineering",
+          "robotics_automation",
+          "transport_aviation"
+        ],
+        "required_strengths": [
+          "mathematics",
+          "physics",
+          "technical_thinking",
+          "analytical_thinking",
+          "practical_skills"
+        ],
+        "personality_fit": [
+          "analytical",
+          "technical",
+          "practical"
+        ],
+        "language_of_instruction": [
+          "lv",
+          "en"
+        ],
         "international_potential": true,
         "research_oriented": false,
         "postgrad_pathway": true,
-        "difficulty_level": "vidējs-augsts",
+        "difficulty_level": "medium_high",
         "math_intensive": true,
         "creative_component": false,
-        "entry_exam_required": false
-      }
+        "entry_exam_required": false,
+        "teamwork_oriented": true
+      },
+      "keywords": [
+        "mechanical engineer",
+        "machine engineer",
+        "manufacturing engineer",
+        "robotics engineer",
+        "mechatronics",
+        "CAD designer",
+        "industrial engineering",
+        "product design",
+        "metal processing"
+      ]
     }
   ],
   "quick_filter_presets": {
-    "without_entry_exam": ["ATSI", "BUV_EN", "BTBI", "MATI", "VIDE", "KKT", "DS", "IT", "TTDP", "VDT", "RIND", "DZOT", "VSU", "BV", "TZ", "ITMM"],
-    "with_entry_exam": ["IRS", "ARH", "EVKS", "JMMD"],
-    "in_english": ["BUV_EN", "BTBI", "DZOT", "VSU"],
-    "bilingual_lv_en": ["ATSI", "MATI", "VIDE", "KKT", "DS", "TTDP", "BV", "ITMM"],
-    "only_latvian": ["IT", "IRS", "VDT", "RIND", "ARH", "EVKS", "JMMD", "TZ"],
-    "rīga": ["ATSI", "BUV_EN", "BTBI", "MATI", "VIDE", "KKT", "DS", "IT", "IRS", "TTDP", "VDT", "RIND", "ARH", "DZOT", "VSU", "ITMM"],
-    "rēzekne": ["DS", "BV", "TZ"],
-    "liepāja": ["DS", "EVKS", "JMMD"],
-    "has_budget_places": ["ATSI", "BTBI", "MATI", "VIDE", "KKT", "DS", "IT", "IRS", "TTDP", "VDT", "RIND", "ARH", "BV", "TZ", "ITMM", "EVKS", "JMMD"],
-    "no_budget_places": ["BUV_EN", "DZOT", "VSU"],
-    "4_year_programs": ["ATSI", "KKT", "DZOT"],
-    "3_year_programs": ["BUV_EN", "BTBI", "MATI", "VIDE", "DS", "IT", "IRS", "TTDP", "VDT", "RIND", "VSU", "EVKS", "JMMD", "BV", "TZ", "ITMM"],
-    "3_5_year_programs": ["ARH"],
-    "math_heavy": ["ATSI", "MATI", "VIDE", "KKT", "DS", "IT", "IRS", "TTDP", "VDT", "DZOT", "ITMM", "ARH"],
-    "creative_component": ["RIND", "ARH", "VDT", "JMMD"],
-    "research_oriented": ["ATSI", "BTBI", "MATI", "VIDE", "KKT", "TTDP", "IRS", "DZOT", "EVKS", "JMMD"],
-    "affordable_under_3000": ["EVKS", "BV"],
-    "affordable_3000_4000": ["ATSI", "BUV_EN", "BTBI", "MATI", "VIDE", "KKT", "DS", "IT", "IRS", "TTDP", "VDT", "RIND", "ITMM", "TZ"],
-    "premium_over_5000": ["ARH", "JMMD", "VSU", "DZOT"]
+    "without_entry_exam": [
+      "ATSI",
+      "BUV_EN",
+      "BTBI",
+      "MATI",
+      "VIDE",
+      "KKT",
+      "DS",
+      "IT",
+      "TTDP",
+      "VDT",
+      "RIND",
+      "DZOT",
+      "VSU",
+      "BV",
+      "TZ",
+      "ITMM"
+    ],
+    "with_entry_exam": [
+      "IRS",
+      "ARH",
+      "EVKS",
+      "JMMD"
+    ],
+    "in_english": [
+      "BUV_EN",
+      "BTBI",
+      "DZOT",
+      "VSU"
+    ],
+    "bilingual_lv_en": [
+      "ATSI",
+      "MATI",
+      "VIDE",
+      "KKT",
+      "DS",
+      "TTDP",
+      "BV",
+      "ITMM"
+    ],
+    "only_latvian": [
+      "IT",
+      "IRS",
+      "VDT",
+      "RIND",
+      "ARH",
+      "EVKS",
+      "JMMD",
+      "TZ"
+    ],
+    "rīga": [
+      "ATSI",
+      "BUV_EN",
+      "BTBI",
+      "MATI",
+      "VIDE",
+      "KKT",
+      "DS",
+      "IT",
+      "IRS",
+      "TTDP",
+      "VDT",
+      "RIND",
+      "ARH",
+      "DZOT",
+      "VSU",
+      "ITMM"
+    ],
+    "rēzekne": [
+      "DS",
+      "BV",
+      "TZ"
+    ],
+    "liepāja": [
+      "DS",
+      "EVKS",
+      "JMMD"
+    ],
+    "has_budget_places": [
+      "ATSI",
+      "BTBI",
+      "MATI",
+      "VIDE",
+      "KKT",
+      "DS",
+      "IT",
+      "IRS",
+      "TTDP",
+      "VDT",
+      "RIND",
+      "ARH",
+      "BV",
+      "TZ",
+      "ITMM",
+      "EVKS",
+      "JMMD"
+    ],
+    "no_budget_places": [
+      "BUV_EN",
+      "DZOT",
+      "VSU"
+    ],
+    "4_year_programs": [
+      "ATSI",
+      "KKT",
+      "DZOT"
+    ],
+    "3_year_programs": [
+      "BUV_EN",
+      "BTBI",
+      "MATI",
+      "VIDE",
+      "DS",
+      "IT",
+      "IRS",
+      "TTDP",
+      "VDT",
+      "RIND",
+      "VSU",
+      "EVKS",
+      "JMMD",
+      "BV",
+      "TZ",
+      "ITMM"
+    ],
+    "3_5_year_programs": [
+      "ARH"
+    ],
+    "math_heavy": [
+      "ATSI",
+      "MATI",
+      "VIDE",
+      "KKT",
+      "DS",
+      "IT",
+      "IRS",
+      "TTDP",
+      "VDT",
+      "DZOT",
+      "ITMM",
+      "ARH"
+    ],
+    "creative_component": [
+      "RIND",
+      "ARH",
+      "VDT",
+      "JMMD"
+    ],
+    "research_oriented": [
+      "ATSI",
+      "BTBI",
+      "MATI",
+      "VIDE",
+      "KKT",
+      "TTDP",
+      "IRS",
+      "DZOT",
+      "EVKS",
+      "JMMD"
+    ],
+    "affordable_under_3000": [
+      "EVKS",
+      "BV"
+    ],
+    "affordable_3000_4000": [
+      "ATSI",
+      "BUV_EN",
+      "BTBI",
+      "MATI",
+      "VIDE",
+      "KKT",
+      "DS",
+      "IT",
+      "IRS",
+      "TTDP",
+      "VDT",
+      "RIND",
+      "ITMM",
+      "TZ"
+    ],
+    "premium_over_5000": [
+      "ARH",
+      "JMMD",
+      "VSU",
+      "DZOT"
+    ]
   }
 }

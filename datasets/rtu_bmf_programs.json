@@ -72,12 +72,21 @@
           "part_time_correspondence": 5
         },
         "credits": 270,
-        "formats": ["Pilna laika klātienes", "Nepilna laika neklātienes"],
-        "languages": ["Latviešu"],
-        "locations": ["Rīga"]
+        "formats": [
+          "Pilna laika klātienes",
+          "Nepilna laika neklātienes"
+        ],
+        "languages": [
+          "Latviešu"
+        ],
+        "locations": [
+          "Rīga"
+        ]
       },
       "finances": {
-        "budget_places": { "Rīga": 60 },
+        "budget_places": {
+          "Rīga": 60
+        },
         "annual_fee_eur": {
           "full_time": 3500,
           "part_time": 3300
@@ -87,8 +96,16 @@
         "prior_education": "Vidējā izglītība",
         "entry_exam": true,
         "entry_exam_details": {
-          "subjects": ["matemātika", "fizika", "loģika", "sadarbības spējas"],
-          "dates_2026": ["6. jūnijs", "13. jūnijs"],
+          "subjects": [
+            "matemātika",
+            "fizika",
+            "loģika",
+            "sadarbības spējas"
+          ],
+          "dates_2026": [
+            "6. jūnijs",
+            "13. jūnijs"
+          ],
           "paid": false
         },
         "special_requirements": null
@@ -129,22 +146,55 @@
           "Transporta sistēmu speciālists",
           "Tehniskās ekspluatācijas vadītājs"
         ],
-        "sectors": ["Transports un loģistika", "Rūpnieciskā ražošana", "Izglītība un zinātne", "Autosports"]
+        "sectors": [
+          "Transports un loģistika",
+          "Rūpnieciskā ražošana",
+          "Izglītība un zinātne",
+          "Autosports"
+        ]
       },
       "matching": {
-        "interest_domains": ["inzenierija", "transports"],
-        "required_strengths": ["matematika", "fizika", "lieriskas_prasmes", "analitika"],
-        "personality_fit": ["analytisks", "praktisks", "pedants"],
-        "language_of_instruction": ["Latviešu"],
+        "interest_domains": [
+          "transport_aviation",
+          "mechanics_engineering"
+        ],
+        "required_strengths": [
+          "mathematics",
+          "physics",
+          "technical_thinking",
+          "practical_skills",
+          "analytical_thinking"
+        ],
+        "personality_fit": [
+          "technical",
+          "practical",
+          "analytical"
+        ],
+        "language_of_instruction": [
+          "Latviešu"
+        ],
         "math_intensive": true,
         "creative_component": false,
         "entry_exam_required": true,
         "entry_exam_type": "standard",
         "part_time_available": true,
-        "difficulty_level": "videja-augsta",
+        "difficulty_level": "medium_high",
         "research_oriented": false,
-        "postgrad_pathway": true
-      }
+        "postgrad_pathway": true,
+        "teamwork_oriented": true
+      },
+      "keywords": [
+        "automotive engineer",
+        "vehicle technician",
+        "transport engineer",
+        "fleet manager",
+        "car mechanic",
+        "automobile design",
+        "transport systems",
+        "vehicle inspection",
+        "powertrain",
+        "chassis"
+      ]
     },
     {
       "id": "AVT",
@@ -169,12 +219,21 @@
           "full_time": 4
         },
         "credits": 240,
-        "formats": ["Pilna laika klātienes"],
-        "languages": ["Latviešu", "Angļu"],
-        "locations": ["Rīga"]
+        "formats": [
+          "Pilna laika klātienes"
+        ],
+        "languages": [
+          "Latviešu",
+          "Angļu"
+        ],
+        "locations": [
+          "Rīga"
+        ]
       },
       "finances": {
-        "budget_places": { "Rīga": 60 },
+        "budget_places": {
+          "Rīga": 60
+        },
         "annual_fee_eur": {
           "full_time": 3500
         }
@@ -222,24 +281,55 @@
           "Avionikas speciālists",
           "Aviācijas tehnikas pētnieks"
         ],
-        "sectors": ["Aviācija un gaisa transports", "Starptautiskie uzņēmumi"]
+        "sectors": [
+          "Aviācija un gaisa transports",
+          "Starptautiskie uzņēmumi"
+        ]
       },
       "matching": {
-        "interest_domains": ["inzenierija", "transports", "elektronika_it"],
-        "required_strengths": ["matematika", "fizika", "lieriskas_prasmes", "analitika"],
-        "personality_fit": ["analytisks", "praktisks", "pedants", "avantūrists"],
-        "language_of_instruction": ["Latviešu", "Angļu"],
+        "interest_domains": [
+          "transport_aviation",
+          "mechanics_engineering",
+          "electronics_telecom"
+        ],
+        "required_strengths": [
+          "mathematics",
+          "physics",
+          "technical_thinking",
+          "practical_skills"
+        ],
+        "personality_fit": [
+          "technical",
+          "practical",
+          "precise"
+        ],
+        "language_of_instruction": [
+          "Latviešu",
+          "Angļu"
+        ],
         "math_intensive": true,
         "creative_component": false,
         "entry_exam_required": false,
         "entry_exam_type": "none",
         "part_time_available": false,
-        "difficulty_level": "augsta",
+        "difficulty_level": "high",
         "research_oriented": false,
         "postgrad_pathway": true,
         "international_certification": true,
-        "english_required_b2": true
-      }
+        "english_required_b2": true,
+        "teamwork_oriented": true
+      },
+      "keywords": [
+        "aviation technician",
+        "aircraft maintenance engineer",
+        "avionics specialist",
+        "aeronautics",
+        "flight engineer",
+        "aircraft inspector",
+        "aerospace maintenance",
+        "aviation safety",
+        "helicopter technician"
+      ]
     },
     {
       "id": "BUV_PRO",
@@ -257,7 +347,12 @@
         "title_en": "Professional Bachelor's Degree in Construction",
         "professional_qualification": "Ēku būvinženiera kvalifikācija",
         "ekf_level": 6,
-        "profession_classifier_codes": ["2142 01", "2141 02", "2142 05", "2142 27"]
+        "profession_classifier_codes": [
+          "2142 01",
+          "2141 02",
+          "2142 05",
+          "2142 27"
+        ]
       },
       "logistics": {
         "duration_years": {
@@ -265,12 +360,21 @@
           "part_time_correspondence": 5
         },
         "credits": 270,
-        "formats": ["Pilna laika klātienes", "Nepilna laika neklātienes"],
-        "languages": ["Latviešu"],
-        "locations": ["Rīga"]
+        "formats": [
+          "Pilna laika klātienes",
+          "Nepilna laika neklātienes"
+        ],
+        "languages": [
+          "Latviešu"
+        ],
+        "locations": [
+          "Rīga"
+        ]
       },
       "finances": {
-        "budget_places": { "Rīga": 110 },
+        "budget_places": {
+          "Rīga": 110
+        },
         "annual_fee_eur": {
           "full_time": 4300,
           "part_time": 3470
@@ -280,8 +384,16 @@
         "prior_education": "Vidējā izglītība",
         "entry_exam": true,
         "entry_exam_details": {
-          "subjects": ["matemātika", "fizika", "loģika", "sadarbības spējas"],
-          "dates_2026": ["6. jūnijs", "13. jūnijs"],
+          "subjects": [
+            "matemātika",
+            "fizika",
+            "loģika",
+            "sadarbības spējas"
+          ],
+          "dates_2026": [
+            "6. jūnijs",
+            "13. jūnijs"
+          ],
           "paid": false
         },
         "special_requirements": "Obligātā prakse — vismaz 26 nedēļas"
@@ -323,24 +435,55 @@
           "Būvdarbu vadītājs",
           "Konstrukciju inženieris"
         ],
-        "sectors": ["Būvniecība un nekustamais īpašums", "Rūpnieciskā ražošana", "Valsts iestādes"]
+        "sectors": [
+          "Būvniecība un nekustamais īpašums",
+          "Rūpnieciskā ražošana",
+          "Valsts iestādes"
+        ]
       },
       "matching": {
-        "interest_domains": ["celtnieciba", "inzenierija"],
-        "required_strengths": ["matematika", "fizika", "analitika", "lieriskas_prasmes"],
-        "personality_fit": ["analytisks", "praktisks", "pedants"],
-        "language_of_instruction": ["Latviešu"],
+        "interest_domains": [
+          "construction_civil",
+          "architecture"
+        ],
+        "required_strengths": [
+          "mathematics",
+          "physics",
+          "analytical_thinking",
+          "practical_skills",
+          "technical_thinking"
+        ],
+        "personality_fit": [
+          "technical",
+          "practical",
+          "precise"
+        ],
+        "language_of_instruction": [
+          "Latviešu"
+        ],
         "math_intensive": true,
         "creative_component": false,
         "entry_exam_required": true,
         "entry_exam_type": "standard",
         "part_time_available": true,
-        "difficulty_level": "augsta",
+        "difficulty_level": "medium_high",
         "research_oriented": false,
         "postgrad_pathway": true,
         "internship_weeks_min": 26,
-        "most_budget_places_bmf": true
-      }
+        "most_budget_places_bmf": true,
+        "teamwork_oriented": true
+      },
+      "keywords": [
+        "civil engineer",
+        "construction engineer",
+        "building engineer",
+        "project manager",
+        "structural engineer",
+        "construction site manager",
+        "building regulations",
+        "infrastructure",
+        "BIM"
+      ]
     },
     {
       "id": "IND",
@@ -367,12 +510,20 @@
           "full_time": 4
         },
         "credits": 240,
-        "formats": ["Pilna laika klātienes"],
-        "languages": ["Latviešu"],
-        "locations": ["Rīga"]
+        "formats": [
+          "Pilna laika klātienes"
+        ],
+        "languages": [
+          "Latviešu"
+        ],
+        "locations": [
+          "Rīga"
+        ]
       },
       "finances": {
-        "budget_places": { "Rīga": 30 },
+        "budget_places": {
+          "Rīga": 30
+        },
         "annual_fee_eur": {
           "full_time": 3500
         }
@@ -381,8 +532,12 @@
         "prior_education": "Vidējā izglītība",
         "entry_exam": true,
         "entry_exam_details": {
-          "subjects": ["zīmēšana"],
-          "dates_2026": ["6. jūnijs"],
+          "subjects": [
+            "zīmēšana"
+          ],
+          "dates_2026": [
+            "6. jūnijs"
+          ],
           "paid": true
         },
         "special_requirements": "Maksas iestājpārbaudījums zīmēšanā"
@@ -426,22 +581,53 @@
           "Izstrādājumu projektētājs",
           "Rūpnieciskā dizainera inženieris"
         ],
-        "sectors": ["Radošās nozares un dizains", "Rūpnieciskā ražošana", "Uzņēmējdarbība"]
+        "sectors": [
+          "Radošās nozares un dizains",
+          "Rūpnieciskā ražošana",
+          "Uzņēmējdarbība"
+        ]
       },
       "matching": {
-        "interest_domains": ["dizains", "inzenierija"],
-        "required_strengths": ["rada", "zimesana", "matematika", "lieriskas_prasmes"],
-        "personality_fit": ["radoss", "analytisks", "praktisks"],
-        "language_of_instruction": ["Latviešu"],
+        "interest_domains": [
+          "art_design",
+          "mechanics_engineering"
+        ],
+        "required_strengths": [
+          "creativity",
+          "drawing_design",
+          "technical_thinking",
+          "mathematics",
+          "practical_skills"
+        ],
+        "personality_fit": [
+          "creative",
+          "technical",
+          "practical"
+        ],
+        "language_of_instruction": [
+          "Latviešu"
+        ],
         "math_intensive": false,
         "creative_component": true,
         "entry_exam_required": true,
         "entry_exam_type": "drawing_paid",
         "part_time_available": false,
-        "difficulty_level": "videja",
+        "difficulty_level": "medium",
         "research_oriented": false,
-        "postgrad_pathway": true
-      }
+        "postgrad_pathway": true,
+        "teamwork_oriented": true
+      },
+      "keywords": [
+        "industrial designer",
+        "product designer",
+        "design consultant",
+        "prototype developer",
+        "ergonomic design",
+        "CAD designer",
+        "manufacturing design",
+        "3D modelling",
+        "product development"
+      ]
     },
     {
       "id": "MAB",
@@ -466,9 +652,16 @@
           "part_time_correspondence": 5
         },
         "credits": 240,
-        "formats": ["Pilna laika klātienes", "Nepilna laika neklātienes"],
-        "languages": ["Latviešu"],
-        "locations": ["Rīga"],
+        "formats": [
+          "Pilna laika klātienes",
+          "Nepilna laika neklātienes"
+        ],
+        "languages": [
+          "Latviešu"
+        ],
+        "locations": [
+          "Rīga"
+        ],
         "specializations": [
           "Tehnoloģiskais un projektēšanas virziens",
           "Metalurģijas virziens",
@@ -476,7 +669,9 @@
         ]
       },
       "finances": {
-        "budget_places": { "Rīga": 30 },
+        "budget_places": {
+          "Rīga": 30
+        },
         "annual_fee_eur": {
           "full_time": 3500,
           "part_time": 3300
@@ -527,23 +722,55 @@
           "Tehnoloģu inženieris",
           "Metalurģijas speciālists"
         ],
-        "sectors": ["Rūpnieciskā ražošana", "Transports un loģistika", "Būvniecība", "Metālapstrāde"]
+        "sectors": [
+          "Rūpnieciskā ražošana",
+          "Transports un loģistika",
+          "Būvniecība",
+          "Metālapstrāde"
+        ]
       },
       "matching": {
-        "interest_domains": ["inzenierija"],
-        "required_strengths": ["matematika", "fizika", "lieriskas_prasmes", "analitika"],
-        "personality_fit": ["analytisks", "praktisks", "pedants"],
-        "language_of_instruction": ["Latviešu"],
+        "interest_domains": [
+          "mechanics_engineering",
+          "robotics_automation"
+        ],
+        "required_strengths": [
+          "mathematics",
+          "physics",
+          "technical_thinking",
+          "practical_skills",
+          "analytical_thinking"
+        ],
+        "personality_fit": [
+          "technical",
+          "practical",
+          "precise"
+        ],
+        "language_of_instruction": [
+          "Latviešu"
+        ],
         "math_intensive": true,
         "creative_component": false,
         "entry_exam_required": false,
         "entry_exam_type": "none",
         "part_time_available": true,
-        "difficulty_level": "videja-augsta",
+        "difficulty_level": "medium_high",
         "research_oriented": false,
         "postgrad_pathway": true,
-        "specialization_count": 3
-      }
+        "specialization_count": 3,
+        "teamwork_oriented": true
+      },
+      "keywords": [
+        "mechanical engineer",
+        "machine engineer",
+        "apparatus engineer",
+        "manufacturing engineer",
+        "factory equipment",
+        "industrial machinery",
+        "production engineer",
+        "CAD modelling",
+        "mechanical design"
+      ]
     },
     {
       "id": "MIF",
@@ -562,7 +789,9 @@
         "professional_qualification": "Medicīnas fizikālo tehnoloģiju inženiera kvalifikācija",
         "ekf_level": 6,
         "joint_program": true,
-        "joint_partners": ["Rīgas Stradiņa universitāte (RSU)"],
+        "joint_partners": [
+          "Rīgas Stradiņa universitāte (RSU)"
+        ],
         "diploma_note": "Absolventi iegūst kopīgu RSU un RTU diplomu"
       },
       "logistics": {
@@ -570,12 +799,21 @@
           "full_time": 4.5
         },
         "credits": 270,
-        "formats": ["Pilna laika klātienes"],
-        "languages": ["Latviešu", "Angļu"],
-        "locations": ["Rīga"]
+        "formats": [
+          "Pilna laika klātienes"
+        ],
+        "languages": [
+          "Latviešu",
+          "Angļu"
+        ],
+        "locations": [
+          "Rīga"
+        ]
       },
       "finances": {
-        "budget_places": { "Rīga": 60 },
+        "budget_places": {
+          "Rīga": 60
+        },
         "annual_fee_eur": {
           "full_time": 4500
         }
@@ -625,25 +863,58 @@
           "Medicīnisko iekārtu apkopes speciālists",
           "Biomedicīnas pētnieks"
         ],
-        "sectors": ["Veselības aprūpe", "Rūpnieciskā ražošana", "Zinātne un pētniecība"]
+        "sectors": [
+          "Veselības aprūpe",
+          "Rūpnieciskā ražošana",
+          "Zinātne un pētniecība"
+        ]
       },
       "matching": {
-        "interest_domains": ["inzenierija", "medicinas_tehnologija"],
-        "required_strengths": ["matematika", "fizika", "analitika"],
-        "personality_fit": ["analytisks", "pedants"],
-        "language_of_instruction": ["Latviešu", "Angļu"],
+        "interest_domains": [
+          "medical_technology",
+          "electronics_telecom",
+          "data_science_ai"
+        ],
+        "required_strengths": [
+          "mathematics",
+          "physics",
+          "analytical_thinking",
+          "practical_skills",
+          "technical_thinking"
+        ],
+        "personality_fit": [
+          "scientific",
+          "analytical",
+          "precise"
+        ],
+        "language_of_instruction": [
+          "Latviešu",
+          "Angļu"
+        ],
         "math_intensive": true,
         "creative_component": false,
         "entry_exam_required": false,
         "entry_exam_type": "none",
         "part_time_available": false,
-        "difficulty_level": "augsta",
+        "difficulty_level": "high",
         "research_oriented": true,
         "postgrad_pathway": true,
         "joint_program": true,
         "dual_diploma": true,
-        "english_required_b2": true
-      }
+        "english_required_b2": true,
+        "teamwork_oriented": true
+      },
+      "keywords": [
+        "medical physicist",
+        "biomedical engineer",
+        "medical device engineer",
+        "radiation safety",
+        "medical equipment",
+        "healthcare technology",
+        "hospital technician",
+        "medical imaging",
+        "dosimetry"
+      ]
     },
     {
       "id": "MEH",
@@ -670,9 +941,17 @@
           "full_time": 4
         },
         "credits": 240,
-        "formats": ["Pilna laika klātienes"],
-        "languages": ["Latviešu"],
-        "locations": ["Rīga", "Rēzekne", "Liepāja"],
+        "formats": [
+          "Pilna laika klātienes"
+        ],
+        "languages": [
+          "Latviešu"
+        ],
+        "locations": [
+          "Rīga",
+          "Rēzekne",
+          "Liepāja"
+        ],
         "regional_notes": "RTU Liepājas akadēmijā — 20 budžeta vietas; RTU Rēzeknes akadēmijā — 30 budžeta vietas"
       },
       "finances": {
@@ -730,24 +1009,61 @@
           "Robotikas speciālists",
           "Industriālās automatizācijas speciālists"
         ],
-        "sectors": ["Rūpnieciskā ražošana", "Informācijas tehnoloģijas", "Enerģētika", "Robotika"]
+        "sectors": [
+          "Rūpnieciskā ražošana",
+          "Informācijas tehnoloģijas",
+          "Enerģētika",
+          "Robotika"
+        ]
       },
       "matching": {
-        "interest_domains": ["inzenierija", "elektronika_it"],
-        "required_strengths": ["matematika", "fizika", "programmesana", "lieriskas_prasmes"],
-        "personality_fit": ["analytisks", "praktisks", "pedants"],
-        "language_of_instruction": ["Latviešu"],
+        "interest_domains": [
+          "robotics_automation",
+          "electronics_telecom",
+          "mechanics_engineering"
+        ],
+        "required_strengths": [
+          "mathematics",
+          "physics",
+          "programming",
+          "practical_skills",
+          "technical_thinking"
+        ],
+        "personality_fit": [
+          "technical",
+          "practical",
+          "analytical"
+        ],
+        "language_of_instruction": [
+          "Latviešu"
+        ],
         "math_intensive": true,
         "creative_component": false,
         "entry_exam_required": false,
         "entry_exam_type": "none",
         "part_time_available": false,
-        "difficulty_level": "videja-augsta",
+        "difficulty_level": "medium_high",
         "research_oriented": false,
         "postgrad_pathway": true,
-        "available_in_regions": ["Rīga", "Rēzekne", "Liepāja"],
-        "total_budget_places": 110
-      }
+        "available_in_regions": [
+          "Rīga",
+          "Rēzekne",
+          "Liepāja"
+        ],
+        "total_budget_places": 110,
+        "teamwork_oriented": true
+      },
+      "keywords": [
+        "mechatronics engineer",
+        "automation engineer",
+        "robotics specialist",
+        "industrial automation",
+        "PLC programmer",
+        "control systems",
+        "embedded systems",
+        "machine design",
+        "servo drives"
+      ]
     },
     {
       "id": "SGU",
@@ -772,13 +1088,22 @@
           "part_time_correspondence": 6
         },
         "credits": 300,
-        "formats": ["Pilna laika klātienes", "Nepilna laika neklātienes"],
-        "languages": ["Latviešu"],
-        "locations": ["Rīga"],
+        "formats": [
+          "Pilna laika klātienes",
+          "Nepilna laika neklātienes"
+        ],
+        "languages": [
+          "Latviešu"
+        ],
+        "locations": [
+          "Rīga"
+        ],
         "note": "Garākā un ar lielāko kredītpunktu skaitu RTU profesionālā bakalaura programma — 300 KP, 5 gadi pilna laika"
       },
       "finances": {
-        "budget_places": { "Rīga": 30 },
+        "budget_places": {
+          "Rīga": 30
+        },
         "annual_fee_eur": {
           "full_time": 4300,
           "part_time": 3470
@@ -828,25 +1153,58 @@
           "Kanalizācijas sistēmu inženieris",
           "Gāzes apgādes inženieris"
         ],
-        "sectors": ["Būvniecība", "Enerģētika", "Vides aizsardzība", "Komunālie pakalpojumi"]
+        "sectors": [
+          "Būvniecība",
+          "Enerģētika",
+          "Vides aizsardzība",
+          "Komunālie pakalpojumi"
+        ]
       },
       "matching": {
-        "interest_domains": ["celtnieciba", "inzenierija", "energetika"],
-        "required_strengths": ["matematika", "fizika", "analitika"],
-        "personality_fit": ["analytisks", "praktisks"],
-        "language_of_instruction": ["Latviešu"],
+        "interest_domains": [
+          "energy_power",
+          "construction_civil",
+          "environment_sustainability"
+        ],
+        "required_strengths": [
+          "mathematics",
+          "physics",
+          "analytical_thinking",
+          "practical_skills",
+          "technical_thinking"
+        ],
+        "personality_fit": [
+          "technical",
+          "practical",
+          "analytical"
+        ],
+        "language_of_instruction": [
+          "Latviešu"
+        ],
         "math_intensive": true,
         "creative_component": false,
         "entry_exam_required": false,
         "entry_exam_type": "none",
         "part_time_available": true,
-        "difficulty_level": "augsta",
-        "research_oriented": true,
+        "difficulty_level": "medium",
+        "research_oriented": false,
         "postgrad_pathway": true,
         "internship_weeks_min": 24,
         "longest_program_rtu": true,
-        "max_credits_rtu": true
-      }
+        "max_credits_rtu": true,
+        "teamwork_oriented": true
+      },
+      "keywords": [
+        "HVAC engineer",
+        "heating engineer",
+        "plumbing engineer",
+        "water supply engineer",
+        "gas systems engineer",
+        "building services",
+        "energy efficiency",
+        "district heating",
+        "sustainable building"
+      ]
     },
     {
       "id": "SET",
@@ -871,9 +1229,15 @@
           "part_time_correspondence": 5
         },
         "credits": 240,
-        "formats": ["Nepilna laika neklātienes"],
-        "languages": ["Latviešu"],
-        "locations": ["Rīga"],
+        "formats": [
+          "Nepilna laika neklātienes"
+        ],
+        "languages": [
+          "Latviešu"
+        ],
+        "locations": [
+          "Rīga"
+        ],
         "note": "Pieejama tikai neklātienes formā. Nav budžeta vietu. Paredzēta strādājošiem speciālistiem."
       },
       "finances": {
@@ -924,26 +1288,58 @@
           "Energoapgādes inženieris",
           "Katlu mājas speciālists"
         ],
-        "sectors": ["Enerģētika", "Rūpnieciskā ražošana", "Vides aizsardzība", "Komunālie pakalpojumi"]
+        "sectors": [
+          "Enerģētika",
+          "Rūpnieciskā ražošana",
+          "Vides aizsardzība",
+          "Komunālie pakalpojumi"
+        ]
       },
       "matching": {
-        "interest_domains": ["energetika", "inzenierija"],
-        "required_strengths": ["matematika", "fizika", "analitika"],
-        "personality_fit": ["analytisks", "praktisks"],
-        "language_of_instruction": ["Latviešu"],
+        "interest_domains": [
+          "energy_power",
+          "mechanics_engineering"
+        ],
+        "required_strengths": [
+          "mathematics",
+          "physics",
+          "analytical_thinking",
+          "technical_thinking",
+          "practical_skills"
+        ],
+        "personality_fit": [
+          "technical",
+          "analytical",
+          "practical"
+        ],
+        "language_of_instruction": [
+          "Latviešu"
+        ],
         "math_intensive": true,
         "creative_component": false,
         "entry_exam_required": false,
         "entry_exam_type": "none",
         "part_time_available": true,
         "full_time_available": false,
-        "difficulty_level": "videja",
+        "difficulty_level": "medium_high",
         "research_oriented": false,
         "postgrad_pathway": true,
         "correspondence_only": true,
         "no_budget_places": true,
-        "suitable_for_working_professionals": true
-      }
+        "suitable_for_working_professionals": true,
+        "teamwork_oriented": true
+      },
+      "keywords": [
+        "thermal engineer",
+        "heat engineer",
+        "energy engineer",
+        "boiler engineer",
+        "power plant engineer",
+        "district heating",
+        "steam technology",
+        "energy efficiency",
+        "thermal systems"
+      ]
     },
     {
       "id": "TRB",
@@ -968,12 +1364,21 @@
           "part_time_correspondence": 5
         },
         "credits": 270,
-        "formats": ["Pilna laika klātienes", "Nepilna laika neklātienes"],
-        "languages": ["Latviešu"],
-        "locations": ["Rīga"]
+        "formats": [
+          "Pilna laika klātienes",
+          "Nepilna laika neklātienes"
+        ],
+        "languages": [
+          "Latviešu"
+        ],
+        "locations": [
+          "Rīga"
+        ]
       },
       "finances": {
-        "budget_places": { "Rīga": 30 },
+        "budget_places": {
+          "Rīga": 30
+        },
         "annual_fee_eur": {
           "full_time": 4300,
           "part_time": 3470
@@ -1023,22 +1428,53 @@
           "Būvprojektu vadītājs",
           "Infrastruktūras inženieris"
         ],
-        "sectors": ["Būvniecība", "Transports un loģistika", "Valsts un pašvaldību iestādes"]
+        "sectors": [
+          "Būvniecība",
+          "Transports un loģistika",
+          "Valsts un pašvaldību iestādes"
+        ]
       },
       "matching": {
-        "interest_domains": ["celtnieciba", "inzenierija", "transports"],
-        "required_strengths": ["matematika", "fizika", "analitika"],
-        "personality_fit": ["analytisks", "praktisks", "leadership"],
-        "language_of_instruction": ["Latviešu"],
+        "interest_domains": [
+          "construction_civil",
+          "transport_aviation"
+        ],
+        "required_strengths": [
+          "mathematics",
+          "physics",
+          "analytical_thinking",
+          "technical_thinking",
+          "practical_skills"
+        ],
+        "personality_fit": [
+          "technical",
+          "analytical",
+          "practical"
+        ],
+        "language_of_instruction": [
+          "Latviešu"
+        ],
         "math_intensive": true,
         "creative_component": false,
         "entry_exam_required": false,
         "entry_exam_type": "none",
         "part_time_available": true,
-        "difficulty_level": "augsta",
-        "research_oriented": true,
-        "postgrad_pathway": true
-      }
+        "difficulty_level": "medium_high",
+        "research_oriented": false,
+        "postgrad_pathway": true,
+        "teamwork_oriented": true
+      },
+      "keywords": [
+        "transport structures engineer",
+        "road engineer",
+        "bridge engineer",
+        "infrastructure engineer",
+        "highway designer",
+        "railway engineer",
+        "structural engineer",
+        "tunnel engineer",
+        "road construction"
+      ]
     },
     {
       "id": "GEO",
@@ -1063,9 +1499,16 @@
           "part_time_correspondence": 5
         },
         "credits": 270,
-        "formats": ["Pilna laika klātienes", "Nepilna laika neklātienes"],
-        "languages": ["Latviešu"],
-        "locations": ["Rīga"],
+        "formats": [
+          "Pilna laika klātienes",
+          "Nepilna laika neklātienes"
+        ],
+        "languages": [
+          "Latviešu"
+        ],
+        "locations": [
+          "Rīga"
+        ],
         "specializations": [
           "Ģeodēzija",
           "Mērniecība",
@@ -1073,7 +1516,9 @@
         ]
       },
       "finances": {
-        "budget_places": { "Rīga": 30 },
+        "budget_places": {
+          "Rīga": 30
+        },
         "annual_fee_eur": {
           "full_time": 3730,
           "part_time": 2990
@@ -1123,74 +1568,269 @@
           "Zemes pārvaldības speciālists",
           "GIS speciālists"
         ],
-        "sectors": ["Būvniecība un infrastruktūra", "Vides aizsardzība", "Valsts iestādes", "Nekustamais īpašums"]
+        "sectors": [
+          "Būvniecība un infrastruktūra",
+          "Vides aizsardzība",
+          "Valsts iestādes",
+          "Nekustamais īpašums"
+        ]
       },
       "matching": {
-        "interest_domains": ["celtnieciba", "inzenierija"],
-        "required_strengths": ["matematika", "fizika", "analitika", "lieriskas_prasmes"],
-        "personality_fit": ["analytisks", "pedants", "avantūrists"],
-        "language_of_instruction": ["Latviešu"],
+        "interest_domains": [
+          "construction_civil",
+          "environment_sustainability"
+        ],
+        "required_strengths": [
+          "mathematics",
+          "physics",
+          "analytical_thinking",
+          "practical_skills",
+          "technical_thinking"
+        ],
+        "personality_fit": [
+          "analytical",
+          "technical",
+          "practical"
+        ],
+        "language_of_instruction": [
+          "Latviešu"
+        ],
         "math_intensive": true,
         "creative_component": false,
         "entry_exam_required": false,
         "entry_exam_type": "none",
         "part_time_available": true,
-        "difficulty_level": "videja",
-        "research_oriented": true,
+        "difficulty_level": "medium",
+        "research_oriented": false,
         "postgrad_pathway": true,
         "unique_in_latvia": true,
-        "specialization_count": 3
-      }
+        "specialization_count": 3,
+        "teamwork_oriented": false
+      },
+      "keywords": [
+        "geodesist",
+        "cartographer",
+        "land surveyor",
+        "GIS specialist",
+        "geomatics engineer",
+        "land registry",
+        "cadastre",
+        "spatial data",
+        "remote sensing",
+        "photogrammetry",
+        "topography"
+      ]
     }
   ],
   "quick_filter_presets": {
-    "entry_exam_required": ["ATI", "BUV_PRO", "IND"],
-    "no_entry_exam": ["AVT", "MAB", "MIF", "MEH", "SGU", "SET", "TRB", "GEO"],
-    "drawing_exam_paid": ["IND"],
-    "no_budget_places": ["SET"],
-    "part_time_available": ["ATI", "BUV_PRO", "MAB", "SGU", "SET", "TRB", "GEO"],
-    "full_time_only": ["AVT", "IND", "MIF", "MEH"],
-    "correspondence_only": ["SET"],
-    "english_available": ["AVT", "MIF"],
-    "english_required_b2": ["AVT", "MIF"],
-    "joint_program_dual_diploma": ["MIF"],
-    "creative_component": ["IND"],
-    "unique_in_latvia": ["GEO"],
-    "multi_location": ["MEH"],
-    "research_oriented": ["MIF", "SGU", "TRB", "GEO"],
-    "math_intensive": ["ATI", "AVT", "BUV_PRO", "MAB", "MIF", "MEH", "SGU", "SET", "TRB", "GEO"],
-    "for_working_professionals": ["SET", "ATI", "MAB", "TRB", "GEO"],
-    "international_certification": ["AVT"],
-    "most_budget_places": ["BUV_PRO"],
-    "highest_fee": ["MIF"],
-    "lowest_fee": ["GEO"],
-    "longest_program": ["SGU"],
+    "entry_exam_required": [
+      "ATI",
+      "BUV_PRO",
+      "IND"
+    ],
+    "no_entry_exam": [
+      "AVT",
+      "MAB",
+      "MIF",
+      "MEH",
+      "SGU",
+      "SET",
+      "TRB",
+      "GEO"
+    ],
+    "drawing_exam_paid": [
+      "IND"
+    ],
+    "no_budget_places": [
+      "SET"
+    ],
+    "part_time_available": [
+      "ATI",
+      "BUV_PRO",
+      "MAB",
+      "SGU",
+      "SET",
+      "TRB",
+      "GEO"
+    ],
+    "full_time_only": [
+      "AVT",
+      "IND",
+      "MIF",
+      "MEH"
+    ],
+    "correspondence_only": [
+      "SET"
+    ],
+    "english_available": [
+      "AVT",
+      "MIF"
+    ],
+    "english_required_b2": [
+      "AVT",
+      "MIF"
+    ],
+    "joint_program_dual_diploma": [
+      "MIF"
+    ],
+    "creative_component": [
+      "IND"
+    ],
+    "unique_in_latvia": [
+      "GEO"
+    ],
+    "multi_location": [
+      "MEH"
+    ],
+    "research_oriented": [
+      "MIF",
+      "SGU",
+      "TRB",
+      "GEO"
+    ],
+    "math_intensive": [
+      "ATI",
+      "AVT",
+      "BUV_PRO",
+      "MAB",
+      "MIF",
+      "MEH",
+      "SGU",
+      "SET",
+      "TRB",
+      "GEO"
+    ],
+    "for_working_professionals": [
+      "SET",
+      "ATI",
+      "MAB",
+      "TRB",
+      "GEO"
+    ],
+    "international_certification": [
+      "AVT"
+    ],
+    "most_budget_places": [
+      "BUV_PRO"
+    ],
+    "highest_fee": [
+      "MIF"
+    ],
+    "lowest_fee": [
+      "GEO"
+    ],
+    "longest_program": [
+      "SGU"
+    ],
     "by_study_direction": {
-      "arhitektura_un_buvnieciba": ["BUV_PRO", "SGU", "TRB", "GEO"],
-      "mehanika_siltumenergetika_masinzinibas": ["ATI", "AVT", "IND", "MAB", "MIF", "MEH", "SET"]
+      "arhitektura_un_buvnieciba": [
+        "BUV_PRO",
+        "SGU",
+        "TRB",
+        "GEO"
+      ],
+      "mehanika_siltumenergetika_masinzinibas": [
+        "ATI",
+        "AVT",
+        "IND",
+        "MAB",
+        "MIF",
+        "MEH",
+        "SET"
+      ]
     },
     "difficulty": {
-      "videja": ["IND", "SET", "GEO"],
-      "videja_augsta": ["ATI", "MAB", "MEH"],
-      "augsta": ["AVT", "BUV_PRO", "MIF", "SGU", "TRB"]
+      "videja": [
+        "IND",
+        "SET",
+        "GEO"
+      ],
+      "videja_augsta": [
+        "ATI",
+        "MAB",
+        "MEH"
+      ],
+      "augsta": [
+        "AVT",
+        "BUV_PRO",
+        "MIF",
+        "SGU",
+        "TRB"
+      ]
     }
   },
   "comparison_summary": {
     "total_budget_places_riga": 480,
-    "additional_budget_places_regions": { "Rēzekne": 30, "Liepāja": 20 },
+    "additional_budget_places_regions": {
+      "Rēzekne": 30,
+      "Liepāja": 20
+    },
     "fee_range_eur": {
-      "cheapest_full_time": { "amount": 3500, "programs": ["ATI", "AVT", "IND", "MAB"] },
-      "most_expensive_full_time": { "amount": 4500, "programs": ["MIF"] },
-      "cheapest_part_time": { "amount": 2990, "programs": ["GEO"] },
-      "most_expensive_part_time": { "amount": 3470, "programs": ["BUV_PRO", "SGU", "TRB"] }
+      "cheapest_full_time": {
+        "amount": 3500,
+        "programs": [
+          "ATI",
+          "AVT",
+          "IND",
+          "MAB"
+        ]
+      },
+      "most_expensive_full_time": {
+        "amount": 4500,
+        "programs": [
+          "MIF"
+        ]
+      },
+      "cheapest_part_time": {
+        "amount": 2990,
+        "programs": [
+          "GEO"
+        ]
+      },
+      "most_expensive_part_time": {
+        "amount": 3470,
+        "programs": [
+          "BUV_PRO",
+          "SGU",
+          "TRB"
+        ]
+      }
     },
     "duration_range": {
-      "shortest": { "years_full_time": 4, "programs": ["AVT", "IND", "MAB", "MEH", "SET"] },
-      "longest": { "years_full_time": 5, "programs": ["SGU"] }
+      "shortest": {
+        "years_full_time": 4,
+        "programs": [
+          "AVT",
+          "IND",
+          "MAB",
+          "MEH",
+          "SET"
+        ]
+      },
+      "longest": {
+        "years_full_time": 5,
+        "programs": [
+          "SGU"
+        ]
+      }
     },
     "credits_range": {
-      "min": { "credits": 240, "programs": ["AVT", "IND", "MAB", "MEH", "SET"] },
-      "max": { "credits": 300, "programs": ["SGU"] }
+      "min": {
+        "credits": 240,
+        "programs": [
+          "AVT",
+          "IND",
+          "MAB",
+          "MEH",
+          "SET"
+        ]
+      },
+      "max": {
+        "credits": 300,
+        "programs": [
+          "SGU"
+        ]
+      }
     }
   }
 }
