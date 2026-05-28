@@ -225,14 +225,15 @@ Constraints:
 def _parse_retry_delay(exc: Exception) -> float:
     """Extract retryDelay seconds from a 429 RESOURCE_EXHAUSTED error message."""
     msg = str(exc)
-    m = re.search(r'"retryDelay":\s*"(\d+(?:\.\d+)?)s"', msg)
+    # Handle both single- and double-quoted repr (Python dict str vs JSON)
+    m = re.search(r"['\"]retryDelay['\"]\s*:\s*['\"](\d+(?:\.\d+)?)s['\"]", msg)
     if m:
-        return float(m.group(1)) + 2.0  # small buffer
-    # Fallback: exponential back-off
-    return 20.0
+        return min(float(m.group(1)) + 3.0, 65.0)
+    # Fallback: wait a full minute to guarantee the RPM window resets
+    return 65.0
 
 
-def call_gemini(prompt: str, retries: int = 3) -> Optional[dict]:
+def call_gemini(prompt: str, retries: int = 1) -> Optional[dict]:
     for attempt in range(retries + 1):
         try:
             response = _client.models.generate_content(
@@ -258,11 +259,14 @@ def call_gemini(prompt: str, retries: int = 3) -> Optional[dict]:
             err_str = str(e)
             if "RESOURCE_EXHAUSTED" in err_str or "429" in err_str:
                 wait = _parse_retry_delay(e)
-                print(f"      Rate limited (attempt {attempt + 1}) — waiting {wait:.0f}s…")
+                print(f"      Rate limited — waiting {wait:.0f}s before retry…")
                 time.sleep(wait)
-                continue
+                continue  # one retry after waiting
             if "PERMISSION_DENIED" in err_str or "403" in err_str:
                 print(f"      Permission denied — API key invalid or leaked. Aborting.")
+                return None
+            if "INVALID_ARGUMENT" in err_str or "400" in err_str:
+                print(f"      Invalid request (400) — check API key. Aborting.")
                 return None
             print(f"      API error (attempt {attempt + 1}): {err_str[:120]}")
         if attempt < retries:
