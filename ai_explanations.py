@@ -13,18 +13,33 @@ from typing import Optional
 
 logger = logging.getLogger("ai_explanations")
 
-# ── Lazy-import the new google-genai SDK ─────────────────────────────────────
-try:
-    from google import genai
-    from google.genai import types as genai_types
-    _GENAI_AVAILABLE = True
-except ImportError:
-    _GENAI_AVAILABLE = False
-    logger.warning("google-genai not installed — AI explanations disabled.")
-
 _client: Optional[object] = None
 _api_key_loaded = False
+_GENAI_AVAILABLE: Optional[bool] = None
+genai = None
+genai_types = None
 _MODEL = "gemini-2.5-flash"   # best free-tier model as of 2026-05
+
+
+def _load_genai_sdk() -> bool:
+    """Import the Gemini SDK only when AI features are requested."""
+    global _GENAI_AVAILABLE, genai, genai_types
+
+    if _GENAI_AVAILABLE is not None:
+        return _GENAI_AVAILABLE
+
+    try:
+        from google import genai as _genai
+        from google.genai import types as _genai_types
+    except ImportError:
+        _GENAI_AVAILABLE = False
+        logger.warning("google-genai not installed — AI explanations disabled.")
+        return False
+
+    genai = _genai
+    genai_types = _genai_types
+    _GENAI_AVAILABLE = True
+    return True
 
 
 def _init_genai() -> bool:
@@ -34,7 +49,7 @@ def _init_genai() -> bool:
         return _client is not None
     _api_key_loaded = True
 
-    if not _GENAI_AVAILABLE:
+    if not _load_genai_sdk():
         return False
 
     # Check env var first, then Streamlit secrets (for cloud deployment)

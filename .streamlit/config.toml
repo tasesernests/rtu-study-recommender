@@ -1,9 +1,9 @@
 [theme]
-# RTU brand colours — clean, modern light theme
-primaryColor = "#c8102e"
-backgroundColor = "#f8fafc"
+# Neutral, professional light theme with RTU red reserved for small accents
+primaryColor = "#374151"
+backgroundColor = "#f7f8fa"
 secondaryBackgroundColor = "#ffffff"
-textColor = "#1a202c"
+textColor = "#111827"
 font = "sans serif"
 
 [server]
